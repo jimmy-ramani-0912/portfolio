@@ -4,7 +4,7 @@ Welcome to my portfolio! This project showcases my skills, projects, and experie
 
 ### Weblink: [Live Website]()
 
-## Some Images:
+## Images:
 
 <img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/about.png?raw=true"/>
 <img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/skills.png?raw=true"/>
