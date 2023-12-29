@@ -11,8 +11,6 @@ import {
   Title,
   Span,
   SubTitle,
-  SocialMediaIcons,
-  SocialMediaIcon,
   ResumeButton,
 } from "./HeroStyle";
 import HeroImg from "../../images/HeroImage.jpg";
@@ -50,7 +48,7 @@ const HeroSection = () => {
           </HeroLeftContainer>
 
           <HeroRightContainer id="Right">
-            <Img src={HeroImg} alt="hero-image" />
+            <Img src={HeroImg} alt="Jimmy-Ramani" />
           </HeroRightContainer>
         </HeroInnerContainer>
       </HeroContainer>

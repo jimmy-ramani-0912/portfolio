@@ -87,7 +87,8 @@ const Document = styled.img`
   height: 23px;
   width: fit-content;
   border-radius: 10px;
-  filter: brightness(0) invert(100%);
+
+  filter: ${({ theme }) => theme.filter};
 `;
 
 function Footer() {
