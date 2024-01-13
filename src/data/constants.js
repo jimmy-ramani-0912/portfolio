@@ -1,15 +1,13 @@
 export const Bio = {
   name: "Jimmy Ramani",
-  roles: ["Flutter Developer", "Full Stack Developer", "DevOps Engineer"],
+  roles: ["Full Stack Developer", "Flutter Developer", "DevOps Engineer"],
   description:
     "I am a motivated and versatile individual with a passion for learning and a dedication to delivering high-quality results. With a positive attitude and a growth mindset, I am always eager to take on new challenges and make a meaningful contribution to web and mobile projects, leveraging my skills that encompass the entire software development lifecycle.",
   github: "https://github.com/jimmy-ramani-0912",
   resume:
     "https://drive.google.com/file/d/1nI1WcgH36h1UZ1DWl8w_t4ADq_ECTfCz/view?usp=share_link",
   linkedin: "https://www.linkedin.com/in/jimmyramani",
-  twitter: "https://twitter.com/RishavChanda",
   insta: "https://www.instagram.com/jim_my0915/",
-  facebook: "https://www.facebook.com/rishav.chanda.165/",
   medium: "https://medium.com/@jimmyramani",
   codepen: "https://codepen.io/jimmyramani",
 };
@@ -243,7 +241,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://www.iaspaper.net/storage/2018/08/Charusat.png",
+    img: "https://play-lh.googleusercontent.com/3_H1GEEyCiDcPf23k0qKTzFOWSTkPk4a6MRSFuWnS825TOojFrdaoolD_FCV3NF64Q",
     school: "Charotar University of Science and Technology, Anand",
     date: "2020 - Present",
     grade: "8.89 CGPA",
@@ -324,7 +322,6 @@ export const projects = [
       "https://github.com/jimmy-ramani-0912/Project-Management-Dashboard-React",
     webapp: "https://reactjs-1-me.netlify.app/",
   },
-
   {
     id: 8,
     title: "MyCar",
@@ -375,7 +372,6 @@ export const projects = [
       },
     ],
   },
-
   {
     id: 2,
     title: "Portfolio Dashboard",
@@ -403,7 +399,6 @@ export const projects = [
       "https://github.com/jimmy-ramani-0912/Project-Management-Dashboard-React-2",
     webapp: "https://test-6-me.netlify.app/",
   },
-
   {
     id: 7,
     title: "Location-Based-Attendances For Company",
@@ -436,6 +431,11 @@ export const projects = [
 export const TimeLineData = [
   { year: 2021, text: "Began the Journey" },
   { year: 2022, text: "Worked as a flutter freelancer" },
-  { year: 2023, text: "JavaScript Proficiency & Exploring React.js" },
-  { year: 2023, text: "Shared my projects & Knowledge with the world" },
+  { year: 2023, text: "JavaScript Proficiency & Delved into React.js" },
+  { year: 2023, text: "Shared my Passion Projects & Knowledge with the World" },
+  {
+    year: 2023,
+    text: "Initiated the Implementation of React.js in Real-world Projects",
+  },
+  { year: 2024, text: "Commenced Leveraging Node.js for Real-world Solutions" },
 ];
