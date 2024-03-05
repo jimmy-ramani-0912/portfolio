@@ -178,13 +178,14 @@ export const ResumeButton = styled.a`
   text-align: center;
   padding: 16px 0;
   color: ${({ theme }) => theme.white};
+  border: 1px solid ${({ theme }) => theme.primary};
   border-radius: 20px;
   cursor: pointer;
   font-size: 20px;
   font-weight: 600;
   transition: all 0.2s ease-in-out !important;
-  background: ${({ theme }) => theme.background};
-  box-shadow: ${({ theme }) => theme.boxShadow};
+  background: ${({ theme }) => theme.primary};
+  /* box-shadow: ${({ theme }) => theme.boxShadow}; */
   &:hover {
     transform: scale(1.05);
     transition: all 0.4s ease-in-out;
