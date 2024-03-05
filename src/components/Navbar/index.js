@@ -15,6 +15,7 @@ import {
 } from "./NavbarStyledComponent";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import { DiCssdeck } from "react-icons/di";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import { Bio } from "../../data/constants";
 import { useTheme } from "styled-components";
 import { FaBars, FaMoon } from "react-icons/fa";
@@ -53,7 +54,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
-            Github Profile
+            <GitHubIcon style={{ marginRight: "10px" }} />
+            Github
           </GitHubButton>
           <ThemeButton onClick={toggleDarkMode}>
             {darkMode ? <WbSunnyIcon /> : <FaMoon />}
@@ -111,7 +113,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
               href={Bio.github}
               target="_blank"
             >
-              Github Profile
+              <GitHubIcon style={{ marginRight: "10px" }} />
+              Github
             </GitHubButton>
           </MobileMenu>
         )}

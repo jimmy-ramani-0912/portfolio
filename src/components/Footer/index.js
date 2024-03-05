@@ -1,6 +1,4 @@
 import styled from "styled-components";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import { Bio } from "../../data/constants";
@@ -117,7 +115,7 @@ function Footer() {
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2023 Jimmy Ramani. All rights reserved.</Copyright>
+        <Copyright>&copy; 2024 Jimmy Ramani. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

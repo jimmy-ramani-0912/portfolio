@@ -101,7 +101,7 @@ const Description = styled.div`
   margin-top: 8px;
   display: -webkit-box;
   max-width: 100%;
-  -webkit-line-clamp: 3;
+  -webkit-line-clamp: 6;
   -webkit-box-orient: vertical;
   text-overflow: ellipsis;
 `;

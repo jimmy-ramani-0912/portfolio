@@ -269,6 +269,19 @@ export const education = [
 
 export const projects = [
   {
+    id: 9,
+    title: "Kloxa",
+    date: "Feb 2024",
+    description:
+      "Kloxa Company offers a comprehensive solution for RO systems via its mobile app, allowing customers to register repairs, installations, and complaints conveniently. With competitive prices on new RO systems and an annual maintenance contract (AMC) plan for all brands, Kloxa ensures efficient service for commercial, domestic, and industrial needs.",
+    image:
+      "https://play-lh.googleusercontent.com/CNiSNjhxPwci7tqnJB9sbrjVEI-YrMn4n4AP_jcYM_eCWW7u1iJTFS9twef5RJOWjJ_E=w526-h296-rw",
+    tags: ["Flutter", "Php", "Mysql"],
+    category: "flutter app",
+    github: "https://github.com/jimmy-ramani-0912/Kloxa",
+    webapp: "https://play.google.com/store/apps/details?id=com.app.kloxa",
+  },
+  {
     id: 4,
     title: "Invoice Generator",
     date: "Oct 2023",
@@ -429,13 +442,13 @@ export const projects = [
 ];
 
 export const TimeLineData = [
-  { year: 2021, text: "Began the Journey" },
-  { year: 2022, text: "Worked as a flutter freelancer" },
-  { year: 2023, text: "JavaScript Proficiency & Delved into React.js" },
-  { year: 2023, text: "Shared my Passion Projects & Knowledge with the World" },
+  { year: 2024, text: "Commenced Leveraging Node.js for Real-world Solutions" },
   {
     year: 2023,
     text: "Initiated the Implementation of React.js in Real-world Projects",
   },
-  { year: 2024, text: "Commenced Leveraging Node.js for Real-world Solutions" },
+  { year: 2023, text: "Shared my Passion Projects & Knowledge with the World" },
+  { year: 2023, text: "JavaScript Proficiency & Delved into React.js" },
+  { year: 2022, text: "Worked as a flutter freelancer" },
+  { year: 2021, text: "Began the Journey" },
 ];

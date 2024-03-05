@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import Education from "./components/Education";
+import TimeLineData from "./components/TimeLine";
 import ProjectDetails from "./components/ProjectDetails";
 import styled from "styled-components";
 
@@ -52,9 +53,10 @@ function App() {
             <Skills />
             <Experience />
           </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />
+          <Projects openModal={openModal} setOpenModal={setOpenModal} />{" "}
+          <Education />
           <Wrapper>
-            <Education />
+            <TimeLineData />
             <Contact />
           </Wrapper>
           <Footer />
