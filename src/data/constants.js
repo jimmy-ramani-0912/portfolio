@@ -452,3 +452,425 @@ export const TimeLineData = [
   { year: 2022, text: "Worked as a flutter freelancer" },
   { year: 2021, text: "Began the Journey" },
 ];
+
+export const blogs = [
+  {
+    id: 1,
+    title:
+      "𝐒𝐩𝐞𝐞𝐝 𝐢𝐬 𝐭𝐡𝐞 𝐧𝐚𝐦𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐠𝐚𝐦𝐞 𝐢𝐧 𝐰𝐞𝐛 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐬 𝐲𝐨𝐮𝐫 𝐌𝐕𝐏! 🚀",
+    date: "20 Mar 2023",
+    description: `𝐒𝐩𝐞𝐞𝐝 𝐢𝐬 𝐭𝐡𝐞 𝐧𝐚𝐦𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐠𝐚𝐦𝐞 𝐢𝐧 𝐰𝐞𝐛 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐬 𝐲𝐨𝐮𝐫 𝐌𝐕𝐏! 🚀
+
+      In the digital realm, the first impression is often the last—and it's all about how quickly your content appears on the user's screen. SSR is the unsung hero here, ensuring your website isn't just a pretty face but also a sprinter on the track of the World Wide Web.
+
+      𝐖𝐡𝐲 𝐬𝐡𝐨𝐮𝐥𝐝 𝐲𝐨𝐮 𝐜𝐚𝐫𝐞 𝐚𝐛𝐨𝐮𝐭 𝐒𝐒𝐑? Well, imagine clicking on a link and getting the content delivered to you faster than you can say "Server-Side Rendering." That's the magic of SSR! It's not just about speed, though. SEO loves SSR too! Search engines can crawl your site more effectively, making your content the star of search results.
+
+      𝐁𝐮𝐭 𝐡𝐨𝐰 𝐝𝐨𝐞𝐬 𝐒𝐒𝐑 𝐰𝐨𝐫𝐤 𝐢𝐭𝐬 𝐦𝐚𝐠𝐢𝐜? It's like a chef preparing your meal before you even step into the restaurant. When you arrive, voilà—your table is set, and your meal is ready. That's SSR serving up your website—fully cooked and ready to be devoured by eager users.
+
+      And for those who speak in code, frameworks like React, Angular, and Vue.js are your allies in implementing SSR. They've got tools like Next.js and Nuxt.js that make SSR as easy as pie.
+
+      So, are you ready to give your users the fast-loading, SEO-friendly, performance-optimized experience they deserve? If SSR isn't on your radar yet, it's time to tune in.
+
+      Let's start a conversation—how has SSR impacted your projects? Or if you're new to this, what's holding you back from giving it a go?
+
+      🚀 𝘋𝘳𝘰𝘱 𝘢 𝘭𝘪𝘬𝘦 𝘪𝘧 𝘺𝘰𝘶'𝘳𝘦 𝘢𝘭𝘭 𝘪𝘯 𝘧𝘰𝘳 𝘣𝘦𝘵𝘵𝘦𝘳 𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘢𝘯𝘤𝘦!
+      🔖 𝘉𝘰𝘰𝘬𝘮𝘢𝘳𝘬 𝘵𝘩𝘪𝘴 𝘵𝘰 𝘬𝘦𝘦𝘱 𝘚𝘚𝘙 𝘰𝘯 𝘺𝘰𝘶𝘳 𝘳𝘢𝘥𝘢𝘳!
+      📤 𝘚𝘩𝘢𝘳𝘦 𝘵𝘩𝘪𝘴 𝘸𝘪𝘵𝘩 𝘺𝘰𝘶𝘳 𝘯𝘦𝘵𝘸𝘰𝘳𝘬 𝘵𝘰 𝘴𝘱𝘳𝘦𝘢𝘥 𝘵𝘩𝘦 𝘚𝘚𝘙 𝘸𝘰𝘳𝘥!
+      💬 𝘊𝘰𝘮𝘮𝘦𝘯𝘵 𝘣𝘦𝘭𝘰𝘸 𝘸𝘪𝘵𝘩 𝘺𝘰𝘶𝘳 𝘚𝘚𝘙 𝘴𝘵𝘰𝘳𝘪𝘦𝘴 𝘰𝘳 𝘲𝘶𝘦𝘴𝘵𝘪𝘰𝘯𝘴!
+
+      #WebDevelopment #SEO #Performance`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQFaRou7lGy5zA/feedshare-document-images_480/1/1710874634503?e=1712188800&v=beta&t=ZSJQwyu1ZORnaGJTAOyFugUeAIjZa7FBgQh3Fsb5KFw",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQFaRou7lGy5zA/feedshare-document-pdf-analyzed/0/1710874637813?e=1712188800&v=beta&t=UV0EfOC8cCRVroloJMZLecscqN2H-V-LVZc47hvYnLM",
+  },
+  {
+    id: 2,
+    title: "🛠️ 𝐄𝐧𝐡𝐚𝐧𝐜𝐞 𝐘𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐔𝐬𝐞𝐟𝐮𝐥 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀💻",
+    date: "25 Mar 2023",
+    description: `🛠️ 𝐄𝐧𝐡𝐚𝐧𝐜𝐞 𝐘𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐔𝐬𝐞𝐟𝐮𝐥 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀💻
+
+    Looking to add some extra functionality and flair to your React projects? Check out these versatile libraries that can help you streamline development and create engaging user experiences:
+
+    𝐑𝐞𝐚𝐜𝐭-𝐊𝐨𝐧𝐯𝐚: Bring your canvas and drawing projects to life with React-Konva. Harness the power of the Konva library for easy and efficient canvas manipulation.
+
+    𝐑𝐞𝐚𝐜𝐭-𝐆𝐞𝐬𝐭𝐮𝐫𝐞-𝐇𝐚𝐧𝐝𝐥𝐞𝐫: Elevate your touch-based interactions with React-Gesture-Handler. Implement gestures like swipe, pinch, and rotate effortlessly in your React applications.
+
+    𝐑𝐞𝐚𝐜𝐭-𝐅𝐥𝐢𝐩-𝐌𝐨𝐯𝐞: Add smooth and beautiful animations to your React components with React-Flip-Move. Easily animate list transitions and UI elements for a polished user experience.
+
+    𝐑𝐞𝐚𝐜𝐭-𝐕𝐢𝐫𝐭𝐮𝐚𝐥𝐢𝐳𝐞𝐝: Optimize performance and efficiency in large-scale applications with React-Virtualized. Render large lists and grids efficiently with virtualized components.
+
+    𝐑𝐞𝐚𝐜𝐭-𝐓𝐨𝐚𝐬𝐭𝐢𝐟𝐲: Enhance your user notifications with React-Toastify. Display toast messages and alerts in a customizable and user-friendly way.
+
+    𝐑𝐞𝐚𝐜𝐭-𝐏𝐚𝐠𝐞-𝐓𝐫𝐚𝐧𝐬𝐢𝐭𝐢𝐨𝐧: Create seamless page transitions and animations in your React applications with React-Page-Transition. Keep your users engaged as they navigate through your site.
+
+    𝐑𝐞𝐚𝐜𝐭-360: Dive into the world of virtual reality with React-360. Build immersive VR experiences for the web using React components.
+
+    With these libraries in your toolkit, you'll have everything you need to take your React projects to the next level! 💡🔧
+
+    𝘙𝘦𝘢𝘥𝘺 𝘵𝘰 𝘵𝘢𝘬𝘦 𝘺𝘰𝘶𝘳 𝒄𝒐𝒅𝒊𝒏𝒈 𝘫𝘰𝘶𝘳𝘯𝘦𝘺 𝘵𝘰 𝘯𝘦𝘸 𝘩𝘦𝘪𝘨𝘩𝘵𝘴? 𝘍𝘰𝘭𝘭𝘰𝘸 Jimmy Ramani'𝒔 𝘭𝘦𝘢𝘥 𝘢𝘯𝘥 𝘶𝘯𝘭𝘰𝘤𝘬 𝘵𝘩𝘦 𝒔𝒆𝒄𝒓𝒆𝒕𝒔 𝘵𝘰 𝘦𝘯𝘩𝘢𝘯𝘤𝘪𝘯𝘨 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘱𝘳𝘰𝘧𝘪𝘤𝘪𝘦𝘯𝘤𝘺! 𝘍𝘳𝘰𝘮 𝘤𝘶𝘵𝘵𝘪𝘯𝘨-𝘦𝘥𝘨𝘦 𝘵𝘪𝘱𝘴 𝘵𝘰 𝘪𝘯𝘷𝘢𝘭𝘶𝘢𝘣𝘭𝘦 𝘪𝘯𝘴𝘪𝘨𝘩𝘵𝘴, 𝑱𝒊𝒎𝒎𝒚'𝒔 𝘨𝘰𝘵 𝘺𝘰𝘶 𝘤𝘰𝘷𝘦𝘳𝘦𝘥 𝘦𝘷𝘦𝘳𝘺 𝘴𝘵𝘦𝘱 𝘰𝘧 𝘵𝘩𝘦 𝘸𝘢𝘺.
+
+    #ReactJS #FrontEndDevelopment #WebDevelopment #ReactLibraries #Innovation`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHnTMQ7srwS6Q/feedshare-document-images_1920/1/1711304663655?e=1712188800&v=beta&t=xDXMWTJw0f7yD8tG3GK_zs_3akl1Hwia6csJTJTfTlM",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQHnTMQ7srwS6Q/feedshare-document-pdf-analyzed/0/1711304663816?e=1712188800&v=beta&t=2W_oKDnuxiIehLSaYmqZRMIiM0zkXmYxrEXESXFlKGw",
+  },
+  {
+    id: 3,
+    title:
+      "𝐄𝐯𝐞𝐫 𝐰𝐨𝐧𝐝𝐞𝐫𝐞𝐝 𝐰𝐡𝐲 𝐲𝐨𝐮𝐫 𝐒𝐕𝐆𝐬 𝐭𝐚𝐤𝐞 𝐚 𝐬𝐜𝐞𝐧𝐢𝐜 𝐫𝐨𝐮𝐭𝐞 𝐛𝐞𝐟𝐨𝐫𝐞 𝐩𝐨𝐩𝐩𝐢𝐧𝐠 𝐮𝐩 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐚𝐩𝐩'𝐬 𝐔𝐈? 🤔",
+    date: "22 Mar 2023",
+    description: `𝐄𝐯𝐞𝐫 𝐰𝐨𝐧𝐝𝐞𝐫𝐞𝐝 𝐰𝐡𝐲 𝐲𝐨𝐮𝐫 𝐒𝐕𝐆𝐬 𝐭𝐚𝐤𝐞 𝐚 𝐬𝐜𝐞𝐧𝐢𝐜 𝐫𝐨𝐮𝐭𝐞 𝐛𝐞𝐟𝐨𝐫𝐞 𝐩𝐨𝐩𝐩𝐢𝐧𝐠 𝐮𝐩 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐚𝐩𝐩'𝐬 𝐔𝐈? 🤔
+
+    SVGs are the superheroes of the digital image world: they're sleek, they scale without a hitch, and they keep your app light on its feet. But even superheroes have their kryptonite. For SVGs, it's the dreaded lag before they make their grand entrance on the screen.
+
+    Here's a pro tip to save the day: pre-caching! 🚀 By creating a helper function and calling it in your main(), you're essentially rolling out the red carpet for your SVGs. They'll be ready to show up instantly, no more awkward waiting.
+
+    And for those who love a bit of customization, SVGs come with a nifty trick up their sleeve. The color filter property! Want to match your SVGs to your brand colors or set the mood with a specific blend mode? Dive into the API docs and get creative.
+
+    Now, I'm curious, fellow developers and designers: How do you optimize your images for the best user experience? Have you tried pre-caching or playing with blend modes? Share your insights or ask questions below. Let's get the conversation started!
+
+    If this tip just made your day or you know someone who could benefit from it, go ahead and hit that like button or better yet, repost this gem. Let's spread the knowledge!
+
+    hashtag#SVG hashtag#Performance hashtag#WebDevelopment`,
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQFZrEUrl9B43w/feedshare-shrink_2048_1536/0/1710961491581?e=1714608000&v=beta&t=uxfIGTrgY_VIfoM9YrSuOKqrEggXlL9Rtlx3oOoMynY",
+    category: "web",
+    photoUrl:
+      "https://media.licdn.com/dms/image/D4D22AQFZrEUrl9B43w/feedshare-shrink_2048_1536/0/1710961491581?e=1714608000&v=beta&t=uxfIGTrgY_VIfoM9YrSuOKqrEggXlL9Rtlx3oOoMynY",
+  },
+  {
+    id: 4,
+    title:
+      "𝑬𝒗𝒆𝒓 𝒘𝒐𝒏𝒅𝒆𝒓𝒆𝒅 𝒘𝒉𝒂𝒕 𝒕𝒉𝒆 𝒔𝒆𝒄𝒓𝒆𝒕 𝒔𝒂𝒖𝒄𝒆 𝒊𝒔 𝒇𝒐𝒓 𝒂 𝒌𝒊𝒍𝒍𝒆𝒓 𝒂𝒑𝒑 𝒐𝒓 𝒘𝒆𝒃 𝒑𝒓𝒐𝒋𝒆𝒄𝒕? 🤔💡",
+    date: "21 Mar 2023",
+    description: `𝑬𝒗𝒆𝒓 𝒘𝒐𝒏𝒅𝒆𝒓𝒆𝒅 𝒘𝒉𝒂𝒕 𝒕𝒉𝒆 𝒔𝒆𝒄𝒓𝒆𝒕 𝒔𝒂𝒖𝒄𝒆 𝒊𝒔 𝒇𝒐𝒓 𝒂 𝒌𝒊𝒍𝒍𝒆𝒓 𝒂𝒑𝒑 𝒐𝒓 𝒘𝒆𝒃 𝒑𝒓𝒐𝒋𝒆𝒄𝒕? 🤔💡
+
+    It's all about the tools you use, and APIs are the Swiss Army knife for developers! Here's a rundown of some amazing APIs that could be the game-changer for your next project:
+
+    🔹 𝐂𝐨𝐢𝐧 𝐏𝐚𝐩𝐫𝐢𝐤𝐚: Get real-time crypto stats and stay ahead of the market trends. Perfect for finance-focused apps!
+
+    🔹 𝐌𝐚𝐫𝐯𝐞𝐥: Tap into the Marvel universe and bring a heroic edge to your content. Ideal for fans and creators alike!
+
+    🔹 𝐔𝐧𝐬𝐩𝐥𝐚𝐬𝐡: Need visuals? Access a wealth of stunning images to enhance your user interface.
+
+    🔹 𝐅𝐚𝐤𝐞 𝐒𝐭𝐨𝐫𝐞 𝐀𝐏𝐈: Hone your e-commerce prowess with a sandbox environment that feels like the real deal.
+
+    🔹 𝐎𝐩𝐞𝐧𝐒𝐞𝐚: Dive into the NFT craze and integrate with the biggest marketplace out there.
+
+    🔹 𝐓𝐕 𝐌𝐚𝐳𝐞: Build the ultimate guide for TV enthusiasts with comprehensive show data.
+
+    🔹 𝐍𝐀𝐒𝐀 𝐎𝐩𝐞𝐧 𝐀𝐏𝐈: Bring space exploration to your users with data from the final frontier.
+
+    🔹 𝐂𝐥𝐨𝐮𝐝𝐂𝐨𝐧𝐯𝐞𝐫𝐭: Solve any file conversion puzzle with this versatile tool.
+
+    Now, here's the question for you: Which of these APIs sparks an idea for your next project, and how would you use it to innovate? 🚀
+
+    Share your 𝒕𝒉𝒐𝒖𝒈𝒉𝒕𝒔, and let's brainstorm some genius applications together! Don't forget to hit the '𝑳𝒊𝒌𝒆' button if you found this list helpful, and drop a 𝒄𝒐𝒎𝒎𝒆𝒏𝒕 with your innovative 𝒊𝒅𝒆𝒂𝒔 or 𝒒𝒖𝒆𝒔𝒕𝒊𝒐𝒏𝒔!
+
+    #APIs #WebDevelopment #AppDevelopment #Innovation #Coding`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQEEna6RRuvFkg/feedshare-document-images_480/1/1710767752033?e=1712188800&v=beta&t=iwBHl3ugdn2x9Nlv3xBe39ejGjR1i8xKW5b8ygvSr9s",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQEEna6RRuvFkg/feedshare-document-pdf-analyzed/0/1710767756363?e=1712188800&v=beta&t=XG2URLftc8WBOsPGsEgX9MFl9dUZffWnZR4wXoyMsnA",
+  },
+  {
+    id: 5,
+    title:
+      "🚀 Ready to Level Up Your Node.js Skills? 𝐁𝐮𝐢𝐥𝐝 𝐚 𝐒𝐢𝐦𝐩𝐥𝐞 𝐄𝐱𝐩𝐫𝐞𝐬𝐬 𝐒𝐞𝐫𝐯𝐞𝐫! 💻🌐",
+    date: "20 Mar 2023",
+    description: `🚀 Ready to Level Up Your Node.js Skills? 𝐁𝐮𝐢𝐥𝐝 𝐚 𝐒𝐢𝐦𝐩𝐥𝐞 𝐄𝐱𝐩𝐫𝐞𝐬𝐬 𝐒𝐞𝐫𝐯𝐞𝐫! 💻🌐
+
+    Excited to share a beginner-friendly guide to building your very own Express server in Node.js! 🎉
+
+    Whether you're new to backend development or looking to expand your skill set, this is for you.
+
+    In just a few easy steps, you'll learn how to:
+
+    1️⃣ Set up a new Node.js project
+    2️⃣ Install and configure Express.js
+    3️⃣ Create routes to handle HTTP requests
+    4️⃣ Serve static files and assets
+    5️⃣ Implement middleware for additional functionality
+
+    By the end of this, you'll have a solid foundation for building backend applications with Express, a powerful and versatile framework for Node.js.
+    Ready to dive in? Check out 𝐉𝐢𝐦𝐦𝐲 𝐑𝐚𝐦𝐚𝐧𝐢 and start building your own Express server today! 🛠️💡
+
+    #NodeJS #ExpressJS #BackendDevelopment #WebDevelopment #Tutorial #Learning
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQEC5kxli8Q3Nw/feedshare-document-images_1920/1/1710524167483?e=1712188800&v=beta&t=TrqRsTxRHoDf7mNjdIin6MkBvsoRgsSOQhOlA-IUhj0",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQEC5kxli8Q3Nw/feedshare-document-pdf-analyzed/0/1710524167542?e=1712188800&v=beta&t=rtUMIkgwr04noJDnFy_Au3-7eOLACFOJf4MhXUGIVos",
+  },
+  {
+    id: 6,
+    title: "🎨 𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 𝐔𝐈 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀✨",
+    date: "18 Mar 2023",
+    description: `🎨 𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 𝐔𝐈 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀✨
+
+    Ready to add some magic to your React applications? Explore these top-notch animation libraries and bring your user interfaces to life:
+
+    𝐅𝐫𝐚𝐦𝐞𝐫 𝐌𝐨𝐭𝐢𝐨𝐧: Dive into fluid animations and gesture-based interactions with Framer Motion. Create stunning visual experiences effortlessly!
+
+    𝐑𝐞𝐚𝐜𝐭 𝐒𝐩𝐫𝐢𝐧𝐠: Harness the power of physics-based animations with React Spring. From simple transitions to complex animations, unleash your creativity!
+
+    𝐀𝐧𝐢𝐦𝐞.𝐣𝐬: Infuse your UI with dynamic and expressive animations using Anime.js. With its lightweight and versatile nature, the possibilities are endless!
+
+    𝐆𝐫𝐞𝐞𝐧𝐒𝐨𝐜𝐤 (𝐆𝐒𝐀𝐏): Delve into the world of professional-grade animations with GreenSock. Elevate your projects with smooth, high-performance animations that captivate your audience!
+
+    𝐑𝐞𝐚𝐜𝐭 𝐌𝐨𝐯𝐞: Seamlessly integrate animations into your React components with React Move. Simplify complex transitions and elevate your user experience!
+
+    Whether you're a seasoned developer or just starting out, these animation libraries offer a plethora of tools and effects to make your React projects shine. Get ready to dazzle your users and take your UI to the next level! 💫🖥️
+
+    #React #Animation #UI #FrontEndDevelopment #FramerMotion #ReactSpring #AnimeJS #GreenSock #ReactMove
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQE-54WXSjI4-w/feedshare-document-images_1920/1/1710439144363?e=1712188800&v=beta&t=Y0DbYCSiT9yv8T3mVKlwi9E2k2PruOPds3A1JfwzCLY",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQE-54WXSjI4-w/feedshare-document-pdf-analyzed/0/1710439144423?e=1712188800&v=beta&t=QehdCWtblPG_C6SIQGLjqtf31wborHCf0Y6xcClhkNA",
+  },
+  {
+    id: 7,
+    title:
+      "🚀 Elevate your website speed with these 5️⃣ simple tips for React.js",
+    date: "17 Mar 2023",
+    description: `🚀 Elevate your website speed with these 5️⃣ simple tips for React.js.
+
+    1️⃣ 𝐋𝐚𝐳𝐲 𝐋𝐨𝐚𝐝𝐢𝐧𝐠: 🖼️ Load images smartly using react-lazy-load to enhance user experience. Code example included!
+
+    2️⃣ 𝐎𝐩𝐭𝐢𝐦𝐢𝐳𝐞 𝐈𝐦𝐚𝐠𝐞𝐬: 📸💨 Speed up your site by compressing images with tools like TinyPNG. It's a game-changer!
+
+    3️⃣ 𝐑𝐞𝐦𝐨𝐯𝐞 𝐈𝐧𝐥𝐢𝐧𝐞 𝐂𝐒𝐒: 🚫💅 Improve organization by avoiding inline styles in React components. Use external stylesheets instead.
+
+    4️⃣ 𝐂𝐨𝐝𝐞-𝐬𝐩𝐥𝐢𝐭𝐭𝐢𝐧𝐠: ⚡🔄 Utilize React.lazy to load components only when needed. breaking down your code into smaller chunks and loading them only when needed. It will boost efficiency and performance!
+
+    5️⃣ 𝐅𝐨𝐧𝐭 𝐋𝐨𝐚𝐝𝐢𝐧𝐠 𝐌𝐚𝐬𝐭𝐞𝐫𝐲: 📚🔠 Control font rendering behavior with the font-display property. Load only what's necessary for sleek typography.
+
+    6️⃣ 𝐌𝐢𝐧𝐢𝐟𝐲 & 𝐁𝐮𝐧𝐝𝐥𝐞: 🛍️🔍 Shrink JavaScript files using tools like Webpack for faster page loads. Your users will thank you!
+
+    Implement these easy techniques now, to supercharge your Google Page Speed! 🚀📈
+
+    Follow Jimmy Ramani for more Web Development, Programming tips and SEO tricks.
+
+    👍 Like if you find it helpful!
+    🔄 Share with your network!
+    📤 Save for future reference!
+    💬 Share your thoughts!
+
+    #reactjs #react #javascript #cheatsheet #tips #mastery #guide #developer #programmer #web #development #code #nextjs #nextjs14 #webdevelopment #mern #notes #speedoptimization #website #websitedevelopment #softwaredevelopment #mernstack #seo
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHwLbXlXI3HEA/feedshare-document-images_1920/1/1709575004184?e=1712188800&v=beta&t=SoHxw9dGLjTxQjxNu1F4MC6NN9bgV6ZtWGyCH0OwJeA",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/image/D4D1FAQHwLbXlXI3HEA/feedshare-document-images_160/1/1709575001727?e=1712188800&v=beta&t=gZKyyZII5E_vo6Bi71Pp6jyexAFjWGSxikBmBI44zXU",
+  },
+  {
+    id: 8,
+    title: "🔥 𝐄𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐬𝐡𝐚𝐫𝐞 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬 𝐨𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬! 🔍💡",
+    date: "16 Mar 2023",
+    description: `🔥 𝐄𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐬𝐡𝐚𝐫𝐞 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬 𝐨𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬! 🔍💡
+
+    In the dynamic world of front-end development, mastering SOLID principles is essential for building robust and scalable ReactJS applications. SOLID is an acronym that stands for five key principles of object-oriented design: single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion.
+
+    I delve into how these principles apply specifically to ReactJS development, covering topics such as:
+    🔹 Understanding each SOLID principle and its importance
+    🔹 Practical examples demonstrating SOLID principles in ReactJS components
+    🔹 Strategies for implementing SOLID principles in your ReactJS projects
+    🔹 Best practices for writing clean, maintainable, and scalable ReactJS code
+    🔹 Real-world case studies highlighting the benefits of SOLID principles in ReactJS development
+
+    Whether you're a ReactJS enthusiast looking to strengthen your coding skills or a developer aiming to build high-quality, maintainable applications, this resource is tailored to provide you with actionable insights and practical guidance.
+
+    📎Dive into the world of 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬 and elevate your front-end development game!
+
+    Absolutely! Here you go:
+
+    🚀 𝘙𝘦𝘢𝘥𝘺 𝘵𝘰 𝘭𝘦𝘷𝘦𝘭 𝘶𝘱 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘴𝘬𝘪𝘭𝘭𝘴? 𝘍𝘰𝘭𝘭𝘰𝘸 𝑱𝒊𝒎𝒎𝒚'𝒔 𝘭𝘦𝘢𝘥! 𝘓𝘦𝘢𝘳𝘯 𝘵𝘪𝘱𝘴 𝘢𝘯𝘥 𝘵𝘳𝘪𝘤𝘬𝘴 𝘧𝘳𝘰𝘮 Jimmy Ramani 𝘵𝘰 𝘦𝘯𝘩𝘢𝘯𝘤𝘦 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘱𝘳𝘰𝘧𝘪𝘤𝘪𝘦𝘯𝘤𝘺! 𝘓𝘦𝘵'𝘴 𝘤𝘰𝘥𝘦 𝘴𝘮𝘢𝘳𝘵𝘦𝘳, 𝘵𝘰𝘨𝘦𝘵𝘩𝘦𝘳 𝘸𝘪𝘵𝘩 𝑱𝒊𝒎𝒎𝒚'𝒔 𝘨𝘶𝘪𝘥𝘢𝘯𝘤𝘦!
+
+    #ReactJS #SOLIDPrinciples #FrontEndDevelopment
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQF24EZ70whMOw/feedshare-document-images_1920/1/1708006434735?e=1712188800&v=beta&t=rJ9fx6H3cRPTFKHTcb11De2WN_mTk1P8taZyHmnFbs4",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQF24EZ70whMOw/feedshare-document-pdf-analyzed/0/1708006434798?e=1712188800&v=beta&t=5q1bW70fU8NtcE4pX4BbcWwUe2q-i_qEPGWssihYTR4",
+  },
+  {
+    id: 9,
+    title: "𝗪𝗲𝗯 𝗔𝗽𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲 🌐💻",
+    date: "15 Mar 2023",
+    description: `𝗪𝗲𝗯 𝗔𝗽𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲 🌐💻
+
+    Excited to unveil an insightful guide to navigating the web application development process using APIs.
+
+    In today's interconnected digital landscape, understanding Web APIs is crucial for developers, businesses, and tech enthusiasts alike. APIs (Application Programming Interfaces) serve as the backbone of modern web applications, enabling seamless communication and data exchange between different software systems.
+
+    I delve into the fundamentals of Web APIs, covering topics such as:
+    1. 𝐖𝐡𝐚𝐭 𝐚𝐫𝐞 𝐖𝐞𝐛 𝐀𝐏𝐈𝐬 𝐚𝐧𝐝 𝐰𝐡𝐲 𝐚𝐫𝐞 𝐭𝐡𝐞𝐲 𝐢𝐦𝐩𝐨𝐫𝐭𝐚𝐧𝐭?
+    2. 𝐃𝐢𝐟𝐟𝐞𝐫𝐞𝐧𝐭 𝐭𝐲𝐩𝐞𝐬 𝐨𝐟 𝐖𝐞𝐛 𝐀𝐏𝐈𝐬
+    3. 𝐇𝐨𝐰 𝐭𝐨 𝐝𝐞𝐬𝐢𝐠𝐧 𝐚𝐧𝐝 𝐢𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭 𝐞𝐟𝐟𝐞𝐜𝐭𝐢𝐯𝐞 𝐀𝐏𝐈𝐬
+    4. 𝐁𝐞𝐬𝐭 𝐩𝐫𝐚𝐜𝐭𝐢𝐜𝐞𝐬 𝐟𝐨𝐫 𝐀𝐏𝐈 𝐝𝐨𝐜𝐮𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐚𝐧𝐝 𝐯𝐞𝐫𝐬𝐢𝐨𝐧𝐢𝐧𝐠
+
+    Whether you're a seasoned developer looking to enhance your API skills or a newcomer eager to grasp the basics, this resource is tailored to provide valuable insights and practical knowledge.
+
+    📎Dive into the world of Web APIs and unlock new possibilities for innovation and collaboration!
+
+    𝘓𝘰𝘰𝘬𝘪𝘯𝘨 𝘵𝘰 𝘭𝘦𝘷𝘦𝘭 𝘶𝘱 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘴𝘬𝘪𝘭𝘭𝘴? 📈 𝘍𝘰𝘭𝘭𝘰𝘸 Jimmy Ramani 𝘧𝘰𝘳 𝘢 𝘴𝘵𝘦𝘢𝘥𝘺 𝘴𝘵𝘳𝘦𝘢𝘮 𝘰𝘧 𝘪𝘯𝘷𝘢𝘭𝘶𝘢𝘣𝘭𝘦 𝘤𝘰𝘥𝘪𝘯𝘨 𝘵𝘪𝘱𝘴, 𝘵𝘳𝘪𝘤𝘬𝘴, 𝘢𝘯𝘥 𝘪𝘯𝘴𝘪𝘨𝘩𝘵𝘴. 𝘍𝘳𝘰𝘮 𝘮𝘢𝘴𝘵𝘦𝘳𝘪𝘯𝘨 𝘯𝘦𝘸 𝘭𝘢𝘯𝘨𝘶𝘢𝘨𝘦𝘴 𝘵𝘰 𝘰𝘱𝘵𝘪𝘮𝘪𝘻𝘪𝘯𝘨 𝘺𝘰𝘶𝘳 𝘸𝘰𝘳𝘬𝘧𝘭𝘰𝘸, 𝑱𝒊𝒎𝒎𝒚'𝒔 𝘨𝘰𝘵 𝘺𝘰𝘶 𝘤𝘰𝘷𝘦𝘳𝘦𝘥!
+
+    #WebAPI #SoftwareDevelopment #TechTalk
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQFCX8LjER_8Nw/feedshare-document-images_1920/1/1707934128630?e=1712188800&v=beta&t=V4Q6toZcERbk0vis2-rq-RjXthGW_nwq_tHtIsl8xFk",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQFCX8LjER_8Nw/feedshare-document-pdf-analyzed/0/1707934128691?e=1712188800&v=beta&t=JI3kthZynwGTqS5oTcRQa9ajvwLphz7dAU7ue8ebIUo",
+  },
+  {
+    id: 10,
+    title: "🚀 Dive into the world of React.js in our first class!",
+    date: "14 Mar 2023",
+    description: `🚀 Dive into the world of React.js in our first class!
+
+    Learn the fundamentals of React components, JSX syntax, and state management. Get hands-on experience with building your first React app from scratch.
+
+    Kickstart your journey to mastering React.js today!
+
+    .
+    .
+
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills!📚⌨️
+
+    #ReactJS #Coding #TechEducation
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQGXwKmawVW4uw/feedshare-document-images_1920/1/1707755414284?e=1712188800&v=beta&t=tR6JjYzjS6A8DPjLplPc_B3on-J7kY8pHY4V5EaFjUk",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQGXwKmawVW4uw/feedshare-document-pdf-analyzed/0/1707755414401?e=1712188800&v=beta&t=fXtr2aWN3yyvDdOLgQ6BLDs8BA1syaDDra1CPzTrx2w",
+  },
+  {
+    id: 11,
+    title: "𝐆𝐢𝐭𝐇𝐮𝐛 𝐖𝐨𝐫𝐤𝐟𝐥𝐨𝐰: 𝐀 𝐕𝐢𝐬𝐮𝐚𝐥 𝐆𝐮𝐢𝐝𝐞 💫",
+    date: "13 Mar 2023",
+    description: `𝐆𝐢𝐭𝐇𝐮𝐛 𝐖𝐨𝐫𝐤𝐟𝐥𝐨𝐰: 𝐀 𝐕𝐢𝐬𝐮𝐚𝐥 𝐆𝐮𝐢𝐝𝐞 💫
+
+    I'm thrilled to share a diagram I've crafted, breaking down the GitHub workflow in an easy-to-understand and visual way.
+
+    🧠 𝐂𝐨𝐧𝐜𝐞𝐩𝐭: It all begins with an idea. This is the stage where a collaborator dreams up a project and lays the groundwork for its creation.
+
+    🔨 𝐎𝐫𝐠𝐚𝐧𝐢𝐳𝐚𝐭𝐢𝐨𝐧: Once the idea is fleshed out, the next step is to get things organized. This means setting up a repository on GitHub, defining teams and collaborators. With tools like project boards and issue tracking, being organized is crucial for a seamless workflow.
+
+    💻 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭: This is where the magic of coding happens. Using Git commands like clone, pull, and fetch, developers can work on the code locally. Then, through commits and pushes, changes are progressively merged into the main repository.
+
+    🔄 𝐂𝐨𝐥𝐥𝐚𝐛𝐨𝐫𝐚𝐭𝐢𝐨𝐧: Collaboration is key, facilitated by using branches for specific tasks or issues, followed by pull requests to integrate these changes into the main branch.
+
+    ✅ 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐢𝐨𝐧: At the cycle's end, issues are resolved, and code is fully integrated, marking the process complete until the next big idea emerges.
+
+    Did you find it helpful? Would you add or change anything?
+    Feel free to save this diagram for future reference and share it with anyone who might find it beneficial.
+
+    #GitHub #DevOps #Workflow #Collaboration #SoftwareDevelopment #DataScience
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D22AQHTY7WTEWFgwQ/feedshare-shrink_800/0/1707395173705?e=1714608000&v=beta&t=xCR7ck7xdWZPEkATQeE_rVejAIpRdzcMLPxBySnvOkA",
+    category: "web",
+    photoUrl:
+      "https://media.licdn.com/dms/image/D4D22AQHTY7WTEWFgwQ/feedshare-shrink_800/0/1707395173705?e=1714608000&v=beta&t=xCR7ck7xdWZPEkATQeE_rVejAIpRdzcMLPxBySnvOkA",
+  },
+  {
+    id: 12,
+    title: "🕶️ Master JavaScript 8 Pro Tricks",
+    date: "12 Mar 2023",
+    description: `🕶️ Master JavaScript 8 Pro Tricks
+
+    ♥️ Give it a like if you think it's helpful!
+
+    💭 Don't forget to Save it.
+
+    🫴 Follow Jimmy Ramani for more
+
+    #javascript #javascriptdeveloper #javascriptlearning #react #reactjs #reactdeveloper #frontend #frontenddeveloper #frontenddevelopment #webdevelopment #webdeveloper #connect #follow
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQEe4rM_rvJj9Q/feedshare-document-images_1920/1/1706901379921?e=1712188800&v=beta&t=l3LQAUvtuR2D3uHvYuKB27rRzNDz4KbdBLCpueEyLp0",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQEe4rM_rvJj9Q/feedshare-document-pdf-analyzed/0/1706901379979?e=1712188800&v=beta&t=SNoV_eFkznJSdud30-vK7Mb1-DRHPD_RinTzf8G7WZA",
+  },
+  {
+    id: 13,
+    title: "𝐌𝐚𝐬𝐭𝐞𝐫 𝐑𝐞𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐑𝐞𝐩𝐨𝐬 ⬇️",
+    date: "11 Mar 2023",
+    description: `𝐌𝐚𝐬𝐭𝐞𝐫 𝐑𝐞𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐑𝐞𝐩𝐨𝐬 ⬇️
+
+    𝐑𝐞𝐚𝐜𝐭 is one of the best library,
+    to build a frontend based on 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭.
+
+    And if you wanna learn React, then
+    These repos are for you.
+
+    01. 𝐫𝐞𝐚𝐜𝐭-𝐮𝐬𝐞
+    02. 𝐫𝐞𝐚𝐜𝐭-𝐛𝐢𝐭𝐬
+    03. 𝐟𝐚𝐜𝐞𝐛𝐨𝐨𝐤/𝐫𝐞𝐚𝐜𝐭
+    04. 𝐫𝐞𝐚𝐜𝐭-𝐢𝐧-𝐩𝐚𝐭𝐭𝐞𝐫𝐧𝐬
+    05. 𝐚𝐰𝐞𝐬𝐨𝐦𝐞-𝐫𝐞𝐚𝐜𝐭
+    06. 𝐫𝐞𝐚𝐜𝐭-𝐫𝐞𝐝𝐮𝐱-𝐥𝐢𝐧𝐤𝐬
+    07. 30-𝐃𝐚𝐲𝐬-𝐎𝐟-𝐑𝐞𝐚𝐜𝐭
+    08. 30-𝐬𝐞𝐜𝐨𝐧𝐝𝐬-𝐨𝐟-𝐫𝐞𝐚𝐜𝐭
+    09. 𝐛𝐞𝐚𝐮𝐭𝐢𝐟𝐮𝐥-𝐫𝐞𝐚𝐜𝐭-𝐡𝐨𝐨𝐤𝐬
+    10. 𝐫𝐞𝐚𝐜𝐭-𝐜𝐨𝐝𝐢𝐧𝐠-𝐜𝐡𝐚𝐥𝐥𝐞𝐧𝐠𝐞𝐬
+    11. 𝐫𝐞𝐚𝐜𝐭-𝐡𝐨𝐨𝐤𝐬-𝐜𝐡𝐞𝐚𝐭𝐬𝐡𝐞𝐞𝐭
+    12. 𝐫𝐞𝐚𝐜𝐭-𝐝𝐞𝐯𝐞𝐥𝐨𝐩𝐞𝐫-𝐫𝐨𝐚𝐝𝐦𝐚𝐩
+    13. 𝐫𝐞𝐚𝐜𝐭𝐣𝐬-𝐢𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰-𝐪𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬
+    14. 𝐚𝐰𝐞𝐬𝐨𝐦𝐞-𝐫𝐞𝐚𝐜𝐭-𝐜𝐨𝐦𝐩𝐨𝐧𝐞𝐧𝐭𝐬
+    15. 𝐫𝐞𝐚𝐜𝐭-𝐫𝐞𝐝𝐮𝐱-𝐭𝐲𝐩𝐞𝐬𝐜𝐫𝐢𝐩𝐭-𝐠𝐮𝐢𝐝𝐞
+    16. 𝐭𝐲𝐩𝐞𝐬𝐜𝐫𝐢𝐩𝐭-𝐜𝐡𝐞𝐚𝐭𝐬𝐡𝐞𝐞𝐭𝐬/𝐫𝐞𝐚𝐜𝐭
+
+    Don't forget to star them 🧑‍💻
+
+    PS: Do you know more? let's add to the comments ⬇️
+
+    .
+    .
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills! 📚🚀
+
+    #react #reactdeveloper #learning #repository #github #facebook #webdevelopment #frontenddevelopment
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHQbj0jqcclag/feedshare-document-images_1920/1/1706788102355?e=1712188800&v=beta&t=__veTQT0XtifNe9K31pBr1sdVm1l5EQDcxkhuE9o1HM",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQHQbj0jqcclag/feedshare-document-pdf-analyzed/0/1706788102416?e=1712188800&v=beta&t=QJ9HyNXuv89qNTK1aIUx9BnZrLNZRH-xL7WxhKnMETY",
+  },
+  {
+    id: 14,
+    title:
+      "𝗙𝗼𝗿 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗽𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹𝘀, 𝗯𝗲𝗰𝗼𝗺𝗶𝗻𝗴 𝗮 𝗙𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗰𝗮𝗻 𝘂𝗻𝗹𝗼𝗰𝗸 𝗺𝗮𝗻𝘆 𝗼𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝗶𝗲𝘀. ✨",
+    date: "10 Mar 2023",
+    description: `𝗙𝗼𝗿 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗽𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹𝘀, 𝗯𝗲𝗰𝗼𝗺𝗶𝗻𝗴 𝗮 𝗙𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗰𝗮𝗻 𝘂𝗻𝗹𝗼𝗰𝗸 𝗺𝗮𝗻𝘆 𝗼𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝗶𝗲𝘀. ✨
+
+    It pays well too, that's why many people want to switch to frontend development today.
+
+    So take the help of this document and become a front-end expert in just 60 days. Start with the very basics and move to the advanced level.
+
+    Take advantage of additional resources and learn how to build projects for practical experience.
+
+    📃 Save this document and share it with your friends!
+
+    #frontend #collab #linkedincommunity
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQGhXF3R7EzzDA/feedshare-document-images_1920/1/1706618749706?e=1712188800&v=beta&t=JNGWM3yZdJ5BLT0Ep_ciNdP6sSapudgIYW6VZLhwzOI",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQGhXF3R7EzzDA/feedshare-document-pdf-analyzed/0/1706618749795?e=1712188800&v=beta&t=DhfshJej87yB1ajAeEf5hq5FFQPAXSY1fltxq5R_77c",
+  },
+];

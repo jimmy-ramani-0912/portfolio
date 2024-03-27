@@ -13,6 +13,7 @@ import {
   MobileLink,
   ThemeButton,
 } from "./NavbarStyledComponent";
+import { Navigate, useNavigate } from "react-router-dom";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import { DiCssdeck } from "react-icons/di";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -23,6 +24,8 @@ import { FaBars, FaMoon } from "react-icons/fa";
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
+  const navigate = useNavigate();
+
   return (
     <Nav>
       <NavbarContainer>
@@ -46,11 +49,54 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           />
         </MobileIcon>
         <NavItems>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
+          <NavLink
+            href="#about"
+            onClick={() => {
+              navigate("/#about");
+            }}
+          >
+            About
+          </NavLink>
+          <NavLink
+            href="#skills"
+            onClick={() => {
+              navigate("/#skills");
+            }}
+          >
+            Skills
+          </NavLink>
+          <NavLink
+            href="#experience"
+            onClick={() => {
+              navigate("/#experience");
+            }}
+          >
+            Experience
+          </NavLink>
+          <NavLink
+            href="#projects"
+            onClick={() => {
+              navigate("/#projects");
+            }}
+          >
+            Projects
+          </NavLink>
+          <NavLink
+            href="#education"
+            onClick={() => {
+              navigate("/#education");
+            }}
+          >
+            Education
+          </NavLink>
+          <NavLink
+            href="#blogs"
+            onClick={() => {
+              navigate("/#blogs");
+            }}
+          >
+            Blogs
+          </NavLink>
         </NavItems>
         <ButtonContainer>
           <GitHubButton href={Bio.github} target="_blank">
@@ -66,6 +112,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#about"
               onClick={() => {
+                navigate("/#about");
                 setIsOpen(!isOpen);
               }}
             >
@@ -74,6 +121,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#skills"
               onClick={() => {
+                navigate("/#skills");
                 setIsOpen(!isOpen);
               }}
             >
@@ -82,6 +130,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#experience"
               onClick={() => {
+                navigate("/#experience");
                 setIsOpen(!isOpen);
               }}
             >
@@ -90,6 +139,8 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#projects"
               onClick={() => {
+                navigate("/#projects");
+
                 setIsOpen(!isOpen);
               }}
             >
@@ -98,10 +149,20 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#education"
               onClick={() => {
+                navigate("/#education");
                 setIsOpen(!isOpen);
               }}
             >
               Education
+            </MobileLink>
+            <MobileLink
+              href="#blogs"
+              onClick={() => {
+                navigate("/#blogs");
+                setIsOpen(!isOpen);
+              }}
+            >
+              Blogs
             </MobileLink>
             <GitHubButton
               style={{
