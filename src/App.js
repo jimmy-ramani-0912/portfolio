@@ -1,43 +1,52 @@
 import { ThemeProvider } from "styled-components";
-import { useState } from "react";
+import { Suspense, useState } from "react";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import HeroSection from "./components/HeroSection";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
-import Contact from "./components/Contact";
-import Footer from "./components/Footer";
-import Experience from "./components/Experience";
-import Education from "./components/Education";
-import TimeLineData from "./components/TimeLine";
-import ProjectDetails from "./components/ProjectDetails";
-import styled from "styled-components";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { PublicRoutes } from "./routes.jsx";
+import styled, { keyframes } from "styled-components";
 
-const Body = styled.div`
-  background-color: ${({ theme }) => theme.bg};
-  width: 100%;
-  overflow-x: hidden;
+export const LoaderWrapper = styled.div`
+  height: 100dvh;
+  width: 100vw;
+  overflow: hidden;
+  z-index: 100;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 `;
 
-const Wrapper = styled.div`
-  background: linear-gradient(
-      38.73deg,
-      rgba(204, 0, 187, 0.15) 0%,
-      rgba(201, 32, 184, 0) 50%
-    ),
-    linear-gradient(
-      141.27deg,
-      rgba(0, 70, 209, 0) 50%,
-      rgba(0, 70, 209, 0.15) 100%
-    );
+export const LoaderWrapperSpinner = styled.div`
+  height: 100%;
   width: 100%;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 30% 98%, 0 100%);
+  overflow: hidden;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;
+
+const spin = keyframes`
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+`;
+
+export const Spinner = styled.div`
+  border: 2px solid #a395e9;
+  border-top: 2px solid #171721;
+  border-radius: 50%;
+  width: 3rem;
+  aspect-ratio: 1/ 1;
+  animation: ${spin} 1s linear infinite;
+`;
+
 function App() {
   const [darkMode, setDarkMode] = useState(true);
-  const [openModal, setOpenModal] = useState({ state: false, project: null });
 
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);
@@ -45,26 +54,28 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
-      <Router>
-        <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
-        <Body>
-          <HeroSection />
-          <Wrapper>
-            <Skills />
-            <Experience />
-          </Wrapper>
-          <Projects openModal={openModal} setOpenModal={setOpenModal} />{" "}
-          <Education />
-          <Wrapper>
-            <TimeLineData />
-            <Contact />
-          </Wrapper>
-          <Footer />
-          {openModal.state && (
-            <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-          )}
-        </Body>
-      </Router>
+      <Suspense
+        fallback={
+          <LoaderWrapper>
+            <LoaderWrapperSpinner>
+              <Spinner />
+            </LoaderWrapperSpinner>
+          </LoaderWrapper>
+        }
+      >
+        <Router>
+          <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
+          <Routes>
+            {PublicRoutes.map((route) => (
+              <Route
+                key={route.path}
+                path={route.path}
+                element={route.element}
+              />
+            ))}
+          </Routes>
+        </Router>
+      </Suspense>
     </ThemeProvider>
   );
 }
