@@ -9,9 +9,9 @@ import {
   ToggleButton,
   Divider,
 } from "../../components/Projects/ProjectsStyle.js";
-import ProjectCard from "../../components/Cards/ProjectCards";
-import ProjectDetails from "../../components/ProjectDetails";
-import { projects } from "../../data/constants";
+import ProjectCard from "../../components/Cards/ProjectCards.jsx";
+import ProjectDetails from "../../components/ProjectDetails/index.jsx";
+import { projects } from "../../data/constants.js";
 import styled from "styled-components";
 
 const Body = styled.div`

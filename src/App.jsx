@@ -1,7 +1,7 @@
 import { ThemeProvider } from "styled-components";
 import { Suspense, useState } from "react";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
-import Navbar from "./components/Navbar";
+import Navbar from "./components/Navbar/index";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PublicRoutes } from "./routes.jsx";
