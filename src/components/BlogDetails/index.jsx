@@ -123,7 +123,7 @@ const Index = ({ openBlogModal, setOpenBlogModal }) => {
           {blog?.pdfUrl && (
             <SCPdfs>
               <Worker
-                workerUrl={`https://unpkg.com/pdfjs-dist@3.4.120/build/pdf.worker.min.js`}
+                workerUrl={`https://unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`}
               >
                 <Viewer
                   fileUrl={blog?.pdfUrl}

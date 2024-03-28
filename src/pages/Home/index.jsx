@@ -1,17 +1,17 @@
 import React from "react";
-import HeroSection from "../../components/HeroSection";
+import HeroSection from "../../components/HeroSection/index.jsx";
 import { useState } from "react";
-import Skills from "../../components/Skills";
-import Projects from "../../components/Projects";
-import Contact from "../../components/Contact";
-import Footer from "../../components/Footer";
-import Experience from "../../components/Experience";
-import Education from "../../components/Education";
-import TimeLineData from "../../components/TimeLine";
-import ProjectDetails from "../../components/ProjectDetails";
-import BlogDetails from "../../components/BlogDetails";
+import Skills from "../../components/Skills/index.jsx";
+import Projects from "../../components/Projects/index.jsx";
+import Contact from "../../components/Contact/index.jsx";
+import Footer from "../../components/Footer/index.jsx";
+import Experience from "../../components/Experience/index.jsx";
+import Education from "../../components/Education/index.jsx";
+import TimeLineData from "../../components/TimeLine/index.jsx";
+import ProjectDetails from "../../components/ProjectDetails/index.jsx";
+import BlogDetails from "../../components/BlogDetails/index.jsx";
 import styled from "styled-components";
-import Blogs from "../../components/Blogs/index.js";
+import Blogs from "../../components/Blogs/index.jsx";
 
 const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
