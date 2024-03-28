@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import {
   Container,
@@ -9,12 +10,15 @@ import {
   ToggleButtonGroup,
   ToggleButton,
   Divider,
+  ViewAll,
 } from "./ProjectsStyle";
 import ProjectCard from "../Cards/ProjectCards";
 import { projects } from "../../data/constants";
 
 const Projects = ({ openModal, setOpenModal }) => {
   const [toggle, setToggle] = useState("all");
+  const navigate = useNavigate();
+
   return (
     <Container id="projects">
       <Wrapper>
@@ -67,14 +71,17 @@ const Projects = ({ openModal, setOpenModal }) => {
         </ToggleButtonGroup>
         <CardContainer>
           {toggle === "all" &&
-            projects.map((project) => (
-              <ProjectCard
-                project={project}
-                openModal={openModal}
-                setOpenModal={setOpenModal}
-              />
-            ))}
+            projects
+              .slice(0, 5)
+              .map((project) => (
+                <ProjectCard
+                  project={project}
+                  openModal={openModal}
+                  setOpenModal={setOpenModal}
+                />
+              ))}
           {projects
+            .slice(0, 5)
             .filter((item) => item.category === toggle)
             .map((project) => (
               <ProjectCard
@@ -84,6 +91,13 @@ const Projects = ({ openModal, setOpenModal }) => {
               />
             ))}
         </CardContainer>
+        <ViewAll
+          onClick={() => {
+            navigate("/projects");
+          }}
+        >
+          View All
+        </ViewAll>
       </Wrapper>
     </Container>
   );

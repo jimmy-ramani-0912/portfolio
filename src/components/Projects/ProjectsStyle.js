@@ -107,3 +107,15 @@ export const CardContainer = styled.div`
   //     grid-template-columns: repeat(1, 1fr);
   // }
 `;
+
+export const ViewAll = styled.div`
+  font-size: 18px;
+  text-align: center;
+  color: ${({ theme }) => theme.button};
+  margin-top: 30px;
+  cursor: pointer;
+  @media (max-width: 768px) {
+    margin-top: 12px;
+    font-size: 16px;
+  }
+`;
