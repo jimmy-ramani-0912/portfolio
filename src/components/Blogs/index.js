@@ -23,7 +23,7 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
           apps.
         </Desc>
         <CardContainer>
-          {blogs.slice(0, 3).map((blog) => (
+          {blogs.slice(0, 5).map((blog) => (
             <BlogCards
               blog={blog}
               openModal={openBlogModal}

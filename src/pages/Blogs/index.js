@@ -29,7 +29,7 @@ const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
-  height: 100dvh;
+  height: calc(100dvh - 80px);
 `;
 
 const Blogs = () => {
