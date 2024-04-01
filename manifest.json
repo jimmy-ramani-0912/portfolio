@@ -1,7 +1,7 @@
 {
   "name": "Jimmy Ramani",
   "short_name": "Jimmy",
-  "start_url": "./?utm_source=pwa",
+  "start_url": "",
   "theme_color": "#CB3C04",
   "background_color": "#FFF",
   "orientation": "any",
@@ -9,8 +9,5 @@
   "display": "standalone",
   "description": "Full Stack Web + App Developer | Flutter Fan📱| DevOps 🌍 | Photography Hobbyist 📸 | Editing Enthusiast 🖌️ | Shaping the Future of Tech with Innovative Solutions",
   "features": [],
-  "icons": [],
-  "assets": [
-    "assets"
-  ]
+  "icons": []
 }
