@@ -8,14 +8,22 @@ import path from "path";
 // https://vitejs.dev/config/
 export default defineConfig({
   envPrefix: "REACT_APP_",
-  // This changes the out put dir from dist to build
-  // comment this out if that isn't relevant for your project
-  build: {
-    outDir: "build",
+  esbuild: {
+    loader: "jsx",
   },
+  // build: {
+  //   outDir: "build",
+  // },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
+    },
+  },
+  optimizeDeps: {
+    esbuildOptions: {
+      loader: {
+        ".js": "jsx",
+      },
     },
   },
   plugins: [
