@@ -33,7 +33,6 @@ export default defineConfig({
     svgrPlugin({
       svgrOptions: {
         icon: true,
-        // ...svgr options (https://react-svgr.com/docs/options/)
       },
     }),
   ],
