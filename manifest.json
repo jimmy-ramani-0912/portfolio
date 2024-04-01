@@ -9,5 +9,8 @@
   "display": "standalone",
   "description": "Full Stack Web + App Developer | Flutter Fan📱| DevOps 🌍 | Photography Hobbyist 📸 | Editing Enthusiast 🖌️ | Shaping the Future of Tech with Innovative Solutions",
   "features": [],
-  "icons": []
+  "icons": [],
+  "assets": [
+    "assets"
+  ]
 }
