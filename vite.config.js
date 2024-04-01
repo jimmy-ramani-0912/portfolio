@@ -7,7 +7,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: "/",
+  base: "/portfolio/",
   envPrefix: "REACT_APP_",
   esbuild: {
     loader: "jsx",
