@@ -93,7 +93,7 @@ const Projects = ({ openModal, setOpenModal }) => {
         </CardContainer>
         <ViewAll
           onClick={() => {
-            navigate("/projects");
+            navigate("portfolio/projects");
           }}
         >
           View All

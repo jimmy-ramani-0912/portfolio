@@ -275,7 +275,7 @@ export const projects = [
     description:
       "Kloxa Company offers a comprehensive solution for RO systems via its mobile app, allowing customers to register repairs, installations, and complaints conveniently. With competitive prices on new RO systems and an annual maintenance contract (AMC) plan for all brands, Kloxa ensures efficient service for commercial, domestic, and industrial needs.",
     image:
-      "https://play-lh.googleusercontent.com/CNiSNjhxPwci7tqnJB9sbrjVEI-YrMn4n4AP_jcYM_eCWW7u1iJTFS9twef5RJOWjJ_E=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/CNiSNjhxPwci7tqnJB9sbrjVEI-YrMn4n4AP_jcYM_eCWW7u1iJTFS9twef5RJOWjJ_E=w2560-h1440-rw",
     tags: ["Flutter", "Php", "Mysql"],
     category: "flutter app",
     github: "https://github.com/jimmy-ramani-0912/Kloxa",
@@ -314,7 +314,7 @@ export const projects = [
     description:
       "AnwarKamal Shayari is a poetic collection that encapsulates the soulful expressions of Anwar Kamal. Dive into a world of profound emotions and eloquent verses, where each line weaves a tapestry of sentiments. This Shayari (poetry) is a reflection of Anwar Kamal's unique perspective and poetic artistry, offering readers a journey through the beauty of words and the depth of emotions.",
     image:
-      "https://play-lh.googleusercontent.com/8Z32aAg7oxEs-wD-osuUu8WyW030fFTA6Q9K6UE3MOYu3Zmt3A_yjvDa9BJ7-S9RjRcP=w526-h296-rw",
+      "https://play-lh.googleusercontent.com/m4ctao_Syy3iEBmQ7fy_vozn4Zdo5q0IdQLkbdLzwtCrBe1hK983xYOwl3JUvI5yFfSR=w2560-h1440-rw",
     tags: ["Flutter", "Php", "Mysql"],
     category: "flutter app",
     github: "https://github.com/jimmy-ramani-0912/AnwarKamal_Shayari",
@@ -454,6 +454,103 @@ export const TimeLineData = [
 ];
 
 export const blogs = [
+  {
+    id: 17,
+    title:
+      "🚦 𝐄𝐦𝐛𝐚𝐫𝐤 𝐨𝐧 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 2024 𝐑𝐨𝐚𝐝𝐦𝐚𝐩! 🌐💼",
+    date: "10 Mar 2023",
+    description: `🚦 𝐄𝐦𝐛𝐚𝐫𝐤 𝐨𝐧 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 2024 𝐑𝐨𝐚𝐝𝐦𝐚𝐩! 🌐💼
+
+    Ready to navigate the ever-evolving landscape of web development? Check out the essential roadmap for aspiring web developers in 2024:
+
+    1️⃣ 𝐋𝐞𝐚𝐫𝐧 𝐇𝐓𝐌𝐋 & 𝐂𝐒𝐒: Lay the foundation by mastering the fundamentals of HTML and CSS—building blocks of every web page.
+
+    2️⃣ 𝐋𝐞𝐚𝐫𝐧 𝐉𝐚𝐯𝐚𝐒𝐜𝐫𝐢𝐩𝐭: Dive into the world of dynamic and interactive web development with JavaScript—the language of the web.
+
+    3️⃣ 𝐋𝐞𝐚𝐫𝐧 𝐆𝐢𝐭 & 𝐆𝐢𝐭𝐇𝐮𝐛: Equip yourself with version control skills using Git and GitHub—essential tools for collaborative coding and project management.
+
+    4️⃣ 𝐋𝐞𝐚𝐫𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒: Level up your frontend development skills with ReactJS—a powerful library for building user interfaces.
+
+    5️⃣ 𝐋𝐞𝐚𝐫𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: Take your React development to the next level with Next.js—a versatile framework for building server-rendered React applications.
+
+    By following this roadmap, you'll acquire the skills and knowledge needed to embark on a successful career journey in web development. 🚀🎓
+
+    Ready to hit the road? Start your journey today and unlock endless possibilities in the world of web development!
+
+    hashtag#WebDevelopment hashtag#Roadmap2024 hashtag#HTML hashtag#CSS hashtag#JavaScript hashtag#ReactJS hashtag#NextJS hashtag#Git hashtag#GitHub
+
+    Let's build the web of tomorrow, one step at a time! 🌟🔗
+  `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQFIwJFjDviu0g/feedshare-document-images_1920/1/1711739888557?e=1712793600&v=beta&t=NywRqHDy63rBNbabV0H9ALlJ_bgz-q_jV_tUJNcaDug",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQFIwJFjDviu0g/feedshare-document-pdf-analyzed/0/1711739888676?e=1712793600&v=beta&t=_2s6l_HvVBTUSMo9BFYbH1Wx-t1qM8x5JllApBNhBGI",
+  },
+  {
+    id: 16,
+    title: "🚀 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐔𝐧𝐯𝐞𝐢𝐥𝐞𝐝: 𝐒𝐮𝐩𝐞𝐫𝐜𝐡𝐚𝐫𝐠𝐞 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 🌐✨",
+    date: "10 Mar 2023",
+    description: `🚀 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐔𝐧𝐯𝐞𝐢𝐥𝐞𝐝: 𝐒𝐮𝐩𝐞𝐫𝐜𝐡𝐚𝐫𝐠𝐞 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 🌐✨
+
+    Hello, digital creators and web enthusiasts! 👋🎨
+
+    Next.js is a powerful React framework that provides a seamless development experience with server-side rendering, static site generation, and many more features out of the box. Here's why it's a game-changer: 🌟
+
+    • 𝑺𝑬𝑶-𝑭𝒓𝒊𝒆𝒏𝒅𝒍𝒚📈: With server-side rendering and static site generation, Next.js ensures your content is fully indexable by search engines, boosting your site's visibility.
+
+    • 𝑭𝒂𝒔𝒕 𝑷𝒆𝒓𝒇𝒐𝒓𝒎𝒂𝒏𝒄𝒆⚡: Enjoy lightning-fast page loads thanks to automatic code splitting and optimized asset delivery.
+
+    • 𝒁𝒆𝒓𝒐 𝑪𝒐𝒏𝒇𝒊𝒈🛠️: Get started with advanced features without the headache of complex setup processes. Next.js handles the heavy lifting for you.
+
+    • 𝑭𝒍𝒆𝒙𝒊𝒃𝒍𝒆 𝑫𝒂𝒕𝒂 𝑭𝒆𝒕𝒄𝒉𝒊𝒏𝒈 🔄: Fetch data at build time, request time, or client side, giving you the flexibility to build a wide range of applications.
+
+    • 𝑩𝒖𝒊𝒍𝒕-𝒊𝒏 𝑪𝑺𝑺 𝑺𝒖𝒑𝒑𝒐𝒓𝒕 🎨: Style your applications effortlessly with built-in CSS and Sass support, along with any CSS-in-JS library.
+
+    • 𝑹𝒊𝒄𝒉 𝑬𝒄𝒐𝒔𝒚𝒔𝒕𝒆𝒎 🌍: Leverage the vast React ecosystem, including libraries and tools, to enhance your app further.
+
+    Whether you're building a small project or a large-scale enterprise application, 𝐍𝐞𝐱𝐭.𝐣𝐬 offers the 𝐬𝐜𝐚𝐥𝐚𝐛𝐢𝐥𝐢𝐭𝐲, 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, and developer experience to bring your visions to life. 🚀🏗️
+
+    Stay tuned for more insights and tips in the world of web development. Together, let's build faster, more efficient, and user-friendly web experiences. Happy coding, everyone! 🎉👨‍💻👩‍💻
+
+    #Nextjs #React #WebDevelopment #SEO #Performance #TechInnovation #DeveloperLife 💻🌈
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQFBAvfyIy0rbg/feedshare-document-images_1920/1/1711646867709?e=1712793600&v=beta&t=-sDlPF2P_fI19QSEEDuAYeAPMa-i-kFDPsh23cPxl1o",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQFBAvfyIy0rbg/feedshare-document-pdf-analyzed/0/1711646867768?e=1712793600&v=beta&t=JTJU8H_Iy97lp_ahcP4VjakufUfcqTEj2ojOLg9xAfM",
+  },
+  {
+    id: 15,
+    title:
+      "🚀 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐒𝐋𝐢𝐧𝐭, 𝐏𝐫𝐞𝐭𝐭𝐢𝐞𝐫 & 𝐕𝐒 𝐂𝐨𝐝𝐞 𝐟𝐨𝐫 𝐍𝐞𝐱𝐭.𝐣𝐬 & 𝐑𝐞𝐚𝐜𝐭 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 💻✨",
+    date: "29 Mar 2023",
+    description: `🚀 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐒𝐋𝐢𝐧𝐭, 𝐏𝐫𝐞𝐭𝐭𝐢𝐞𝐫 & 𝐕𝐒 𝐂𝐨𝐝𝐞 𝐟𝐨𝐫 𝐍𝐞𝐱𝐭.𝐣𝐬 & 𝐑𝐞𝐚𝐜𝐭 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 💻✨
+
+    Ready to streamline your Next.js and React development workflows? Dive into this comprehensive guide on ESLint, Prettier, and VS Code integration—essential tools for maintaining code quality and consistency.
+
+    In this guide, you'll learn:
+    1️⃣ Setting up ESLint to catch errors and enforce coding standards.
+    2️⃣ Configuring Prettier for consistent code formatting across your project.
+    3️⃣ Integrating ESLint and Prettier seamlessly with VS Code for real-time feedback and auto-fixing.
+    4️⃣ Best practices for configuring ESLint and Prettier for Next.js and React projects.
+    5️⃣ Maximizing productivity with VS Code's powerful features and extensions tailored for React development.
+
+    By the end of this guide, you'll have a well-oiled development environment that ensures code quality, consistency, and productivity—empowering you to build stellar Next.js and React applications with confidence!
+
+    Let's elevate your coding experience and unleash the full potential of Next.js and React! 🌟💡
+
+    #ESLint #Prettier #VSCode #NextJS #React #DevelopmentGuide #CodingTips
+
+    Get ready to code smarter, not harder! 🛠️🚀
+    `,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHM7IWlB7iuig/feedshare-document-images_1920/1/1711563171722?e=1712793600&v=beta&t=cR_cpHng7U7r67XNNKaIiXZXA3FlIuz_4zvLVDK0dGo",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQHM7IWlB7iuig/feedshare-document-pdf-analyzed/0/1711563171805?e=1712793600&v=beta&t=WFeuNrwyGiyVdAwmsMXthGmWJuKIrLY3XGJkfUw-N_E",
+  },
   {
     id: 1,
     title:

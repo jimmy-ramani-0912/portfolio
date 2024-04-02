@@ -92,6 +92,7 @@ export const HeroRightContainer = styled.div`
 `;
 
 export const Img = styled.img`
+  object-fit: cover;
   position: relative;
   width: 100%;
   height: 100%;
@@ -102,12 +103,12 @@ export const Img = styled.img`
 
   @media (max-width: 768px) {
     max-width: 400px;
-    max-height: 400px;
+    max-height: 500px;
   }
 
   @media (max-width: 640px) {
     max-width: 280px;
-    max-height: 280px;
+    max-height: 320px;
   }
 `;
 
