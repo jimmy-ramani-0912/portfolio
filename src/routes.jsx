@@ -6,11 +6,11 @@ const Blogs = lazy(() => import("./pages/Blogs/index"));
 
 export const PublicRoutes = [
   {
-    path: "/projects",
+    path: "portfolio/projects",
     element: <Projects />,
   },
   {
-    path: "/blogs",
+    path: "portfolio/blogs",
     element: <Blogs />,
   },
   {

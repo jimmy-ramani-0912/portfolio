@@ -64,7 +64,7 @@ const Desc = styled.div`
 `;
 
 const Image = styled.img`
-  width: 100%;
+  width: 60%;
   object-fit: cover;
   border-radius: 12px;
   margin-top: 30px;
@@ -198,7 +198,14 @@ const index = ({ openModal, setOpenModal }) => {
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
-          <Image src={project?.image} />
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "center",
+            }}
+          >
+            <Image src={project?.image} />
+          </div>
           <Title>{project?.title}</Title>
           <Date>{project.date}</Date>
           <Tags>

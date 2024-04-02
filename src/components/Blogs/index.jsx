@@ -33,7 +33,7 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
         </CardContainer>
         <ViewAll
           onClick={() => {
-            navigate("/blogs");
+            navigate("portfolio/blogs");
           }}
         >
           View All
