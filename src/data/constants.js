@@ -455,10 +455,42 @@ export const TimeLineData = [
 
 export const blogs = [
   {
+    id: 18,
+    title: "🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐡𝐨𝐫𝐭𝐡𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐢𝐪𝐮𝐞𝐬! 💻✨",
+    date: "4 Apr 2024",
+    description: `🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐡𝐨𝐫𝐭𝐡𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐢𝐪𝐮𝐞𝐬! 💻✨
+
+    Ready to enhance your ReactJS coding skills? Dive into these essential shorthand techniques to streamline your development workflow and write cleaner, more concise code!
+
+    1️⃣ 𝑶𝒃𝒋𝒆𝒄𝒕 𝑫𝒆𝒔𝒕𝒓𝒖𝒄𝒕𝒖𝒓𝒊𝒏𝒈: Simplify variable assignment and access properties with object destructuring in React components.
+
+    2️⃣ 𝑪𝒐𝒏𝒅𝒊𝒕𝒊𝒐𝒏𝒂𝒍 𝑹𝒆𝒏𝒅𝒆𝒓𝒊𝒏𝒈: Use ternary operators and logical && to conditionally render components and elements based on state or props.
+
+    3️⃣ 𝑺𝒑𝒓𝒆𝒂𝒅 𝑶𝒑𝒆𝒓𝒂𝒕𝒐𝒓: Leverage the spread operator (...) to merge objects and arrays efficiently, reducing code redundancy.
+
+    4️⃣ 𝑨𝒓𝒓𝒐𝒘 𝑭𝒖𝒏𝒄𝒕𝒊𝒐𝒏𝒔: Harness the power of arrow functions for concise and readable event handlers and component methods.
+
+    5️⃣ 𝑭𝒓𝒂𝒈𝒎𝒆𝒏𝒕 𝑺𝒉𝒐𝒓𝒕𝒉𝒂𝒏𝒅: Replace <React.Fragment> with the shorthand <> syntax for cleaner JSX markup.
+
+    By incorporating these shorthand techniques into your ReactJS projects, you'll write code that is not only more elegant but also easier to maintain and understand.
+
+    Ready to level up your ReactJS game? Let's dive into the world of shorthand techniques and supercharge your coding productivity!
+
+    #ReactJS #CodingTips #ShorthandTechniques #WebDevelopment #Programming
+
+    Let's write ReactJS code like a pro! 🚀🔍
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQH852BJAGw7lw/feedshare-document-images_1920/1/1712168097059?e=1713398400&v=beta&t=q-Aw2RIi3z3lmr6zdABO-OQBiRJ8KDmXDUok6udDrPA",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQH852BJAGw7lw/feedshare-document-pdf-analyzed/0/1712168097128?e=1713398400&v=beta&t=6xXZyzFcrpMErXFxDmipZ301STyHGNyihdk1NzfGqTc",
+  },
+  {
     id: 17,
     title:
       "🚦 𝐄𝐦𝐛𝐚𝐫𝐤 𝐨𝐧 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 2024 𝐑𝐨𝐚𝐝𝐦𝐚𝐩! 🌐💼",
-    date: "10 Mar 2023",
+    date: "3 Apr 2024",
     description: `🚦 𝐄𝐦𝐛𝐚𝐫𝐤 𝐨𝐧 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 2024 𝐑𝐨𝐚𝐝𝐦𝐚𝐩! 🌐💼
 
     Ready to navigate the ever-evolving landscape of web development? Check out the essential roadmap for aspiring web developers in 2024:
@@ -477,20 +509,20 @@ export const blogs = [
 
     Ready to hit the road? Start your journey today and unlock endless possibilities in the world of web development!
 
-    hashtag#WebDevelopment hashtag#Roadmap2024 hashtag#HTML hashtag#CSS hashtag#JavaScript hashtag#ReactJS hashtag#NextJS hashtag#Git hashtag#GitHub
+    #WebDevelopment #Roadmap2024 #HTML #CSS #JavaScript #ReactJS #NextJS #Git #GitHub
 
     Let's build the web of tomorrow, one step at a time! 🌟🔗
   `,
     image:
-      "https://media.licdn.com/dms/image/D4D1FAQFIwJFjDviu0g/feedshare-document-images_1920/1/1711739888557?e=1712793600&v=beta&t=NywRqHDy63rBNbabV0H9ALlJ_bgz-q_jV_tUJNcaDug",
+      "https://media.licdn.com/dms/image/D4D1FAQFp_E1WMYCOhA/feedshare-document-images_1920/1/1712073974120?e=1713398400&v=beta&t=vmYP59eIINVSUcUXJ2VcQl4NsurlMD5D3esWzGzTKLM",
     category: "web",
     pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFIwJFjDviu0g/feedshare-document-pdf-analyzed/0/1711739888676?e=1712793600&v=beta&t=_2s6l_HvVBTUSMo9BFYbH1Wx-t1qM8x5JllApBNhBGI",
+      "https://media.licdn.com/dms/document/media/D4D1FAQFp_E1WMYCOhA/feedshare-document-pdf-analyzed/0/1712073974180?e=1713398400&v=beta&t=qz3cGTCEkEQXS1dhRA88LslOBwGONtFMaj7sFj8EcVg",
   },
   {
     id: 16,
     title: "🚀 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐔𝐧𝐯𝐞𝐢𝐥𝐞𝐝: 𝐒𝐮𝐩𝐞𝐫𝐜𝐡𝐚𝐫𝐠𝐞 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 🌐✨",
-    date: "10 Mar 2023",
+    date: "10 Mar 2024",
     description: `🚀 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐔𝐧𝐯𝐞𝐢𝐥𝐞𝐝: 𝐒𝐮𝐩𝐞𝐫𝐜𝐡𝐚𝐫𝐠𝐞 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 🌐✨
 
     Hello, digital creators and web enthusiasts! 👋🎨
@@ -525,7 +557,7 @@ export const blogs = [
     id: 15,
     title:
       "🚀 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐒𝐋𝐢𝐧𝐭, 𝐏𝐫𝐞𝐭𝐭𝐢𝐞𝐫 & 𝐕𝐒 𝐂𝐨𝐝𝐞 𝐟𝐨𝐫 𝐍𝐞𝐱𝐭.𝐣𝐬 & 𝐑𝐞𝐚𝐜𝐭 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 💻✨",
-    date: "29 Mar 2023",
+    date: "29 Mar 2024",
     description: `🚀 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐒𝐋𝐢𝐧𝐭, 𝐏𝐫𝐞𝐭𝐭𝐢𝐞𝐫 & 𝐕𝐒 𝐂𝐨𝐝𝐞 𝐟𝐨𝐫 𝐍𝐞𝐱𝐭.𝐣𝐬 & 𝐑𝐞𝐚𝐜𝐭 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 💻✨
 
     Ready to streamline your Next.js and React development workflows? Dive into this comprehensive guide on ESLint, Prettier, and VS Code integration—essential tools for maintaining code quality and consistency.
@@ -555,7 +587,7 @@ export const blogs = [
     id: 1,
     title:
       "𝐒𝐩𝐞𝐞𝐝 𝐢𝐬 𝐭𝐡𝐞 𝐧𝐚𝐦𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐠𝐚𝐦𝐞 𝐢𝐧 𝐰𝐞𝐛 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐬 𝐲𝐨𝐮𝐫 𝐌𝐕𝐏! 🚀",
-    date: "20 Mar 2023",
+    date: "20 Mar 2024",
     description: `𝐒𝐩𝐞𝐞𝐝 𝐢𝐬 𝐭𝐡𝐞 𝐧𝐚𝐦𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐠𝐚𝐦𝐞 𝐢𝐧 𝐰𝐞𝐛 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐬 𝐲𝐨𝐮𝐫 𝐌𝐕𝐏! 🚀
 
       In the digital realm, the first impression is often the last—and it's all about how quickly your content appears on the user's screen. SSR is the unsung hero here, ensuring your website isn't just a pretty face but also a sprinter on the track of the World Wide Web.
@@ -585,7 +617,7 @@ export const blogs = [
   {
     id: 2,
     title: "🛠️ 𝐄𝐧𝐡𝐚𝐧𝐜𝐞 𝐘𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐔𝐬𝐞𝐟𝐮𝐥 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀💻",
-    date: "25 Mar 2023",
+    date: "25 Mar 2024",
     description: `🛠️ 𝐄𝐧𝐡𝐚𝐧𝐜𝐞 𝐘𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐔𝐬𝐞𝐟𝐮𝐥 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀💻
 
     Looking to add some extra functionality and flair to your React projects? Check out these versatile libraries that can help you streamline development and create engaging user experiences:
@@ -619,7 +651,7 @@ export const blogs = [
     id: 3,
     title:
       "𝐄𝐯𝐞𝐫 𝐰𝐨𝐧𝐝𝐞𝐫𝐞𝐝 𝐰𝐡𝐲 𝐲𝐨𝐮𝐫 𝐒𝐕𝐆𝐬 𝐭𝐚𝐤𝐞 𝐚 𝐬𝐜𝐞𝐧𝐢𝐜 𝐫𝐨𝐮𝐭𝐞 𝐛𝐞𝐟𝐨𝐫𝐞 𝐩𝐨𝐩𝐩𝐢𝐧𝐠 𝐮𝐩 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐚𝐩𝐩'𝐬 𝐔𝐈? 🤔",
-    date: "22 Mar 2023",
+    date: "22 Mar 2024",
     description: `𝐄𝐯𝐞𝐫 𝐰𝐨𝐧𝐝𝐞𝐫𝐞𝐝 𝐰𝐡𝐲 𝐲𝐨𝐮𝐫 𝐒𝐕𝐆𝐬 𝐭𝐚𝐤𝐞 𝐚 𝐬𝐜𝐞𝐧𝐢𝐜 𝐫𝐨𝐮𝐭𝐞 𝐛𝐞𝐟𝐨𝐫𝐞 𝐩𝐨𝐩𝐩𝐢𝐧𝐠 𝐮𝐩 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐚𝐩𝐩'𝐬 𝐔𝐈? 🤔
 
     SVGs are the superheroes of the digital image world: they're sleek, they scale without a hitch, and they keep your app light on its feet. But even superheroes have their kryptonite. For SVGs, it's the dreaded lag before they make their grand entrance on the screen.
@@ -643,7 +675,7 @@ export const blogs = [
     id: 4,
     title:
       "𝑬𝒗𝒆𝒓 𝒘𝒐𝒏𝒅𝒆𝒓𝒆𝒅 𝒘𝒉𝒂𝒕 𝒕𝒉𝒆 𝒔𝒆𝒄𝒓𝒆𝒕 𝒔𝒂𝒖𝒄𝒆 𝒊𝒔 𝒇𝒐𝒓 𝒂 𝒌𝒊𝒍𝒍𝒆𝒓 𝒂𝒑𝒑 𝒐𝒓 𝒘𝒆𝒃 𝒑𝒓𝒐𝒋𝒆𝒄𝒕? 🤔💡",
-    date: "21 Mar 2023",
+    date: "21 Mar 2024",
     description: `𝑬𝒗𝒆𝒓 𝒘𝒐𝒏𝒅𝒆𝒓𝒆𝒅 𝒘𝒉𝒂𝒕 𝒕𝒉𝒆 𝒔𝒆𝒄𝒓𝒆𝒕 𝒔𝒂𝒖𝒄𝒆 𝒊𝒔 𝒇𝒐𝒓 𝒂 𝒌𝒊𝒍𝒍𝒆𝒓 𝒂𝒑𝒑 𝒐𝒓 𝒘𝒆𝒃 𝒑𝒓𝒐𝒋𝒆𝒄𝒕? 🤔💡
 
     It's all about the tools you use, and APIs are the Swiss Army knife for developers! Here's a rundown of some amazing APIs that could be the game-changer for your next project:
@@ -679,7 +711,7 @@ export const blogs = [
     id: 5,
     title:
       "🚀 Ready to Level Up Your Node.js Skills? 𝐁𝐮𝐢𝐥𝐝 𝐚 𝐒𝐢𝐦𝐩𝐥𝐞 𝐄𝐱𝐩𝐫𝐞𝐬𝐬 𝐒𝐞𝐫𝐯𝐞𝐫! 💻🌐",
-    date: "20 Mar 2023",
+    date: "20 Mar 2024",
     description: `🚀 Ready to Level Up Your Node.js Skills? 𝐁𝐮𝐢𝐥𝐝 𝐚 𝐒𝐢𝐦𝐩𝐥𝐞 𝐄𝐱𝐩𝐫𝐞𝐬𝐬 𝐒𝐞𝐫𝐯𝐞𝐫! 💻🌐
 
     Excited to share a beginner-friendly guide to building your very own Express server in Node.js! 🎉
@@ -708,7 +740,7 @@ export const blogs = [
   {
     id: 6,
     title: "🎨 𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 𝐔𝐈 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀✨",
-    date: "18 Mar 2023",
+    date: "18 Mar 2024",
     description: `🎨 𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 𝐔𝐈 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀✨
 
     Ready to add some magic to your React applications? Explore these top-notch animation libraries and bring your user interfaces to life:
@@ -737,7 +769,7 @@ export const blogs = [
     id: 7,
     title:
       "🚀 Elevate your website speed with these 5️⃣ simple tips for React.js",
-    date: "17 Mar 2023",
+    date: "17 Mar 2024",
     description: `🚀 Elevate your website speed with these 5️⃣ simple tips for React.js.
 
     1️⃣ 𝐋𝐚𝐳𝐲 𝐋𝐨𝐚𝐝𝐢𝐧𝐠: 🖼️ Load images smartly using react-lazy-load to enhance user experience. Code example included!
@@ -772,7 +804,7 @@ export const blogs = [
   {
     id: 8,
     title: "🔥 𝐄𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐬𝐡𝐚𝐫𝐞 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬 𝐨𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬! 🔍💡",
-    date: "16 Mar 2023",
+    date: "16 Mar 2024",
     description: `🔥 𝐄𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐬𝐡𝐚𝐫𝐞 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬 𝐨𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬! 🔍💡
 
     In the dynamic world of front-end development, mastering SOLID principles is essential for building robust and scalable ReactJS applications. SOLID is an acronym that stands for five key principles of object-oriented design: single responsibility, open/closed, Liskov substitution, interface segregation, and dependency inversion.
@@ -803,7 +835,7 @@ export const blogs = [
   {
     id: 9,
     title: "𝗪𝗲𝗯 𝗔𝗽𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲 🌐💻",
-    date: "15 Mar 2023",
+    date: "15 Mar 2024",
     description: `𝗪𝗲𝗯 𝗔𝗽𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲 🌐💻
 
     Excited to unveil an insightful guide to navigating the web application development process using APIs.
@@ -833,7 +865,7 @@ export const blogs = [
   {
     id: 10,
     title: "🚀 Dive into the world of React.js in our first class!",
-    date: "14 Mar 2023",
+    date: "14 Mar 2024",
     description: `🚀 Dive into the world of React.js in our first class!
 
     Learn the fundamentals of React components, JSX syntax, and state management. Get hands-on experience with building your first React app from scratch.
@@ -856,7 +888,7 @@ export const blogs = [
   {
     id: 11,
     title: "𝐆𝐢𝐭𝐇𝐮𝐛 𝐖𝐨𝐫𝐤𝐟𝐥𝐨𝐰: 𝐀 𝐕𝐢𝐬𝐮𝐚𝐥 𝐆𝐮𝐢𝐝𝐞 💫",
-    date: "13 Mar 2023",
+    date: "13 Mar 2024",
     description: `𝐆𝐢𝐭𝐇𝐮𝐛 𝐖𝐨𝐫𝐤𝐟𝐥𝐨𝐰: 𝐀 𝐕𝐢𝐬𝐮𝐚𝐥 𝐆𝐮𝐢𝐝𝐞 💫
 
     I'm thrilled to share a diagram I've crafted, breaking down the GitHub workflow in an easy-to-understand and visual way.
@@ -885,7 +917,7 @@ export const blogs = [
   {
     id: 12,
     title: "🕶️ Master JavaScript 8 Pro Tricks",
-    date: "12 Mar 2023",
+    date: "12 Mar 2024",
     description: `🕶️ Master JavaScript 8 Pro Tricks
 
     ♥️ Give it a like if you think it's helpful!
@@ -905,7 +937,7 @@ export const blogs = [
   {
     id: 13,
     title: "𝐌𝐚𝐬𝐭𝐞𝐫 𝐑𝐞𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐑𝐞𝐩𝐨𝐬 ⬇️",
-    date: "11 Mar 2023",
+    date: "11 Mar 2024",
     description: `𝐌𝐚𝐬𝐭𝐞𝐫 𝐑𝐞𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐑𝐞𝐩𝐨𝐬 ⬇️
 
     𝐑𝐞𝐚𝐜𝐭 is one of the best library,
@@ -951,7 +983,7 @@ export const blogs = [
     id: 14,
     title:
       "𝗙𝗼𝗿 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗽𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹𝘀, 𝗯𝗲𝗰𝗼𝗺𝗶𝗻𝗴 𝗮 𝗙𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗰𝗮𝗻 𝘂𝗻𝗹𝗼𝗰𝗸 𝗺𝗮𝗻𝘆 𝗼𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝗶𝗲𝘀. ✨",
-    date: "10 Mar 2023",
+    date: "10 Mar 2024",
     description: `𝗙𝗼𝗿 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗽𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹𝘀, 𝗯𝗲𝗰𝗼𝗺𝗶𝗻𝗴 𝗮 𝗙𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗰𝗮𝗻 𝘂𝗻𝗹𝗼𝗰𝗸 𝗺𝗮𝗻𝘆 𝗼𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝗶𝗲𝘀. ✨
 
     It pays well too, that's why many people want to switch to frontend development today.
@@ -969,5 +1001,203 @@ export const blogs = [
     category: "web",
     pdfUrl:
       "https://media.licdn.com/dms/document/media/D4D1FAQGhXF3R7EzzDA/feedshare-document-pdf-analyzed/0/1706618749795?e=1712188800&v=beta&t=DhfshJej87yB1ajAeEf5hq5FFQPAXSY1fltxq5R_77c",
+  },
+  {
+    id: 19,
+    title: "🚀 Exciting Journey into TypeScript! 🚀",
+    date: "8 Mar 2024",
+    description: `🚀 Exciting Journey into TypeScript! 🚀
+
+    Hey LinkedIn fam! 👋 I wanted to share my enthusiasm for TypeScript, and if you haven't explored it yet, you're in for a treat! 🌟
+
+    TypeScript has been a game-changer for me, offering a statically typed superset of JavaScript that brings robustness and maintainability to my projects. 💻✨
+
+    Here are a few reasons why I'm loving it:
+
+    1️⃣ Strong Typing: TypeScript's static typing helps catch errors during development, making the code more reliable and preventing bugs from sneaking into production.
+
+    2️⃣ Code Maintainability: With interfaces, generics, and advanced type features, TypeScript enhances code readability and maintainability. It's like having a safety net while working on larger codebases.
+
+    3️⃣ Tooling Support: Integrated well with popular IDEs like Visual Studio Code, TypeScript offers excellent tooling support, making development smoother and more efficient.
+
+    4️⃣ ESNext Features: Stay on the cutting edge of JavaScript with TypeScript's support for the latest ECMAScript features, allowing you to write modern and clean code.
+
+    5️⃣ Community & Ecosystem: The TypeScript community is thriving, and the ecosystem around it is growing rapidly. It's fantastic to be part of such a dynamic and supportive developer community.
+
+    Whether you're a seasoned developer or just starting your coding journey, TypeScript is worth exploring. It has certainly elevated my coding experience, and I can't wait to hear about your TypeScript adventures! 🚀✨
+
+    For more 👇🏻
+    .
+    .
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills! 📚🚀
+
+    #TypeScript #JavaScript #CodingJourney #DeveloperCommunity #TechEnthusiast
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQEPYTfggGORuw/feedshare-document-images_1920/1/1706532913902?e=1713398400&v=beta&t=er_W43trmKlomT9Q62JqDe1zczI0SGd0SeZhqvSsZCM",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQEPYTfggGORuw/feedshare-document-pdf-analyzed/0/1706532914107?e=1713398400&v=beta&t=B88bI2PCIrgZVi97ESMuuHAd4nKWxbqbNImGQvohAYw",
+  },
+  {
+    id: 20,
+    title: "useForm Hook",
+    date: "7 Mar 2024",
+    description: `Ever wondered how to keep your React forms neat, tidy, and oh-so-manageable? 🤔 Let's talk about the magic of the useForm hook!
+
+    If you've ever built forms in React, you know the drill: managing state, validations, and handling submissions can get messy. But with the useForm hook, you can say goodbye to the boilerplate blues. It's like having a personal assistant for your forms!
+
+    The useForm hook, part of the React Hook Form library, simplifies form handling by reducing the amount of code you need to write. It takes care of the form state, validation, and submission without you manually wiring up event handlers for every field. 🎉
+
+    Here's why you'll love it:
+    1. Less Code: Your codebase shrinks and becomes more readable.
+    2. Performance Gains: It minimizes re-renders, making your forms snappier.
+    3. Built-in Validation: Leverage simple to complex validations with minimal effort.
+    4. Easy Integration: Works like a charm with UI libraries and can be easily integrated with other form-related libraries.
+
+    Imagine handling forms with less hassle and more grace. That's what useForm brings to the table. It's a game-changer for developers who want to write less and do more. And the best part? It's incredibly beginner-friendly!
+
+    Ready to elevate your form game? Dive into the useForm hook and watch your React projects transform. And if you've already used it, share your experiences below. What did you build? How did it go?
+
+    Don't forget to hit that like button if you found this useful, and drop a comment if you've got questions or insights to share. Let's keep the conversation going!
+
+    #ReactJS #WebDevelopment
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQGTwpSqA60Q3A/feedshare-document-images_1920/1/1706447748056?e=1713398400&v=beta&t=snWfKb-S52TZSXz1pv9HTV5PSbt7swaKwgK3AYg6lvY",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQGTwpSqA60Q3A/feedshare-document-pdf-analyzed/0/1706447748111?e=1713398400&v=beta&t=dppgQvWfjvTuovhJC9mQS4oHEF6R7J2WEK5Y3JleO5E",
+  },
+  {
+    id: 21,
+    title: "📌PART - 2 Important Javascript build-in methods (cheatsheet) ✔️📑",
+    date: "6 Mar 2024",
+    description: `📌PART - 2
+    Important Javascript build-in methods (cheatsheet) ✔️📑
+    .
+    .
+    .
+
+    For more 👇🏻
+
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills! 📚🚀
+
+    #JavaScript
+    #Coding
+    #DeveloperResources
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHePZBSoRGJaw/feedshare-document-images_1920/1/1706360631995?e=1713398400&v=beta&t=LmZksuZbeixwH0KrniL_jzqbQl_8EcCcx5QdtdhSU9g",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQHePZBSoRGJaw/feedshare-document-pdf-analyzed/0/1706360632057?e=1713398400&v=beta&t=SxT4ce_3jZUr8yS93PXv4AbOijWbkX3cP5N5e9jb0Nw",
+  },
+  {
+    id: 22,
+    title: "🏭Factory Pattern in JavaScript!!",
+    date: "5 Mar 2024",
+    description: `🏭Factory Pattern in JavaScript!!
+
+    The Factory Pattern is used in software development when you want to create objects without specifying the exact class of the object that will be created. It provides an interface for creating objects in a superclass but also allows subclasses to alter the types of objects that will be created.
+    .
+    .
+    .
+
+    For more 👇🏻
+
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills! 📚🚀
+
+    #JavaScript #Coding #DeveloperResources
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQFExzpNW1i19w/feedshare-document-images_1920/1/1705929325460?e=1713398400&v=beta&t=zn66An6r-yq98Z3sXwGFoV9M6jEO6Eo5OWwnMUIVtM8",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQFExzpNW1i19w/feedshare-document-pdf-analyzed/0/1705929325520?e=1713398400&v=beta&t=scIPR7IslSp1xm_FNdTIuJPxkvAbbp3pGyW5JVG_QQI",
+  },
+  {
+    id: 23,
+    title:
+      "📌PART - 1 Important Javascript build-in methods (cheatsheet) ✔️📑!",
+    date: "4 Mar 2024",
+    description: `📌PART - 1
+    Important Javascript build-in methods (cheatsheet) ✔️📑
+    .
+    .
+    .
+
+    For more 👇🏻
+
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills! 📚🚀
+
+    #JavaScript
+    #Coding
+    #DeveloperResources
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQGrkFhFfhFPjw/feedshare-document-images_1920/1/1705581218790?e=1713398400&v=beta&t=4ePePlAP1qmqQd-E-j5srODIg24nOZDIm0ldL5QyfCs",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQGrkFhFfhFPjw/feedshare-document-pdf-analyzed/0/1705581218852?e=1713398400&v=beta&t=CkLnjhZQzhiDrFWTKR3MkYUDqWLC0R8PR6GTzwsQ4mQ",
+  },
+  {
+    id: 23,
+    title: "Elevate your coding skills with these 21 React project ideas ✔️📑!",
+    date: "3 Mar 2024",
+    description: `Elevate your coding skills with these 21 React project ideas—from dynamic dashboards to interactive games, there's something for every aspiring developer! 💻🚀
+    .
+    .
+    .
+
+    For more 👇🏻
+
+    Coding tips, tricks, and valuable insights, make sure to follow Jimmy Ramani. Stay tuned for regular updates and boost your coding skills! 📚🚀
+
+    #reactjs #reactjsdeveloper #javascript #typescript #programminers #codingchallenge #coding #coder #codinglife #code #programmer #programminglife #programmers #ReactProjects #CodingChallenge
+`,
+    image:
+      "https://media.licdn.com/dms/image/D561FAQHxNHHG_38F_A/feedshare-document-images_1920/1/1705495626088?e=1713398400&v=beta&t=MiYGEyvoCYicuLChN7tUF2ymLx6eS-EPbG3bbP88s7k",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D561FAQHxNHHG_38F_A/feedshare-document-pdf-analyzed/0/1705495626144?e=1713398400&v=beta&t=qJB57HF5aFUf_pKpXkgP0ln_01Dng2HU_E7K-Yfu1FY",
+  },
+  {
+    id: 24,
+    title: "🌐 Elevate your JavaScript game with a deep dive into Web APIs! 🚀",
+    date: "2 Mar 2024",
+    description: `🌐 Elevate your JavaScript game with a deep dive into Web APIs! 🚀
+
+    From fetching data to manipulating the DOM, this post unravels the power of JavaScript in web development. 💡
+
+    Explore the world of APIs with clear examples and tips to enhance your coding skills.
+
+    Ready to level up? Dive into the world of JavaScript magic! 💻✨
+
+    #JavaScript #WebAPIs #CodingJourney
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQF1CqgdEmNTWw/feedshare-document-images_1920/1/1705152453163?e=1713398400&v=beta&t=9_zSeXjqXeGJ-snCmM6rDxLHbKOG66T8aGUlpfpAHmY",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQF1CqgdEmNTWw/feedshare-document-pdf-analyzed/0/1705152453234?e=1713398400&v=beta&t=OBKgGRujsvxI8FIkglsERmRivZqQgXj3MxH_1LxD4YQ",
+  },
+  {
+    id: 25,
+    title: "🍽️ Add a dash of JavaScript knowledge to your coding feast!",
+    date: "2 Mar 2024",
+    description: `🍽️ Add a dash of JavaScript knowledge to your coding feast!
+
+    Explore this comprehensive cheat sheet to satisfy your coding hunger. From essential concepts to handy syntax tips, this guide has got your JavaScript cravings covered.
+
+    Dive in and elevate your coding experience! 💻🚀
+
+    #JavaScript #Coding #DeveloperResources
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHx0NDAj837ZA/feedshare-document-images_1920/1/1705064782042?e=1713398400&v=beta&t=lr2CuFrFrRki8O9t3D8gayvZRxY1QHFiYS729lpuPps",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQHx0NDAj837ZA/feedshare-document-pdf-analyzed/0/1705064782206?e=1713398400&v=beta&t=3Oq_niGS_GrzFiHi_Y2j46i6NZSLGuTGGRqhrhD-mKw",
   },
 ];
