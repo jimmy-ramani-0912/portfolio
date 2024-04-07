@@ -59,6 +59,21 @@ export const skills = [
         image:
           "data:image/png;base64,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",
       },
+      {
+        name: "Antd",
+        image:
+          "https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-dl3neb73.png",
+      },
+      {
+        name: "Sass",
+        image:
+          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png",
+      },
+      {
+        name: "Styled-component",
+        image:
+          "https://corevaluetech.com/assets/illustrations/styled-component.webp",
+      },
     ],
   },
   {
@@ -81,6 +96,11 @@ export const skills = [
       {
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
+      },
+      {
+        name: "PostgresSQL",
+        image:
+          "https://static-00.iconduck.com/assets.00/postgresql-original-wordmark-icon-512x509-kcfxxtk0.png",
       },
     ],
   },
@@ -144,6 +164,10 @@ export const skills = [
         name: "Netlify",
         image:
           "https://www.vectorlogo.zone/logos/terraformio/terraformio-icon.svg",
+      },
+      {
+        name: "Vercel",
+        image: "https://logowik.com/content/uploads/images/vercel1868.jpg",
       },
       {
         name: "Postman",
@@ -454,6 +478,147 @@ export const TimeLineData = [
 ];
 
 export const blogs = [
+  {
+    id: 27,
+    title:
+      "🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨",
+    date: "7 Mar 2024",
+    description: `🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨
+
+    Ready to unlock the full potential of 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) in Next.js? Let's dive into this essential topic together:
+
+    In this comprehensive guide, we'll cover:
+
+    1️⃣ 𝑼𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈 𝑺𝑺𝑹: Gain a deep understanding of what Server-Side Rendering (SSR) is and why it's crucial for building dynamic and SEO-friendly web applications.
+
+    2️⃣ 𝑩𝒆𝒏𝒆𝒇𝒊𝒕𝒔 𝒐𝒇 𝑺𝑺𝑹: Explore the advantages of using SSR, including improved performance, SEO optimization, and enhanced user experience.
+
+    3️⃣ 𝑰𝒎𝒑𝒍𝒆𝒎𝒆𝒏𝒕𝒊𝒏𝒈 𝑺𝑺𝑹 𝒊𝒏 𝑵𝒆𝒙𝒕.𝒋𝒔: Get a step-by-step overview of how to implement Server-Side Rendering in your Next.js projects, including setup, routing, data fetching, and rendering.
+
+    4️⃣ 𝑹𝒆𝒂𝒍-𝑾𝒐𝒓𝒍𝒅 𝑬𝒙𝒂𝒎𝒑𝒍𝒆𝒔: Dive into practical examples showcasing the use of SSR in building dynamic web applications, blogs, e-commerce sites, and more.
+
+    5️⃣ 𝑻𝒊𝒑𝒔 𝒂𝒏𝒅 𝑩𝒆𝒔𝒕 𝑷𝒓𝒂𝒄𝒕𝒊𝒄𝒆𝒔: Discover tips and best practices for optimizing and maximizing the benefits of SSR in your Next.js projects.
+
+    By the end of this guide, you'll have a comprehensive understanding of Server-Side Rendering in Next.js and how to leverage it to build high-performance and SEO-friendly web applications.
+
+    Ready to become a master of Server-Side Rendering in Next.js? Let's embark on this journey together!
+
+    #NextJS #ServerSideRendering #SSR #WebDevelopment #PerformanceOptimization #SEO #UserExperience
+
+    Let's elevate your Next.js projects with the power of Server-Side Rendering! 🚀
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQFYtpBmN1Jktw/feedshare-document-images_1920/1/1712494168067?e=1713398400&v=beta&t=NzO50YYlK4ZFtJLxFH-z4D6wcc85YbCt0N5EzTS1Mac",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQFYtpBmN1Jktw/feedshare-document-pdf-analyzed/0/1712494168121?e=1713398400&v=beta&t=xI0m5Axv57moKtVc7gusnvxzMGZgOmOd3t6admxh8cQ",
+  },
+  {
+    id: 26,
+    title:
+      "🌟 𝐔𝐧𝐥𝐨𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐏𝐨𝐰𝐞𝐫 𝐨𝐟 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨",
+    date: "6 Mar 2024",
+    description: `🌟 𝐔𝐧𝐥𝐨𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐏𝐨𝐰𝐞𝐫 𝐨𝐟 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨
+
+  Curious about 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) and its application in Next.js development? Let's delve into this essential topic together:
+
+  In this comprehensive guide, we'll cover:
+
+  1️⃣ 𝑼𝒏𝒅𝒆𝒓𝒔𝒕𝒂𝒏𝒅𝒊𝒏𝒈 𝑪𝑺𝑹: Gain insights into what Client-Side Rendering (CSR) is and how it differs from other rendering methods in Next.js.
+
+  2️⃣ 𝑨𝒅𝒗𝒂𝒏𝒕𝒂𝒈𝒆𝒔 𝒐𝒇 𝑪𝑺𝑹: Explore the benefits of using CSR, including dynamic content rendering, enhanced interactivity, and flexibility.
+
+  3️⃣ 𝑰𝒎𝒑𝒍𝒆𝒎𝒆𝒏𝒕𝒊𝒏𝒈 𝑪𝑺𝑹 𝒊𝒏 𝑵𝒆𝒙𝒕.𝒋𝒔: Get a step-by-step overview of how to implement Client-Side Rendering in your Next.js projects, including routing, data fetching, and component rendering.
+
+  4️⃣ 𝑹𝒆𝒂𝒍-𝑾𝒐𝒓𝒍𝒅 𝑬𝒙𝒂𝒎𝒑𝒍𝒆𝒔: Dive into practical examples showcasing the use of CSR in building interactive web applications, dashboards, and more.
+
+  5️⃣ 𝑻𝒊𝒑𝒔 𝒂𝒏𝒅 𝑩𝒆𝒔𝒕 𝑷𝒓𝒂𝒄𝒕𝒊𝒄𝒆𝒔: Discover tips and best practices for optimizing and maximizing the benefits of CSR in your Next.js projects.
+
+  By the end of this guide, you'll have a comprehensive understanding of Client-Side Rendering in Next.js and how to leverage it to build dynamic, interactive, and responsive web applications.
+
+  Ready to harness the power of Client-Side Rendering in Next.js? Let's embark on this journey together!
+
+  hashtag#NextJS hashtag#ClientSideRendering hashtag#CSR hashtag#WebDevelopment hashtag#DynamicContent hashtag#Interactivity hashtag#Optimization
+
+  Let's elevate your Next.js projects with the power of Client-Side Rendering! 🚀🌐
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQEIFek3HOW4Pw/feedshare-document-images_1920/1/1712427592247?e=1713398400&v=beta&t=zpazAPERJjA7YdDGFqF04gpAx8j8jHJSJZdBbcAP7o8",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQEIFek3HOW4Pw/feedshare-document-pdf-analyzed/0/1712427592300?e=1713398400&v=beta&t=PB9PLTdGMP_Hnox6j65YOVeHLiH5sYuDQNwDgvB_rIA",
+  },
+  {
+    id: 28,
+    title:
+      "🌟 𝐃𝐢𝐯𝐞 𝐢𝐧𝐭𝐨 𝐒𝐭𝐚𝐭𝐢𝐜 𝐒𝐢𝐭𝐞 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧 (𝐒𝐒𝐆) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰! 💻✨",
+    date: "5 Mar 2024",
+    description: `🌟 𝐃𝐢𝐯𝐞 𝐢𝐧𝐭𝐨 𝐒𝐭𝐚𝐭𝐢𝐜 𝐒𝐢𝐭𝐞 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧 (𝐒𝐒𝐆) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐥𝐞𝐭𝐞 𝐎𝐯𝐞𝐫𝐯𝐢𝐞𝐰! 💻✨
+
+    Curious about 𝐒𝐭𝐚𝐭𝐢𝐜 𝐒𝐢𝐭𝐞 𝐆𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧 (𝐒𝐒𝐆) and its role in Next.js development? Let's explore this powerful feature together:
+
+    In this comprehensive guide, we'll cover:
+
+    1️⃣ 𝐔𝐧𝐝𝐞𝐫𝐬𝐭𝐚𝐧𝐝𝐢𝐧𝐠 𝐒𝐒𝐆: Learn what SSG is and how it differs from other rendering methods in Next.js.
+
+    2️⃣ 𝐁𝐞𝐧𝐞𝐟𝐢𝐭𝐬 𝐨𝐟 𝐒𝐒𝐆: Explore the advantages of using SSG, including improved performance, SEO, and user experience.
+
+    3️⃣ 𝐇𝐨𝐰 𝐒𝐒𝐆 𝐰𝐨𝐫𝐤𝐬 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: Get a step-by-step overview of how SSG is implemented in Next.js projects.
+
+    4️⃣ 𝐏𝐫𝐚𝐜𝐭𝐢𝐜𝐚𝐥 𝐄𝐱𝐚𝐦𝐩𝐥𝐞𝐬: Dive into real-world examples of SSG usage, including blog sites, e-commerce platforms, and more.
+
+    5️⃣ 𝐓𝐢𝐩𝐬 𝐚𝐧𝐝 𝐁𝐞𝐬𝐭 𝐏𝐫𝐚𝐜𝐭𝐢𝐜𝐞𝐬: Discover tips and best practices for maximizing the benefits of SSG in your Next.js projects.
+
+    By the end of this overview, you'll have a solid understanding of SSG and how to leverage it to build fast, SEO-friendly, and scalable web applications with Next.js.
+
+    Ready to unlock the full potential of Static Site Generation in Next.js? Let's embark on this journey together!
+
+    #NextJS #StaticSiteGeneration #SSG #WebDevelopment #SEO #PerformanceOptimization #UserExperience
+
+    Let's harness the power of Static Site Generation to build better web experiences! 🚀🌐
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQEjWyZBiUXFoA/feedshare-document-images_1920/1/1712322611727?e=1713398400&v=beta&t=Cr-rtsyOMs-2c2abyA4w-k_26Cu-eOH1Pig2drFoKAQ",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQEjWyZBiUXFoA/feedshare-document-pdf-analyzed/0/1712322611795?e=1713398400&v=beta&t=xeP4AXwbk3A6xIe-Jeg-VSbxvaOAB5Kt6tP_ZHOuP3Y",
+  },
+  {
+    id: 29,
+    title:
+      "🚀 𝐒𝐭𝐫𝐮𝐠𝐠𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐟𝐞𝐭𝐜𝐡𝐢𝐧𝐠 𝐀𝐏𝐈 𝐝𝐚𝐭𝐚 𝐚𝐧𝐝 𝐦𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐬𝐭𝐚𝐭𝐞 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐚𝐩𝐩? 𝐑𝐞𝐚𝐜𝐭 𝐐𝐮𝐞𝐫𝐲 𝐭𝐨 𝐭𝐡𝐞 𝐑𝐞𝐬𝐜𝐮𝐞! 🌟",
+    date: "4 Mar 2024",
+    description: `🚀 𝐒𝐭𝐫𝐮𝐠𝐠𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐟𝐞𝐭𝐜𝐡𝐢𝐧𝐠 𝐀𝐏𝐈 𝐝𝐚𝐭𝐚 𝐚𝐧𝐝 𝐦𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐬𝐭𝐚𝐭𝐞 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐚𝐩𝐩? 𝐑𝐞𝐚𝐜𝐭 𝐐𝐮𝐞𝐫𝐲 𝐭𝐨 𝐭𝐡𝐞 𝐑𝐞𝐬𝐜𝐮𝐞! 🌟
+
+    Discover how React Query can simplify your development workflow:
+
+    1️⃣ 𝑬𝒇𝒇𝒐𝒓𝒕𝒍𝒆𝒔𝒔 𝑫𝒂𝒕𝒂 𝑭𝒆𝒕𝒄𝒉𝒊𝒏𝒈: Say goodbye to complex fetch logic! React Query's intuitive API simplifies data fetching.
+
+    2️⃣ 𝑨𝒖𝒕𝒐𝒎𝒂𝒕𝒊𝒄 𝑪𝒂𝒄𝒉𝒊𝒏𝒈: No more manual caching headaches. React Query automatically caches data, ensuring faster subsequent requests.
+
+    3️⃣ 𝑶𝒑𝒕𝒊𝒎𝒊𝒔𝒕𝒊𝒄 𝑼𝒑𝒅𝒂𝒕𝒆𝒔: Handle state updates optimistically with React Query's built-in support, providing a smoother user experience.
+
+    4️⃣ 𝑷𝒂𝒈𝒊𝒏𝒂𝒕𝒊𝒐𝒏 𝒂𝒏𝒅 𝑰𝒏𝒇𝒊𝒏𝒊𝒕𝒆 𝑳𝒐𝒂𝒅𝒊𝒏𝒈: Easily implement pagination and infinite loading with React Query's powerful features, saving time and effort.
+
+    5️⃣ 𝑬𝒓𝒓𝒐𝒓 𝑯𝒂𝒏𝒅𝒍𝒊𝒏𝒈 𝑴𝒂𝒅𝒆 𝑬𝒂𝒔𝒚: Streamline error handling with React Query, making it simple to manage and display errors to users.
+
+    With React Query, fetching data and managing states become simple and efficient! Give it a try and experience the difference.
+
+    💯 𝐅𝐨𝐥𝐥𝐨𝐰 for more 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 and 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 Tips & Tricks.
+    👍 If you found it helpful, hit 𝐥𝐢𝐤𝐞!
+    🔁 𝐒𝐡𝐚𝐫𝐞 it with your network!
+    🔖 𝐒𝐚𝐯𝐞 it for future reference!
+    📤 𝐒𝐡𝐚𝐫𝐞 it with your 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐨𝐧𝐬!
+    💭 𝐂𝐨𝐦𝐦𝐞𝐧𝐭 your thoughts!
+
+    #ReactJS #ReactQuery #WebDevelopment #Programming #TipsAndTricks #StateManagement #APIFetching #Optimization #ErrorHandling #Innovation
+`,
+    image:
+      "https://media.licdn.com/dms/image/D4D1FAQHS16pqSh50jw/feedshare-document-images_1920/1/1712255677913?e=1713398400&v=beta&t=be4aTJ9hqFXfeCAqvdHyxBUZKYBCYI5kiiIG6Yb2zzY",
+    category: "web",
+    pdfUrl:
+      "https://media.licdn.com/dms/document/media/D4D1FAQHS16pqSh50jw/feedshare-document-pdf-analyzed/0/1712255677977?e=1713398400&v=beta&t=7RQ08PY7Dd1Y2BxLfX2K5TdPPtluLSi2FIOq9dH3QwQ",
+  },
   {
     id: 18,
     title: "🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐡𝐨𝐫𝐭𝐡𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐢𝐪𝐮𝐞𝐬! 💻✨",
@@ -1180,7 +1345,7 @@ export const blogs = [
       "https://media.licdn.com/dms/image/D4D1FAQF1CqgdEmNTWw/feedshare-document-images_1920/1/1705152453163?e=1713398400&v=beta&t=9_zSeXjqXeGJ-snCmM6rDxLHbKOG66T8aGUlpfpAHmY",
     category: "web",
     pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQF1CqgdEmNTWw/feedshare-document-pdf-analyzed/0/1705152453234?e=1713398400&v=beta&t=OBKgGRujsvxI8FIkglsERmRivZqQgXj3MxH_1LxD4YQ",
+      "https://media.licdn.com/dms/documen+t/media/D4D1FAQF1CqgdEmNTWw/feedshare-document-pdf-analyzed/0/1705152453234?e=1713398400&v=beta&t=OBKgGRujsvxI8FIkglsERmRivZqQgXj3MxH_1LxD4YQ",
   },
   {
     id: 25,
