@@ -6,12 +6,30 @@ Welcome to my portfolio! This project showcases my skills, projects, and experie
 
 ## Images:
 
-<img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/about.png?raw=true"/>
-<img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/skills.png?raw=true"/>
-<img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/experience.png?raw=true"/>
-<img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/projects.png?raw=true"/>
-<img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/education.png?raw=true"/>
-<img width="450px;" src="https://github.com/jimmy-ramani-0912/portfolio/blob/main/imgs/contact.png?raw=true"/>
+<img width="500px;" src="https://i.postimg.cc/J7K81cqd/Screenshot-2024-04-10-180507.png"/>
+<img width="500px;" src="https://i.postimg.cc/GmstkszY/Screenshot-2024-04-10-181841.png"/>
+<img width="500px;" src="https://i.postimg.cc/wjJxtYTQ/Screenshot-2024-04-10-181916.png"/>
+<img width="500px;" src="https://i.postimg.cc/90nX9W7J/Screenshot-2024-04-10-181948.png"/>
+<img width="500px;" src="https://i.postimg.cc/HxTLDvm4/Screenshot-2024-04-10-182015.png"/>
+<img width="500px;" src="https://i.postimg.cc/zvBX3LVy/Screenshot-2024-04-10-182408.png"/>
+<img width="500px;" src="https://i.postimg.cc/8P7zSr23/Screenshot-2024-04-10-182441.png"/>
+<img width="500px;" src="https://i.postimg.cc/zDtG6kcK/Screenshot-2024-04-10-182752.png"/>
+<img width="500px;" src="https://i.postimg.cc/tC8CC4yg/Screenshot-2024-04-10-182807.png"/>
+<img width="500px;" src="https://i.postimg.cc/nL4LWbyh/Screenshot-2024-04-10-182821.png"/>
+<img width="500px;" src="https://i.postimg.cc/KzQ8Z7vX/Screenshot-2024-04-10-182912.png"/>
+<img width="500px;" src="https://i.postimg.cc/W4w2nmZD/Screenshot-2024-04-10-182953.png"/>
+<img width="500px;" src="https://i.postimg.cc/QM381YFG/Screenshot-2024-04-10-183619.png"/>
+<img width="500px;" src="https://i.postimg.cc/Y9XtcpbM/Screenshot-2024-04-10-183654.png"/>
+<img width="500px;" src="https://i.postimg.cc/xCj9FkG6/Screenshot-2024-04-10-183716.png"/>
+<img width="500px;" src="https://i.postimg.cc/htFcRZbz/Screenshot-2024-04-10-183747.png"/>
+<img width="500px;" src="https://i.postimg.cc/cCr00VbY/Screenshot-2024-04-10-183759.png"/>
+<img width="500px;" src="https://i.postimg.cc/MKfq4JRJ/Screenshot-2024-04-10-183815.png"/>
+<img width="500px;" src="https://i.postimg.cc/59Rfn2Xm/Screenshot-2024-04-10-183831.png"/>
+<img width="500px;" src="https://i.postimg.cc/76LynFDc/Screenshot-2024-04-10-183852.png"/>
+<img width="500px;" src="https://i.postimg.cc/t4hyqd2r/Screenshot-2024-04-10-183944.png"/>
+<img width="500px;" src="https://i.postimg.cc/pdRvp9SP/Screenshot-2024-04-10-184002.png"/>
+<img width="500px;" src="https://i.postimg.cc/tTmGSB4g/Screenshot-2024-04-10-184021.png"/>
+<img width="500px;" src="https://i.postimg.cc/JhxLJrwZ/Screenshot-2024-04-10-184034.png"/>
 
 ## Table of Contents
 
