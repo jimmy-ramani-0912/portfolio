@@ -5,7 +5,7 @@ export const Bio = {
     "I am a motivated and versatile individual with a passion for learning and a dedication to delivering high-quality results. With a positive attitude and a growth mindset, I am always eager to take on new challenges and make a meaningful contribution to web and mobile projects, leveraging my skills that encompass the entire software development lifecycle.",
   github: "https://github.com/jimmy-ramani-0912",
   resume:
-    "https://drive.google.com/file/d/12LVDAC_BvxUQVc3ybnJHd37rZqZS2Gf_/view?usp=drive_link",
+    "https://drive.google.com/file/d/1k8sjNtEG68zQeU3Oo1cojwvA9A0_ua8O/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/jimmyramani",
   insta: "https://www.instagram.com/jim_my0915/",
   medium: "https://medium.com/@jimmyramani",
