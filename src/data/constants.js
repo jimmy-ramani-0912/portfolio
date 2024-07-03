@@ -293,6 +293,28 @@ export const education = [
 
 export const projects = [
   {
+    id: 10,
+    title: "CoverCreationStation",
+    date: "Apr 2024",
+    description:
+      "Built with the Next.js 14 App Router, TypeScript, Tailwind, Kinde for Auth, Neon for Postgres database, Uploadthing for File uploading, Prisma as the ORM & Stripe for Payment processing",
+    image:
+      "https://github.com/jimmy-ramani-0912/CoverCreationStation/raw/main/public/SS-1.png",
+    tags: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Kinde",
+      "Neon",
+      "Uploadthing",
+      "Prisma",
+      "Stripe",
+    ],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/CoverCreationStation",
+    webapp: "https://github.com/jimmy-ramani-0912/CoverCreationStation",
+  },
+  {
     id: 9,
     title: "Kloxa",
     date: "Feb 2024",
