@@ -6,6 +6,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PublicRoutes } from "./routes.jsx";
 import styled, { keyframes } from "styled-components";
+import Cursor from "./components/Cursor/Cursor.jsx";
 
 export const LoaderWrapper = styled.div`
   height: 100dvh;
@@ -54,6 +55,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <Cursor />
       <Suspense
         fallback={
           <LoaderWrapper>
