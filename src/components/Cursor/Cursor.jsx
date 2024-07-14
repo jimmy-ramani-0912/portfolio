@@ -21,7 +21,10 @@ const Cursor = () => {
   return (
     <CircularBorderWrapper>
       <CursorContainer
-        style={{ left: `${cursorPosition.x}px`, top: `${cursorPosition.y}px` }}
+        style={{
+          left: `${cursorPosition.x - 20}px`,
+          top: `${cursorPosition.y - 20}px`,
+        }}
       />
     </CircularBorderWrapper>
   );
