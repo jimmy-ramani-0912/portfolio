@@ -40,12 +40,13 @@ export const CursorContainer = styled.div`
   align-items: center;
   justify-content: center;
   animation: ${pulse} 2s infinite;
+`;
 
-  &:after {
-    content: "";
-    width: 10px;
-    height: 10px;
-    background-color: #854ce6;
-    border-radius: 50%;
-  }
+export const InnerCircle = styled.div`
+  width: 10px;
+  height: 10px;
+  background-color: #854ce6;
+  border-radius: 50%;
+  position: absolute;
+  transition: transform 0.2s ease-out;
 `;
