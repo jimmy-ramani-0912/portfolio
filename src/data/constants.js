@@ -7,7 +7,7 @@ export const Bio = {
   resume:
     "https://drive.google.com/file/d/1k8sjNtEG68zQeU3Oo1cojwvA9A0_ua8O/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/jimmyramani",
-  insta: "https://www.instagram.com/jim_my0915/",
+  insta: "https://www.instagram.com/jim_y0912/",
   medium: "https://medium.com/@jimmyramani",
   codepen: "https://codepen.io/jimmyramani",
 };
