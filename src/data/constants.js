@@ -513,6 +513,20 @@ import FunAPIs from "../../public/blog/funAPIs.pdf";
 import ExpressServer from "../../public/blog/expressServer.pdf";
 import PopularReactLibrary from "../../public/blog/popularReactLibrary.pdf";
 import WebSitePerformance from "../../public/blog/WebSitePerformance.pdf";
+import ReactSolid from "../../public/blog/reactSolid.pdf";
+import WebAPI from "../../public/blog/webAPI.pdf";
+import ReactMaster from "../../public/blog/reactMaster.pdf";
+import ProTricks from "../../public/blog/jsProTricks.pdf";
+import ReactWithRepos from "../../public/blog/masterReactWithRepos.pdf";
+import TypeScript from "../../public/blog/typescript.pdf";
+import FrontEndMaster from "../../public/blog/frontendMaster.pdf";
+import useFormHook from "../../public/blog/useFormHook.pdf";
+import JSBuildIn from "../../public/blog/js-build-in.pdf";
+import JSBuildIn2 from "../../public/blog/js-build-in-2.pdf";
+import FactoryPattern from "../../public/blog/factoryPattern.pdf";
+import ProjectIdeas from "../../public/blog/projectIdeas.pdf";
+import JSWebAPI from "../../public/blog/jsWebAPI.pdf";
+import JSCheatSheet from "../../public/blog/jsCheatSheet.pdf";
 
 export const blogs = [
   {
@@ -998,11 +1012,9 @@ export const blogs = [
 
     #ReactJS #SOLIDPrinciples #FrontEndDevelopment
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQF24EZ70whMOw/feedshare-document-images_1920/1/1708006434735?e=1712188800&v=beta&t=rJ9fx6H3cRPTFKHTcb11De2WN_mTk1P8taZyHmnFbs4",
+    image: "https://i.postimg.cc/sXjhd686/Screenshot-2024-07-16-122830.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQF24EZ70whMOw/feedshare-document-pdf-analyzed/0/1708006434798?e=1712188800&v=beta&t=5q1bW70fU8NtcE4pX4BbcWwUe2q-i_qEPGWssihYTR4",
+    pdfUrl: ReactSolid,
   },
   {
     id: 9,
@@ -1028,11 +1040,9 @@ export const blogs = [
 
     #WebAPI #SoftwareDevelopment #TechTalk
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQFCX8LjER_8Nw/feedshare-document-images_1920/1/1707934128630?e=1712188800&v=beta&t=V4Q6toZcERbk0vis2-rq-RjXthGW_nwq_tHtIsl8xFk",
+    image: "https://i.postimg.cc/Prr2zK5M/Screenshot-2024-07-16-120106.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFCX8LjER_8Nw/feedshare-document-pdf-analyzed/0/1707934128691?e=1712188800&v=beta&t=JI3kthZynwGTqS5oTcRQa9ajvwLphz7dAU7ue8ebIUo",
+    pdfUrl: WebAPI,
   },
   {
     id: 10,
@@ -1051,11 +1061,9 @@ export const blogs = [
 
     #ReactJS #Coding #TechEducation
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQGXwKmawVW4uw/feedshare-document-images_1920/1/1707755414284?e=1712188800&v=beta&t=tR6JjYzjS6A8DPjLplPc_B3on-J7kY8pHY4V5EaFjUk",
+    image: "https://i.postimg.cc/xCDHLZL9/Screenshot-2024-07-16-123343.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQGXwKmawVW4uw/feedshare-document-pdf-analyzed/0/1707755414401?e=1712188800&v=beta&t=fXtr2aWN3yyvDdOLgQ6BLDs8BA1syaDDra1CPzTrx2w",
+    pdfUrl: ReactMaster,
   },
   {
     id: 11,
@@ -1080,11 +1088,9 @@ export const blogs = [
 
     #GitHub #DevOps #Workflow #Collaboration #SoftwareDevelopment #DataScience
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D22AQHTY7WTEWFgwQ/feedshare-shrink_800/0/1707395173705?e=1714608000&v=beta&t=xCR7ck7xdWZPEkATQeE_rVejAIpRdzcMLPxBySnvOkA",
+    image: "https://i.postimg.cc/7hNgHNGw/1707395173705.gif",
     category: "web",
-    photoUrl:
-      "https://media.licdn.com/dms/image/D4D22AQHTY7WTEWFgwQ/feedshare-shrink_800/0/1707395173705?e=1714608000&v=beta&t=xCR7ck7xdWZPEkATQeE_rVejAIpRdzcMLPxBySnvOkA",
+    photoUrl: "https://i.postimg.cc/7hNgHNGw/1707395173705.gif",
   },
   {
     id: 12,
@@ -1100,11 +1106,9 @@ export const blogs = [
 
     #javascript #javascriptdeveloper #javascriptlearning #react #reactjs #reactdeveloper #frontend #frontenddeveloper #frontenddevelopment #webdevelopment #webdeveloper #connect #follow
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQEe4rM_rvJj9Q/feedshare-document-images_1920/1/1706901379921?e=1712188800&v=beta&t=l3LQAUvtuR2D3uHvYuKB27rRzNDz4KbdBLCpueEyLp0",
+    image: "https://i.postimg.cc/HLp1jYhm/Screenshot-2024-07-16-123609.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQEe4rM_rvJj9Q/feedshare-document-pdf-analyzed/0/1706901379979?e=1712188800&v=beta&t=SNoV_eFkznJSdud30-vK7Mb1-DRHPD_RinTzf8G7WZA",
+    pdfUrl: ProTricks,
   },
   {
     id: 13,
@@ -1145,11 +1149,9 @@ export const blogs = [
 
     #react #reactdeveloper #learning #repository #github #facebook #webdevelopment #frontenddevelopment
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHQbj0jqcclag/feedshare-document-images_1920/1/1706788102355?e=1712188800&v=beta&t=__veTQT0XtifNe9K31pBr1sdVm1l5EQDcxkhuE9o1HM",
+    image: "https://i.postimg.cc/L5zWGs1F/Screenshot-2024-07-16-124231.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQHQbj0jqcclag/feedshare-document-pdf-analyzed/0/1706788102416?e=1712188800&v=beta&t=QJ9HyNXuv89qNTK1aIUx9BnZrLNZRH-xL7WxhKnMETY",
+    pdfUrl: ReactWithRepos,
   },
   {
     id: 14,
@@ -1168,11 +1170,9 @@ export const blogs = [
 
     #frontend #collab #linkedincommunity
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQGhXF3R7EzzDA/feedshare-document-images_1920/1/1706618749706?e=1712188800&v=beta&t=JNGWM3yZdJ5BLT0Ep_ciNdP6sSapudgIYW6VZLhwzOI",
+    image: "https://i.postimg.cc/cJtGX0X0/Screenshot-2024-07-16-124516.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQGhXF3R7EzzDA/feedshare-document-pdf-analyzed/0/1706618749795?e=1712188800&v=beta&t=DhfshJej87yB1ajAeEf5hq5FFQPAXSY1fltxq5R_77c",
+    pdfUrl: FrontEndMaster,
   },
   {
     id: 19,
@@ -1205,11 +1205,9 @@ export const blogs = [
 
     #TypeScript #JavaScript #CodingJourney #DeveloperCommunity #TechEnthusiast
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQEPYTfggGORuw/feedshare-document-images_1920/1/1706532913902?e=1713398400&v=beta&t=er_W43trmKlomT9Q62JqDe1zczI0SGd0SeZhqvSsZCM",
+    image: "https://i.postimg.cc/P5MY1y2D/Screenshot-2024-07-16-124736.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQEPYTfggGORuw/feedshare-document-pdf-analyzed/0/1706532914107?e=1713398400&v=beta&t=B88bI2PCIrgZVi97ESMuuHAd4nKWxbqbNImGQvohAYw",
+    pdfUrl: TypeScript,
   },
   {
     id: 20,
@@ -1235,11 +1233,9 @@ export const blogs = [
 
     #ReactJS #WebDevelopment
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQGTwpSqA60Q3A/feedshare-document-images_1920/1/1706447748056?e=1713398400&v=beta&t=snWfKb-S52TZSXz1pv9HTV5PSbt7swaKwgK3AYg6lvY",
+    image: "https://i.postimg.cc/NFQH6gRj/Screenshot-2024-07-16-132250.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQGTwpSqA60Q3A/feedshare-document-pdf-analyzed/0/1706447748111?e=1713398400&v=beta&t=dppgQvWfjvTuovhJC9mQS4oHEF6R7J2WEK5Y3JleO5E",
+    pdfUrl: useFormHook,
   },
   {
     id: 21,
@@ -1259,11 +1255,9 @@ export const blogs = [
     #Coding
     #DeveloperResources
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHePZBSoRGJaw/feedshare-document-images_1920/1/1706360631995?e=1713398400&v=beta&t=LmZksuZbeixwH0KrniL_jzqbQl_8EcCcx5QdtdhSU9g",
+    image: "https://i.postimg.cc/3JVw78W0/Screenshot-2024-07-16-132530.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQHePZBSoRGJaw/feedshare-document-pdf-analyzed/0/1706360632057?e=1713398400&v=beta&t=SxT4ce_3jZUr8yS93PXv4AbOijWbkX3cP5N5e9jb0Nw",
+    pdfUrl: JSBuildIn2,
   },
   {
     id: 22,
@@ -1282,11 +1276,9 @@ export const blogs = [
 
     #JavaScript #Coding #DeveloperResources
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQFExzpNW1i19w/feedshare-document-images_1920/1/1705929325460?e=1713398400&v=beta&t=zn66An6r-yq98Z3sXwGFoV9M6jEO6Eo5OWwnMUIVtM8",
+    image: "https://i.postimg.cc/mZ6LNLYp/Screenshot-2024-07-16-132608.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFExzpNW1i19w/feedshare-document-pdf-analyzed/0/1705929325520?e=1713398400&v=beta&t=scIPR7IslSp1xm_FNdTIuJPxkvAbbp3pGyW5JVG_QQI",
+    pdfUrl: FactoryPattern,
   },
   {
     id: 23,
@@ -1307,11 +1299,9 @@ export const blogs = [
     #Coding
     #DeveloperResources
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQGrkFhFfhFPjw/feedshare-document-images_1920/1/1705581218790?e=1713398400&v=beta&t=4ePePlAP1qmqQd-E-j5srODIg24nOZDIm0ldL5QyfCs",
+    image: "https://i.postimg.cc/FKmNs7vz/Screenshot-2024-07-16-132558.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQGrkFhFfhFPjw/feedshare-document-pdf-analyzed/0/1705581218852?e=1713398400&v=beta&t=CkLnjhZQzhiDrFWTKR3MkYUDqWLC0R8PR6GTzwsQ4mQ",
+    pdfUrl: JSBuildIn,
   },
   {
     id: 23,
@@ -1328,11 +1318,9 @@ export const blogs = [
 
     #reactjs #reactjsdeveloper #javascript #typescript #programminers #codingchallenge #coding #coder #codinglife #code #programmer #programminglife #programmers #ReactProjects #CodingChallenge
 `,
-    image:
-      "https://media.licdn.com/dms/image/D561FAQHxNHHG_38F_A/feedshare-document-images_1920/1/1705495626088?e=1713398400&v=beta&t=MiYGEyvoCYicuLChN7tUF2ymLx6eS-EPbG3bbP88s7k",
+    image: "https://i.postimg.cc/G2JSbxRg/Screenshot-2024-07-16-141914.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D561FAQHxNHHG_38F_A/feedshare-document-pdf-analyzed/0/1705495626144?e=1713398400&v=beta&t=qJB57HF5aFUf_pKpXkgP0ln_01Dng2HU_E7K-Yfu1FY",
+    pdfUrl: ProjectIdeas,
   },
   {
     id: 24,
@@ -1348,11 +1336,9 @@ export const blogs = [
 
     #JavaScript #WebAPIs #CodingJourney
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQF1CqgdEmNTWw/feedshare-document-images_1920/1/1705152453163?e=1713398400&v=beta&t=9_zSeXjqXeGJ-snCmM6rDxLHbKOG66T8aGUlpfpAHmY",
+    image: "https://i.postimg.cc/nV9GK1gy/Screenshot-2024-07-16-142308.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/documen+t/media/D4D1FAQF1CqgdEmNTWw/feedshare-document-pdf-analyzed/0/1705152453234?e=1713398400&v=beta&t=OBKgGRujsvxI8FIkglsERmRivZqQgXj3MxH_1LxD4YQ",
+    pdfUrl: JSWebAPI,
   },
   {
     id: 25,
@@ -1366,10 +1352,8 @@ export const blogs = [
 
     #JavaScript #Coding #DeveloperResources
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHx0NDAj837ZA/feedshare-document-images_1920/1/1705064782042?e=1713398400&v=beta&t=lr2CuFrFrRki8O9t3D8gayvZRxY1QHFiYS729lpuPps",
+    image: "https://i.postimg.cc/Vk4YcZYD/Screenshot-2024-07-16-142648.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQHx0NDAj837ZA/feedshare-document-pdf-analyzed/0/1705064782206?e=1713398400&v=beta&t=3Oq_niGS_GrzFiHi_Y2j46i6NZSLGuTGGRqhrhD-mKw",
+    pdfUrl: JSCheatSheet,
   },
 ];
