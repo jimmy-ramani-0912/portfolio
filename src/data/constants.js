@@ -499,6 +499,15 @@ export const TimeLineData = [
   { year: 2021, text: "Began the Journey" },
 ];
 
+import SSR from "../../public/blog/ssr.pdf";
+import CSR from "../../public/blog/csr.pdf";
+import SSG from "../../public/blog/ssg.pdf";
+import ReactShorthand from "../../public/blog/react-shorthand.pdf";
+import ReactQuery from "../../public/blog/react-query.pdf";
+import WebDevRoadMap from "../../public/blog/web-dev-roadmap.pdf";
+import NextJS from "../../public/blog/nextJS.pdf";
+import VSCodeExt from "../../public/blog/vsCodeExtention.pdf";
+
 export const blogs = [
   {
     id: 27,
@@ -529,11 +538,9 @@ export const blogs = [
 
     Let's elevate your Next.js projects with the power of Server-Side Rendering! 🚀
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQFYtpBmN1Jktw/feedshare-document-images_1920/1/1712494168067?e=1713398400&v=beta&t=NzO50YYlK4ZFtJLxFH-z4D6wcc85YbCt0N5EzTS1Mac",
+    image: "https://i.postimg.cc/pdFBtRqQ/Screenshot-2024-07-16-102515.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFYtpBmN1Jktw/feedshare-document-pdf-analyzed/0/1712494168121?e=1713398400&v=beta&t=xI0m5Axv57moKtVc7gusnvxzMGZgOmOd3t6admxh8cQ",
+    pdfUrl: SSR,
   },
   {
     id: 26,
@@ -564,11 +571,9 @@ export const blogs = [
 
   Let's elevate your Next.js projects with the power of Client-Side Rendering! 🚀🌐
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQEIFek3HOW4Pw/feedshare-document-images_1920/1/1712427592247?e=1713398400&v=beta&t=zpazAPERJjA7YdDGFqF04gpAx8j8jHJSJZdBbcAP7o8",
+    image: "https://i.postimg.cc/qMWhHnYY/Screenshot-2024-07-16-102651.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQEIFek3HOW4Pw/feedshare-document-pdf-analyzed/0/1712427592300?e=1713398400&v=beta&t=PB9PLTdGMP_Hnox6j65YOVeHLiH5sYuDQNwDgvB_rIA",
+    pdfUrl: CSR,
   },
   {
     id: 28,
@@ -599,11 +604,9 @@ export const blogs = [
 
     Let's harness the power of Static Site Generation to build better web experiences! 🚀🌐
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQEjWyZBiUXFoA/feedshare-document-images_1920/1/1712322611727?e=1713398400&v=beta&t=Cr-rtsyOMs-2c2abyA4w-k_26Cu-eOH1Pig2drFoKAQ",
+    image: "https://i.postimg.cc/Vvp61Q7M/Screenshot-2024-07-16-102808.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQEjWyZBiUXFoA/feedshare-document-pdf-analyzed/0/1712322611795?e=1713398400&v=beta&t=xeP4AXwbk3A6xIe-Jeg-VSbxvaOAB5Kt6tP_ZHOuP3Y",
+    pdfUrl: SSG,
   },
   {
     id: 29,
@@ -635,11 +638,9 @@ export const blogs = [
 
     #ReactJS #ReactQuery #WebDevelopment #Programming #TipsAndTricks #StateManagement #APIFetching #Optimization #ErrorHandling #Innovation
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHS16pqSh50jw/feedshare-document-images_1920/1/1712255677913?e=1713398400&v=beta&t=be4aTJ9hqFXfeCAqvdHyxBUZKYBCYI5kiiIG6Yb2zzY",
+    image: "https://i.postimg.cc/rs0VfZ8p/Screenshot-2024-07-16-102910.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQHS16pqSh50jw/feedshare-document-pdf-analyzed/0/1712255677977?e=1713398400&v=beta&t=7RQ08PY7Dd1Y2BxLfX2K5TdPPtluLSi2FIOq9dH3QwQ",
+    pdfUrl: ReactQuery,
   },
   {
     id: 18,
@@ -667,11 +668,9 @@ export const blogs = [
 
     Let's write ReactJS code like a pro! 🚀🔍
 `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQH852BJAGw7lw/feedshare-document-images_1920/1/1712168097059?e=1713398400&v=beta&t=q-Aw2RIi3z3lmr6zdABO-OQBiRJ8KDmXDUok6udDrPA",
+    image: "https://i.postimg.cc/d1vYNGz9/Screenshot-2024-07-16-102953.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQH852BJAGw7lw/feedshare-document-pdf-analyzed/0/1712168097128?e=1713398400&v=beta&t=6xXZyzFcrpMErXFxDmipZ301STyHGNyihdk1NzfGqTc",
+    pdfUrl: ReactShorthand,
   },
   {
     id: 17,
@@ -700,11 +699,9 @@ export const blogs = [
 
     Let's build the web of tomorrow, one step at a time! 🌟🔗
   `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQFp_E1WMYCOhA/feedshare-document-images_1920/1/1712073974120?e=1713398400&v=beta&t=vmYP59eIINVSUcUXJ2VcQl4NsurlMD5D3esWzGzTKLM",
+    image: "https://i.postimg.cc/Jh3wXGGH/Screenshot-2024-07-16-103204.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFp_E1WMYCOhA/feedshare-document-pdf-analyzed/0/1712073974180?e=1713398400&v=beta&t=qz3cGTCEkEQXS1dhRA88LslOBwGONtFMaj7sFj8EcVg",
+    pdfUrl: WebDevRoadMap,
   },
   {
     id: 16,
@@ -734,11 +731,9 @@ export const blogs = [
 
     #Nextjs #React #WebDevelopment #SEO #Performance #TechInnovation #DeveloperLife 💻🌈
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQFBAvfyIy0rbg/feedshare-document-images_1920/1/1711646867709?e=1712793600&v=beta&t=-sDlPF2P_fI19QSEEDuAYeAPMa-i-kFDPsh23cPxl1o",
+    image: "https://i.postimg.cc/cLYPqr7k/Screenshot-2024-07-16-103353.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFBAvfyIy0rbg/feedshare-document-pdf-analyzed/0/1711646867768?e=1712793600&v=beta&t=JTJU8H_Iy97lp_ahcP4VjakufUfcqTEj2ojOLg9xAfM",
+    pdfUrl: NextJS,
   },
   {
     id: 15,
@@ -764,11 +759,9 @@ export const blogs = [
 
     Get ready to code smarter, not harder! 🛠️🚀
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHM7IWlB7iuig/feedshare-document-images_1920/1/1711563171722?e=1712793600&v=beta&t=cR_cpHng7U7r67XNNKaIiXZXA3FlIuz_4zvLVDK0dGo",
+    image: "https://i.postimg.cc/rmvs22Z4/Screenshot-2024-07-16-103836.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQHM7IWlB7iuig/feedshare-document-pdf-analyzed/0/1711563171805?e=1712793600&v=beta&t=WFeuNrwyGiyVdAwmsMXthGmWJuKIrLY3XGJkfUw-N_E",
+    pdfUrl: VSCodeExt,
   },
   {
     id: 1,
