@@ -507,6 +507,12 @@ import ReactQuery from "../../public/blog/react-query.pdf";
 import WebDevRoadMap from "../../public/blog/web-dev-roadmap.pdf";
 import NextJS from "../../public/blog/nextJS.pdf";
 import VSCodeExt from "../../public/blog/vsCodeExtention.pdf";
+import ReactLibrary from "../../public/blog/reactLibrary.pdf";
+import PerformanceWithSSR from "../../public/blog/performanceWithSSR.pdf";
+import FunAPIs from "../../public/blog/funAPIs.pdf";
+import ExpressServer from "../../public/blog/expressServer.pdf";
+import PopularReactLibrary from "../../public/blog/popularReactLibrary.pdf";
+import WebSitePerformance from "../../public/blog/WebSitePerformance.pdf";
 
 export const blogs = [
   {
@@ -788,11 +794,9 @@ export const blogs = [
       💬 𝘊𝘰𝘮𝘮𝘦𝘯𝘵 𝘣𝘦𝘭𝘰𝘸 𝘸𝘪𝘵𝘩 𝘺𝘰𝘶𝘳 𝘚𝘚𝘙 𝘴𝘵𝘰𝘳𝘪𝘦𝘴 𝘰𝘳 𝘲𝘶𝘦𝘴𝘵𝘪𝘰𝘯𝘴!
 
       #WebDevelopment #SEO #Performance`,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQFaRou7lGy5zA/feedshare-document-images_480/1/1710874634503?e=1712188800&v=beta&t=ZSJQwyu1ZORnaGJTAOyFugUeAIjZa7FBgQh3Fsb5KFw",
+    image: "https://i.postimg.cc/JzCNGnJk/Screenshot-2024-07-16-104307.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQFaRou7lGy5zA/feedshare-document-pdf-analyzed/0/1710874637813?e=1712188800&v=beta&t=UV0EfOC8cCRVroloJMZLecscqN2H-V-LVZc47hvYnLM",
+    pdfUrl: PerformanceWithSSR,
   },
   {
     id: 2,
@@ -821,11 +825,9 @@ export const blogs = [
     𝘙𝘦𝘢𝘥𝘺 𝘵𝘰 𝘵𝘢𝘬𝘦 𝘺𝘰𝘶𝘳 𝒄𝒐𝒅𝒊𝒏𝒈 𝘫𝘰𝘶𝘳𝘯𝘦𝘺 𝘵𝘰 𝘯𝘦𝘸 𝘩𝘦𝘪𝘨𝘩𝘵𝘴? 𝘍𝘰𝘭𝘭𝘰𝘸 Jimmy Ramani'𝒔 𝘭𝘦𝘢𝘥 𝘢𝘯𝘥 𝘶𝘯𝘭𝘰𝘤𝘬 𝘵𝘩𝘦 𝒔𝒆𝒄𝒓𝒆𝒕𝒔 𝘵𝘰 𝘦𝘯𝘩𝘢𝘯𝘤𝘪𝘯𝘨 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘱𝘳𝘰𝘧𝘪𝘤𝘪𝘦𝘯𝘤𝘺! 𝘍𝘳𝘰𝘮 𝘤𝘶𝘵𝘵𝘪𝘯𝘨-𝘦𝘥𝘨𝘦 𝘵𝘪𝘱𝘴 𝘵𝘰 𝘪𝘯𝘷𝘢𝘭𝘶𝘢𝘣𝘭𝘦 𝘪𝘯𝘴𝘪𝘨𝘩𝘵𝘴, 𝑱𝒊𝒎𝒎𝒚'𝒔 𝘨𝘰𝘵 𝘺𝘰𝘶 𝘤𝘰𝘷𝘦𝘳𝘦𝘥 𝘦𝘷𝘦𝘳𝘺 𝘴𝘵𝘦𝘱 𝘰𝘧 𝘵𝘩𝘦 𝘸𝘢𝘺.
 
     #ReactJS #FrontEndDevelopment #WebDevelopment #ReactLibraries #Innovation`,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHnTMQ7srwS6Q/feedshare-document-images_1920/1/1711304663655?e=1712188800&v=beta&t=xDXMWTJw0f7yD8tG3GK_zs_3akl1Hwia6csJTJTfTlM",
+    image: "https://i.postimg.cc/d0t4V3P9/Screenshot-2024-07-16-104451.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQHnTMQ7srwS6Q/feedshare-document-pdf-analyzed/0/1711304663816?e=1712188800&v=beta&t=2W_oKDnuxiIehLSaYmqZRMIiM0zkXmYxrEXESXFlKGw",
+    pdfUrl: ReactLibrary,
   },
   {
     id: 3,
@@ -845,11 +847,9 @@ export const blogs = [
     If this tip just made your day or you know someone who could benefit from it, go ahead and hit that like button or better yet, repost this gem. Let's spread the knowledge!
 
     hashtag#SVG hashtag#Performance hashtag#WebDevelopment`,
-    image:
-      "https://media.licdn.com/dms/image/D4D22AQFZrEUrl9B43w/feedshare-shrink_2048_1536/0/1710961491581?e=1714608000&v=beta&t=uxfIGTrgY_VIfoM9YrSuOKqrEggXlL9Rtlx3oOoMynY",
+    image: "https://i.postimg.cc/3xcHcCc4/Screenshot-2024-07-16-104846.png",
     category: "web",
-    photoUrl:
-      "https://media.licdn.com/dms/image/D4D22AQFZrEUrl9B43w/feedshare-shrink_2048_1536/0/1710961491581?e=1714608000&v=beta&t=uxfIGTrgY_VIfoM9YrSuOKqrEggXlL9Rtlx3oOoMynY",
+    photoUrl: "https://i.postimg.cc/3xcHcCc4/Screenshot-2024-07-16-104846.png",
   },
   {
     id: 4,
@@ -881,11 +881,9 @@ export const blogs = [
     Share your 𝒕𝒉𝒐𝒖𝒈𝒉𝒕𝒔, and let's brainstorm some genius applications together! Don't forget to hit the '𝑳𝒊𝒌𝒆' button if you found this list helpful, and drop a 𝒄𝒐𝒎𝒎𝒆𝒏𝒕 with your innovative 𝒊𝒅𝒆𝒂𝒔 or 𝒒𝒖𝒆𝒔𝒕𝒊𝒐𝒏𝒔!
 
     #APIs #WebDevelopment #AppDevelopment #Innovation #Coding`,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQEEna6RRuvFkg/feedshare-document-images_480/1/1710767752033?e=1712188800&v=beta&t=iwBHl3ugdn2x9Nlv3xBe39ejGjR1i8xKW5b8ygvSr9s",
+    image: "https://i.postimg.cc/j5189b14/Screenshot-2024-07-16-110151.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQEEna6RRuvFkg/feedshare-document-pdf-analyzed/0/1710767756363?e=1712188800&v=beta&t=XG2URLftc8WBOsPGsEgX9MFl9dUZffWnZR4wXoyMsnA",
+    pdfUrl: FunAPIs,
   },
   {
     id: 5,
@@ -911,11 +909,9 @@ export const blogs = [
 
     #NodeJS #ExpressJS #BackendDevelopment #WebDevelopment #Tutorial #Learning
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQEC5kxli8Q3Nw/feedshare-document-images_1920/1/1710524167483?e=1712188800&v=beta&t=TrqRsTxRHoDf7mNjdIin6MkBvsoRgsSOQhOlA-IUhj0",
+    image: "https://i.postimg.cc/tJtBgxT2/Screenshot-2024-07-16-110430.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQEC5kxli8Q3Nw/feedshare-document-pdf-analyzed/0/1710524167542?e=1712188800&v=beta&t=rtUMIkgwr04noJDnFy_Au3-7eOLACFOJf4MhXUGIVos",
+    pdfUrl: ExpressServer,
   },
   {
     id: 6,
@@ -939,11 +935,9 @@ export const blogs = [
 
     #React #Animation #UI #FrontEndDevelopment #FramerMotion #ReactSpring #AnimeJS #GreenSock #ReactMove
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQE-54WXSjI4-w/feedshare-document-images_1920/1/1710439144363?e=1712188800&v=beta&t=Y0DbYCSiT9yv8T3mVKlwi9E2k2PruOPds3A1JfwzCLY",
+    image: "https://i.postimg.cc/W3KSk8XV/Screenshot-2024-07-16-110743.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/document/media/D4D1FAQE-54WXSjI4-w/feedshare-document-pdf-analyzed/0/1710439144423?e=1712188800&v=beta&t=QehdCWtblPG_C6SIQGLjqtf31wborHCf0Y6xcClhkNA",
+    pdfUrl: PopularReactLibrary,
   },
   {
     id: 7,
@@ -975,11 +969,9 @@ export const blogs = [
 
     #reactjs #react #javascript #cheatsheet #tips #mastery #guide #developer #programmer #web #development #code #nextjs #nextjs14 #webdevelopment #mern #notes #speedoptimization #website #websitedevelopment #softwaredevelopment #mernstack #seo
     `,
-    image:
-      "https://media.licdn.com/dms/image/D4D1FAQHwLbXlXI3HEA/feedshare-document-images_1920/1/1709575004184?e=1712188800&v=beta&t=SoHxw9dGLjTxQjxNu1F4MC6NN9bgV6ZtWGyCH0OwJeA",
+    image: "https://i.postimg.cc/8CzbX9YD/Screenshot-2024-07-16-111043.png",
     category: "web",
-    pdfUrl:
-      "https://media.licdn.com/dms/image/D4D1FAQHwLbXlXI3HEA/feedshare-document-images_160/1/1709575001727?e=1712188800&v=beta&t=gZKyyZII5E_vo6Bi71Pp6jyexAFjWGSxikBmBI44zXU",
+    pdfUrl: WebSitePerformance,
   },
   {
     id: 8,
