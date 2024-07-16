@@ -267,8 +267,8 @@ export const education = [
     id: 0,
     img: "https://play-lh.googleusercontent.com/3_H1GEEyCiDcPf23k0qKTzFOWSTkPk4a6MRSFuWnS825TOojFrdaoolD_FCV3NF64Q",
     school: "Charotar University of Science and Technology, Anand",
-    date: "2020 - Present",
-    grade: "8.89 CGPA",
+    date: "2020 - 2024",
+    grade: "8.94 CGPA",
     desc: "I am currently pursuing a Bachelor's degree in Information Technology at Charotar University of Science and Technology, Anand. I have completed 6 semesters and have a CGPA of 8.89. I have taken courses in Data Structures, Algorithms, Object-Oriented Programming, Database Management Systems, Operating Systems, and Computer Networks, among others. I am also a member of UGFS Club at KDPIT, where I am learning and working on exciting projects with a team of talented developers.",
     degree: "Bachelor of Technology - BTech, Information Technology",
   },
@@ -527,10 +527,368 @@ import FactoryPattern from "../../public/blog/factoryPattern.pdf";
 import ProjectIdeas from "../../public/blog/projectIdeas.pdf";
 import JSWebAPI from "../../public/blog/jsWebAPI.pdf";
 import JSCheatSheet from "../../public/blog/jsCheatSheet.pdf";
+import ISR from "../../public/blog/isr.pdf";
+import ReactInterview from "../../public/blog/reactInterview.pdf";
+import FrontEndInterview from "../../public/blog/frontendInterview.pdf";
+import UseContext from "../../public/blog/useContext.pdf";
+import React19UseAPI from "../../public/blog/use-API-React19.pdf";
+import ImproveCodeQuality from "../../public/blog/improveCodeQuality.pdf";
+import ImprovReact19 from "../../public/blog/improveReact19.pdf";
+import MongoCheatSheet from "../../public/blog/mongodbCheatSheet.pdf";
+import NextVSReact from "../../public/blog/nextVsReact.pdf";
+import NextJSHook from "../../public/blog/NextJSHooks.pdf";
 
 export const blogs = [
   {
-    id: 27,
+    id: 42,
+    title: "✨𝐔𝐧𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐏𝐨𝐰𝐞𝐫 𝐨𝐟 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐰𝐢𝐭𝐡 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐇𝐨𝐨𝐤𝐬! ✨",
+    date: "15 July 2024",
+    description: `✨𝐔𝐧𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐏𝐨𝐰𝐞𝐫 𝐨𝐟 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐰𝐢𝐭𝐡 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐇𝐨𝐨𝐤𝐬! ✨
+
+Hey LinkedIn family! 🌟
+
+I’ve created a carousel that dives deep into the must-know hooks in Next.js. Whether you’re a seasoned developer or just getting started, these hooks are game-changers for your web development projects. Here’s a sneak peek:
+
+• 𝐮𝐬𝐞𝐑𝐨𝐮𝐭𝐞𝐫: Navigate with ease and control. Seamlessly manage routes and take advantage of dynamic routing in your Next.js applications.
+
+• 𝐮𝐬𝐞𝐏𝐚𝐫𝐚𝐦𝐬: Extract dynamic parameters from the URL effortlessly. Perfect for creating dynamic pages and handling user-specific content.
+
+• 𝐮𝐬𝐞𝐒𝐞𝐚𝐫𝐜𝐡𝐏𝐚𝐫𝐚𝐦𝐬: Manage query strings like a pro. Parse and manipulate URL search parameters to enhance your app’s functionality.
+
+• 𝐮𝐬𝐞𝐏𝐚𝐭𝐡𝐧𝐚𝐦𝐞: Keep track of the current pathname and react to URL changes in real time. Ideal for creating responsive and adaptive navigation.
+
+🔧 Why These Hooks?
+
+✨ Simplify complex routing logic.
+✨ Enhance the user experience with dynamic content.
+✨ Improve code readability and maintainability.
+
+Dive into the carousel to learn how these hooks can transform your Next.js projects!
+
+#reactjs #nextjs #fullstack #WebDevelopment #JavaScript #typescript
+#Programming #WebDevTips #TechGuide #linkedinlearning #growth
+`,
+    image: "https://i.postimg.cc/Nfgkpb0Q/Screenshot-2024-07-16-154526.png",
+    category: "web",
+    pdfUrl: NextJSHook,
+  },
+  {
+    id: 41,
+    title: "🚀 𝐑𝐞𝐚𝐜𝐭.𝐣𝐬 𝐯𝐬 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐖𝐡𝐢𝐜𝐡 𝐎𝐧𝐞 𝐒𝐡𝐨𝐮𝐥𝐝 𝐘𝐨𝐮 𝐂𝐡𝐨𝐨𝐬𝐞? 🚀",
+    date: "15 Apr 2024",
+    description: `🚀 𝐑𝐞𝐚𝐜𝐭.𝐣𝐬 𝐯𝐬 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐖𝐡𝐢𝐜𝐡 𝐎𝐧𝐞 𝐒𝐡𝐨𝐮𝐥𝐝 𝐘𝐨𝐮 𝐂𝐡𝐨𝐨𝐬𝐞? 🚀
+
+When it comes to building modern web applications, two powerful tools often come up: 𝘙𝘦𝘢𝘤𝘵.𝘫𝘴 𝘢𝘯𝘥 𝘕𝘦𝘹𝘵.𝘫𝘴. Both have their own unique strengths, but they serve different purposes. Let’s break down what makes each of them special:
+
+𝐑𝐞𝐚𝐜𝐭.𝐣𝐬
+React.js is a JavaScript library for building dynamic user interfaces, especially single-page applications. Developed by Facebook, it focuses on the "View" in the MVC (Model-View-Controller) architecture.
+
+Here are some key features:
+🌟 Component-Based Architecture: Build encapsulated components that manage their own state, then compose them to make complex UIs.
+🚀 Virtual DOM: Efficiently update and render components, improving performance.
+🛠️ Reusable Components: Create reusable UI components, enhancing maintainability and scalability.
+
+𝐍𝐞𝐱𝐭.𝐣𝐬
+Next.js, on the other hand, is a powerful React framework developed by Vercel. It extends React by providing additional features, particularly for server-side rendering and static site generation.
+
+Here’s what sets it apart:
+⚡ Server-Side Rendering (SSR): Enhance performance and SEO by rendering pages on the server.
+📄 Static Site Generation (SSG): Pre-render pages at build time, ideal for blogs and e-commerce.
+🔀 API Routes: Build API endpoints directly within your Next.js app.
+🌐 File-Based Routing: Simplifies routing with a file system-based approach.
+
+𝐖𝐡𝐢𝐜𝐡 𝐎𝐧𝐞 𝐬𝐡𝐨𝐮𝐥𝐝 𝐂𝐡𝐨𝐨𝐬𝐞?
+🏷️Use React.js if you need a flexible, powerful library to build dynamic UIs and you're comfortable handling client-side routing and data fetching.
+
+🏷️Opt for Next.js if you want built-in SSR, SSG, and other optimizations out-of-the-box, making it easier to build performant, SEO-friendly applications.
+
+Both tools are incredible in their own right and can help you build amazing applications. Your choice will depend on your project requirements and your development style.
+
+Happy coding! 💻
+`,
+    image: "https://i.postimg.cc/SK5gP9vD/Screenshot-2024-07-16-154238.png",
+    category: "web",
+    pdfUrl: NextVSReact,
+  },
+  {
+    id: 40,
+    title: "𝑵𝒆𝒘 𝒉𝒐𝒐𝒌: 𝒖𝒔𝒆𝑭𝒐𝒓𝒎𝑺𝒕𝒂𝒕𝒖𝒔 𝒊𝒏 𝑹𝒆𝒂𝒄𝒕 19 𝒖𝒑𝒅𝒂𝒕𝒆!!",
+    date: "19 Mar 2024",
+    description: `𝑵𝒆𝒘 𝒉𝒐𝒐𝒌: 𝒖𝒔𝒆𝑭𝒐𝒓𝒎𝑺𝒕𝒂𝒕𝒖𝒔 𝒊𝒏 𝑹𝒆𝒂𝒄𝒕 19 𝒖𝒑𝒅𝒂𝒕𝒆!!
+
+𝘐𝘯 𝘵𝘩𝘦 𝘦𝘹𝘢𝘮𝘱𝘭𝘦, 𝘵𝘩𝘦 𝘩𝘰𝘰𝘬 𝘳𝘦𝘵𝘳𝘪𝘦𝘷𝘦𝘴 𝘵𝘩𝘦 𝘱𝘦𝘯𝘥𝘪𝘯𝘨 𝘱𝘳𝘰𝘱𝘦𝘳𝘵𝘺, 𝘪𝘯𝘥𝘪𝘤𝘢𝘵𝘪𝘯𝘨 𝘪𝘧 𝘵𝘩𝘦 𝘱𝘢𝘳𝘦𝘯𝘵 𝘧𝘰𝘳𝘮 𝘪𝘴 𝘤𝘶𝘳𝘳𝘦𝘯𝘵𝘭𝘺 𝘴𝘶𝘣𝘮𝘪𝘵𝘵𝘪𝘯𝘨 𝘥𝘢𝘵𝘢. 𝘛𝘩𝘦 𝘣𝘶𝘵𝘵𝘰𝘯 𝘪𝘴 𝘵𝘩𝘦𝘯 𝘥𝘪𝘴𝘢𝘣𝘭𝘦𝘥 𝘣𝘢𝘴𝘦𝘥 𝘰𝘯 𝘵𝘩𝘦 𝘱𝘦𝘯𝘥𝘪𝘯𝘨 𝘷𝘢𝘭𝘶𝘦, 𝘱𝘳𝘦𝘷𝘦𝘯𝘵𝘪𝘯𝘨 𝘮𝘶𝘭𝘵𝘪𝘱𝘭𝘦 𝘴𝘶𝘣𝘮𝘪𝘴𝘴𝘪𝘰𝘯𝘴 𝘸𝘩𝘪𝘭𝘦 𝘵𝘩𝘦 𝘧𝘰𝘳𝘮 𝘪𝘴 𝘱𝘳𝘰𝘤𝘦𝘴𝘴𝘪𝘯𝘨.
+
+𝘎𝘦𝘵 𝘢 𝘸𝘦𝘦𝘬𝘭𝘺 𝘥𝘪𝘨𝘦𝘴𝘵 𝘰𝘧 𝘮𝘺 𝘵𝘪𝘱𝘴 𝘢𝘯𝘥 𝘵𝘶𝘵𝘰𝘳𝘪𝘢𝘭𝘴 𝘣𝘺 𝘴𝘶𝘣𝘴𝘤𝘳𝘪𝘣𝘪𝘯𝘨 𝘯𝘰𝘸 => Jimmy Ramani
+
+𝘕𝘦𝘦𝘥 𝘩𝘦𝘭𝘱 𝘸𝘪𝘵𝘩 𝘺𝘰𝘶𝘳 𝘸𝘦𝘣𝘴𝘪𝘵𝘦? 𝘋𝘔 𝘮𝘦.
+
+#programming #ReactJS
+`,
+    image: "https://i.postimg.cc/QxsWzLfr/1714386279635.jpg",
+    category: "web",
+    photoUrl: "https://i.postimg.cc/QxsWzLfr/1714386279635.jpg",
+  },
+  {
+    id: 39,
+    title:
+      "💡 𝐌𝐨𝐧𝐠𝐨𝐃𝐁 𝐂𝐡𝐞𝐚𝐭 𝐒𝐡𝐞𝐞𝐭: 𝐐𝐮𝐢𝐜𝐤 𝐓𝐢𝐩𝐬 𝐟𝐨𝐫 𝐄𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭",
+    date: "18 Mar 2024",
+    description: `💡 𝐌𝐨𝐧𝐠𝐨𝐃𝐁 𝐂𝐡𝐞𝐚𝐭 𝐒𝐡𝐞𝐞𝐭: 𝐐𝐮𝐢𝐜𝐤 𝐓𝐢𝐩𝐬 𝐟𝐨𝐫 𝐄𝐟𝐟𝐢𝐜𝐢𝐞𝐧𝐭 𝐃𝐚𝐭𝐚𝐛𝐚𝐬𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭
+
+𝐃𝐚𝐭𝐚 𝐌𝐨𝐝𝐞𝐥𝐢𝐧𝐠 𝐓𝐢𝐩𝐬 📊
+🔸Use embedded documents for one-to-few relationships.
+🔸Opt for referencing for one-to-many relationships.
+
+𝐈𝐧𝐝𝐞𝐱𝐢𝐧𝐠 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥𝐬 🔍
+🔸Create compound indexes for multiple fields.
+🔸Avoid large index keys to maintain performance.
+
+𝐀𝐠𝐠𝐫𝐞𝐠𝐚𝐭𝐢𝐨𝐧 𝐅𝐫𝐚𝐦𝐞𝐰𝐨𝐫𝐤 🔄
+🔸Use $match and $group to filter and summarize data.
+🔸Explore $lookup for joins across collections.
+
+𝐏𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞 𝐎𝐩𝐭𝐢𝐦𝐢𝐳𝐚𝐭𝐢𝐨𝐧⚡
+🔸Use profiler to analyze query performance.
+🔸Implement sharding for horizontal scaling.
+
+𝐒𝐞𝐜𝐮𝐫𝐢𝐭𝐲 𝐁𝐞𝐬𝐭 𝐏𝐫𝐚𝐜𝐭𝐢𝐜𝐞𝐬 🔒
+🔸Enable authentication and encryption.
+🔸Regularly audit database access logs.
+
+🔁 Repost this cheat sheet for your network ♻️ Thank you!
+
+P.S. What's your favorite MongoDB tip? Comment below!
+`,
+    image: "https://i.postimg.cc/pVB6WmhX/Screenshot-2024-07-16-155214.png",
+    category: "web",
+    pdfUrl: MongoCheatSheet,
+  },
+  {
+    id: 38,
+    title: "𝑰𝒎𝒑𝒓𝒐𝒗𝒆𝒎𝒆𝒏𝒕𝒔 𝒊𝒏𝒕𝒓𝒐𝒅𝒖𝒄𝒆𝒅 𝒊𝒏 𝑹𝒆𝒂𝒄𝒕 19!!",
+    date: "17 Mar 2024",
+    description: `𝑰𝒎𝒑𝒓𝒐𝒗𝒆𝒎𝒆𝒏𝒕𝒔 𝒊𝒏𝒕𝒓𝒐𝒅𝒖𝒄𝒆𝒅 𝒊𝒏 𝑹𝒆𝒂𝒄𝒕 19!!
+
+1. 𝘳𝘦𝘧 𝘢𝘴 𝘢 𝘱𝘳𝘰𝘱
+2. 𝘋𝘪𝘧𝘧𝘴 𝘧𝘰𝘳 𝘩𝘺𝘥𝘳𝘢𝘵𝘪𝘰𝘯 𝘦𝘳𝘳𝘰𝘳𝘴
+3. <𝘊𝘰𝘯𝘵𝘦𝘹𝘵> 𝘢𝘴 𝘢 𝘱𝘳𝘰𝘷𝘪𝘥𝘦𝘳
+4. 𝘊𝘭𝘦𝘢𝘯𝘶𝘱 𝘧𝘶𝘯𝘤𝘵𝘪𝘰𝘯𝘴 𝘧𝘰𝘳 𝘳𝘦𝘧𝘴
+5. 𝘶𝘴𝘦𝘋𝘦𝘧𝘦𝘳𝘳𝘦𝘥𝘝𝘢𝘭𝘶𝘦 𝘪𝘯𝘪𝘵𝘪𝘢𝘭 𝘷𝘢𝘭𝘶𝘦
+6. 𝘋𝘰𝘤𝘶𝘮𝘦𝘯𝘵 𝘔𝘦𝘵𝘢𝘥𝘢𝘵𝘢, 𝘚𝘵𝘺𝘭𝘦𝘴𝘩𝘦𝘦𝘵𝘴, 𝘈𝘴𝘺𝘯𝘤 𝘚𝘤𝘳𝘪𝘱𝘵𝘴, 𝘗𝘳𝘦𝘭𝘰𝘢𝘥𝘪𝘯𝘨 𝘙𝘦𝘴𝘰𝘶𝘳𝘤𝘦𝘴
+
+𝘎𝘦𝘵 𝘢 𝘸𝘦𝘦𝘬𝘭𝘺 𝘥𝘪𝘨𝘦𝘴𝘵 𝘰𝘧 𝘮𝘺 𝘵𝘪𝘱𝘴 𝘣𝘺 following 𝘯𝘰𝘸 => Jimmy Ramani
+
+𝘕𝘦𝘦𝘥 𝘩𝘦𝘭𝘱 𝘸𝘪𝘵𝘩 𝘺𝘰𝘶𝘳 𝘸𝘦𝘣𝘴𝘪𝘵𝘦? 𝘋𝘔 𝘮𝘦.
+
+#reactjs #react19 #updates
+`,
+    image: "https://i.postimg.cc/3wJwq4v4/Screenshot-2024-07-16-155042.pngs",
+    category: "web",
+    pdfUrl: ImprovReact19,
+  },
+  {
+    id: 37,
+    title: "🔍 𝐔𝐧𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐒𝐞𝐜𝐫𝐞𝐭𝐬 𝐭𝐨 𝐒𝐮𝐩𝐞𝐫𝐢𝐨𝐫 𝐂𝐨𝐝𝐞 𝐐𝐮𝐚𝐥𝐢𝐭𝐲! 🛠️",
+    date: "16 Mar 2024",
+    description: `🔍 𝐔𝐧𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐒𝐞𝐜𝐫𝐞𝐭𝐬 𝐭𝐨 𝐒𝐮𝐩𝐞𝐫𝐢𝐨𝐫 𝐂𝐨𝐝𝐞 𝐐𝐮𝐚𝐥𝐢𝐭𝐲! 🛠️
+
+𝘋𝘪𝘷𝘦 𝘪𝘯𝘵𝘰 𝘦𝘴𝘴𝘦𝘯𝘵𝘪𝘢𝘭 𝘵𝘪𝘱𝘴 𝘧𝘰𝘳 𝘤𝘳𝘢𝘧𝘵𝘪𝘯𝘨 𝘤𝘭𝘦𝘢𝘯, 𝘦𝘧𝘧𝘪𝘤𝘪𝘦𝘯𝘵, 𝘢𝘯𝘥 𝘮𝘢𝘪𝘯𝘵𝘢𝘪𝘯𝘢𝘣𝘭𝘦 𝘤𝘰𝘥𝘦 𝘵𝘩𝘢𝘵 𝘴𝘵𝘢𝘯𝘥𝘴 𝘵𝘩𝘦 𝘵𝘦𝘴𝘵 𝘰𝘧 𝘵𝘪𝘮𝘦. 𝘞𝘩𝘦𝘵𝘩𝘦𝘳 𝘺𝘰𝘶'𝘳𝘦 𝘢 𝘴𝘦𝘢𝘴𝘰𝘯𝘦𝘥 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘦𝘳 𝘰𝘳 𝘫𝘶𝘴𝘵 𝘴𝘵𝘢𝘳𝘵𝘪𝘯𝘨 𝘰𝘶𝘵, 𝘦𝘭𝘦𝘷𝘢𝘵𝘦 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘨𝘢𝘮𝘦 𝘸𝘪𝘵𝘩 𝘦𝘹𝘱𝘦𝘳𝘵 𝘪𝘯𝘴𝘪𝘨𝘩𝘵𝘴 𝘢𝘯𝘥 𝘣𝘦𝘴𝘵 𝘱𝘳𝘢𝘤𝘵𝘪𝘤𝘦𝘴. 💻✨
+
+👍 If you found it helpful, hit 𝐥𝐢𝐤𝐞!
+🔁 𝐒𝐡𝐚𝐫𝐞 it with your network!
+🔖 𝐒𝐚𝐯𝐞 it for future reference!
+📤 𝐒𝐡𝐚𝐫𝐞 it with your 𝐜𝐨𝐧𝐧𝐞𝐜𝐭𝐢𝐨𝐧𝐬!
+💭 𝐂𝐨𝐦𝐦𝐞𝐧𝐭 your thoughts!
+
+💯Follow Jimmy Ramani for more 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 and 𝐏𝐫𝐨𝐠𝐫𝐚𝐦𝐦𝐢𝐧𝐠 Tips & Tricks."
+
+#CodeTips #CodeQuality #FollowForMore
+`,
+    image: "https://i.postimg.cc/WzYJ1mck/Screenshot-2024-07-16-152722.png",
+    category: "web",
+    pdfUrl: ImproveCodeQuality,
+  },
+  {
+    id: 36,
+    title: "🚀 𝐄𝐱𝐜𝐢𝐭𝐢𝐧𝐠 𝐍𝐞𝐰𝐬 𝐢𝐧 𝐑𝐞𝐚𝐜𝐭 19! 🚀",
+    date: "14 Mar 2024",
+    description: `🚀 𝐄𝐱𝐜𝐢𝐭𝐢𝐧𝐠 𝐍𝐞𝐰𝐬 𝐢𝐧 𝐑𝐞𝐚𝐜𝐭 19! 🚀
+
+𝘐𝘯𝘵𝘳𝘰𝘥𝘶𝘤𝘪𝘯𝘨 𝘵𝘩𝘦 𝘨𝘢𝘮𝘦-𝘤𝘩𝘢𝘯𝘨𝘪𝘯𝘨 '𝘶𝘴𝘦' 𝘈𝘗𝘐, 𝘥𝘦𝘴𝘪𝘨𝘯𝘦𝘥 𝘵𝘰 𝘴𝘵𝘳𝘦𝘢𝘮𝘭𝘪𝘯𝘦 𝘺𝘰𝘶𝘳 𝘙𝘦𝘢𝘤𝘵 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘮𝘦𝘯𝘵 𝘱𝘳𝘰𝘤𝘦𝘴𝘴 𝘭𝘪𝘬𝘦 𝘯𝘦𝘷𝘦𝘳 𝘣𝘦𝘧𝘰𝘳𝘦. 𝘋𝘪𝘷𝘦 𝘪𝘯𝘵𝘰 𝘵𝘩𝘦 𝘧𝘶𝘵𝘶𝘳𝘦 𝘰𝘧 𝘙𝘦𝘢𝘤𝘵 𝘢𝘯𝘥 𝘭𝘦𝘢𝘳𝘯 𝘩𝘰𝘸 '𝘶𝘴𝘦' 𝘳𝘦𝘷𝘰𝘭𝘶𝘵𝘪𝘰𝘯𝘪𝘻𝘦𝘴 𝘴𝘵𝘢𝘵𝘦 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵, 𝘤𝘰𝘮𝘱𝘰𝘯𝘦𝘯𝘵 𝘭𝘰𝘨𝘪𝘤, 𝘢𝘯𝘥 𝘳𝘦𝘶𝘴𝘢𝘣𝘪𝘭𝘪𝘵𝘺.
+
+𝘚𝘵𝘢𝘺 𝘢𝘩𝘦𝘢𝘥 𝘪𝘯 𝘵𝘩𝘦 𝘸𝘰𝘳𝘭𝘥 𝘰𝘧 𝘸𝘦𝘣 𝘥𝘦𝘷𝘦𝘭𝘰𝘱𝘮𝘦𝘯𝘵 𝘸𝘪𝘵𝘩 𝘙𝘦𝘢𝘤𝘵 19!
+
+#React19 #ReactDevelopment #NewAPI
+`,
+    image: "https://i.postimg.cc/rwS7grZJ/Screenshot-2024-07-16-151753.png",
+    category: "web",
+    pdfUrl: React19UseAPI,
+  },
+  {
+    id: 35,
+    title: "𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐒𝐭𝐚𝐭𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐂𝐨𝐧𝐭𝐞𝐱𝐭 𝐇𝐨𝐨𝐤 𝐢𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 💣",
+    date: "13 Mar 2024",
+    description: `𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐒𝐭𝐚𝐭𝐞 𝐌𝐚𝐧𝐚𝐠𝐞𝐦𝐞𝐧𝐭 𝐰𝐢𝐭𝐡 𝐮𝐬𝐞𝐂𝐨𝐧𝐭𝐞𝐱𝐭 𝐇𝐨𝐨𝐤 𝐢𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 💣
+
+Are you tired of passing props down multiple levels in your React application? Say hello to useContext Hook! 🚀 In this comprehensive guide, I'll walk you through harnessing the power of useContext Hook for efficient state management in ReactJS.
+
+From the basics to advanced techniques, you'll learn:
+
+>> 𝑾𝒉𝒂𝒕 𝒊𝒔 𝒕𝒉𝒆 𝒖𝒔𝒆𝑪𝒐𝒏𝒕𝒆𝒙𝒕 𝑯𝒐𝒐𝒌 𝒂𝒏𝒅 𝒘𝒉𝒚 𝒊𝒕'𝒔 𝒂 𝒈𝒂𝒎𝒆-𝒄𝒉𝒂𝒏𝒈𝒆𝒓 𝒇𝒐𝒓 𝑹𝒆𝒂𝒄𝒕 𝒅𝒆𝒗𝒆𝒍𝒐𝒑𝒆𝒓𝒔.
+
+>> 𝑯𝒐𝒘 𝒕𝒐 𝒄𝒓𝒆𝒂𝒕𝒆 𝒂𝒏𝒅 𝒄𝒐𝒏𝒔𝒖𝒎𝒆 𝒂 𝒄𝒐𝒏𝒕𝒆𝒙𝒕 𝒊𝒏 𝑹𝒆𝒂𝒄𝒕.
+𝑰𝒏𝒕𝒆𝒈𝒓𝒂𝒕𝒊𝒏𝒈 𝒖𝒔𝒆𝑪𝒐𝒏𝒕𝒆𝒙𝒕 𝑯𝒐𝒐𝒌 𝒕𝒐 𝒂𝒄𝒄𝒆𝒔𝒔 𝒔𝒕𝒂𝒕𝒆 𝒂𝒏𝒅 𝒇𝒖𝒏𝒄𝒕𝒊𝒐𝒏𝒔 𝒂𝒄𝒓𝒐𝒔𝒔 𝒚𝒐𝒖𝒓 𝒄𝒐𝒎𝒑𝒐𝒏𝒆𝒏𝒕𝒔 𝒆𝒇𝒇𝒐𝒓𝒕𝒍𝒆𝒔𝒔𝒍𝒚.
+
+>> 𝑩𝒆𝒔𝒕 𝒑𝒓𝒂𝒄𝒕𝒊𝒄𝒆𝒔 𝒂𝒏𝒅 𝒄𝒐𝒎𝒎𝒐𝒏 𝒑𝒊𝒕𝒇𝒂𝒍𝒍𝒔 𝒕𝒐 𝒂𝒗𝒐𝒊𝒅 𝒘𝒉𝒆𝒏 𝒖𝒔𝒊𝒏𝒈 𝒖𝒔𝒆𝑪𝒐𝒏𝒕𝒆𝒙𝒕.
+
+>> 𝑹𝒆𝒂𝒍-𝒘𝒐𝒓𝒍𝒅 𝒆𝒙𝒂𝒎𝒑𝒍𝒆𝒔 𝒂𝒏𝒅 𝒔𝒄𝒆𝒏𝒂𝒓𝒊𝒐𝒔 𝒘𝒉𝒆𝒓𝒆 𝒖𝒔𝒆𝑪𝒐𝒏𝒕𝒆𝒙𝒕 𝒔𝒉𝒊𝒏𝒆𝒔.
+
+Whether you're a beginner looking to level up your React skills or a seasoned developer seeking more elegant solutions for state management, this guide has got you covered. Dive in and unlock the full potential of useContext Hook in ReactJS! 🔍💡
+
+#ReactJS #StateManagement #useContext #ReactHooks #FrontendDevelopment
+`,
+    image: "https://i.postimg.cc/Mp8pvWJc/Screenshot-2024-07-16-151513.png",
+    category: "web",
+    pdfUrl: UseContext,
+  },
+  {
+    id: 34,
+    title: "🌟 𝐔𝐧𝐥𝐨𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐌𝐨𝐬𝐭 𝐀𝐬𝐤𝐞𝐝 𝐅𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬! 💫💼",
+    date: "12 Mar 2024",
+    description: `🌟 𝐔𝐧𝐥𝐨𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐌𝐨𝐬𝐭 𝐀𝐬𝐤𝐞𝐝 𝐅𝐫𝐨𝐧𝐭𝐞𝐧𝐝 𝐈𝐧𝐭𝐞𝐫𝐯𝐢𝐞𝐰 𝐐𝐮𝐞𝐬𝐭𝐢𝐨𝐧𝐬! 💫💼
+
+Preparing for a frontend interview and feeling overwhelmed? Let's simplify your preparation by diving into the most commonly asked questions:
+
+In this comprehensive post, we'll cover:
+
+1️⃣ 𝑯𝑻𝑴𝑳/𝑪𝑺𝑺 𝑭𝒖𝒏𝒅𝒂𝒎𝒆𝒏𝒕𝒂𝒍𝒔: Brush up on essential HTML and CSS concepts, including semantic markup, box models, and responsive design principles.
+
+2️⃣ 𝑱𝒂𝒗𝒂𝑺𝒄𝒓𝒊𝒑𝒕 𝑬𝒔𝒔𝒆𝒏𝒕𝒊𝒂𝒍𝒔: Dive deep into JavaScript fundamentals such as data types, variables, scope, closures, and asynchronous programming.
+
+3️⃣ 𝑭𝒓𝒂𝒎𝒆𝒘𝒐𝒓𝒌𝒔 𝒂𝒏𝒅 𝑳𝒊𝒃𝒓𝒂𝒓𝒊𝒆𝒔: Explore questions related to popular frontend frameworks like React, Vue.js, and Angular, along with key concepts and best practices.
+
+4️⃣ 𝑫𝑶𝑴 𝑴𝒂𝒏𝒊𝒑𝒖𝒍𝒂𝒕𝒊𝒐𝒏: Understand DOM manipulation techniques, event handling, and performance optimizations for dynamic web applications.
+
+5️⃣ 𝑩𝒓𝒐𝒘𝒔𝒆𝒓 𝒂𝒏𝒅 𝑵𝒆𝒕𝒘𝒐𝒓𝒌𝒊𝒏𝒈: Familiarize yourself with browser internals, HTTP protocols, cross-origin resource sharing (CORS), and network performance optimization strategies.
+
+6️⃣ 𝑷𝒓𝒐𝒃𝒍𝒆𝒎 𝑺𝒐𝒍𝒗𝒊𝒏𝒈: Sharpen your problem-solving skills with algorithmic and data structure questions, and learn how to approach coding challenges effectively.
+
+By tackling these frontend interview questions, you'll boost your confidence and readiness to ace your next interview!
+
+Ready to conquer your front-end interview? Let's dive in and master the most asked questions together!
+
+#FrontendInterview #HTML #CSS #JavaScript #Frameworks #Libraries #ProblemSolving #InterviewPreparation #WebDevelopment
+
+Let's ace that frontend interview and land your dream job! 🚀🎓
+`,
+    image: "https://i.postimg.cc/vZRcfrfZ/Screenshot-2024-07-16-151205.png",
+    category: "web",
+    pdfUrl: FrontEndInterview,
+  },
+  {
+    id: 33,
+    title:
+      "🌟 𝐃𝐞𝐜𝐢𝐩𝐡𝐞𝐫𝐢𝐧𝐠 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) 𝐯𝐬. 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐃𝐞𝐭𝐚𝐢𝐥𝐞𝐝 𝐂𝐨𝐦𝐩𝐚𝐫𝐢𝐬𝐨𝐧! 💻✨",
+    date: "11 Mar 2024",
+    description: `🌟 𝐃𝐞𝐜𝐢𝐩𝐡𝐞𝐫𝐢𝐧𝐠 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) 𝐯𝐬. 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐃𝐞𝐭𝐚𝐢𝐥𝐞𝐝 𝐂𝐨𝐦𝐩𝐚𝐫𝐢𝐬𝐨𝐧! 💻✨
+
+Curious about the nuances between 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) and 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) in Next.js? Let's delve into this essential comparison:
+
+In this comprehensive breakdown, we'll explore:
+
+1️⃣ 𝐔𝐧𝐝𝐞𝐫𝐬𝐭𝐚𝐧𝐝𝐢𝐧𝐠 𝐂𝐒𝐑 𝐚𝐧𝐝 𝐒𝐒𝐑: Delve into the core concepts of CSR and SSR, unraveling their functionalities and purposes within Next.js architecture.
+
+2️⃣ 𝐀𝐝𝐯𝐚𝐧𝐭𝐚𝐠𝐞𝐬 𝐚𝐧𝐝 𝐃𝐫𝐚𝐰𝐛𝐚𝐜𝐤𝐬: Uncover the strengths and weaknesses of CSR and SSR, including considerations for performance, SEO optimization, and initial load times.
+
+3️⃣ 𝐏𝐫𝐚𝐜𝐭𝐢𝐜𝐚𝐥 𝐔𝐬𝐞 𝐂𝐚𝐬𝐞𝐬: Explore real-world scenarios where CSR and SSR shine, and discover when each rendering method is most beneficial for your Next.js projects.
+
+4️⃣ 𝐈𝐦𝐩𝐥𝐞𝐦𝐞𝐧𝐭𝐚𝐭𝐢𝐨𝐧 𝐈𝐧𝐬𝐢𝐠𝐡𝐭𝐬: Gain practical insights into implementing CSR and SSR, including configuration, data fetching strategies, and rendering techniques.
+
+5️⃣ 𝐂𝐨𝐦𝐩𝐚𝐫𝐚𝐭𝐢𝐯𝐞 𝐄𝐱𝐚𝐦𝐩𝐥𝐞𝐬: Dive into comparative examples showcasing the application of CSR and SSR in building dynamic web applications, e-commerce platforms, and content-heavy sites.
+
+6️⃣ 𝐓𝐢𝐩𝐬 𝐚𝐧𝐝 𝐑𝐞𝐜𝐨𝐦𝐦𝐞𝐧𝐝𝐚𝐭𝐢𝐨𝐧𝐬: Learn valuable tips and recommendations for optimizing the performance and user experience of your Next.js applications through thoughtful rendering choices.
+
+By the end of this comparison, you'll have a comprehensive understanding of the distinctions between CSR and SSR in Next.js, empowering you to make informed architectural decisions for your projects.
+
+Ready to navigate the complexities of rendering in Next.js? Let's embark on this journey together!
+
+#NextJS #ClientSideRendering #ServerSideRendering #CSR #SSR #WebDevelopment #PerformanceOptimization #SEO #UserExperience
+
+Let's unravel the complexities of CSR vs. SSR in Next.js and elevate your development approach! 🚀🔍
+`,
+    image: "https://i.postimg.cc/x1TKYCrH/image.jpg",
+    category: "web",
+    photoUrl: "https://i.postimg.cc/x1TKYCrH/image.jpg",
+  },
+  {
+    id: 32,
+    title:
+      "🌟 𝐃𝐞𝐦𝐲𝐬𝐭𝐢𝐟𝐲𝐢𝐧𝐠 𝐈𝐧𝐜𝐫𝐞𝐦𝐞𝐧𝐭𝐚𝐥 𝐒𝐭𝐚𝐭𝐢𝐜 𝐑𝐞𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧 (𝐈𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨",
+    date: "10 Mar 2024",
+    description: `Curious about 𝐈𝐧𝐜𝐫𝐞𝐦𝐞𝐧𝐭𝐚𝐥 𝐒𝐭𝐚𝐭𝐢𝐜 𝐑𝐞𝐠𝐞𝐧𝐞𝐫𝐚𝐭𝐢𝐨𝐧 (𝐈𝐒𝐑) and its application in Next.js development? Let's delve into this cutting-edge topic together:
+
+In this comprehensive guide, we'll cover:
+
+1️⃣ 𝑾𝒉𝒂𝒕 𝒊𝒔 𝑰𝑺𝑹?: Gain a clear understanding of what Incremental Static Regeneration (ISR) is and how it revolutionizes static site generation in Next.js.
+
+2️⃣ 𝑯𝒐𝒘 𝑰𝑺𝑹 𝑾𝒐𝒓𝒌𝒔: Explore the mechanics behind ISR and learn how it enables dynamic content updates in statically generated pages.
+
+3️⃣ 𝑨𝒅𝒗𝒂𝒏𝒕𝒂𝒈𝒆𝒔 𝒐𝒇 𝑰𝑺𝑹: Discover the benefits of using ISR, including real-time data updates, improved performance, and scalability.
+
+4️⃣ 𝑰𝒎𝒑𝒍𝒆𝒎𝒆𝒏𝒕𝒊𝒏𝒈 𝑰𝑺𝑹 𝒊𝒏 𝑵𝒆𝒙𝒕.𝒋𝒔: Get practical insights into implementing Incremental Static Regeneration in your Next.js projects, including configuration and usage.
+
+5️⃣ 𝑹𝒆𝒂𝒍-𝑾𝒐𝒓𝒍𝒅 𝑬𝒙𝒂𝒎𝒑𝒍𝒆𝒔: Dive into examples showcasing the power of ISR in building dynamic web applications, blogs, e-commerce sites, and more.
+
+6️⃣ 𝑻𝒊𝒑𝒔 𝒂𝒏𝒅 𝑩𝒆𝒔𝒕 𝑷𝒓𝒂𝒄𝒕𝒊𝒄𝒆𝒔: Learn tips and best practices for optimizing ISR and maximizing its benefits in your Next.js projects.
+
+By the end of this guide, you'll have a comprehensive understanding of Incremental Static Regeneration in Next.js and how to leverage it to build dynamic and scalable web applications.
+
+Ready to unlock the full potential of ISR in Next.js? Let's embark on this journey together!
+
+#NextJS #IncrementalStaticRegeneration #ISR #WebDevelopment #DynamicContent #PerformanceOptimization #Scalability
+
+Let's revolutionize your Next.js projects with the power of Incremental Static Regeneration! 🚀🌐
+`,
+    image: "https://i.postimg.cc/05DgGXJr/Screenshot-2024-07-16-145700.png",
+    category: "web",
+    pdfUrl: ISR,
+  },
+  {
+    id: 31,
+    title: "🚀 Elevate Your React Interview Game!",
+    date: "8 Mar 2024",
+    description: `🚀 Elevate Your React Interview Game!
+
+Are you gearing up for a React interview? 🚀 Mastering React is crucial, but acing the interview requires preparation! 💡 Here are key questions and polished answers to help you shine:
+
+1️⃣ What is React and why use it?
+React is a JavaScript library for building user interfaces. Highlight its efficiency in creating interactive, dynamic, and scalable UIs.
+
+2️⃣ Explain Virtual DOM.
+Delve into how React's Virtual DOM optimizes performance by minimizing actual DOM manipulations.
+
+3️⃣ What are React Components?
+Emphasize that components are the building blocks of React applications, encapsulating functionality and rendering.
+
+4️⃣ State vs. Props – what's the difference?
+Clearly distinguish between state (mutable data) and props (immutable data passed to a component) to showcase your understanding of React's data flow.
+
+5️⃣ What is JSX?
+Highlight JSX as a syntax extension for JavaScript, making React component structures more readable and concise.
+
+Ace these questions, and you're on your way to React success! 🚀 Share your favorite React interview tips below! 👇 Let's empower each other in the React community! 💪
+
+#ReactInterview #CareerGrowth #ReactJS #TechInterviews
+
+🙋𝑳𝒐𝒐𝒌𝒊𝒏𝒈 𝒇𝒐𝒓 𝐲𝐨𝐮𝐫 𝒅𝒓𝒆𝒂𝒎 𝒋𝒐𝒃?
+Follow Jimmy Ramani for more videos and notes.
+`,
+    image: "https://i.postimg.cc/fWcX9XDm/Screenshot-2024-07-16-150759.png",
+    category: "web",
+    pdfUrl: ReactInterview,
+  },
+  {
+    id: 30,
     title:
       "🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨",
     date: "7 Mar 2024",
@@ -563,7 +921,7 @@ export const blogs = [
     pdfUrl: SSR,
   },
   {
-    id: 26,
+    id: 29,
     title:
       "🌟 𝐔𝐧𝐥𝐨𝐜𝐤𝐢𝐧𝐠 𝐭𝐡𝐞 𝐏𝐨𝐰𝐞𝐫 𝐨𝐟 𝐂𝐥𝐢𝐞𝐧𝐭-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐂𝐒𝐑) 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬: 𝐀 𝐂𝐨𝐦𝐩𝐫𝐞𝐡𝐞𝐧𝐬𝐢𝐯𝐞 𝐆𝐮𝐢𝐝𝐞! 💻✨",
     date: "6 Mar 2024",
@@ -629,7 +987,7 @@ export const blogs = [
     pdfUrl: SSG,
   },
   {
-    id: 29,
+    id: 27,
     title:
       "🚀 𝐒𝐭𝐫𝐮𝐠𝐠𝐥𝐢𝐧𝐠 𝐰𝐢𝐭𝐡 𝐟𝐞𝐭𝐜𝐡𝐢𝐧𝐠 𝐀𝐏𝐈 𝐝𝐚𝐭𝐚 𝐚𝐧𝐝 𝐦𝐚𝐧𝐚𝐠𝐢𝐧𝐠 𝐬𝐭𝐚𝐭𝐞 𝐢𝐧 𝐲𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐚𝐩𝐩? 𝐑𝐞𝐚𝐜𝐭 𝐐𝐮𝐞𝐫𝐲 𝐭𝐨 𝐭𝐡𝐞 𝐑𝐞𝐬𝐜𝐮𝐞! 🌟",
     date: "4 Mar 2024",
@@ -663,7 +1021,7 @@ export const blogs = [
     pdfUrl: ReactQuery,
   },
   {
-    id: 18,
+    id: 26,
     title: "🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐡𝐨𝐫𝐭𝐡𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐢𝐪𝐮𝐞𝐬! 💻✨",
     date: "4 Apr 2024",
     description: `🌟 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐡𝐨𝐫𝐭𝐡𝐚𝐧𝐝 𝐓𝐞𝐜𝐡𝐧𝐢𝐪𝐮𝐞𝐬! 💻✨
@@ -693,7 +1051,7 @@ export const blogs = [
     pdfUrl: ReactShorthand,
   },
   {
-    id: 17,
+    id: 25,
     title:
       "🚦 𝐄𝐦𝐛𝐚𝐫𝐤 𝐨𝐧 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭 𝐉𝐨𝐮𝐫𝐧𝐞𝐲 𝐰𝐢𝐭𝐡 𝐭𝐡𝐞 2024 𝐑𝐨𝐚𝐝𝐦𝐚𝐩! 🌐💼",
     date: "3 Apr 2024",
@@ -724,7 +1082,7 @@ export const blogs = [
     pdfUrl: WebDevRoadMap,
   },
   {
-    id: 16,
+    id: 24,
     title: "🚀 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐔𝐧𝐯𝐞𝐢𝐥𝐞𝐝: 𝐒𝐮𝐩𝐞𝐫𝐜𝐡𝐚𝐫𝐠𝐞 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 🌐✨",
     date: "10 Mar 2024",
     description: `🚀 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐔𝐧𝐯𝐞𝐢𝐥𝐞𝐝: 𝐒𝐮𝐩𝐞𝐫𝐜𝐡𝐚𝐫𝐠𝐞 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 🌐✨
@@ -756,7 +1114,7 @@ export const blogs = [
     pdfUrl: NextJS,
   },
   {
-    id: 15,
+    id: 23,
     title:
       "🚀 𝐌𝐚𝐬𝐭𝐞𝐫𝐢𝐧𝐠 𝐄𝐒𝐋𝐢𝐧𝐭, 𝐏𝐫𝐞𝐭𝐭𝐢𝐞𝐫 & 𝐕𝐒 𝐂𝐨𝐝𝐞 𝐟𝐨𝐫 𝐍𝐞𝐱𝐭.𝐣𝐬 & 𝐑𝐞𝐚𝐜𝐭 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭! 💻✨",
     date: "29 Mar 2024",
@@ -784,7 +1142,7 @@ export const blogs = [
     pdfUrl: VSCodeExt,
   },
   {
-    id: 1,
+    id: 22,
     title:
       "𝐒𝐩𝐞𝐞𝐝 𝐢𝐬 𝐭𝐡𝐞 𝐧𝐚𝐦𝐞 𝐨𝐟 𝐭𝐡𝐞 𝐠𝐚𝐦𝐞 𝐢𝐧 𝐰𝐞𝐛 𝐩𝐞𝐫𝐟𝐨𝐫𝐦𝐚𝐧𝐜𝐞, 𝐚𝐧𝐝 𝐒𝐞𝐫𝐯𝐞𝐫-𝐒𝐢𝐝𝐞 𝐑𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐒𝐒𝐑) 𝐢𝐬 𝐲𝐨𝐮𝐫 𝐌𝐕𝐏! 🚀",
     date: "20 Mar 2024",
@@ -813,7 +1171,7 @@ export const blogs = [
     pdfUrl: PerformanceWithSSR,
   },
   {
-    id: 2,
+    id: 21,
     title: "🛠️ 𝐄𝐧𝐡𝐚𝐧𝐜𝐞 𝐘𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐔𝐬𝐞𝐟𝐮𝐥 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀💻",
     date: "25 Mar 2024",
     description: `🛠️ 𝐄𝐧𝐡𝐚𝐧𝐜𝐞 𝐘𝐨𝐮𝐫 𝐑𝐞𝐚𝐜𝐭 𝐏𝐫𝐨𝐣𝐞𝐜𝐭𝐬 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐔𝐬𝐞𝐟𝐮𝐥 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀💻
@@ -844,7 +1202,7 @@ export const blogs = [
     pdfUrl: ReactLibrary,
   },
   {
-    id: 3,
+    id: 20,
     title:
       "𝐄𝐯𝐞𝐫 𝐰𝐨𝐧𝐝𝐞𝐫𝐞𝐝 𝐰𝐡𝐲 𝐲𝐨𝐮𝐫 𝐒𝐕𝐆𝐬 𝐭𝐚𝐤𝐞 𝐚 𝐬𝐜𝐞𝐧𝐢𝐜 𝐫𝐨𝐮𝐭𝐞 𝐛𝐞𝐟𝐨𝐫𝐞 𝐩𝐨𝐩𝐩𝐢𝐧𝐠 𝐮𝐩 𝐨𝐧 𝐲𝐨𝐮𝐫 𝐚𝐩𝐩'𝐬 𝐔𝐈? 🤔",
     date: "22 Mar 2024",
@@ -866,7 +1224,7 @@ export const blogs = [
     photoUrl: "https://i.postimg.cc/3xcHcCc4/Screenshot-2024-07-16-104846.png",
   },
   {
-    id: 4,
+    id: 19,
     title:
       "𝑬𝒗𝒆𝒓 𝒘𝒐𝒏𝒅𝒆𝒓𝒆𝒅 𝒘𝒉𝒂𝒕 𝒕𝒉𝒆 𝒔𝒆𝒄𝒓𝒆𝒕 𝒔𝒂𝒖𝒄𝒆 𝒊𝒔 𝒇𝒐𝒓 𝒂 𝒌𝒊𝒍𝒍𝒆𝒓 𝒂𝒑𝒑 𝒐𝒓 𝒘𝒆𝒃 𝒑𝒓𝒐𝒋𝒆𝒄𝒕? 🤔💡",
     date: "21 Mar 2024",
@@ -900,7 +1258,7 @@ export const blogs = [
     pdfUrl: FunAPIs,
   },
   {
-    id: 5,
+    id: 18,
     title:
       "🚀 Ready to Level Up Your Node.js Skills? 𝐁𝐮𝐢𝐥𝐝 𝐚 𝐒𝐢𝐦𝐩𝐥𝐞 𝐄𝐱𝐩𝐫𝐞𝐬𝐬 𝐒𝐞𝐫𝐯𝐞𝐫! 💻🌐",
     date: "20 Mar 2024",
@@ -928,7 +1286,7 @@ export const blogs = [
     pdfUrl: ExpressServer,
   },
   {
-    id: 6,
+    id: 17,
     title: "🎨 𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 𝐔𝐈 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀✨",
     date: "18 Mar 2024",
     description: `🎨 𝐄𝐥𝐞𝐯𝐚𝐭𝐞 𝐘𝐨𝐮𝐫 𝐔𝐈 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 𝐀𝐧𝐢𝐦𝐚𝐭𝐢𝐨𝐧 𝐋𝐢𝐛𝐫𝐚𝐫𝐢𝐞𝐬! 🚀✨
@@ -954,7 +1312,7 @@ export const blogs = [
     pdfUrl: PopularReactLibrary,
   },
   {
-    id: 7,
+    id: 16,
     title:
       "🚀 Elevate your website speed with these 5️⃣ simple tips for React.js",
     date: "17 Mar 2024",
@@ -988,7 +1346,7 @@ export const blogs = [
     pdfUrl: WebSitePerformance,
   },
   {
-    id: 8,
+    id: 15,
     title: "🔥 𝐄𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐬𝐡𝐚𝐫𝐞 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬 𝐨𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬! 🔍💡",
     date: "16 Mar 2024",
     description: `🔥 𝐄𝐱𝐜𝐢𝐭𝐞𝐝 𝐭𝐨 𝐬𝐡𝐚𝐫𝐞 𝐢𝐧𝐬𝐢𝐠𝐡𝐭𝐬 𝐨𝐧 𝐑𝐞𝐚𝐜𝐭𝐉𝐒 𝐒𝐎𝐋𝐈𝐃 𝐏𝐫𝐢𝐧𝐜𝐢𝐩𝐥𝐞𝐬! 🔍💡
@@ -1017,7 +1375,7 @@ export const blogs = [
     pdfUrl: ReactSolid,
   },
   {
-    id: 9,
+    id: 14,
     title: "𝗪𝗲𝗯 𝗔𝗽𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲 🌐💻",
     date: "15 Mar 2024",
     description: `𝗪𝗲𝗯 𝗔𝗽𝗜 𝗗𝗲𝘀𝗶𝗴𝗻 𝗣𝗿𝗼𝗰𝗲𝘀𝘀: 𝗔 𝗩𝗶𝘀𝘂𝗮𝗹 𝗚𝘂𝗶𝗱𝗲 🌐💻
@@ -1045,7 +1403,7 @@ export const blogs = [
     pdfUrl: WebAPI,
   },
   {
-    id: 10,
+    id: 13,
     title: "🚀 Dive into the world of React.js in our first class!",
     date: "14 Mar 2024",
     description: `🚀 Dive into the world of React.js in our first class!
@@ -1066,7 +1424,7 @@ export const blogs = [
     pdfUrl: ReactMaster,
   },
   {
-    id: 11,
+    id: 12,
     title: "𝐆𝐢𝐭𝐇𝐮𝐛 𝐖𝐨𝐫𝐤𝐟𝐥𝐨𝐰: 𝐀 𝐕𝐢𝐬𝐮𝐚𝐥 𝐆𝐮𝐢𝐝𝐞 💫",
     date: "13 Mar 2024",
     description: `𝐆𝐢𝐭𝐇𝐮𝐛 𝐖𝐨𝐫𝐤𝐟𝐥𝐨𝐰: 𝐀 𝐕𝐢𝐬𝐮𝐚𝐥 𝐆𝐮𝐢𝐝𝐞 💫
@@ -1093,7 +1451,7 @@ export const blogs = [
     photoUrl: "https://i.postimg.cc/7hNgHNGw/1707395173705.gif",
   },
   {
-    id: 12,
+    id: 11,
     title: "🕶️ Master JavaScript 8 Pro Tricks",
     date: "12 Mar 2024",
     description: `🕶️ Master JavaScript 8 Pro Tricks
@@ -1111,7 +1469,7 @@ export const blogs = [
     pdfUrl: ProTricks,
   },
   {
-    id: 13,
+    id: 10,
     title: "𝐌𝐚𝐬𝐭𝐞𝐫 𝐑𝐞𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐑𝐞𝐩𝐨𝐬 ⬇️",
     date: "11 Mar 2024",
     description: `𝐌𝐚𝐬𝐭𝐞𝐫 𝐑𝐞𝐚𝐜𝐭 𝐰𝐢𝐭𝐡 𝐓𝐡𝐞𝐬𝐞 𝐑𝐞𝐩𝐨𝐬 ⬇️
@@ -1154,7 +1512,7 @@ export const blogs = [
     pdfUrl: ReactWithRepos,
   },
   {
-    id: 14,
+    id: 9,
     title:
       "𝗙𝗼𝗿 𝘄𝗼𝗿𝗸𝗶𝗻𝗴 𝗽𝗿𝗼𝗳𝗲𝘀𝘀𝗶𝗼𝗻𝗮𝗹𝘀, 𝗯𝗲𝗰𝗼𝗺𝗶𝗻𝗴 𝗮 𝗙𝗿𝗼𝗻𝘁-𝗲𝗻𝗱 𝗘𝗻𝗴𝗶𝗻𝗲𝗲𝗿 𝗰𝗮𝗻 𝘂𝗻𝗹𝗼𝗰𝗸 𝗺𝗮𝗻𝘆 𝗼𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝗶𝗲𝘀. ✨",
     date: "10 Mar 2024",
@@ -1175,7 +1533,7 @@ export const blogs = [
     pdfUrl: FrontEndMaster,
   },
   {
-    id: 19,
+    id: 8,
     title: "🚀 Exciting Journey into TypeScript! 🚀",
     date: "8 Mar 2024",
     description: `🚀 Exciting Journey into TypeScript! 🚀
@@ -1210,7 +1568,7 @@ export const blogs = [
     pdfUrl: TypeScript,
   },
   {
-    id: 20,
+    id: 7,
     title: "useForm Hook",
     date: "7 Mar 2024",
     description: `Ever wondered how to keep your React forms neat, tidy, and oh-so-manageable? 🤔 Let's talk about the magic of the useForm hook!
@@ -1238,7 +1596,7 @@ export const blogs = [
     pdfUrl: useFormHook,
   },
   {
-    id: 21,
+    id: 6,
     title: "📌PART - 2 Important Javascript build-in methods (cheatsheet) ✔️📑",
     date: "6 Mar 2024",
     description: `📌PART - 2
@@ -1260,7 +1618,7 @@ export const blogs = [
     pdfUrl: JSBuildIn2,
   },
   {
-    id: 22,
+    id: 5,
     title: "🏭Factory Pattern in JavaScript!!",
     date: "5 Mar 2024",
     description: `🏭Factory Pattern in JavaScript!!
@@ -1281,7 +1639,7 @@ export const blogs = [
     pdfUrl: FactoryPattern,
   },
   {
-    id: 23,
+    id: 4,
     title:
       "📌PART - 1 Important Javascript build-in methods (cheatsheet) ✔️📑!",
     date: "4 Mar 2024",
@@ -1304,7 +1662,7 @@ export const blogs = [
     pdfUrl: JSBuildIn,
   },
   {
-    id: 23,
+    id: 3,
     title: "Elevate your coding skills with these 21 React project ideas ✔️📑!",
     date: "3 Mar 2024",
     description: `Elevate your coding skills with these 21 React project ideas—from dynamic dashboards to interactive games, there's something for every aspiring developer! 💻🚀
@@ -1323,7 +1681,7 @@ export const blogs = [
     pdfUrl: ProjectIdeas,
   },
   {
-    id: 24,
+    id: 2,
     title: "🌐 Elevate your JavaScript game with a deep dive into Web APIs! 🚀",
     date: "2 Mar 2024",
     description: `🌐 Elevate your JavaScript game with a deep dive into Web APIs! 🚀
@@ -1341,7 +1699,7 @@ export const blogs = [
     pdfUrl: JSWebAPI,
   },
   {
-    id: 25,
+    id: 1,
     title: "🍽️ Add a dash of JavaScript knowledge to your coding feast!",
     date: "2 Mar 2024",
     description: `🍽️ Add a dash of JavaScript knowledge to your coding feast!
