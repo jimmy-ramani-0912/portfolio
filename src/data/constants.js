@@ -488,6 +488,11 @@ export const projects = [
 ];
 
 export const TimeLineData = [
+  {
+    year: 2024,
+    text: "Deployed Scalable Solutions Using Cloudflare, GCP, AWS, and Docker",
+  },
+  { year: 2024, text: "Integrated NestJS to Enhance Backend Architecture" },
   { year: 2024, text: "Commenced Leveraging Node.js for Real-world Solutions" },
   {
     year: 2023,
