@@ -537,8 +537,80 @@ import ImprovReact19 from "../../public/blog/improveReact19.pdf";
 import MongoCheatSheet from "../../public/blog/mongodbCheatSheet.pdf";
 import NextVSReact from "../../public/blog/nextVsReact.pdf";
 import NextJSHook from "../../public/blog/NextJSHooks.pdf";
+import NextJS15 from "../../public/blog/nextJS15.pdf";
+import ZustandVSRedux from "../../public/blog/zustandVSredux.pdf";
 
 export const blogs = [
+  {
+    id: 44,
+    title: "𝐖𝐡𝐚𝐭 𝐞𝐱𝐚𝐜𝐭𝐥𝐲 𝐚𝐫𝐞 𝐙𝐮𝐬𝐭𝐚𝐧𝐝 𝐚𝐧𝐝 𝐑𝐞𝐝𝐮𝐱?",
+    date: "17 July 2024",
+    description: `𝐖𝐡𝐚𝐭 𝐞𝐱𝐚𝐜𝐭𝐥𝐲 𝐚𝐫𝐞 𝐙𝐮𝐬𝐭𝐚𝐧𝐝 𝐚𝐧𝐝 𝐑𝐞𝐝𝐮𝐱?
+
+𝐙𝐮𝐬𝐭𝐚𝐧𝐝
+ - 𝘚𝘮𝘢𝘭𝘭, 𝘧𝘢𝘴𝘵 𝘴𝘵𝘢𝘵𝘦 𝘮𝘢𝘯𝘢𝘨𝘦𝘮𝘦𝘯𝘵 𝘧𝘰𝘳 𝘙𝘦𝘢𝘤𝘵.
+ - 𝘚𝘪𝘮𝘱𝘭𝘦 𝘈𝘗𝘐, 𝘮𝘪𝘯𝘪𝘮𝘢𝘭 𝘣𝘰𝘪𝘭𝘦𝘳𝘱𝘭𝘢𝘵𝘦.
+ - 𝘜𝘴𝘦𝘴 𝘙𝘦𝘢𝘤𝘵 𝘩𝘰𝘰𝘬𝘴.
+ - 𝘍𝘭𝘦𝘹𝘪𝘣𝘭𝘦 𝘧𝘰𝘳 𝘴𝘮𝘢𝘭𝘭 𝘢𝘯𝘥 𝘭𝘢𝘳𝘨𝘦 𝘢𝘱𝘱𝘴.
+ - '𝘤𝘳𝘦𝘢𝘵𝘦' 𝘧𝘶𝘯𝘤𝘵𝘪𝘰𝘯 𝘢𝘯𝘥 '𝘶𝘴𝘦𝘚𝘵𝘰𝘳𝘦' 𝘩𝘰𝘰𝘬.
+ - 𝘚𝘶𝘱𝘱𝘰𝘳𝘵𝘴 𝘮𝘪𝘥𝘥𝘭𝘦𝘸𝘢𝘳𝘦.
+ - 𝘌𝘢𝘴𝘺 𝘵𝘰 𝘵𝘦𝘴𝘵.
+ - 𝘖𝘱𝘵𝘪𝘮𝘪𝘻𝘦𝘥 𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘢𝘯𝘤𝘦.
+ - 𝘞𝘰𝘳𝘬𝘴 𝘸𝘪𝘵𝘩 𝘙𝘦𝘢𝘤𝘵 𝘕𝘢𝘵𝘪𝘷𝘦.
+
+𝐑𝐞𝐝𝐮𝐱
+ - 𝘗𝘳𝘦𝘥𝘪𝘤𝘵𝘢𝘣𝘭𝘦 𝘴𝘵𝘢𝘵𝘦 𝘤𝘰𝘯𝘵𝘢𝘪𝘯𝘦𝘳 𝘧𝘰𝘳 𝘑𝘢𝘷𝘢𝘚𝘤𝘳𝘪𝘱𝘵.
+ - 𝘚𝘪𝘯𝘨𝘭𝘦 𝘴𝘵𝘰𝘳𝘦 𝘧𝘰𝘳 𝘵𝘩𝘦 𝘦𝘯𝘵𝘪𝘳𝘦 𝘴𝘵𝘢𝘵𝘦.
+ - 𝘐𝘮𝘮𝘶𝘵𝘢𝘣𝘪𝘭𝘪𝘵𝘺 𝘸𝘪𝘵𝘩 𝘱𝘶𝘳𝘦 𝘧𝘶𝘯𝘤𝘵𝘪𝘰𝘯 𝘳𝘦𝘥𝘶𝘤𝘦𝘳𝘴.
+ - 𝘙𝘦𝘲𝘶𝘪𝘳𝘦𝘴 𝘮𝘰𝘳𝘦 𝘣𝘰𝘪𝘭𝘦𝘳𝘱𝘭𝘢𝘵𝘦.
+ - 𝘜𝘴𝘦𝘴 𝘢𝘤𝘵𝘪𝘰𝘯𝘴 𝘧𝘰𝘳 𝘴𝘵𝘢𝘵𝘦 𝘤𝘩𝘢𝘯𝘨𝘦𝘴.
+ - 𝘔𝘪𝘥𝘥𝘭𝘦𝘸𝘢𝘳𝘦 𝘧𝘰𝘳 𝘴𝘪𝘥𝘦 𝘦𝘧𝘧𝘦𝘤𝘵𝘴.
+ - 𝘐𝘯𝘵𝘦𝘨𝘳𝘢𝘵𝘦𝘴 𝘸𝘪𝘵𝘩 𝘙𝘦𝘥𝘶𝘹 𝘋𝘦𝘷𝘛𝘰𝘰𝘭𝘴.
+ - 𝘓𝘢𝘳𝘨𝘦 𝘦𝘤𝘰𝘴𝘺𝘴𝘵𝘦𝘮 𝘢𝘯𝘥 𝘤𝘰𝘮𝘮𝘶𝘯𝘪𝘵𝘺.
+ - 𝘊𝘢𝘯 𝘰𝘱𝘵𝘪𝘮𝘪𝘻𝘦 𝘱𝘦𝘳𝘧𝘰𝘳𝘮𝘢𝘯𝘤𝘦.
+ - 𝘞𝘰𝘳𝘬𝘴 𝘸𝘪𝘵𝘩 𝘙𝘦𝘢𝘤𝘵 𝘢𝘯𝘥 𝘰𝘵𝘩𝘦𝘳 𝘧𝘳𝘢𝘮𝘦𝘸𝘰𝘳𝘬𝘴.
+ - 𝘙𝘦𝘲𝘶𝘪𝘳𝘦𝘴 𝘴𝘦𝘵𝘶𝘱 𝘧𝘰𝘳 𝘙𝘦𝘢𝘤𝘵 𝘕𝘢𝘵𝘪𝘷𝘦.
+ - 𝘔𝘪𝘥𝘥𝘭𝘦𝘸𝘢𝘳𝘦 𝘭𝘪𝘬𝘦 𝘙𝘦𝘥𝘶𝘹 𝘛𝘩𝘶𝘯𝘬 𝘢𝘯𝘥 𝘚𝘢𝘨𝘢 𝘧𝘰𝘳 𝘢𝘴𝘺𝘯𝘤 𝘭𝘰𝘨𝘪𝘤.
+
+#nextjs #react #zustand #redux #zustandVsRedux #context #stateManagement
+`,
+    image: "https://i.postimg.cc/PJcZ4fGw/Screenshot-2024-07-23-232003.png",
+    category: "web",
+    pdfUrl: ZustandVSRedux,
+  },
+  {
+    id: 43,
+    title:
+      "🌟𝐖𝐡𝐚𝐭'𝐬 𝐍𝐞𝐰 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬 15 𝐓𝐡𝐚𝐭 𝐖𝐢𝐥𝐥 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭?🌟",
+    date: "17 July 2024",
+    description: `🌟𝐖𝐡𝐚𝐭'𝐬 𝐍𝐞𝐰 𝐢𝐧 𝐍𝐞𝐱𝐭.𝐣𝐬 15 𝐓𝐡𝐚𝐭 𝐖𝐢𝐥𝐥 𝐓𝐫𝐚𝐧𝐬𝐟𝐨𝐫𝐦 𝐘𝐨𝐮𝐫 𝐖𝐞𝐛 𝐃𝐞𝐯𝐞𝐥𝐨𝐩𝐦𝐞𝐧𝐭?🌟
+
+I'm thrilled to share that the Next.js 15 Release Candidate (RC) is now available, bringing an array of powerful new features and improvements to streamline your development process. Highlights include:
+
+• 𝐒𝐞𝐚𝐦𝐥𝐞𝐬𝐬 𝐈𝐧𝐭𝐞𝐠𝐫𝐚𝐭𝐢𝐨𝐧 𝐰𝐢𝐭𝐡 𝐑𝐞𝐚𝐜𝐭 19: Leverage advanced features like Concurrent Rendering and Automatic Batching for enhanced user experiences.
+
+• 𝐑𝐞𝐚𝐜𝐭 𝐂𝐨𝐦𝐩𝐢𝐥𝐞𝐫: An experimental compiler that optimizes your code automatically, reducing the need for manual optimizations and simplifying development.
+
+• 𝐈𝐦𝐩𝐫𝐨𝐯𝐞𝐝 𝐇𝐲𝐝𝐫𝐚𝐭𝐢𝐨𝐧 𝐄𝐫𝐫𝐨𝐫 𝐇𝐚𝐧𝐝𝐥𝐢𝐧𝐠: Enhanced error views with source code and suggestions to quickly address issues.
+
+• 𝐔𝐩𝐝𝐚𝐭𝐞𝐝 𝐂𝐚𝐜𝐡𝐢𝐧𝐠 𝐁𝐞𝐡𝐚𝐯𝐢𝐨𝐫: Fetch requests, GET Route Handlers, and Client Router Cache are now uncashed by default, with an option to opt-in for caching.
+
+• 𝐏𝐚𝐫𝐭𝐢𝐚𝐥 𝐏𝐫𝐞𝐫𝐞𝐧𝐝𝐞𝐫𝐢𝐧𝐠 (𝐏𝐏𝐑): Combines static and dynamic rendering on the same page for optimal performance.
+
+• 𝐍𝐞𝐱𝐭/𝐀𝐟𝐭𝐞𝐫 𝐀𝐏𝐈: Allows secondary tasks to be processed after the primary response, ensuring efficient logging and analytics.
+
+• 𝐂𝐫𝐞𝐚𝐭𝐞-𝐍𝐞𝐱𝐭-𝐀𝐩𝐩 𝐔𝐩𝐝𝐚𝐭𝐞𝐬: New design and prompt to enable Turbopack for local development.
+
+• 𝐎𝐩𝐭𝐢𝐦𝐢𝐳𝐢𝐧𝐠 𝐁𝐮𝐧𝐝𝐥𝐢𝐧𝐠 𝐨𝐟 𝐄𝐱𝐭𝐞𝐫𝐧𝐚𝐥 𝐏𝐚𝐜𝐤𝐚𝐠𝐞𝐬: Streamlines the bundling process with new configuration options.
+
+Next.js 15 continues to push the boundaries of web development, making it easier and more efficient for developers to create high-performance applications. Stay tuned for more updates and insights!
+
+#Nextjs #React #JavaScript #TechUpdates #WebDevelopment #Coding #fullstack #typescript #Programming #WebDevTips #TechGuide
+`,
+    image: "https://i.postimg.cc/wjps2Gy3/Screenshot-2024-07-23-231536.png",
+    category: "web",
+    pdfUrl: NextJS15,
+  },
   {
     id: 42,
     title: "✨𝐔𝐧𝐥𝐨𝐜𝐤 𝐭𝐡𝐞 𝐏𝐨𝐰𝐞𝐫 𝐨𝐟 𝐍𝐞𝐱𝐭.𝐣𝐬 𝐰𝐢𝐭𝐡 𝐄𝐬𝐬𝐞𝐧𝐭𝐢𝐚𝐥 𝐇𝐨𝐨𝐤𝐬! ✨",
