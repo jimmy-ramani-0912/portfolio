@@ -25,6 +25,7 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
         <CardContainer>
           {blogs.slice(0, 5).map((blog) => (
             <BlogCards
+              key={blog.id}
               blog={blog}
               openModal={openBlogModal}
               setOpenModal={setOpenBlogModal}
