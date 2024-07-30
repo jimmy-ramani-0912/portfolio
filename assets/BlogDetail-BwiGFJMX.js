@@ -1,6 +1,6 @@
-import{H as t}from"./index-l38dwVT9.js";const o=t.div`
-  color: ${({theme:i})=>i.text_primary};
-  background-color: ${({theme:i})=>i.bg};
+import{H as o,b as s,D as d,r as p,j as e,A as x}from"./index-DE4grSfI.js";import{B as c,I as m}from"./BlogCards-CLZrANst.js";import"./CloseRounded-B79tgPDI.js";const g=o.div`
+  color: ${({theme:t})=>t.text_primary};
+  background-color: ${({theme:t})=>t.bg};
   width: 100%;
   overflow-x: hidden;
   height: calc(100dvh - 80px);
@@ -11,7 +11,7 @@ import{H as t}from"./index-l38dwVT9.js";const o=t.div`
   @media (max-width: 960px) {
     grid-template-columns: 1fr;
   }
-`,n=t.div`
+`,f=o.div`
   @media (min-width: 960px) {
     min-height: 100vh;
     overflow: auto;
@@ -22,7 +22,7 @@ import{H as t}from"./index-l38dwVT9.js";const o=t.div`
   }
   -ms-overflow-style: none;
   scrollbar-width: none;
-`,r=t.div`
+`,h=o.div`
   display: flex;
   flex-direction: column;
   max-width: 100dvw;
@@ -33,29 +33,29 @@ import{H as t}from"./index-l38dwVT9.js";const o=t.div`
   @media (max-width: 960px) {
     flex-direction: row;
   }
-`,a=t.div`
+`,w=o.div`
   /* display: flex;
   flex-direction: column;
   gap: 28px;
   flex-wrap: wrap; */
-`,p=t.div`
+`,u=o.div`
   font-size: 28px;
   font-weight: 600;
   text-align: center;
-  color: ${({theme:i})=>i.text_primary};
+  color: ${({theme:t})=>t.text_primary};
   margin: 8px 6px 16px 16px;
   @media only screen and (max-width: 600px) {
     font-size: 24px;
     margin: 6px 6px 0px 6px;
   }
-`,x=t.div`
+`,v=o.div`
   font-size: 18px;
   text-align: center;
-  color: ${({theme:i})=>i.button};
+  color: ${({theme:t})=>t.button};
   margin-top: 30px;
   cursor: pointer;
   @media (max-width: 768px) {
     margin-top: 12px;
     font-size: 16px;
   }
-`;export{o as Body,a as CardContainer,r as Cards,n as HtmlData,p as Title,x as ViewAll};
+`;function M(){var r;const t=s(),n=(r=d().state)==null?void 0:r.blog,[a,l]=p.useState({state:!1,blog:null});return e.jsxs(g,{children:[e.jsx(f,{dangerouslySetInnerHTML:{__html:n.HTML}}),e.jsxs(w,{children:[e.jsx(u,{children:"Latest Blogs"}),e.jsx(h,{children:x.filter(i=>i.id!==n.id).slice(0,5).map(i=>e.jsx(c,{blog:i,openModal:a,setOpenModal:l},i.id))}),e.jsx(v,{onClick:()=>{t("/portfolio/blogs")},children:"View All"})]}),a.state&&e.jsx(m,{openBlogModal:a,setOpenBlogModal:l})]})}export{g as Body,w as CardContainer,h as Cards,f as HtmlData,u as Title,v as ViewAll,M as default};
