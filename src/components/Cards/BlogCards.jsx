@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import { useNavigate } from "react-router-dom";
 
 const Button = styled.button`
   display: none;
@@ -80,8 +81,16 @@ const Date = styled.div`
 `;
 
 const BlogCards = ({ blog, setOpenModal }) => {
+  const navigate = useNavigate();
+
   return (
-    <Card onClick={() => setOpenModal({ state: true, blog: blog })}>
+    <Card
+      onClick={() =>
+        !blog?.pdfUrl
+          ? navigate("/portfolio/blogs/" + blog?.id, { state: { blog } })
+          : setOpenModal({ state: true, blog: blog })
+      }
+    >
       <Image src={blog?.image} />
       <Details>
         <Title>{blog?.title}</Title>
