@@ -1,4 +1,4 @@
-import{H as t}from"./vendor-BscfTXtr.js";const o=t.div`
+import{H as t}from"./index-l38dwVT9.js";const o=t.div`
   color: ${({theme:i})=>i.text_primary};
   background-color: ${({theme:i})=>i.bg};
   width: 100%;
