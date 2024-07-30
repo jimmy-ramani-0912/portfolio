@@ -26,11 +26,16 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const theme = useTheme();
   const navigate = useNavigate();
 
+  const scrollToTop = () => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  };
+
   return (
     <Nav>
       <NavbarContainer>
-        <NavLogo to="/">
+        <NavLogo to="/portfolio">
           <a
+            onClick={() => scrollToTop()}
             style={{
               display: "flex",
               alignItems: "center",
@@ -52,7 +57,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             href="#about"
             onClick={() => {
-              navigate("/#about");
+              navigate("portfolio#about");
             }}
           >
             About
@@ -60,7 +65,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             href="#skills"
             onClick={() => {
-              navigate("/#skills");
+              navigate("portfolio#skills");
             }}
           >
             Skills
@@ -68,7 +73,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             href="#experience"
             onClick={() => {
-              navigate("/#experience");
+              navigate("portfolio#experience");
             }}
           >
             Experience
@@ -76,7 +81,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             href="#projects"
             onClick={() => {
-              navigate("/#projects");
+              navigate("portfolio#projects");
             }}
           >
             Projects
@@ -84,7 +89,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             href="#education"
             onClick={() => {
-              navigate("/#education");
+              navigate("portfolio#education");
             }}
           >
             Education
@@ -92,7 +97,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
           <NavLink
             href="#blogs"
             onClick={() => {
-              navigate("/#blogs");
+              navigate("portfolio#blogs");
             }}
           >
             Blogs
@@ -112,7 +117,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#about"
               onClick={() => {
-                navigate("/#about");
+                navigate("portfolio#about");
                 setIsOpen(!isOpen);
               }}
             >
@@ -121,7 +126,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#skills"
               onClick={() => {
-                navigate("/#skills");
+                navigate("portfolio#skills");
                 setIsOpen(!isOpen);
               }}
             >
@@ -130,7 +135,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#experience"
               onClick={() => {
-                navigate("/#experience");
+                navigate("portfolio#experience");
                 setIsOpen(!isOpen);
               }}
             >
@@ -139,8 +144,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#projects"
               onClick={() => {
-                navigate("/#projects");
-
+                navigate("portfolio#projects");
                 setIsOpen(!isOpen);
               }}
             >
@@ -149,7 +153,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#education"
               onClick={() => {
-                navigate("/#education");
+                navigate("portfolio#education");
                 setIsOpen(!isOpen);
               }}
             >
@@ -158,7 +162,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <MobileLink
               href="#blogs"
               onClick={() => {
-                navigate("/#blogs");
+                navigate("portfolio#blogs");
                 setIsOpen(!isOpen);
               }}
             >
