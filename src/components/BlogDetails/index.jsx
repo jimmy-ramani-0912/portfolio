@@ -1,5 +1,5 @@
 import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
-import { Backdrop, Modal } from "@mui/material";
+import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import styled from "styled-components";
 import { Worker, Viewer } from "@react-pdf-viewer/core";

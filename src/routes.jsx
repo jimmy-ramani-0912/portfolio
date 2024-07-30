@@ -3,7 +3,9 @@ import { lazy } from "react";
 const Home = lazy(() => import("./pages/Home/index"));
 const Projects = lazy(() => import("./pages/Projects/index"));
 const Blogs = lazy(() => import("./pages/Blogs/index"));
-const BlogDetail = lazy(() => import("./components/BlogDetails/BlogDetail"));
+const BlogDetail = lazy(() =>
+  import("./components/BlogDetails/BlogDetail.jsx")
+);
 
 export const PublicRoutes = [
   {

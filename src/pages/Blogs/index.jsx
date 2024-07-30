@@ -50,6 +50,7 @@ const Blogs = () => {
           <CardContainer>
             {blogs.map((blog) => (
               <BlogCards
+                key={blog.id}
                 blog={blog}
                 openModal={openBlogModal}
                 setOpenModal={setOpenBlogModal}

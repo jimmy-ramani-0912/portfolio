@@ -87,7 +87,7 @@ const BlogCards = ({ blog, setOpenModal }) => {
     <Card
       onClick={() =>
         !blog?.pdfUrl
-          ? navigate("/portfolio/blogs/" + blog?.id, { state: { blog } })
+          ? navigate(`/portfolio/blogs/${blog?.id}`, { state: { blog } })
           : setOpenModal({ state: true, blog: blog })
       }
     >
