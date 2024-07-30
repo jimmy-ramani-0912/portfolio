@@ -547,6 +547,64 @@ import ZustandVSRedux from "../../public/blog/zustandVSredux.pdf";
 
 export const blogs = [
   {
+    id: 45,
+    title: "Patterns For JavaScript Frontend Mastery",
+    date: "26 July 2024",
+    description: ``,
+    image: "https://i.postimg.cc/rwNRSYbm/design-pattern.avif",
+    category: "web",
+    pdfUrl: null,
+    HTML: `<blockquote>
+<p style="margin: 0cm 40.2pt 28pt 42.55pt; text-align: center; line-height: 137%; font-size: 30pt; font-family: Calibri, sans-serif;"><span><strong><span style="font-size: 30pt; line-height: 127%; font-family: Georgia, serif;">Patterns For JavaScript FrontEnd Mastery</span></strong></span></p>
+</blockquote>
+<p style="margin: 0.5cm 40.2pt 28pt 62.55pt; text-align: center; line-height: 137%; font-size: 20pt; font-family: Calibri, sans-serif;"><span style="font-size: 20pt;"><strong><span style="line-height: 127%; font-family: Georgia, serif; ">Tech tools come and go. Patterns remain.</span></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">Modern web development is driven by JavaScript, a versatile and powerful language that enables the creation of dynamic and responsive web applications. However, as we incorporate new frameworks and libraries into our projects, it's easy to lose sight of their purpose, often using them for the sake of it rather than for their actual benefits.</span></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">This article will explore the architectural patterns and design principles that have stood the test of time, helping developers manage the complexities of frontend applications. It is not another "how-to" guide, but rather a discussion to spark ideas and conversations on this critical topic.</span></p><p style="text-align: justify;">&nbsp;</p>
+<p><span style="font-size: 20px;"><strong>The Evolution of Web Development</strong></span></p><p>&nbsp;</p><p><span style="font-size: 18px;"><strong>Before React, Angular, Vue &hellip; </strong><strong>:</strong><strong> </strong><strong>The Era of jQuery</strong></span></p>
+<p><span style="font-size: 16px;"><p>&nbsp;</p><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/rsj8pHtJ/jquery.png" width="400" height="250"><p>&nbsp;</p></strong></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">In the early days of web development, jQuery was the tool of choice for manipulating the DOM and handling events. It provided a convenient way to select and manipulate the DOM, making JavaScript more accessible.</span></p><p>&nbsp;</p>
+<p><span style="font-size: 16px;"><strong>Example Scenario</strong>: Creating a Netflix-like App</span></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">Consider creating a web app similar to Netflix. We display a list of films for the user and save this information in the following format:</span></p><p>&nbsp;</p>
+<p><span style="font-size: 16px;">[</span></p>
+<p><span style="font-size: 16px;">&nbsp; {id: 1, title: 'Thor', savedForLater: true},</span></p>
+<p><span style="font-size: 16px;">&nbsp; {id: 2, title: 'The Avengers', savedForLater: false},</span></p>
+<p><span style="font-size: 16px;">&nbsp; {id: 3, title: 'Iron Man', savedForLater: false}</span></p>
+<p><span style="font-size: 16px;">]</span></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">We can loop through the array and use appendChild to add relevant information to the document. Each movie has a button to toggle the savedForLater boolean field. We bind the onClick event to update the list and the UI.</span></p><p>&nbsp;</p><p style="text-align: justify;"><span style="font-size: 16px;">Next, we want to add the feature of showing a savedForLater count, A number badge on a bookmark icon button appeared in the navigation bar. To keep this count up-to-date, we bind this to the onClick event of every savedForLater button. This involves updating the list variable, updating the cards UI, and updating the count display.</span></p>
+<p><span style="background-color: #34495e; color: #ecf0f1; font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/MG0PQJd1/Picture2.png" width="400" height="250"><p>&nbsp;</p></span></p>
+<p><span style="font-size: 18px;"><strong>The Complexity of DOM Operations and Global Variables</strong></span></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">As features and interactions grow, managing more DOM operations and global variables (like the movie array, isLoading, isLoggedIn, themeColor, etc.) becomes complex and error-prone.</span></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">This is where frontend frameworks such as Angular, React, and Vue come in. These frameworks/libraries handle DOM operations (View) for us once we update the state (Model) of an app. Update the model, change the view. Sounds familiar? Yes, let&rsquo;s take a detour to architectural patterns.</span></p>
+<p>&nbsp;</p><p>&nbsp;</p>
+<p><span style="font-size: 20px;"><strong>Archit</strong><strong>ectural Patterns in Fronten</strong><strong>d Development</strong></span></p>
+<p>&nbsp;</p>
+<p><strong>MVVM Pattern | Two-Way Binding</strong></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">The&nbsp;Model-View-ViewModel (MVVM) pattern is a variant of the traditional Model-View-Controller (MVC) architecture. In MVVM, the view (UI) is directly bound to the ViewModel, which in turn is bound to the model (application state). This two-way binding allows for automatic updates between the view and model, making it ideal for CRUD (Create, Read, Update, Delete) applications.</span></p>
+<p><strong><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/zXWcrhKd/Picture3.png" width="600" height="350"><p>&nbsp;</p></strong></p><p><strong>Event Bus | One-Way Binding</strong></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">Messages can be sent to the event bus by components in response to events, such as button clicks by users. For events that interest them, components can also subscribe to the event bus. As soon as the event bus receives a message, it will distribute it to subscribers. The term "one-way binding" refers to this type of middleman-like pattern where the component is not directly read-write bound to the model. Rather than writing independently, a component emits an event to a "state handler" so that it can write after subscribing to a portion of the model. One-way binding is implemented by the library React. As stated differently, we must independently connect the read-write cycle.</span></p>
+<p><span style="font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/pVnHmpKj/3.webp" width="400" height="250"><p>&nbsp;</p></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">In the above example, we could say the button is a publisher to send message to the event bus, and the h1 header is a subscriber listening to changes of the count part of the data model / app state.</span></p>
+<p>&nbsp;</p>
+<p><strong>Task-Based Apps |&nbsp;CQRS Pattern</strong></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">For task-based applications such as booking systems or e-commerce platforms, the Command Query Responsibility Segregation (CQRS) pattern can be more effective. CQRS separates read operations (queries) from write operations (commands), reducing the complexity of state management.</span></p>
+<p><span style="font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/9Fjvz1m3/4.webp" width="600" height="400"><p>&nbsp;</p></span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;">That doesn&rsquo;t mean that frameworks like Angular and Vue.js become useless. Angular service is a good example of applying CQRS pattern: you have private variables storing the items in question, public getters (query) and setters (command) as separate methods. The &ldquo;Managing Data&rdquo; section in Angular&rsquo;s official documentation has a good illustration on this. Architectural pattern capitalizing on CQRS ? Of course there is.</span></p>
+<p>&nbsp;</p>
+<p><strong>Flux pattern |&nbsp;Redux</strong></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">The Flux pattern, implemented by Redux, enforces a unidirectional data flow, ensuring that state changes are predictable and traceable. In Flux, state can only be mutated through actions dispatched to a central dispatcher.</span></p>
+<p style="text-align: justify;"><span style="font-size: 16px;"><p>&nbsp;</p><img src="https://i.postimg.cc/xCM62DbX/5.webp" style="display: block; margin-left: auto; margin-right: auto;"  width="600" height="330"><p>&nbsp;</p></span></p>
+<p><strong>Conclusion</strong></p><p>&nbsp;</p>
+<p style="text-align: justify;"><span style="font-size: 16px;">We have travelled through the evolution of web development tools, moving from the venerable jQuery to the potent ones of today like Angular, React, and Vue. We break down our web application into two layers: View and Model, and investigate how to control the flow of data between them. By using the MVVM pattern, 2-way binding enables each View to read and update its corresponding portion of the Model directly. The View is tightly bound to the Model by a ViewModel. The design principle of 1-way binding is taken from CQRS; write and read operations are implemented independently, and we do so on purpose. This idea is furthered by flux pattern, which restricts data model mutation to only action dispatching, maintaining control over the overall application state.</span></p>
+<p style="text-align: justify;">&nbsp;</p>
+<h5 style="line-height: 2.5;"><span style="color: #854CE6; font-size: 12pt;">#JavaScript </span></h5>
+<h5 style="line-height: 2.5;"><span style="color: #854CE6; font-size: 12pt;">#Programming </span></h5>
+<h5 style="line-height: 2.5;"><span style="color: #854CE6; font-size: 12pt;">#Technology </span></h5>
+<h5 style="line-height: 2.5;"><span style="color: #854CE6; font-size: 12pt;">#Software Engineering </span></h5>
+<h5 style="line-height: 2.5;"><span style="color: #854CE6; font-size: 12pt;">#Front End Development</span></h5>
+<p style="text-align: justify;">&nbsp;</p>
+<p style="text-align: justify;">&nbsp;</p>`,
+  },
+  {
     id: 44,
     title: "𝐖𝐡𝐚𝐭 𝐞𝐱𝐚𝐜𝐭𝐥𝐲 𝐚𝐫𝐞 𝐙𝐮𝐬𝐭𝐚𝐧𝐝 𝐚𝐧𝐝 𝐑𝐞𝐝𝐮𝐱?",
     date: "17 July 2024",
