@@ -1,4 +1,4 @@
-import{H as o,b as s,D as d,r as p,j as e,A as x}from"./index-B3V6QPsR.js";import{B as c,I as m}from"./BlogCards-Dka7jKFB.js";import"./CloseRounded-BDmouaD_.js";const g=o.div`
+import{H as o,b as s,D as d,r as p,j as e,A as x}from"./index-BrUZ47WH.js";import{B as c,I as m}from"./BlogCards-DMTSdHYw.js";import"./CloseRounded-lsb9C6ks.js";const g=o.div`
   color: ${({theme:t})=>t.text_primary};
   background-color: ${({theme:t})=>t.bg};
   width: 100%;
@@ -9,11 +9,11 @@ import{H as o,b as s,D as d,r as p,j as e,A as x}from"./index-B3V6QPsR.js";impor
   grid-template-columns: 2.4fr 0.6fr;
   gap: 40px;
   @media (max-width: 960px) {
+    max-height: 100dvh;
     grid-template-columns: 1fr;
   }
 `,f=o.div`
   @media (min-width: 960px) {
-    min-height: 100vh;
     overflow: auto;
   }
   height: auto;
