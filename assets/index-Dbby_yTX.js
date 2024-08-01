@@ -1,4 +1,4 @@
-import{H as n,r,j as e,A as t}from"./index-DE4grSfI.js";import{W as i,T as l,D as d,a as c}from"./BlogsStyle-DPtfIoOs.js";import{B as p,I as g}from"./BlogCards-CLZrANst.js";import"./CloseRounded-B79tgPDI.js";const x=n.div`
+import{H as n,r,j as e,A as t}from"./index-B3V6QPsR.js";import{W as i,T as l,D as d,a as c}from"./BlogsStyle-B9RoyTmr.js";import{B as p,I as g}from"./BlogCards-Dka7jKFB.js";import"./CloseRounded-BDmouaD_.js";const x=n.div`
   background: linear-gradient(
     343.07deg,
     rgba(132, 59, 206, 0.06) 5.71%,
