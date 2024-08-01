@@ -16,13 +16,13 @@ export const Body = styled.div`
   grid-template-columns: 2.4fr 0.6fr;
   gap: 40px;
   @media (max-width: 960px) {
+    max-height: 100dvh;
     grid-template-columns: 1fr;
   }
 `;
 
 export const HtmlData = styled.div`
   @media (min-width: 960px) {
-    min-height: 100vh;
     overflow: auto;
   }
   height: auto;

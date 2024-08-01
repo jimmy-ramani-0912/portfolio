@@ -66,31 +66,31 @@ const Projects = () => {
                 value="web app"
                 onClick={() => setToggle("web app")}
               >
-                WEB APP'S
+                Web App's
               </ToggleButton>
             ) : (
               <ToggleButton
                 value="web app"
                 onClick={() => setToggle("web app")}
               >
-                WEB APP'S
+                Web App's
               </ToggleButton>
             )}
             <Divider />
-            {toggle === "flutter app" ? (
+            {toggle === "mobile app" ? (
               <ToggleButton
                 active
-                value="flutter app"
-                onClick={() => setToggle("flutter app")}
+                value="mobile app"
+                onClick={() => setToggle("mobile app")}
               >
-                FLUTTER APP'S
+                Mobile App's
               </ToggleButton>
             ) : (
               <ToggleButton
-                value="flutter app"
-                onClick={() => setToggle("flutter app")}
+                value="mobile app"
+                onClick={() => setToggle("mobile app")}
               >
-                FLUTTER APP'S
+                Mobile App's
               </ToggleButton>
             )}
           </ToggleButtonGroup>
