@@ -418,7 +418,7 @@ export const projects = [
     image:
       "https://play-lh.googleusercontent.com/CNiSNjhxPwci7tqnJB9sbrjVEI-YrMn4n4AP_jcYM_eCWW7u1iJTFS9twef5RJOWjJ_E=w2560-h1440-rw",
     tags: ["Flutter", "Php", "Mysql"],
-    category: "flutter app",
+    category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/Kloxa",
     webapp: "https://play.google.com/store/apps/details?id=com.app.kloxa",
   },
@@ -457,7 +457,7 @@ export const projects = [
     image:
       "https://play-lh.googleusercontent.com/m4ctao_Syy3iEBmQ7fy_vozn4Zdo5q0IdQLkbdLzwtCrBe1hK983xYOwl3JUvI5yFfSR=w2560-h1440-rw",
     tags: ["Flutter", "Php", "Mysql"],
-    category: "flutter app",
+    category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/AnwarKamal_Shayari",
     webapp:
       "https://play.google.com/store/apps/details?id=com.websolguru.anwarkamal&hl=en_US",
@@ -485,7 +485,7 @@ export const projects = [
     image:
       "https://miro.medium.com/v2/resize:fit:640/format:webp/0*oEDmeduTDk1t17kB.jpeg",
     tags: ["Flutter", "UI - UX", "Node JS", "Express JS"],
-    category: "flutter app",
+    category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/MyCar",
     webapp: "https://medium.com/@jimmyramani/my-car-35373fe7385c",
   },
@@ -562,7 +562,7 @@ export const projects = [
     image:
       "https://miro.medium.com/v2/resize:fit:640/format:webp/1*3l3GVLGNp5jPTYoTZw22vQ.jpeg",
     tags: ["Flutter", "UI / UX", "NodeJS", "Express JS", "MongoDB"],
-    category: "flutter app",
+    category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/Location-Based-Attendances",
     webapp:
       "https://medium.com/@jimmyramani/mobile-attendance-system-with-location-using-flutter-node-js-mongo-db-79a5833adb12",
@@ -576,7 +576,7 @@ export const projects = [
     image:
       "https://github.com/mitesh77/Best-Flutter-UI-Templates/raw/master/best_flutter_ui_templates/assets/fitness_app/fitness_app.png",
     tags: ["Flutter", "UI/UX"],
-    category: "flutter app",
+    category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/Best-Flutter-UI-Templates",
     webapp: "",
   },
