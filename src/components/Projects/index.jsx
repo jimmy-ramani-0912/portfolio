@@ -81,8 +81,8 @@ const Projects = ({ openModal, setOpenModal }) => {
                 />
               ))}
           {projects
-            .slice(0, 5)
             .filter((item) => item.category === toggle)
+            .slice(0, 5)
             .map((project) => (
               <ProjectCard
                 project={project}
