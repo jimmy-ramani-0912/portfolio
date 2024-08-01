@@ -77,8 +77,12 @@ export const skills = [
     ],
   },
   {
-    title: "Backend",
+    title: "Backend & Database",
     skills: [
+      {
+        name: "Nest Js",
+        image: "https://www.vectorlogo.zone/logos/nestjs/nestjs-ar21.svg",
+      },
       {
         name: "Node Js",
         image: "https://nodejs.org/static/images/logo.svg",
@@ -94,13 +98,17 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
       {
+        name: "PostgresSQL",
+        image:
+          "https://static-00.iconduck.com/assets.00/postgresql-original-wordmark-icon-512x509-kcfxxtk0.png",
+      },
+      {
         name: "Firebase",
         image: "https://www.vectorlogo.zone/logos/firebase/firebase-icon.svg",
       },
       {
-        name: "PostgresSQL",
-        image:
-          "https://static-00.iconduck.com/assets.00/postgresql-original-wordmark-icon-512x509-kcfxxtk0.png",
+        name: "MySQL",
+        image: "https://www.vectorlogo.zone/logos/mysql/mysql-horizontal.svg",
       },
     ],
   },
@@ -293,7 +301,94 @@ export const education = [
 
 export const projects = [
   {
-    id: 10,
+    id: 18,
+    title: "ReactJS Interview Questions & Answers",
+    date: "Jun 2024",
+    description:
+      "ReactJS Interview Questions is a guide for both interviewers and candidates to prepare for ReactJS interviews. It features a curated list of questions covering basic to advanced concepts, helping evaluate understanding and skills in ReactJS development. Ideal for interview preparation or enhancing ReactJS knowledge.",
+    image: "https://i.postimg.cc/3NrwbgDf/Screenshot-2024-08-01-144352.png",
+    tags: ["React.js", "JavaScript", "InterviewPreparation", "Interview"],
+    category: "web app",
+    github:
+      "https://github.com/jimmy-ramani-0912/ReactJS-Interview-Questions-and-Answers",
+    webapp:
+      "https://github.com/jimmy-ramani-0912/ReactJS-Interview-Questions-and-Answers",
+  },
+  {
+    id: 17,
+    title: "JS Interview Questions & Answers",
+    date: "Jun 2024",
+    description:
+      "JS Interview Questions is a guide for both interviewers and candidates to prepare for JS interviews. It features a curated list of questions covering basic to advanced concepts, helping to evaluate understanding and skills in JS related framework development. Ideal for interview preparation or enhancing JS knowledge.",
+    image: "https://i.postimg.cc/DzsmWfT6/Screenshot-2024-08-01-132958.png",
+    tags: ["JavaScript", "InterviewPreparation", "NodeJS", "NestJS"],
+    category: "web app",
+    github:
+      "https://github.com/jimmy-ramani-0912/JavaScript-Interview-Questions-and-Answers",
+    webapp:
+      "https://github.com/jimmy-ramani-0912/JavaScript-Interview-Questions-and-Answers",
+  },
+  {
+    id: 16,
+    title: "NestJS-Role-Based-Management-App",
+    date: "Jun 2024",
+    description:
+      "Building a Comprehensive Role-Based User Management System with NestJS, PostgreSQL, and TypeORM",
+    image:
+      "https://imgtr.ee/images/2024/08/01/5aed70b47199d9ad680933e8fedcfda0.png",
+    tags: ["Nest JS", "TypeORM", "PostgreSQL"],
+    category: "web app",
+    github:
+      "https://github.com/jimmy-ramani-0912/NestJS-Role-Based-Management-App",
+    webapp:
+      "https://github.com/jimmy-ramani-0912/NestJS-Role-Based-Management-App",
+  },
+  {
+    id: 15,
+    title: "NestJS-OTP-Auth-Email",
+    date: "Jun 2024",
+    description:
+      "This project is a NestJS application that provides user authentication, OTP (One Time Password) verification, and email sending functionalities. It uses PostgreSQL for the database, JWT for authentication, and an SMTP server for email sending.",
+    image:
+      "https://imgtr.ee/images/2024/08/01/c30f85957edab0c9d9cc9c97a3fe91a5.png",
+    tags: [
+      "NestJS",
+      "TypeORM",
+      "PostgreSQL",
+      "Simple Mail Transfer Protocol (SMTP)",
+    ],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/NestJS-OTP-Auth-Email",
+    webapp: "https://github.com/jimmy-ramani-0912/NestJS-OTP-Auth-Email",
+  },
+  {
+    id: 14,
+    title: "NestJS-Auth-REST-API",
+    date: "Jun 2024",
+    description:
+      "Building a Secure Authentication System with NestJS, PostgreSQL, and TypeORM. The combination of NestJS, TypeORM, and PostgreSQL provides a scalable, and efficient stack for developing web services. This article gives a general outline of constructing a basic, yet operational web service using these tools. We will look into the fundamentals of each element, and their collaboration, and guide you through a straightforward example to kickstart your project.",
+    image:
+      "https://imgtr.ee/images/2024/08/01/ad82c62c1ba79538cb9c6b96393330c7.png",
+    tags: ["NestJS", "TypeORM", "PostgreSQL"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/NestJS-Auth-REST-API",
+    webapp: "https://github.com/jimmy-ramani-0912/NestJS-Auth-REST-API",
+  },
+  {
+    id: 13,
+    title: "NEST-CRUD-REST-API",
+    date: "May 2024",
+    description:
+      "Building CRUD Web Services with NestJS, TypeORM, and PostgreSQL. The combination of NestJS, TypeORM, and PostgreSQL provides a scalable, and efficient stack for developing web services. This article gives a general outline of constructing a basic, yet operational web service using these tools. We will look into the fundamentals of each element, and their collaboration, and guide you through a straightforward example to kickstart your project.",
+    image:
+      "https://imgtr.ee/images/2024/08/01/d592d07f9b3e774d31b357fb04585c8b.png",
+    tags: ["NestJS", "TypeORM", "PostgreSQL"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/NEST-CRUD-REST-API",
+    webapp: "https://github.com/jimmy-ramani-0912/NEST-CRUD-REST-API",
+  },
+  {
+    id: 12,
     title: "CoverCreationStation",
     date: "Apr 2024",
     description:
@@ -315,7 +410,7 @@ export const projects = [
     webapp: "https://github.com/jimmy-ramani-0912/CoverCreationStation",
   },
   {
-    id: 9,
+    id: 11,
     title: "Kloxa",
     date: "Feb 2024",
     description:
@@ -328,7 +423,7 @@ export const projects = [
     webapp: "https://play.google.com/store/apps/details?id=com.app.kloxa",
   },
   {
-    id: 4,
+    id: 10,
     title: "Invoice Generator",
     date: "Oct 2023",
     description:
@@ -341,7 +436,7 @@ export const projects = [
     webapp: "https://invoice-gen-me.netlify.app/",
   },
   {
-    id: 5,
+    id: 9,
     title: "Readme Generator",
     date: "Sep 2023",
     description:
@@ -368,7 +463,7 @@ export const projects = [
       "https://play.google.com/store/apps/details?id=com.websolguru.anwarkamal&hl=en_US",
   },
   {
-    id: 1,
+    id: 7,
     title: "Project Management Dashboard",
     date: "Aug 2023",
     description:
@@ -382,7 +477,7 @@ export const projects = [
     webapp: "https://reactjs-1-me.netlify.app/",
   },
   {
-    id: 8,
+    id: 6,
     title: "MyCar",
     date: "Dec 2022 - Jan 2023",
     description:
@@ -395,7 +490,7 @@ export const projects = [
     webapp: "https://medium.com/@jimmyramani/my-car-35373fe7385c",
   },
   {
-    id: 0,
+    id: 5,
     title: "Track Your Trip",
     date: "Nov 2022 - Dec 2022",
     description:
@@ -432,7 +527,7 @@ export const projects = [
     ],
   },
   {
-    id: 2,
+    id: 4,
     title: "Portfolio Dashboard",
     date: "Jul 2023",
     description:
@@ -459,7 +554,7 @@ export const projects = [
     webapp: "https://test-6-me.netlify.app/",
   },
   {
-    id: 7,
+    id: 2,
     title: "Location-Based-Attendances For Company",
     date: "May 2023 - April 2023",
     description:
@@ -473,7 +568,7 @@ export const projects = [
       "https://medium.com/@jimmyramani/mobile-attendance-system-with-location-using-flutter-node-js-mongo-db-79a5833adb12",
   },
   {
-    id: 6,
+    id: 1,
     title: "Flutter UI Templates",
     date: "May 2023",
     description:
