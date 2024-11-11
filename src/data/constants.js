@@ -301,6 +301,53 @@ export const education = [
 
 export const projects = [
   {
+    id: 22,
+    title: "Karma Time Foundation",
+    date: "Nov 2024",
+    description:
+      "Karma Time Foundation facilitates a unique value exchange system through our collaborative platform. Members earn minutes by volunteering or sharing their expertise, which can then be used to access products, services, or further their own personal growth. This system not only meets individual needs but also strengthens the bonds between community members.",
+    image: "https://i.postimg.cc/4NwqkVdB/Screenshot-2024-11-11-160737.png",
+    tags: ["Next.js", "JavaScript", "Static Website"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/Minomics-Website",
+    webapp: "https://karma-time-foundation.netlify.app/",
+  },
+  {
+    id: 21,
+    title: "Orscop",
+    date: "Oct 2024",
+    description: "Innovation is what Drives Us",
+    image: "https://i.postimg.cc/XqvD9sRN/Screenshot-2024-11-11-161535.png",
+    tags: ["React.js", "JavaScript", "Static Website"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/ORSCOPE",
+    webapp: "https://orscope.netlify.app/",
+  },
+  {
+    id: 20,
+    title: "MyHealth - From Birth To Infinity",
+    date: "Sep 2024",
+    description:
+      "Book appointment with any doctor near you! Select your doctor and preferred time slot according to your convenience and availability.",
+    image: "https://i.postimg.cc/6qtVJTW8/Screenshot-2024-11-11-161554.png",
+    tags: ["React.js", "JavaScript", "Static Website"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/myhealth-frontend",
+    webapp: "https://myhealth-web.netlify.app/",
+  },
+  {
+    id: 19,
+    title: "KTF - Where time is our most valuable currency",
+    date: "Aug 2024",
+    description:
+      "We are dedicated to building a community that thrives on the exchange of time, talents, and resources, creating a network of support and cooperation. At KTF, we believe that every minute you invest in helping others is an investment in our shared future.",
+    image: "https://i.postimg.cc/ZR4Q5bjd/Screenshot-2024-11-11-161628.png",
+    tags: ["React.js", "JavaScript", "Static Website"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/Karma-Time-Foundation",
+    webapp: "https://ktf-karma-time-foundation.netlify.app/",
+  },
+  {
     id: 18,
     title: "ReactJS Interview Questions & Answers",
     date: "Jun 2024",
