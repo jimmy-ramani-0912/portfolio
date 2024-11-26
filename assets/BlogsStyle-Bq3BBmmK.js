@@ -1,4 +1,4 @@
-import{H as e}from"./index-DFSJHcmm.js";const p=e.div`
+import{H as e}from"./index-63NrE6WV.js";const p=e.div`
   background: linear-gradient(
     343.07deg,
     rgba(132, 59, 206, 0.06) 5.71%,
