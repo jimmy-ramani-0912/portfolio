@@ -306,8 +306,7 @@ export const projects = [
     date: "Nov 2024",
     description:
       "Enhance your organization's sales management with the Salesman Tracking System, a powerful real-time solution tailored to optimize operational efficiency. Designed for superadmins, admins, and salesmen, this comprehensive system offers seamless integration across all levels. Key Features: 1. Real-Time Location Tracking: Monitor your sales team’s movements with precision using socket.io technology.2. Attendance Management: Keep track of your sales force's attendance effortlessly.3. Visit Logging: Record and review all visits made by sales personnel.Instant Notifications: Superadmins and admins receive immediate alerts for any location discrepancies, ensuring full transparency and accountability. 4. User-Friendly Interface: Navigate the system with ease, thanks to its intuitive design. Whether managing a small team or a large workforce, the Salesman Tracking System equips you with the tools needed for efficient, transparent, and accountable sales operations. Boost your team's productivity and maintain strict oversight with our cutting-edge solution.",
-    image:
-      "https://play.google.com/store/apps/details?id=com.aksharpharmacy.salesman_tracking_appcking_app",
+    image: "https://i.postimg.cc/YqnBSw3G/Feature-graphic.png",
     tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
     category: "mobile app",
     github:
