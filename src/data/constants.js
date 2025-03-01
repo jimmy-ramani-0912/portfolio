@@ -328,7 +328,7 @@ export const projects = [
   },
   {
     id: 21,
-    title: "Orscop",
+    title: "Orscope",
     date: "Oct 2024",
     description: "Innovation is what Drives Us",
     image: "https://i.postimg.cc/XqvD9sRN/Screenshot-2024-11-11-161535.png",
@@ -359,7 +359,7 @@ export const projects = [
     tags: ["React.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/Karma-Time-Foundation",
-    webapp: "https://ktf-karma-time-foundation.netlify.app/",
+    webapp: "https://karmatimefoundation.org/",
   },
   {
     id: 18,
