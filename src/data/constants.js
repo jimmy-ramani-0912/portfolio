@@ -340,19 +340,19 @@ export const projects = [
   {
     id: 20,
     title: "MyHealth - From Birth To Infinity",
-    date: "Sep 2024",
+    date: "Dec 2024",
     description:
       "Book appointment with any doctor near you! Select your doctor and preferred time slot according to your convenience and availability.",
     image: "https://i.postimg.cc/6qtVJTW8/Screenshot-2024-11-11-161554.png",
     tags: ["React.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/myhealth-frontend",
-    webapp: "https://myhealth-web.netlify.app/",
+    webapp: "https://myhealth.org.in",
   },
   {
     id: 19,
     title: "KTF - Where time is our most valuable currency",
-    date: "Aug 2024",
+    date: "Feb 2025",
     description:
       "We are dedicated to building a community that thrives on the exchange of time, talents, and resources, creating a network of support and cooperation. At KTF, we believe that every minute you invest in helping others is an investment in our shared future.",
     image: "https://i.postimg.cc/ZR4Q5bjd/Screenshot-2024-11-11-161628.png",
