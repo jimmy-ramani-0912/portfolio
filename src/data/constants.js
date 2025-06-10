@@ -301,6 +301,73 @@ export const education = [
 
 export const projects = [
   {
+    id: 28,
+    title: "My Legal Help",
+    date: "Feb 2025",
+    description:
+      "Book appointment with any lawyer near you! Select your lawyer and preferred time slot according to your convenience and availability.",
+    image: "https://i.ibb.co/Q7B7tmGF/Screenshot-2025-06-10-223543.png",
+    tags: ["React.js", "JavaScript", "Static Website"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/mylegalhelp-frontend",
+    webapp: "https://mylegalhelp.org.in",
+  },
+  {
+    id: 27,
+    title: "Sancorp",
+    date: "May 2025",
+    description: "Material that's Transforming the World.",
+    image: "https://i.ibb.co/XrZPkzNq/Screenshot-2025-06-10-224036.png",
+    tags: ["React.js", "JavaScript", "Static Website"],
+    category: "web app",
+    github: "https://github.com/jimmy-ramani-0912/Sancorp",
+    webapp: "https://sancorpsemiconductors.com",
+  },
+  {
+    id: 26,
+    title: "My Health",
+    date: "Jun 2025",
+    description: `Manage your health effortlessly with My Health – your trusted companion for healthcare needs, from birth to infinity. Designed to simplify and enhance your healthcare journey, My Health connects patients and doctors in a seamless, user-friendly platform.
+
+Key Features
+Easy Appointment Booking: Schedule appointments with top healthcare professionals at your convenience.
+Doctor Search: Find specialists based on your needs, including pediatricians, general physicians, dentists, and more.
+Secure Login and Verification: Protect your data with secure phone login and OTP-based verification.
+User-Friendly Interface: Designed for patients of all ages, making healthcare access simple and intuitive.
+`,
+    image:
+      "https://play-lh.googleusercontent.com/WBKYLUiFhAJNPhJkRwMQuVEUiWuLryv532TEGBkPCenMbS6Lm5o569o_ViHY7N7urhY=w1052-h592-rw",
+    tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
+    category: "mobile app",
+    github: "https://github.com/jimmy-ramani-0912/myhealth-app-frontend",
+    webapp:
+      "https://play.google.com/store/apps/details?id=com.chirasumyhealth.patient",
+  },
+  {
+    id: 25,
+    title: "My Legal Help",
+    date: "Jun 2025",
+    description: `Navigate legal matters with confidence using MyLegalHelp – your trusted companion for legal support, from advice to advocacy. Built to simplify access to legal services, MyLegalHelp connects clients with qualified legal professionals through a secure, intuitive platform.
+
+Key Features
+
+Easy Appointment Booking: Schedule consultations with experienced lawyers based on your availability.
+
+Lawyer Search: Find legal experts across various fields, including family law, criminal law, property disputes, and more.
+
+Secure Login and Verification: Keep your personal and legal information safe with secure phone login and OTP-based authentication.
+
+User-Friendly Interface: Designed for users of all ages to easily connect with legal help when needed most.
+`,
+    image:
+      "https://i.ibb.co/fdgwDZkR/t-Iyj-Hg-L86mmk-Fov-SLP7-WAGb-SKCI58-Mvz-Fq-Vyp-LRZf3-Fp-EFyh-V1-Hw-C-b-CMo-Jkgkvpc-w1052-h592-rw.webp",
+    tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
+    category: "mobile app",
+    github: "https://github.com/jimmy-ramani-0912/mylegalhelp-app-frontend",
+    webapp:
+      "https://play.google.com/store/apps/details?id=com.mylegalhelp.mylegalhelp",
+  },
+  {
     id: 23,
     title: "Akshar Pharmacy",
     date: "Nov 2024",
