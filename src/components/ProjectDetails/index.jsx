@@ -2,6 +2,8 @@ import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React from "react";
 import styled from "styled-components";
+import { glassCard } from "../../theme/mixins";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
 const Container = styled.div`
   width: 100%;
@@ -23,7 +25,7 @@ const Wrapper = styled.div`
   border-radius: 16px;
   margin: 50px 12px;
   height: min-content;
-  background-color: ${({ theme }) => theme.card};
+  ${glassCard}
   color: ${({ theme }) => theme.text_primary};
   padding: 20px;
   display: flex;
@@ -182,13 +184,14 @@ const Button = styled.a`
 
 const index = ({ openModal, setOpenModal }) => {
   const project = openModal?.project;
+  const spotlight = useSpotlightCardHandlers();
   return (
     <Modal
       open={true}
       onClose={() => setOpenModal({ state: false, project: null })}
     >
       <Container>
-        <Wrapper>
+        <Wrapper {...spotlight}>
           <CloseRounded
             style={{
               position: "absolute",

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { glassCard } from "../../theme/mixins";
 import { useRef } from "react";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
 
@@ -59,10 +61,9 @@ const ContactForm = styled.form`
   max-width: 600px;
   display: flex;
   flex-direction: column;
-  background-color: ${({ theme }) => theme.card};
+  ${glassCard}
   padding: 32px;
   border-radius: 16px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
   margin-top: 28px;
   gap: 12px;
 `;
@@ -118,9 +119,9 @@ const ContactButton = styled.input`
 `;
 
 const Contact = () => {
-  //hooks
   const [open, setOpen] = React.useState(false);
   const form = useRef();
+  const spotlight = useSpotlightCardHandlers();
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -149,7 +150,7 @@ const Contact = () => {
         <Desc>
           Feel free to reach out to me for any questions or opportunities!
         </Desc>
-        <ContactForm ref={form} onSubmit={handleSubmit}>
+        <ContactForm ref={form} onSubmit={handleSubmit} {...spotlight}>
           <ContactTitle>Email Me 🚀</ContactTitle>
           <ContactInput placeholder="Your Email" name="from_email" />
           <ContactInput placeholder="Your Name" name="from_name" />

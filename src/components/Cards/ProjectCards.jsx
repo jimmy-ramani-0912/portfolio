@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { glassCard } from "../../theme/mixins";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
 const Button = styled.button`
   display: none;
@@ -17,10 +19,9 @@ const Button = styled.button`
 const Card = styled.div`
   width: 330px;
   height: 490px;
-  background-color: ${({ theme }) => theme.card};
+  ${glassCard}
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
@@ -29,8 +30,7 @@ const Card = styled.div`
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
-    filter: brightness(1.1);
+    filter: brightness(1.05);
   }
   &:hover ${Button} {
     display: block;
@@ -118,12 +118,16 @@ const Avatar = styled.img`
   margin-left: -10px;
   background-color: ${({ theme }) => theme.white};
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border: 3px solid ${({ theme }) => theme.card};
+  border: 3px solid ${({ theme }) => theme.glassCardBorder};
 `;
 
 const ProjectCards = ({ project, setOpenModal }) => {
+  const spotlight = useSpotlightCardHandlers();
   return (
-    <Card onClick={() => setOpenModal({ state: true, project: project })}>
+    <Card
+      {...spotlight}
+      onClick={() => setOpenModal({ state: true, project: project })}
+    >
       <Image src={project.image} />
       <Tags>
         {project.tags?.map((tag, index) => (

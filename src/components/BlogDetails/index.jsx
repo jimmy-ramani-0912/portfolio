@@ -2,6 +2,8 @@ import { CloseRounded, GitHub, LinkedIn } from "@mui/icons-material";
 import { Modal } from "@mui/material";
 import React, { useState } from "react";
 import styled from "styled-components";
+import { glassCard } from "../../theme/mixins";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 import { Worker, Viewer } from "@react-pdf-viewer/core";
 import { pdfjs } from "react-pdf";
 import { zoomPlugin } from "@react-pdf-viewer/zoom";
@@ -30,7 +32,7 @@ const Wrapper = styled.div`
   border-radius: 16px;
   margin: 50px 12px;
   height: min-content;
-  background-color: ${({ theme }) => theme.card};
+  ${glassCard}
   color: ${({ theme }) => theme.text_primary};
   padding: 20px;
   display: flex;
@@ -92,6 +94,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = new URL(
 
 const Index = ({ openBlogModal, setOpenBlogModal }) => {
   const [numPages, setNumPages] = useState(null);
+  const spotlight = useSpotlightCardHandlers();
 
   const blog = openBlogModal?.blog;
 
@@ -108,7 +111,7 @@ const Index = ({ openBlogModal, setOpenBlogModal }) => {
       onClose={() => setOpenBlogModal({ state: false, blog: null })}
     >
       <Container>
-        <Wrapper>
+        <Wrapper {...spotlight}>
           <CloseRounded
             style={{
               position: "absolute",

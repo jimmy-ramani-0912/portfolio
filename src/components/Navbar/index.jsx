@@ -13,7 +13,8 @@ import {
   MobileLink,
   ThemeButton,
 } from "./NavbarStyledComponent";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 import WbSunnyIcon from "@mui/icons-material/WbSunny";
 import { DiCssdeck } from "react-icons/di";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -25,6 +26,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
   const theme = useTheme();
   const navigate = useNavigate();
+  const navSpotlight = useSpotlightCardHandlers();
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -32,7 +34,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
 
   return (
     <Nav>
-      <NavbarContainer>
+      <NavbarContainer {...navSpotlight}>
         <NavLogo to="/portfolio">
           <a
             onClick={() => scrollToTop()}

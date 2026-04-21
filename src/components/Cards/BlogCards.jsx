@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { glassCard } from "../../theme/mixins";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 import { useNavigate } from "react-router-dom";
 
 const Button = styled.button`
@@ -18,10 +20,9 @@ const Button = styled.button`
 const Card = styled.div`
   width: 330px;
   height: 350px;
-  background-color: ${({ theme }) => theme.card};
+  ${glassCard}
   cursor: pointer;
   border-radius: 10px;
-  box-shadow: 0 0 12px 4px rgba(0, 0, 0, 0.2);
   overflow: hidden;
   padding: 26px 20px;
   display: flex;
@@ -31,8 +32,7 @@ const Card = styled.div`
   transition: all 0.2s ease-in-out;
   &:hover {
     transform: translateY(-6px);
-    box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.3);
-    filter: brightness(1.1);
+    filter: brightness(1.05);
   }
   &:hover ${Button} {
     display: block;
@@ -82,9 +82,11 @@ const Date = styled.div`
 
 const BlogCards = ({ blog, setOpenModal }) => {
   const navigate = useNavigate();
+  const spotlight = useSpotlightCardHandlers();
 
   return (
     <Card
+      {...spotlight}
       onClick={() =>
         !blog?.pdfUrl
           ? navigate(`/portfolio/blogs/${blog?.id}`, { state: { blog } })

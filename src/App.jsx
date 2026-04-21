@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Suspense, useState } from "react";
+import { Suspense, useEffect, useState } from "react";
 import { darkTheme, lightTheme } from "./utils/Themes.js";
 import Navbar from "./components/Navbar/index";
 import "./App.css";
@@ -38,8 +38,8 @@ const spin = keyframes`
 `;
 
 export const Spinner = styled.div`
-  border: 2px solid #a395e9;
-  border-top: 2px solid #171721;
+  border: 2px solid ${({ theme }) => theme.primary};
+  border-top: 2px solid ${({ theme }) => theme.card};
   border-radius: 50%;
   width: 3rem;
   aspect-ratio: 1/ 1;
@@ -48,6 +48,10 @@ export const Spinner = styled.div`
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
+
+  useEffect(() => {
+    document.documentElement.dataset.theme = darkMode ? "dark" : "light";
+  }, [darkMode]);
 
   const toggleDarkMode = () => {
     setDarkMode((prevMode) => !prevMode);

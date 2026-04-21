@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+import { glassCard } from "../../theme/mixins";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
 const Document = styled.img`
   display: none;
@@ -36,7 +38,7 @@ const Span = styled.span`
 const Card = styled.div`
   width: 650px;
   border-radius: 10px;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  ${glassCard}
   padding: 12px 16px;
   justify-content: space-between;
   position: relative;
@@ -45,8 +47,8 @@ const Card = styled.div`
   flex-direction: column;
   gap: 12px;
   transition: all 0.3s ease-in-out;
+  border-color: ${({ theme }) => theme.primary}55;
   &:hover {
-    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
     transform: translateY(-5px);
   }
   @media only screen and (max-width: 768px) {
@@ -63,7 +65,6 @@ const Card = styled.div`
     overflow: visible;
     -webkit-line-clamp: unset;
   }
-  border: 0.1px solid #854ce6;
 `;
 
 const Image = styled.img`
@@ -118,16 +119,18 @@ const Grade = styled.div`
   }
 `;
 
+const Top = styled.div`
+  width: 100%;
+  display: flex;
+  gap: ${({ $hasImage }) => ($hasImage ? "12px" : "0")};
+`;
+
 const EducationCard = ({ education, hasImage }) => {
-  const Top = styled.div`
-    width: 100%;
-    display: flex;
-    gap: ${hasImage ? "12px" : "0"};
-  `;
+  const spotlight = useSpotlightCardHandlers();
 
   return (
-    <Card>
-      <Top>
+    <Card {...spotlight}>
+      <Top $hasImage={hasImage}>
         <Image src={education.img} />
         <Body>
           <Name>{education.school}</Name>

@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
+import { glassCard, glassChip } from "../../theme/mixins";
 import { skills } from "../../data/constants";
+import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
 const Container = styled.div`
   display: flex;
@@ -60,9 +62,8 @@ const SkillsContainer = styled.div`
 const Skill = styled.div`
   width: 100%;
   max-width: 500px;
-  background: ${({ theme }) => theme.card};
-  border: 0.1px solid #854ce6;
-  box-shadow: rgba(23, 92, 230, 0.15) 0px 4px 24px;
+  ${glassCard}
+  border-color: ${({ theme }) => theme.primary}55;
   border-radius: 16px;
   padding: 18px 36px;
   @media (max-width: 768px) {
@@ -94,8 +95,8 @@ const SkillList = styled.div`
 const SkillItem = styled.div`
   font-size: 16px;
   font-weight: 400;
+  ${glassChip}
   color: ${({ theme }) => theme.text_primary + 80};
-  border: 1px solid ${({ theme }) => theme.text_primary + 80};
   border-radius: 12px;
   padding: 12px 16px;
   display: flex;
@@ -117,6 +118,23 @@ const SkillImage = styled.img`
   height: 24px;
 `;
 
+const SkillPanel = ({ skill }) => {
+  const spotlight = useSpotlightCardHandlers();
+  return (
+    <Skill {...spotlight}>
+      <SkillTitle>{skill.title}</SkillTitle>
+      <SkillList>
+        {skill.skills.map((item) => (
+          <SkillItem key={item.name}>
+            <SkillImage src={item.image} />
+            {item.name}
+          </SkillItem>
+        ))}
+      </SkillList>
+    </Skill>
+  );
+};
+
 const Skills = () => {
   return (
     <Container id="skills">
@@ -128,17 +146,7 @@ const Skills = () => {
         </Desc>
         <SkillsContainer>
           {skills.map((skill) => (
-            <Skill>
-              <SkillTitle>{skill.title}</SkillTitle>
-              <SkillList>
-                {skill.skills.map((item) => (
-                  <SkillItem>
-                    <SkillImage src={item.image} />
-                    {item.name}
-                  </SkillItem>
-                ))}
-              </SkillList>
-            </Skill>
+            <SkillPanel key={skill.title} skill={skill} />
           ))}
         </SkillsContainer>
       </Wrapper>

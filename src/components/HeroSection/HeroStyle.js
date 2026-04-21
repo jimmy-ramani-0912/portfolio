@@ -1,7 +1,10 @@
 import styled from "styled-components";
 
 export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.card_light};
+  background: ${({ theme }) => theme.heroSurface};
+  backdrop-filter: blur(22px) saturate(1.2);
+  -webkit-backdrop-filter: blur(22px) saturate(1.2);
+  border-bottom: 1px solid ${({ theme }) => theme.navBorder};
   display: flex;
   justify-content: center;
   position: relative;

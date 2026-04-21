@@ -1,52 +1,63 @@
 import styled, { keyframes } from "styled-components";
 
-const pulse = keyframes`
-  0% {
+const breathe = keyframes`
+  0%,
+  100% {
+    opacity: 0.85;
     transform: scale(1);
-    opacity: 1;
-    box-shadow: 0 0 6px rgba(133, 76, 230, 0.6), 0 0 20px rgba(133, 76, 230, 0.4);
   }
   50% {
-    transform: scale(1.5);
-    opacity: 0.5;
-    box-shadow: 0 0 10px rgba(133, 76, 230, 0.8), 0 0 30px rgba(133, 76, 230, 0.6);
-  }
-  100% {
-    transform: scale(1);
     opacity: 1;
-    box-shadow: 0 0 6px rgba(133, 76, 230, 0.6), 0 0 20px rgba(133, 76, 230, 0.4);
+    transform: scale(1.06);
   }
 `;
 
 export const CircularBorderWrapper = styled.div`
   position: fixed;
-  top: 0;
-  left: 0;
+  inset: 0;
   pointer-events: none;
-  width: 100%;
-  height: 100%;
   z-index: 9999;
 `;
 
-export const CursorContainer = styled.div`
-  width: 40px;
-  height: 40px;
-  border: 1.2px solid #854ce6;
-  border-radius: 50%;
-  position: absolute;
-  transform: translate(-50%, -50%);
+export const CursorRing = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 36px;
+  height: 36px;
   pointer-events: none;
+  will-change: transform;
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: ${pulse} 2s infinite;
 `;
 
-export const InnerCircle = styled.div`
-  width: 10px;
-  height: 10px;
-  background-color: #854ce6;
+export const RingGlow = styled.div`
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
-  position: absolute;
-  transition: transform 0.2s ease-out;
+  border: 1.5px solid ${({ $primary }) => $primary};
+  background: ${({ $primary }) =>
+    `linear-gradient(135deg, ${$primary}12, transparent 55%)`};
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  box-shadow:
+    0 0 0 1px ${({ $primary }) => `${$primary}22`},
+    0 4px 24px ${({ $primary }) => `${$primary}28`};
+  animation: ${breathe} 2.4s ease-in-out infinite;
+`;
+
+export const CursorDot = styled.div`
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  pointer-events: none;
+  will-change: transform;
+  background: ${({ $primary }) => $primary};
+  box-shadow:
+    0 0 12px ${({ $primary }) => `${$primary}66`},
+    0 0 2px ${({ $primary }) => `${$primary}99`};
 `;

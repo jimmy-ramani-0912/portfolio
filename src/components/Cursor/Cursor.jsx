@@ -1,58 +1,108 @@
-import React, { useState, useEffect } from "react";
+import { useEffect, useRef, useState } from "react";
+import { useTheme } from "styled-components";
 import {
   CircularBorderWrapper,
-  CursorContainer,
-  InnerCircle,
+  CursorDot,
+  CursorRing,
+  RingGlow,
 } from "./Cursor.Style";
 
+const lerp = (a, b, t) => a + (b - a) * t;
+
 const Cursor = () => {
-  const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
-  const [innerCirclePosition, setInnerCirclePosition] = useState({
-    x: 0,
-    y: 0,
-  });
+  const theme = useTheme();
+  const [enabled, setEnabled] = useState(
+    () =>
+      typeof window !== "undefined" &&
+      window.matchMedia("(pointer: fine)").matches
+  );
+  const mouse = useRef({ x: 0, y: 0 });
+  const dot = useRef({ x: 0, y: 0 });
+  const ring = useRef({ x: 0, y: 0 });
+  const rafId = useRef(0);
+  const ringEl = useRef(null);
+  const dotEl = useRef(null);
+  const primed = useRef(false);
 
   useEffect(() => {
-    const handleMouseMove = (event) => {
-      const x = event.clientX;
-      const y = event.clientY;
-      setCursorPosition({ x, y });
+    const mq = window.matchMedia("(pointer: fine)");
+    const onMq = () => setEnabled(mq.matches);
+    mq.addEventListener("change", onMq);
+    return () => mq.removeEventListener("change", onMq);
+  }, []);
 
-      // Calculate the inner circle position
-      const outerCircleRadius = 20; // Radius limit for the inner circle
-      const deltaX = x - (cursorPosition.x || x);
-      const deltaY = y - (cursorPosition.y || y);
-      const distance = Math.sqrt(deltaX * deltaX + deltaY * deltaY);
+  useEffect(() => {
+    if (!enabled) return undefined;
+    document.body.classList.add("use-custom-cursor");
+    return () => {
+      document.body.classList.remove("use-custom-cursor");
+    };
+  }, [enabled]);
 
-      if (distance < outerCircleRadius) {
-        setInnerCirclePosition({ x: deltaX, y: deltaY });
+  useEffect(() => {
+    if (!enabled) return undefined;
+    primed.current = false;
+
+    const tick = () => {
+      const mx = mouse.current.x;
+      const my = mouse.current.y;
+      ring.current.x = lerp(ring.current.x, mx, 0.32);
+      ring.current.y = lerp(ring.current.y, my, 0.32);
+      dot.current.x = lerp(dot.current.x, mx, 0.52);
+      dot.current.y = lerp(dot.current.y, my, 0.52);
+      const rx = ring.current.x;
+      const ry = ring.current.y;
+      const dx = dot.current.x;
+      const dy = dot.current.y;
+      const tfRing = `translate3d(${rx}px, ${ry}px, 0) translate(-50%, -50%)`;
+      const tfDot = `translate3d(${dx}px, ${dy}px, 0) translate(-50%, -50%)`;
+      if (ringEl.current) ringEl.current.style.transform = tfRing;
+      if (dotEl.current) dotEl.current.style.transform = tfDot;
+      rafId.current = requestAnimationFrame(tick);
+    };
+
+    const onMove = (e) => {
+      const x = e.clientX;
+      const y = e.clientY;
+      if (!primed.current) {
+        primed.current = true;
+        mouse.current = { x, y };
+        ring.current = { x, y };
+        dot.current = { x, y };
       } else {
-        const ratio = outerCircleRadius / distance;
-        setInnerCirclePosition({ x: deltaX * ratio, y: deltaY * ratio });
+        mouse.current = { x, y };
       }
     };
 
-    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("mousemove", onMove, { passive: true });
+    rafId.current = requestAnimationFrame(tick);
 
     return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("mousemove", onMove);
+      cancelAnimationFrame(rafId.current);
     };
-  }, [cursorPosition]);
+  }, [enabled]);
+
+  if (!enabled) return null;
 
   return (
     <CircularBorderWrapper>
-      <CursorContainer
+      <CursorRing
+        ref={ringEl}
+        $primary={theme.primary}
         style={{
-          left: `${cursorPosition.x - 20}px`,
-          top: `${cursorPosition.y - 20}px`,
+          transform: "translate3d(0px, 0px, 0) translate(-50%, -50%)",
         }}
       >
-        <InnerCircle
-          style={{
-            transform: `translate(${innerCirclePosition.x}px, ${innerCirclePosition.y}px)`,
-          }}
-        />
-      </CursorContainer>
+        <RingGlow $primary={theme.primary} />
+      </CursorRing>
+      <CursorDot
+        ref={dotEl}
+        $primary={theme.primary}
+        style={{
+          transform: "translate3d(0px, 0px, 0) translate(-50%, -50%)",
+        }}
+      />
     </CircularBorderWrapper>
   );
 };

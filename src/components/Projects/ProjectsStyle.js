@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { glassChip } from "../../theme/mixins";
 
 export const Container = styled.div`
   background: linear-gradient(
@@ -56,12 +57,13 @@ export const Desc = styled.div`
 
 export const ToggleButtonGroup = styled.div`
   display: flex;
-  border: 1.5px solid ${({ theme }) => theme.primary};
+  ${glassChip}
   color: ${({ theme }) => theme.primary};
   font-size: 16px;
   border-radius: 12px;
   font-weight: 500;
   margin: 22px 0px;
+  border: 1.5px solid ${({ theme }) => theme.primary}66;
   @media (max-width: 768px) {
     font-size: 12px;
   }
