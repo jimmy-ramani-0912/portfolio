@@ -2,7 +2,9 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import {
   Container,
-  Wrapper,
+  Inner,
+  SectionHeader,
+  Eyebrow,
   Title,
   Desc,
   CardContainer,
@@ -15,13 +17,16 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
   const navigate = useNavigate();
 
   return (
-    <Container id="blogs">
-      <Wrapper>
-        <Title>Blogs</Title>
-        <Desc>
-          Join me as I share insights from my journey developing web and Android
-          apps.
-        </Desc>
+    <Container id="blogs" aria-labelledby="blogs-heading">
+      <Inner>
+        <SectionHeader>
+          <Eyebrow>Writing</Eyebrow>
+          <Title id="blogs-heading">Blogs</Title>
+          <Desc>
+            Notes on web and mobile development—patterns, tooling, and lessons
+            learned while building real products.
+          </Desc>
+        </SectionHeader>
         <CardContainer>
           {blogs.slice(0, 5).map((blog) => (
             <BlogCards
@@ -33,13 +38,12 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
           ))}
         </CardContainer>
         <ViewAll
-          onClick={() => {
-            navigate("portfolio/blogs");
-          }}
+          type="button"
+          onClick={() => navigate("portfolio/blogs")}
         >
-          View All
+          View All Blogs
         </ViewAll>
-      </Wrapper>
+      </Inner>
     </Container>
   );
 };

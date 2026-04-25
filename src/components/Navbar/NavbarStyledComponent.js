@@ -6,10 +6,11 @@ export const Nav = styled.div`
   position: sticky;
   top: 0;
   z-index: 200;
-  height: 80px;
+  min-height: 80px;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding: 10px 0;
   font-size: 1rem;
   isolation: isolate;
   background: ${({ theme }) => theme.navBarFill};
@@ -25,7 +26,7 @@ export const NavbarContainer = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
+  min-height: 60px;
   z-index: 2;
   position: relative;
   width: 100%;
@@ -36,7 +37,7 @@ export const NavbarContainer = styled.div`
   border-radius: 10px;
   background: ${({ theme }) => theme.navInnerFill};
   box-sizing: border-box;
-  overflow: hidden;
+  overflow: visible;
   isolation: isolate;
   --spot-x: 50%;
   --spot-y: 50%;
@@ -77,7 +78,7 @@ export const NavbarContainer = styled.div`
 `;
 
 export const NavLogo = styled(LinkR)`
-  width: 80%;
+  flex: 0 0 auto;
   padding: 0 6px;
   display: flex;
   justify-content: start;
@@ -97,11 +98,12 @@ export const Span = styled.div`
 `;
 
 export const NavItems = styled.ul`
-  width: 100%;
+  flex: 1;
+  min-width: 0;
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: clamp(14px, 2vw, 28px);
   padding: 0 6px;
   list-style: none;
 
@@ -114,7 +116,7 @@ export const NavLink = styled.a`
   color: ${({ theme }) => theme.text_primary};
   font-weight: 500;
   cursor: pointer;
-  padding: 6px 12px;
+  padding: 6px;
   border-radius: 6px;
   border: 1px solid transparent;
   transition: color 0.2s ease, border-color 0.2s ease, background 0.2s ease;
@@ -161,7 +163,7 @@ export const ThemeButton = styled.button`
 `;
 
 export const ButtonContainer = styled.div`
-  width: 80%;
+  flex: 0 0 auto;
   height: 100%;
   display: flex;
   justify-content: end;
@@ -175,14 +177,20 @@ export const ButtonContainer = styled.div`
 export const MobileIcon = styled.div`
   display: none;
   @media screen and (max-width: 950px) {
-    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 10px;
-    right: 0;
-    transform: translate(-100%, 60%);
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
     font-size: 1.5rem;
+    line-height: 0;
     cursor: pointer;
     color: ${({ theme }) => theme.text_primary};
+    @media (max-width: 640px) {
+      right: 14px;
+    }
   }
 `;
 

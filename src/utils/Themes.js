@@ -17,7 +17,7 @@ export const darkTheme = {
     "linear-gradient(225deg,hsla(271, 100%, 50%, 1) 0%,hsla(294, 100%, 50%, 1) 100%)",
   logo: "white",
   filter: "brightness(0) invert(100%);",
-  navBarFill: "rgba(21, 21, 30, 0.98)",
+  navBarFill: "#1C1C27",
   navBorder: "rgba(255, 255, 255, 0.16)",
   navInsetLine: "rgba(255, 255, 255, 0.07)",
   navShadow: "0 1px 0 rgba(0, 0, 0, 0.35)",

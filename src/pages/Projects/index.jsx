@@ -1,7 +1,8 @@
-import React from "react";
-import { useState } from "react";
+import React, { useMemo, useState } from "react";
 import {
-  Wrapper,
+  Inner,
+  SectionHeader,
+  Eyebrow,
   Title,
   Desc,
   CardContainer,
@@ -18,10 +19,10 @@ const Body = styled.div`
   background-color: ${({ theme }) => theme.bg};
   width: 100%;
   overflow-x: hidden;
-  height: calc(100dvh - 80px);
+  min-height: calc(100dvh - 80px);
 `;
 
-const Container = styled.div`
+const PageBackdrop = styled.div`
   background: linear-gradient(
     343.07deg,
     rgba(132, 59, 206, 0.06) 5.71%,
@@ -29,92 +30,66 @@ const Container = styled.div`
   );
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
-  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
+  padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px) 80px;
 `;
 
-const Projects = () => {
+const FILTERS = [
+  { value: "all", label: "All" },
+  { value: "web app", label: "Web apps" },
+  { value: "mobile app", label: "Mobile apps" },
+];
+
+const ProjectsPage = () => {
   const [openModal, setOpenModal] = useState({ state: false, project: null });
   const [toggle, setToggle] = useState("all");
 
+  const visibleProjects = useMemo(() => {
+    if (toggle === "all") return projects;
+    return projects.filter((p) => p.category === toggle);
+  }, [toggle]);
+
   return (
     <Body>
-      <Container>
-        <Wrapper>
-          <Title>Projects</Title>
-          <Desc>
-            I have worked on a wide range of projects. From web apps to android
-            apps. Here are some of my projects.
-          </Desc>
-          <ToggleButtonGroup>
-            {toggle === "all" ? (
-              <ToggleButton active value="all" onClick={() => setToggle("all")}>
-                All
-              </ToggleButton>
-            ) : (
-              <ToggleButton value="all" onClick={() => setToggle("all")}>
-                All
-              </ToggleButton>
-            )}
-            <Divider />
-            {toggle === "web app" ? (
-              <ToggleButton
-                active
-                value="web app"
-                onClick={() => setToggle("web app")}
-              >
-                Web App's
-              </ToggleButton>
-            ) : (
-              <ToggleButton
-                value="web app"
-                onClick={() => setToggle("web app")}
-              >
-                Web App's
-              </ToggleButton>
-            )}
-            <Divider />
-            {toggle === "mobile app" ? (
-              <ToggleButton
-                active
-                value="mobile app"
-                onClick={() => setToggle("mobile app")}
-              >
-                Mobile App's
-              </ToggleButton>
-            ) : (
-              <ToggleButton
-                value="mobile app"
-                onClick={() => setToggle("mobile app")}
-              >
-                Mobile App's
-              </ToggleButton>
-            )}
+      <PageBackdrop>
+        <Inner>
+          <SectionHeader>
+            <Eyebrow>Portfolio</Eyebrow>
+            <Title id="projects-page-heading">Projects</Title>
+            <Desc>
+              Shipped web and mobile work—from marketing sites and dashboards to
+              Play Store apps—with links to live demos and source where available.
+            </Desc>
+          </SectionHeader>
+          <ToggleButtonGroup role="tablist" aria-label="Filter projects by type">
+            {FILTERS.map((f, i) => (
+              <React.Fragment key={f.value}>
+                {i > 0 && <Divider aria-hidden />}
+                <ToggleButton
+                  type="button"
+                  role="tab"
+                  aria-selected={toggle === f.value}
+                  $active={toggle === f.value}
+                  onClick={() => setToggle(f.value)}
+                >
+                  {f.label}
+                </ToggleButton>
+              </React.Fragment>
+            ))}
           </ToggleButtonGroup>
           <CardContainer>
-            {toggle === "all" &&
-              projects.map((project) => (
-                <ProjectCard
-                  project={project}
-                  openModal={openModal}
-                  setOpenModal={setOpenModal}
-                />
-              ))}
-            {projects
-              .filter((item) => item.category === toggle)
-              .map((project) => (
-                <ProjectCard
-                  project={project}
-                  openModal={openModal}
-                  setOpenModal={setOpenModal}
-                />
-              ))}
+            {visibleProjects.map((project) => (
+              <ProjectCard
+                key={project.id}
+                project={project}
+                setOpenModal={setOpenModal}
+              />
+            ))}
           </CardContainer>
-        </Wrapper>
-      </Container>
+        </Inner>
+      </PageBackdrop>
       {openModal.state && (
         <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
       )}
@@ -122,4 +97,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsPage;

@@ -13,6 +13,15 @@ export const LoaderWrapper = styled.div`
   width: 100vw;
   overflow: hidden;
   z-index: 100;
+  position: fixed;
+  inset: 0;
+  background:
+    radial-gradient(
+      70% 55% at 50% 0%,
+      ${({ theme }) => `${theme.primary}22`},
+      transparent 72%
+    ),
+    ${({ theme }) => theme.bg};
 
   &::-webkit-scrollbar {
     display: none;
@@ -30,20 +39,84 @@ export const LoaderWrapperSpinner = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 18px;
 `;
 
-const spin = keyframes`
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+const rotate = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`;
+
+const pulse = keyframes`
+  0%, 100% {
+    opacity: 0.6;
+    transform: scale(0.96);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+`;
+
+const shimmer = keyframes`
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+`;
+
+export const SpinnerCore = styled.div`
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: ${({ theme }) => theme.primary};
+  box-shadow: 0 0 20px ${({ theme }) => `${theme.primary}aa`};
+  animation: ${pulse} 1.4s ease-in-out infinite;
+`;
+
+export const SpinnerRing = styled.div`
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  border-top-color: ${({ theme }) => theme.primary};
+  border-right-color: ${({ theme }) => `${theme.primary}99`};
+  animation: ${rotate} ${({ $speed }) => $speed || "1.1s"} linear infinite;
 `;
 
 export const Spinner = styled.div`
-  border: 2px solid ${({ theme }) => theme.primary};
-  border-top: 2px solid ${({ theme }) => theme.card};
-  border-radius: 50%;
-  width: 3rem;
-  aspect-ratio: 1/ 1;
-  animation: ${spin} 1s linear infinite;
+  position: relative;
+  width: 64px;
+  height: 64px;
+  display: grid;
+  place-items: center;
+`;
+
+export const LoaderText = styled.p`
+  margin: 0;
+  font-size: 1rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  background: linear-gradient(
+    100deg,
+    ${({ theme }) => theme.text_primary} 0%,
+    ${({ theme }) => theme.primary} 45%,
+    rgba(249, 115, 22, 0.9) 60%,
+    ${({ theme }) => theme.text_primary} 100%
+  );
+  background-size: 200% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: ${shimmer} 1.9s linear infinite;
 `;
 
 function App() {
@@ -64,7 +137,12 @@ function App() {
         fallback={
           <LoaderWrapper>
             <LoaderWrapperSpinner>
-              <Spinner />
+              <Spinner>
+                <SpinnerRing $speed="1.2s" />
+                <SpinnerRing $speed="1.9s" />
+                <SpinnerCore />
+              </Spinner>
+              <LoaderText>Loading...</LoaderText>
             </LoaderWrapperSpinner>
           </LoaderWrapper>
         }

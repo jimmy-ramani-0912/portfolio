@@ -1,6 +1,9 @@
 import React, { useState } from "react";
 import {
-  Wrapper,
+  Container,
+  Inner,
+  SectionHeader,
+  Eyebrow,
   Title,
   Desc,
   CardContainer,
@@ -10,7 +13,14 @@ import { blogs } from "../../data/constants";
 import BlogDetails from "../../components/BlogDetails";
 import styled from "styled-components";
 
-const Container = styled.div`
+const Body = styled.div`
+  background-color: ${({ theme }) => theme.bg};
+  width: 100%;
+  overflow-x: hidden;
+  min-height: calc(100dvh - 80px);
+`;
+
+const PageBackdrop = styled.div`
   background: linear-gradient(
     343.07deg,
     rgba(132, 59, 206, 0.06) 5.71%,
@@ -18,21 +28,13 @@ const Container = styled.div`
   );
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 1;
-  align-items: center;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 100% 98%, 0 100%);
+  padding: clamp(40px, 6vw, 72px) clamp(16px, 4vw, 32px) 80px;
 `;
 
-const Body = styled.div`
-  background-color: ${({ theme }) => theme.bg};
-  width: 100%;
-  overflow-x: hidden;
-  height: calc(100dvh - 80px);
-`;
-
-const Blogs = () => {
+const BlogsPage = () => {
   const [openBlogModal, setOpenBlogModal] = useState({
     state: false,
     blog: null,
@@ -40,13 +42,16 @@ const Blogs = () => {
 
   return (
     <Body>
-      <Container>
-        <Wrapper>
-          <Title>Blogs</Title>
-          <Desc>
-            Join me as I share insights from my journey developing web and
-            Android apps.
-          </Desc>
+      <PageBackdrop>
+        <Inner>
+          <SectionHeader>
+            <Eyebrow>Writing</Eyebrow>
+            <Title id="blogs-page-heading">Blogs</Title>
+            <Desc>
+              Notes on web and mobile development—patterns, tooling, and lessons
+              learned while building real products.
+            </Desc>
+          </SectionHeader>
           <CardContainer>
             {blogs.map((blog) => (
               <BlogCards
@@ -57,8 +62,8 @@ const Blogs = () => {
               />
             ))}
           </CardContainer>
-        </Wrapper>
-      </Container>
+        </Inner>
+      </PageBackdrop>
       {openBlogModal.state && (
         <BlogDetails
           openBlogModal={openBlogModal}
@@ -69,4 +74,4 @@ const Blogs = () => {
   );
 };
 
-export default Blogs;
+export default BlogsPage;

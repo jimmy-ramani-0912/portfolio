@@ -1,121 +1,137 @@
 import styled from "styled-components";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
+import ArticleIcon from "@mui/icons-material/Article";
+import CodeIcon from "@mui/icons-material/Code";
 import { Bio } from "../../data/constants";
 
-const FooterContainer = styled.div`
+const FooterContainer = styled.footer`
   width: 100%;
-  padding: 2rem 0;
+  padding: clamp(44px, 7vw, 72px) clamp(16px, 4vw, 32px) clamp(28px, 5vw, 44px);
   display: flex;
   justify-content: center;
-  //background: linear-gradient(100.26deg, rgba(0, 102, 255, 0.05) 42.33%, rgba(150, 0, 225, 0.05) 127.07%);
+  position: relative;
+  z-index: 1;
 `;
 
-const FooterWrapper = styled.footer`
+const FooterWrapper = styled.div`
   width: 100%;
-  max-width: 1200px;
+  max-width: min(1040px, 100%);
   display: flex;
   flex-direction: column;
-  gap: 14px;
+  gap: 16px;
   align-items: center;
-  padding: 1rem;
+  padding: 0;
   color: ${({ theme }) => theme.text_primary};
 `;
 
 const Logo = styled.h1`
-  font-weight: 600;
-  font-size: 20px;
-  color: ${({ theme }) => theme.primary};
-`;
-
-const Nav = styled.nav`
-  width: 100%;
-  max-width: 800px;
-  margin-top: 0.5rem;
-  display: flex;
-  flex-direction: row;
-  gap: 2rem;
-  justify-content: center;
-  @media (max-width: 768px) {
-    flex-wrap: wrap;
-    gap: 1rem;
-    justify-content: center;
-    text-align: center;
-    font-size: 12px;
-  }
-`;
-
-const NavLink = styled.a`
-  color: ${({ theme }) => theme.text_primary};
-  text-decoration: none;
-  font-size: 1.2rem;
-  transition: color 0.2s ease-in-out;
-  &:hover {
-    color: ${({ theme }) => theme.primary};
-  }
-  @media (max-width: 768px) {
-    font-size: 1rem;
-  }
+  margin: 0;
+  font-size: clamp(1.25rem, 2.6vw, 1.65rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  background: linear-gradient(
+    110deg,
+    ${({ theme }) => theme.text_primary} 0%,
+    ${({ theme }) => theme.text_primary} 38%,
+    ${({ theme }) => theme.primary} 76%,
+    rgba(249, 115, 22, 0.88) 108%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
 `;
 
 const SocialMediaIcons = styled.div`
   display: flex;
-  margin-top: 1rem;
+  justify-content: center;
+  gap: 12px;
 `;
 
 const SocialMediaIcon = styled.a`
-  display: inline-block;
-  margin: 0 1rem;
-  font-size: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   color: ${({ theme }) => theme.text_primary};
-  transition: color 0.2s ease-in-out;
+  text-decoration: none;
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid ${({ theme }) => theme.navBorder};
+  background: ${({ theme }) => theme.card_light};
+  transition:
+    transform 0.2s ease,
+    border-color 0.2s ease;
   &:hover {
+    transform: translateY(-2px);
+    border-color: ${({ theme }) => theme.primary}66;
     color: ${({ theme }) => theme.primary};
+  }
+  svg {
+    font-size: 1.2rem;
   }
 `;
 
 const Copyright = styled.p`
-  margin-top: 1.5rem;
-  font-size: 0.9rem;
+  margin: 2px 0 0;
+  font-size: 0.85rem;
   color: ${({ theme }) => theme.soft2};
   text-align: center;
 `;
 
-const Document = styled.img`
-  height: 23px;
-  width: fit-content;
-  border-radius: 10px;
-
-  filter: ${({ theme }) => theme.filter};
-`;
-
 function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <FooterContainer>
       <FooterWrapper>
-        <Logo>Jimmy Ramani</Logo>
-        <Nav>
-          <NavLink href="#about">About</NavLink>
-          <NavLink href="#skills">Skills</NavLink>
-          <NavLink href="#experience">Experience</NavLink>
-          <NavLink href="#projects">Projects</NavLink>
-          <NavLink href="#education">Education</NavLink>
-        </Nav>
+        <Logo>{Bio.name}</Logo>
         <SocialMediaIcons>
-          <SocialMediaIcon href={Bio.linkedin} target="display">
+          <SocialMediaIcon
+            href={Bio.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="GitHub"
+          >
+            <GitHubIcon />
+          </SocialMediaIcon>
+          <SocialMediaIcon
+            href={Bio.linkedin}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
             <LinkedInIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.codepen} target="display">
-            <Document src="https://www.svgrepo.com/show/353582/codepen-icon.svg" />
+          <SocialMediaIcon
+            href={Bio.medium}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Medium"
+          >
+            <ArticleIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.medium} target="display">
-            <Document src="https://www.svgrepo.com/show/354057/medium-icon.svg" />
+          <SocialMediaIcon
+            href={Bio.codepen}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="CodePen"
+          >
+            <CodeIcon />
           </SocialMediaIcon>
-          <SocialMediaIcon href={Bio.insta} target="display">
+          <SocialMediaIcon
+            href={Bio.insta}
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram"
+          >
             <InstagramIcon />
           </SocialMediaIcon>
         </SocialMediaIcons>
-        <Copyright>&copy; 2024 Jimmy Ramani. All rights reserved.</Copyright>
+        <Copyright>&copy; {year} {Bio.name}. All rights reserved.</Copyright>
       </FooterWrapper>
     </FooterContainer>
   );

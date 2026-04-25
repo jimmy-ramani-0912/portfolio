@@ -24,9 +24,76 @@ import { FaBars, FaMoon } from "react-icons/fa";
 
 const Navbar = ({ darkMode, toggleDarkMode }) => {
   const [isOpen, setIsOpen] = React.useState(false);
+  const [activeSection, setActiveSection] = React.useState("about");
   const theme = useTheme();
   const navigate = useNavigate();
   const navSpotlight = useSpotlightCardHandlers();
+  const basePath = React.useMemo(() => {
+    const baseUrl = import.meta.env.BASE_URL || "/";
+    return baseUrl.endsWith("/") ? baseUrl : `${baseUrl}/`;
+  }, []);
+  const sectionIds = React.useMemo(
+    () => ["about", "skills", "experience", "projects", "education", "blogs"],
+    []
+  );
+  const sectionHref = React.useCallback(
+    (sectionId) => `${basePath}#${sectionId}`,
+    [basePath]
+  );
+  const handleSectionNavigate = React.useCallback(
+    (sectionId) => {
+      setActiveSection(sectionId);
+      navigate({ pathname: basePath, hash: `#${sectionId}` });
+    },
+    [basePath, navigate]
+  );
+
+  React.useEffect(() => {
+    const syncActiveSection = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop < 220) {
+        setActiveSection("about");
+        return;
+      }
+      const viewportMarker = window.innerHeight * 0.38;
+      let current = sectionIds[0];
+      let nearestId = sectionIds[0];
+      let nearestDistance = Number.POSITIVE_INFINITY;
+      let hasMarkerMatch = false;
+
+      for (const id of sectionIds) {
+        const section = document.getElementById(id);
+        if (!section) {
+          continue;
+        }
+        const rect = section.getBoundingClientRect();
+        const distanceToMarker = Math.abs(rect.top - viewportMarker);
+        if (distanceToMarker < nearestDistance) {
+          nearestDistance = distanceToMarker;
+          nearestId = id;
+        }
+        if (rect.top <= viewportMarker && rect.bottom > viewportMarker) {
+          hasMarkerMatch = true;
+          current = id;
+          break;
+        }
+      }
+
+      if (!hasMarkerMatch) {
+        setActiveSection("");
+        return;
+      }
+      setActiveSection(current === sectionIds[0] ? nearestId : current);
+    };
+
+    syncActiveSection();
+    window.addEventListener("scroll", syncActiveSection, { passive: true });
+    window.addEventListener("resize", syncActiveSection);
+    return () => {
+      window.removeEventListener("scroll", syncActiveSection);
+      window.removeEventListener("resize", syncActiveSection);
+    };
+  }, [sectionIds]);
 
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -35,7 +102,7 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   return (
     <Nav>
       <NavbarContainer {...navSpotlight}>
-        <NavLogo to="/portfolio">
+        <NavLogo to={basePath}>
           <a
             onClick={() => scrollToTop()}
             style={{
@@ -57,49 +124,55 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         </MobileIcon>
         <NavItems>
           <NavLink
-            href="#about"
+            href={sectionHref("about")}
+            className={activeSection === "about" ? "active" : ""}
             onClick={() => {
-              navigate("portfolio#about");
+              handleSectionNavigate("about");
             }}
           >
             About
           </NavLink>
           <NavLink
-            href="#skills"
+            href={sectionHref("skills")}
+            className={activeSection === "skills" ? "active" : ""}
             onClick={() => {
-              navigate("portfolio#skills");
+              handleSectionNavigate("skills");
             }}
           >
             Skills
           </NavLink>
           <NavLink
-            href="#experience"
+            href={sectionHref("experience")}
+            className={activeSection === "experience" ? "active" : ""}
             onClick={() => {
-              navigate("portfolio#experience");
+              handleSectionNavigate("experience");
             }}
           >
             Experience
           </NavLink>
           <NavLink
-            href="#projects"
+            href={sectionHref("projects")}
+            className={activeSection === "projects" ? "active" : ""}
             onClick={() => {
-              navigate("portfolio#projects");
+              handleSectionNavigate("projects");
             }}
           >
             Projects
           </NavLink>
           <NavLink
-            href="#education"
+            href={sectionHref("education")}
+            className={activeSection === "education" ? "active" : ""}
             onClick={() => {
-              navigate("portfolio#education");
+              handleSectionNavigate("education");
             }}
           >
             Education
           </NavLink>
           <NavLink
-            href="#blogs"
+            href={sectionHref("blogs")}
+            className={activeSection === "blogs" ? "active" : ""}
             onClick={() => {
-              navigate("portfolio#blogs");
+              handleSectionNavigate("blogs");
             }}
           >
             Blogs
@@ -117,54 +190,60 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
         {isOpen && (
           <MobileMenu isOpen={isOpen}>
             <MobileLink
-              href="#about"
+              href={sectionHref("about")}
+              className={activeSection === "about" ? "active" : ""}
               onClick={() => {
-                navigate("portfolio#about");
+                handleSectionNavigate("about");
                 setIsOpen(!isOpen);
               }}
             >
               About
             </MobileLink>
             <MobileLink
-              href="#skills"
+              href={sectionHref("skills")}
+              className={activeSection === "skills" ? "active" : ""}
               onClick={() => {
-                navigate("portfolio#skills");
+                handleSectionNavigate("skills");
                 setIsOpen(!isOpen);
               }}
             >
               Skills
             </MobileLink>
             <MobileLink
-              href="#experience"
+              href={sectionHref("experience")}
+              className={activeSection === "experience" ? "active" : ""}
               onClick={() => {
-                navigate("portfolio#experience");
+                handleSectionNavigate("experience");
                 setIsOpen(!isOpen);
               }}
             >
               Experience
             </MobileLink>
             <MobileLink
-              href="#projects"
+              href={sectionHref("projects")}
+              className={activeSection === "projects" ? "active" : ""}
               onClick={() => {
-                navigate("portfolio#projects");
+                handleSectionNavigate("projects");
                 setIsOpen(!isOpen);
               }}
             >
               Projects
             </MobileLink>
             <MobileLink
-              href="#education"
+              href={sectionHref("education")}
+              className={activeSection === "education" ? "active" : ""}
               onClick={() => {
-                navigate("portfolio#education");
+                handleSectionNavigate("education");
                 setIsOpen(!isOpen);
               }}
             >
               Education
             </MobileLink>
             <MobileLink
-              href="#blogs"
+              href={sectionHref("blogs")}
+              className={activeSection === "blogs" ? "active" : ""}
               onClick={() => {
-                navigate("portfolio#blogs");
+                handleSectionNavigate("blogs");
                 setIsOpen(!isOpen);
               }}
             >

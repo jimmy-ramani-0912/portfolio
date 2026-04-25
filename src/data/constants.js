@@ -1,8 +1,20 @@
 export const Bio = {
   name: "Jimmy Ramani",
-  roles: ["Full Stack Developer", "Flutter Developer", "DevOps Engineer"],
-  description:
-    "I am a motivated and versatile individual with a passion for learning and a dedication to delivering high-quality results. With a positive attitude and a growth mindset, I am always eager to take on new challenges and make a meaningful contribution to web and mobile projects, leveraging my skills that encompass the entire software development lifecycle.",
+  roles: [
+    "Full Stack Developer",
+    "Frontend Developer",
+    "Backend Developer",
+    "Cloud & DevOps Engineer",
+  ],
+  description: {
+    lead:
+      "Full Stack Developer with 2.6+ years building scalable web applications and AI-enabled solutions using React.js, Next.js, Angular, and Node.js.",
+    bullets: [
+      "Skilled in designing efficient APIs, database management, optimizing application performance, and deploying cloud-based solutions.",
+      "Experienced leading projects end-to-end and delivering high-quality, business-focused solutions through strong technical expertise and problem-solving.",
+      "Interested in impactful projects and continuously improving my technical skills.",
+    ],
+  },
   github: "https://github.com/jimmy-ramani-0912",
   resume:
     "https://drive.google.com/file/d/18HR0Lhic-0FFP3qE-vRRo-99xVlG4nql/view?usp=drive_link",
@@ -62,12 +74,12 @@ export const skills = [
       {
         name: "Antd",
         image:
-          "https://static-00.iconduck.com/assets.00/ant-design-icon-2048x2046-dl3neb73.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/antdesign/antdesign-original.svg",
       },
       {
         name: "Sass",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/96/Sass_Logo_Color.svg/2560px-Sass_Logo_Color.svg.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/sass/sass-original.svg",
       },
       {
         name: "Styled-component",
@@ -93,14 +105,24 @@ export const skills = [
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/express/express-original-wordmark.svg",
       },
       {
+        name: "Socket.io",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/socketio/socketio-original.svg",
+      },
+      {
         name: "MongoDB",
         image:
           "https://raw.githubusercontent.com/devicons/devicon/master/icons/mongodb/mongodb-original-wordmark.svg",
       },
       {
-        name: "PostgresSQL",
+        name: "PostgreSQL",
         image:
-          "https://static-00.iconduck.com/assets.00/postgresql-original-wordmark-icon-512x509-kcfxxtk0.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/postgresql/postgresql-original.svg",
+      },
+      {
+        name: "Redis",
+        image:
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/redis/redis-original.svg",
       },
       {
         name: "Firebase",
@@ -118,12 +140,12 @@ export const skills = [
       {
         name: "CI/CD",
         image:
-          "https://www.parasoft.com/wp-content/uploads/2021/04/CICD_CICD.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/githubactions/githubactions-plain.svg",
       },
       {
         name: "EC2",
         image:
-          "https://static-00.iconduck.com/assets.00/aws-ec2-icon-423x512-iaajemnx.png",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/amazonwebservices/amazonwebservices-original-wordmark.svg",
       },
       {
         name: "Docker",
@@ -166,7 +188,20 @@ export const skills = [
       {
         name: "VS Code",
         image:
-          "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/512px-Visual_Studio_Code_1.35_icon.svg.png?20210804221519",
+          "https://raw.githubusercontent.com/devicons/devicon/master/icons/vscode/vscode-original.svg",
+      },
+      {
+        name: "Cursor",
+        image: "https://cdn.jsdelivr.net/npm/simple-icons@16/icons/cursor.svg",
+      },
+      {
+        name: "Claude",
+        image: "https://cdn.jsdelivr.net/npm/simple-icons@16/icons/claude.svg",
+      },
+      {
+        name: "Antigravity",
+        image:
+          "https://cdn.jsdelivr.net/npm/simple-icons@16/icons/googlegemini.svg",
       },
       {
         name: "Netlify",
@@ -186,15 +221,32 @@ export const skills = [
   },
 ];
 
+const faviconLogo = (origin) =>
+  `https://t2.gstatic.com/faviconV2?client=SOCIAL&type=FAVICON&fallback_opts=TYPE,SIZE,URL&url=${encodeURIComponent(
+    origin
+  )}&size=128`;
+
 export const experiences = [
   {
     id: 0,
-    img: "https://media.glassdoor.com/sql/3167804/softrefine-technology-squarelogo-1644826824493.png",
+    img: faviconLogo("https://softrefine.com"),
     role: "Full Stack Developer",
-    company: "SoftRefine Technology",
-    date: "Jun 2023 - Present",
-    desc: "Created a user-friendly and exceptionally responsive web dashboard with clean code, in addition to developing essential JavaScript components for daily use.",
-    skills: ["ReactJS", "HTML", "CSS", "SASS/SCSS", "Styled CSS", "Tailwind"],
+    company: "SoftRefine Technology Pvt. Ltd.",
+    date: "Jun '23 – Present",
+    desc: `▪ Developed and maintained high-performance full-stack web applications using React.js, Node.js, Next.js, Angular, and various databases, contributing to a 30% increase in customer engagement.
+▪ Improved frontend performance through code-splitting, lazy loading, memoization, and optimized rendering, reducing load time by 45%.
+▪ Designed and developed secure REST APIs while optimizing database queries, reducing API latency by 35%.
+▪ Led multiple end-to-end full-stack projects from concept to deployment, ensuring clean architecture, reusable components and maintainability using best coding practices.`,
+    skills: [
+      "React.js",
+      "Node.js",
+      "Next.js",
+      "Angular",
+      "REST APIs",
+      "Tailwind",
+      "HTML",
+      "CSS",
+    ],
     doc: [
       {
         link: "https://invoice-gen-me.netlify.app/",
@@ -233,12 +285,15 @@ export const experiences = [
   },
   {
     id: 1,
-    img: "https://websolguru.com/admin/dist/img/services/mobility.png",
-    role: "Mobile Application Intern",
-    company: "WebSolGuru",
-    date: "Nov 2022 - Jan 2023",
-    desc: "I've crafted interactive Flutter applications as a front-end developer, focusing on perfecting UI responsiveness and seamlessly integrating CRUD API functionality to elevate the overall user experience.",
-    skills: ["Flutter"],
+    img: faviconLogo("https://websolguru.com"),
+    role: "Full Stack Developer Intern",
+    company: "WebSolGuru Pvt. Ltd.",
+    date: "Nov '22 – Jan '23",
+    desc: `▪ Built interactive mobile applications using Flutter with responsive UIs and smooth animations.
+▪ Developed and integrated Node.js CRUD APIs, improving app performance and user interactivity.
+▪ Applied state management (BLoC, Provider, and Riverpod) to improve scalability and performance.
+▪ Published app to Google Play Store, reaching 100+ downloads and maintaining a 4.8+ rating.`,
+    skills: ["Flutter", "Dart", "Node.js", "BLoC", "Provider", "Riverpod"],
     doc: [
       {
         link: "https://play.google.com/store/apps/details?id=com.websolguru.anwarkamal&hl=en_US",
@@ -254,12 +309,15 @@ export const experiences = [
   },
   {
     id: 2,
-    img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSmr-8ac8lkmGeTe3g2y4vTwvIR0F_H_AJKYCQmyG3das0Pb72ZD82ODvCr6zYsFdlJPN8&usqp=CAU",
-    role: "Mobile Application Intern",
+    img: faviconLogo("https://webearl.com"),
+    role: "Full Stack Developer Intern",
     company: "WebEarl Technologies Pvt. Ltd.",
-    date: "May 2022 - Jun 2022",
-    desc: "As a front-end developer, I designed interactive Flutter applications, optimizing UI responsiveness and integrating CRUD API functionality to enhance user experiences.",
-    skills: ["Flutter"],
+    date: "May '22 – Jun '22",
+    desc: `▪ Designed clean, modern Flutter UIs, improving load times and user engagement.
+▪ Built and integrated Node.js APIs with real-time updates for seamless app interaction.
+▪ Focused on frontend optimization for faster performance and smoother UX.
+▪ Integrated Razorpay for secure and reliable online payments.`,
+    skills: ["Flutter", "Dart", "Node.js", "Razorpay"],
     doc: [
       {
         link: "https://medium.com/@jimmyramani/zambet-ecommerce-application-79e97f7c6e47",
@@ -379,7 +437,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     github:
       "https://github.com/jimmy-ramani-0912/Akshar-Pharmacy-Salesman-Tracking-App",
     webapp:
-      "https://play.google.com/store/apps/details?id=com.aksharpharmacy.salesman_tracking_appcking_app",
+      "https://play.google.com/store/apps/details?id=com.aksharpharmacy.salesman_tracking_app",
   },
   {
     id: 22,
@@ -712,19 +770,45 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
 
 export const TimeLineData = [
   {
-    year: 2024,
-    text: "Deployed Scalable Solutions Using Cloudflare, GCP, AWS, and Docker",
+    year: 2026,
+    text: "Started learning AI tools deeply and focused on integrating AI capabilities into real-world applications and workflows.",
   },
-  { year: 2024, text: "Integrated NestJS to Enhance Backend Architecture" },
-  { year: 2024, text: "Commenced Leveraging Node.js for Real-world Solutions" },
+  {
+    year: 2025,
+    text: "Continued as a Full Stack Developer, strengthening expertise across React.js, Next.js, Angular, Node.js, and cloud platforms.",
+  },
+  {
+    year: 2024,
+    text: "Led end-to-end full-stack delivery at Softrefine, improving frontend performance and API responsiveness.",
+  },
+  {
+    year: 2024,
+    text: "Expanded experience in scalable architecture, API optimization, and production-grade engineering practices.",
+  },
+  {
+    year: 2024,
+    text: "Completed BTech in Information Technology from CHARUSAT with 8.94 CGPA.",
+  },
   {
     year: 2023,
-    text: "Initiated the Implementation of React.js in Real-world Projects",
+    text: "Joined Softrefine Technology Pvt Ltd as a Full Stack Developer and started building scalable production applications.",
   },
-  { year: 2023, text: "Shared my Passion Projects & Knowledge with the World" },
-  { year: 2023, text: "JavaScript Proficiency & Delved into React.js" },
-  { year: 2022, text: "Worked as a flutter freelancer" },
-  { year: 2021, text: "Began the Journey" },
+  {
+    year: 2022,
+    text: "Worked as a Full Stack Developer Intern at WebSolGuru, built Flutter apps, integrated Node.js APIs, and shipped to Play Store.",
+  },
+  {
+    year: 2022,
+    text: "Completed internship at WebEarl Technologies, building Flutter UIs, real-time Node.js APIs, and Razorpay integrations.",
+  },
+  {
+    year: 2022,
+    text: "Strengthened core full-stack fundamentals through consistent hands-on development and production-focused learning.",
+  },
+  {
+    year: 2021,
+    text: "Started professional development journey with JavaScript, frontend engineering, and backend fundamentals.",
+  },
 ];
 
 import SSR from "../../public/blog/ssr.pdf";

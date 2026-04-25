@@ -4,152 +4,286 @@ import { glassCard, glassChip } from "../../theme/mixins";
 import { skills } from "../../data/constants";
 import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
-const Container = styled.div`
+const Container = styled.section`
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
   z-index: 1;
   align-items: center;
-  padding: 80px 0px 80px 0px;
+  padding: clamp(56px, 8vw, 96px) clamp(16px, 4vw, 32px);
 `;
 
-const Wrapper = styled.div`
-  position: relative;
+const Inner = styled.div`
+  width: 100%;
+  max-width: min(1240px, 90vw);
   display: flex;
-  justify-content: space-between;
-  align-items: center;
   flex-direction: column;
-  width: 100%;
-  max-width: 1100px;
-  gap: 12px;
-  @media (max-width: 960px) {
-    flex-direction: column;
-  }
+  align-items: center;
 `;
 
-export const Title = styled.div`
-  font-size: 42px;
-  text-align: center;
-  font-weight: 600;
-  margin-top: 20px;
-  color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 768px) {
-    margin-top: 12px;
-    font-size: 32px;
-  }
-`;
-
-export const Desc = styled.div`
-  font-size: 18px;
-  text-align: center;
-  max-width: 600px;
-  color: ${({ theme }) => theme.text_secondary};
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
-const SkillsContainer = styled.div`
-  width: 100%;
+const SectionHeader = styled.header`
   display: flex;
-  flex-wrap: wrap;
-  margin-top: 30px;
-  gap: 30px;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  max-width: 720px;
 `;
 
-const Skill = styled.div`
+const Eyebrow = styled.span`
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: ${({ theme }) => theme.text_secondary};
+  &::before {
+    content: "";
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: ${({ theme }) => theme.primary};
+    box-shadow:
+      0 0 0 3px rgba(133, 76, 230, 0.2),
+      0 0 16px rgba(133, 76, 230, 0.45);
+  }
+`;
+
+const Title = styled.h2`
+  margin: 0;
+  font-size: clamp(2rem, 4.2vw, 2.75rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  background: linear-gradient(
+    110deg,
+    ${({ theme }) => theme.text_primary} 0%,
+    ${({ theme }) => theme.text_primary} 36%,
+    ${({ theme }) => theme.primary} 76%,
+    rgba(249, 115, 22, 0.88) 108%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+`;
+
+const Desc = styled.p`
+  margin: 0;
+  font-size: clamp(0.95rem, 1.4vw, 1.0625rem);
+  line-height: 1.65;
+  color: ${({ theme }) => theme.text_secondary};
+  max-width: 56ch;
+`;
+
+const SkillsGridWrap = styled.div`
+  position: relative;
   width: 100%;
-  max-width: 500px;
+  margin-top: clamp(36px, 5vw, 52px);
+`;
+
+const GridCenterOrb = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: ${({ theme }) => theme.primary};
+  box-shadow:
+    0 0 0 5px rgba(133, 76, 230, 0.22),
+    0 0 36px rgba(133, 76, 230, 0.55),
+    0 0 72px rgba(133, 76, 230, 0.2);
+  pointer-events: none;
+  z-index: 3;
+  @media (max-width: 720px) {
+    display: none;
+  }
+`;
+
+const SkillsGrid = styled.div`
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  align-items: stretch;
+  @media (min-width: 721px) {
+    grid-template-rows: repeat(2, 1fr);
+  }
+  @media (max-width: 720px) {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+    gap: 20px;
+  }
+`;
+
+const Skill = styled.article`
+  position: relative;
+  width: 100%;
+  height: 100%;
+  min-height: 0;
   ${glassCard}
-  border-color: ${({ theme }) => theme.primary}55;
-  border-radius: 16px;
-  padding: 18px 36px;
-  @media (max-width: 768px) {
-    max-width: 400px;
-    padding: 10px 36px;
+  border-radius: 20px;
+  padding: 0;
+  border-color: ${({ theme }) => theme.primary}40;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    border-radius: 20px 20px 0 0;
+    background: linear-gradient(
+      90deg,
+      ${({ theme }) => theme.primary} 0%,
+      rgba(249, 115, 22, 0.75) 48%,
+      ${({ theme }) => theme.primary} 100%
+    );
+    z-index: 2;
+    pointer-events: none;
+  }
+`;
+
+const SkillCardInner = styled.div`
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  min-height: 0;
+  padding: 28px 26px 26px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  @media (max-width: 720px) {
+    padding: 24px 18px 22px;
+    gap: 16px;
   }
   @media (max-width: 500px) {
-    max-width: 330px;
-    padding: 10px 36px;
+    padding: 22px 14px 18px;
   }
 `;
 
-const SkillTitle = styled.h2`
-  font-size: 28px;
-  font-weight: 600;
-  color: ${({ theme }) => theme.text_secondary};
-  margin-bottom: 20px;
+const SkillHead = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 `;
 
-const SkillList = styled.div`
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 12px;
-  margin-bottom: 20px;
+const SkillTitle = styled.h3`
+  margin: 0;
+  width: 100%;
+  font-size: clamp(1.2rem, 2.1vw, 1.5rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  line-height: 1.25;
+  color: ${({ theme }) => theme.text_primary};
+  text-align: center;
 `;
 
-const SkillItem = styled.div`
-  font-size: 16px;
-  font-weight: 400;
+const SkillList = styled.ul`
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-content: center;
+  justify-content: center;
+`;
+
+const SkillItem = styled.li`
+  font-size: clamp(0.9rem, 1.35vw, 1rem);
+  font-weight: 500;
   ${glassChip}
-  color: ${({ theme }) => theme.text_primary + 80};
+  color: ${({ theme }) => theme.text_primary};
   border-radius: 12px;
-  padding: 12px 16px;
+  padding: 11px 15px 11px 11px;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  transition: transform 0.2s ease;
+  &:hover {
+    transform: translateY(-2px);
+  }
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+    padding: 9px 12px 9px 9px;
+  }
+`;
+
+const IconWrap = styled.span`
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px;
-  @media (max-width: 768px) {
-    font-size: 14px;
-    padding: 8px 12px;
-  }
-  @media (max-width: 500px) {
-    font-size: 14px;
-    padding: 6px 12px;
-  }
+  width: 38px;
+  height: 38px;
+  border-radius: 10px;
+  background: ${({ theme }) => theme.card_light};
+  border: 1px solid ${({ theme }) => theme.navBorder};
+  flex-shrink: 0;
 `;
 
 const SkillImage = styled.img`
   width: 24px;
   height: 24px;
+  object-fit: contain;
 `;
 
 const SkillPanel = ({ skill }) => {
   const spotlight = useSpotlightCardHandlers();
   return (
     <Skill {...spotlight}>
-      <SkillTitle>{skill.title}</SkillTitle>
-      <SkillList>
-        {skill.skills.map((item) => (
-          <SkillItem key={item.name}>
-            <SkillImage src={item.image} />
-            {item.name}
-          </SkillItem>
-        ))}
-      </SkillList>
+      <SkillCardInner>
+        <SkillHead>
+          <SkillTitle>{skill.title}</SkillTitle>
+        </SkillHead>
+        <SkillList>
+          {skill.skills.map((item) => (
+            <SkillItem key={item.name}>
+              <IconWrap>
+                <SkillImage
+                  src={item.image}
+                  alt=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </IconWrap>
+              {item.name}
+            </SkillItem>
+          ))}
+        </SkillList>
+      </SkillCardInner>
     </Skill>
   );
 };
 
 const Skills = () => {
   return (
-    <Container id="skills">
-      <Wrapper>
-        <Title>Skills</Title>
-        <Desc>
-          Here are some of my skills on which I have been working on for the
-          past 4 years.
-        </Desc>
-        <SkillsContainer>
-          {skills.map((skill) => (
-            <SkillPanel key={skill.title} skill={skill} />
-          ))}
-        </SkillsContainer>
-      </Wrapper>
+    <Container id="skills" aria-labelledby="skills-heading">
+      <Inner>
+        <SectionHeader>
+          <Eyebrow>Tech stack</Eyebrow>
+          <Title id="skills-heading">Skills</Title>
+          <Desc>
+            Here are some of my skills on which I have been working on for the
+            past 4 years.
+          </Desc>
+        </SectionHeader>
+        <SkillsGridWrap>
+          <GridCenterOrb aria-hidden />
+          <SkillsGrid>
+            {skills.map((skill) => (
+              <SkillPanel key={skill.title} skill={skill} />
+            ))}
+          </SkillsGrid>
+        </SkillsGridWrap>
+      </Inner>
     </Container>
   );
 };
