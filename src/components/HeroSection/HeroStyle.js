@@ -160,11 +160,12 @@ export const HeroRightContainer = styled.div`
   width: 100%;
   display: flex;
   order: 2;
-  justify-content: flex-end;
+  // justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   @media (max-width: 960px) {
     order: 1;
-    justify-content: center;
+    // justify-content: center;
     margin-bottom: 12px;
   }
 `;
@@ -188,7 +189,8 @@ export const ProfileFrame = styled.div`
 
 export const Img = styled.img`
   display: block;
-  object-fit: cover;
+  // object-fit: cover;
+  object-fit: contain;
   width: 100%;
   height: 100%;
   max-width: 392px;

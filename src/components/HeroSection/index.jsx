@@ -21,7 +21,7 @@ import {
   ResumeButton,
   ProfileFrame,
 } from "./HeroStyle";
-import HeroImg from "../../images/photo.jpg";
+import HeroImg from "../../images/me.png";
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
 
