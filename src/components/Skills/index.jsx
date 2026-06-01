@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { glassCard, glassChip } from "../../theme/mixins";
+import { sectionEyebrowDot, sectionTitleGradient } from "../../theme/sectionStyles";
 import { skills } from "../../data/constants";
 import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
@@ -40,16 +41,7 @@ const Eyebrow = styled.span`
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: ${({ theme }) => theme.text_secondary};
-  &::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px rgba(133, 76, 230, 0.2),
-      0 0 16px rgba(133, 76, 230, 0.45);
-  }
+  ${sectionEyebrowDot}
 `;
 
 const Title = styled.h2`
@@ -58,17 +50,7 @@ const Title = styled.h2`
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 36%,
-    ${({ theme }) => theme.primary} 76%,
-    rgba(249, 115, 22, 0.88) 108%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  ${sectionTitleGradient}
 `;
 
 const Desc = styled.p`
@@ -95,9 +77,9 @@ const GridCenterOrb = styled.div`
   border-radius: 50%;
   background: ${({ theme }) => theme.primary};
   box-shadow:
-    0 0 0 5px rgba(133, 76, 230, 0.22),
-    0 0 36px rgba(133, 76, 230, 0.55),
-    0 0 72px rgba(133, 76, 230, 0.2);
+    0 0 0 5px ${({ theme }) => theme.primaryGlowSoft},
+    0 0 36px ${({ theme }) => theme.primaryGlow},
+    0 0 72px ${({ theme }) => theme.primaryGlowSubtle};
   pointer-events: none;
   z-index: 3;
   @media (max-width: 720px) {
@@ -141,7 +123,7 @@ const Skill = styled.article`
     background: linear-gradient(
       90deg,
       ${({ theme }) => theme.primary} 0%,
-      rgba(249, 115, 22, 0.75) 48%,
+      ${({ theme }) => theme.accent} 48%,
       ${({ theme }) => theme.primary} 100%
     );
     z-index: 2;

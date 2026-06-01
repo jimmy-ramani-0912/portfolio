@@ -17,7 +17,7 @@ export const Bio = {
   },
   github: "https://github.com/jimmy-ramani-0912",
   resume:
-    "https://drive.google.com/file/d/18HR0Lhic-0FFP3qE-vRRo-99xVlG4nql/view?usp=drive_link",
+    "https://drive.google.com/file/d/1iyg2AO2vbi0c9l0lxExIfvnq5E5tMZQo/view?usp=sharing",
   linkedin: "https://www.linkedin.com/in/jimmyramani",
   insta: "https://www.instagram.com/jim_y0912/",
   medium: "https://medium.com/@jimmyramani",
@@ -358,6 +358,123 @@ export const education = [
 ];
 
 export const projects = [
+  {
+    id: 32,
+    title: "First Decacorn",
+    date: "May 2026",
+    description: `Internal workforce management and labour onboarding app for supervisors and organizational staff at First Decacorn Pvt Ltd. Built for authorized internal use to streamline labour onboarding, workforce records, and employee-related operations.
+
+▪ Labour onboarding and registration
+
+▪ Supervisor login and management
+
+▪ Workforce data management and record maintenance
+
+▪ Secure employee information handling with data encrypted in transit
+
+▪ Real-time workforce tracking and updates
+
+▪ Administrator-managed accounts for organizational access only`,
+    image:
+      "https://play-lh.googleusercontent.com/zUoSviCLffPQGzpyeXpk4XGbGBjQAYSuUi6OQnhmKYY9Nrl7jM6JgFdf_GpaC3OqTZkS52xVofr-LFXLKkCyJtI=w5120-h2880-rw",
+    tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
+    category: "mobile app",
+    webapp:
+      "https://play.google.com/store/apps/details?id=com.first.decacorn&hl=en",
+  },
+  {
+    id: 31,
+    title: "School Automation System",
+    date: "Nov 2025 – Present",
+    description: `▪ Designed and built a responsive school automation platform for admissions and marketing teams, with multi-school administration and workflows that support enrollment and outreach.
+
+    ▪ AI-assisted admissions with embeddable chat widget/page, live chat, chat history, knowledge base, model retraining, and streaming assistant replies.
+
+    ▪ Role-based access, staff management, analytics and charts, and integrations for daily work and lead tracking.
+
+    ▪ AI Sites with React Flow sitemaps, templates, live preview, SEO, brand setup, and WordPress migration with saved step progress.
+
+    ▪ CRM, contact forms, event booking, and automated sequences.`,
+    image:
+      "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&w=800&q=80",
+    tags: [
+      "React.js",
+      "CSS",
+      "Redux",
+      "Redux Thunk",
+      "Python",
+      "Flask",
+      "Django",
+      "DynamoDB",
+      "Redis",
+      "AWS",
+    ],
+    category: "web app",
+  },
+  {
+    id: 30,
+    title: "AI-Enabled Operations Platform",
+    date: "Nov 2025 – Present",
+    description: `▪ Developed and enhanced a technology platform for mechanical, electrical, and facilities management (M&E/FM) businesses, enabling operational efficiency and collaboration.
+
+    ▪ Built modules for maintenance workflows, service operations, PPM, and reactive maintenance.
+
+    ▪ Integrated AI-driven tools for data-driven decision-making and operational insights across services.
+
+    ▪ Scalable backend services and APIs for multi-company data with independent business unit operations.
+
+    ▪ Real-time data monitoring and reporting to optimize performance, resource utilization, and service delivery.
+
+    ▪ Cross-company workflows, shared services, and centralized management capabilities.
+
+    ▪ Performance optimization and modular architecture to support scalable platform growth.`,
+    image:
+      "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=800&q=80",
+    tags: [
+      "React.js",
+      "Redux",
+      "Redux Thunk",
+      "CSS",
+      "Python",
+      "AWS",
+      "MySQL",
+      "Flask",
+      "Django",
+    ],
+    category: "web app",
+  },
+  {
+    id: 29,
+    title: "AI Chatbot Platform",
+    date: "Nov 2025 – Present",
+    description: `▪ Built an AI-powered chatbot platform that enables users to create and deploy custom chatbots trained on website content, documents, and knowledge bases.
+
+    ▪ Automated data ingestion from URLs, PDFs, and text sources with preprocessing and embeddings for accurate contextual responses.
+
+    ▪ Scalable backend for chatbot training, conversations, and vector-based retrieval (RAG).
+
+    ▪ Embeddable chat widget with real-time streaming for integration into any website.
+
+    ▪ Chat history, multi-source training, branding/UI customization, and API access.
+
+    ▪ Secure APIs, rate limiting, and optimized prompt handling for production deployment.`,
+    image:
+      "https://images.unsplash.com/photo-1677442136019-21780ecad995?auto=format&fit=crop&w=800&q=80",
+    tags: [
+      "React.js",
+      "Redux",
+      "Tailwind CSS",
+      "Redux Thunk",
+      "Python",
+      "AWS",
+      "Django",
+      "Flask",
+      "Git",
+      "DynamoDB",
+      "RAG",
+    ],
+    category: "web app",
+  },
   {
     id: 28,
     title: "My Legal Help",

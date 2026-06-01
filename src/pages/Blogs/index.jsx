@@ -23,8 +23,8 @@ const Body = styled.div`
 const PageBackdrop = styled.div`
   background: linear-gradient(
     343.07deg,
-    rgba(132, 59, 206, 0.06) 5.71%,
-    rgba(132, 59, 206, 0) 64.83%
+    ${({ theme }) => theme.accentMesh1} 5.71%,
+    transparent 64.83%
   );
   display: flex;
   flex-direction: column;
@@ -42,11 +42,12 @@ const BlogsPage = () => {
 
   return (
     <Body>
+      <main id="main-content">
       <PageBackdrop>
         <Inner>
           <SectionHeader>
             <Eyebrow>Writing</Eyebrow>
-            <Title id="blogs-page-heading">Blogs</Title>
+            <Title as="h1" id="blogs-page-heading">Blogs</Title>
             <Desc>
               Notes on web and mobile development—patterns, tooling, and lessons
               learned while building real products.
@@ -70,6 +71,7 @@ const BlogsPage = () => {
           setOpenBlogModal={setOpenBlogModal}
         />
       )}
+      </main>
     </Body>
   );
 };

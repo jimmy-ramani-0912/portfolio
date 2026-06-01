@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sectionEyebrowDot, sectionTitleGradient } from "../../theme/sectionStyles";
 
 export const Container = styled.section`
   position: relative;
@@ -9,8 +10,8 @@ export const Container = styled.section`
   padding: clamp(56px, 8vw, 96px) clamp(16px, 4vw, 32px);
   background: linear-gradient(
     343.07deg,
-    rgba(132, 59, 206, 0.06) 5.71%,
-    rgba(132, 59, 206, 0) 64.83%
+    ${({ theme }) => theme.accentMesh1} 5.71%,
+    transparent 64.83%
   );
 `;
 
@@ -47,8 +48,8 @@ export const Eyebrow = styled.span`
     border-radius: 50%;
     background: ${({ theme }) => theme.primary};
     box-shadow:
-      0 0 0 3px rgba(133, 76, 230, 0.2),
-      0 0 16px rgba(133, 76, 230, 0.45);
+      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
+      0 0 16px ${({ theme }) => theme.primaryGlow};
   }
 `;
 
@@ -63,7 +64,7 @@ export const Title = styled.h2`
     ${({ theme }) => theme.text_primary} 0%,
     ${({ theme }) => theme.text_primary} 36%,
     ${({ theme }) => theme.primary} 76%,
-    rgba(249, 115, 22, 0.88) 108%
+    ${({ theme }) => theme.accent} 100%
   );
   -webkit-background-clip: text;
   background-clip: text;

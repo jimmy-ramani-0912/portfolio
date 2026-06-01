@@ -1,26 +1,24 @@
 export default {
-    // Temp fonts
-    fonts: {
-      title: "Space Grotesk, sans-serif",
-      main: "Space Grotesk, sans-serif"
-    },
-    // Colors for layout
-    colors: {
-      primary1: "#854CE6",
-      background1: "#222A35",
-      button: "#854CE6",
-      background2: "#19212C",
-      text: "#C8CFD8",
-      text1: "#F2F5F7",
-      text2: "#626970",
-      text3: "#575C66",
-      footerBackground: "#00012B"
-    },
-    // Breakpoints for responsive design
-    breakpoints: {
-      sm: 'screen and (max-width: 640px)',
-      md: 'screen and (max-width: 768px)',
-      lg: 'screen and (max-width: 1024px)',
-      xl: 'screen and (max-width: 1280px)'
-    },
-  }
+  fonts: {
+    title: "Inter, system-ui, sans-serif",
+    main: "Inter, system-ui, sans-serif",
+    mono: "JetBrains Mono, ui-monospace, monospace",
+  },
+  colors: {
+    primary1: "#22D3EE",
+    background1: "#050816",
+    button: "#0891B2",
+    background2: "#0B1020",
+    text: "#94A3B8",
+    text1: "#F1F5F9",
+    text2: "#64748B",
+    text3: "#475569",
+    footerBackground: "#050816",
+  },
+  breakpoints: {
+    sm: "screen and (max-width: 640px)",
+    md: "screen and (max-width: 768px)",
+    lg: "screen and (max-width: 1024px)",
+    xl: "screen and (max-width: 1280px)",
+  },
+};

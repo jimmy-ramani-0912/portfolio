@@ -7,30 +7,45 @@ import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
 const Container = styled.div`
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
+  height: 100dvh;
+  max-height: 100dvh;
+  position: fixed;
+  inset: 0;
   background-color: #000000a7;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
-  overflow-y: scroll;
-  transition: all 0.5s ease;
+  overflow: hidden;
+  padding: 24px 12px;
+  box-sizing: border-box;
+  outline: none;
 `;
 
 const Wrapper = styled.div`
   max-width: 800px;
   width: 100%;
   border-radius: 16px;
-  margin: 50px 12px;
-  height: min-content;
+  max-height: calc(100dvh - 48px);
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
   ${glassCard}
   color: ${({ theme }) => theme.text_primary};
+  position: relative;
+`;
+
+const ScrollBody = styled.div`
+  overflow-x: hidden;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  flex: 1;
+  min-height: 0;
   padding: 20px;
   display: flex;
   flex-direction: column;
   position: relative;
+  z-index: 1;
 `;
 
 const Title = styled.div`
@@ -59,6 +74,7 @@ const Desc = styled.div`
   font-weight: 400;
   color: ${({ theme }) => theme.text_primary};
   margin: 8px 6px;
+  white-space: pre-line;
   @media only screen and (max-width: 600px) {
     font-size: 14px;
     margin: 6px 6px;
@@ -189,6 +205,7 @@ const index = ({ openModal, setOpenModal }) => {
     <Modal
       open={true}
       onClose={() => setOpenModal({ state: false, project: null })}
+      slotProps={{ backdrop: { sx: { backgroundColor: "transparent" } } }}
     >
       <Container>
         <Wrapper {...spotlight}>
@@ -198,60 +215,69 @@ const index = ({ openModal, setOpenModal }) => {
               top: "10px",
               right: "20px",
               cursor: "pointer",
+              zIndex: 2,
             }}
             onClick={() => setOpenModal({ state: false, project: null })}
           />
-          <div
-            style={{
-              display: "flex",
-              justifyContent: "center",
-            }}
-          >
-            <Image src={project?.image} />
-          </div>
-          <Title>{project?.title}</Title>
-          <Date>{project.date}</Date>
-          <Tags>
-            {project?.tags.map((tag) => (
-              <Tag>{tag}</Tag>
-            ))}
-          </Tags>
-          <Desc>{project?.description}</Desc>
-          {project.member && (
-            <>
-              <Label>Members</Label>
-              <Members>
-                {project?.member.map((member) => (
-                  <Member>
-                    <MemberImage src={member.img} />
-                    <MemberName>{member.name}</MemberName>
-                    <a
-                      href={member.github}
-                      target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <GitHub />
-                    </a>
-                    <a
-                      href={member.linkedin}
-                      target="new"
-                      style={{ textDecoration: "none", color: "inherit" }}
-                    >
-                      <LinkedIn />
-                    </a>
-                  </Member>
-                ))}
-              </Members>
-            </>
-          )}
-          <ButtonGroup>
-            <Button dull href={project?.github} target="new">
-              View Code
-            </Button>
-            <Button href={project?.webapp} target="new">
-              View Live App
-            </Button>
-          </ButtonGroup>
+          <ScrollBody>
+            <div
+              style={{
+                display: "flex",
+                justifyContent: "center",
+              }}
+            >
+              <Image src={project?.image} />
+            </div>
+            <Title>{project?.title}</Title>
+            <Date>{project.date}</Date>
+            <Tags>
+              {project?.tags.map((tag) => (
+                <Tag key={tag}>{tag}</Tag>
+              ))}
+            </Tags>
+            <Desc>{project?.description}</Desc>
+            {project.member && (
+              <>
+                <Label>Members</Label>
+                <Members>
+                  {project?.member.map((member) => (
+                    <Member key={member.name}>
+                      <MemberImage src={member.img} />
+                      <MemberName>{member.name}</MemberName>
+                      <a
+                        href={member.github}
+                        target="new"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <GitHub />
+                      </a>
+                      <a
+                        href={member.linkedin}
+                        target="new"
+                        style={{ textDecoration: "none", color: "inherit" }}
+                      >
+                        <LinkedIn />
+                      </a>
+                    </Member>
+                  ))}
+                </Members>
+              </>
+            )}
+            {(project?.github || project?.webapp) && (
+              <ButtonGroup>
+                {project?.github && (
+                  <Button dull href={project.github} target="new">
+                    View Code
+                  </Button>
+                )}
+                {project?.webapp && (
+                  <Button href={project.webapp} target="new">
+                    View Live App
+                  </Button>
+                )}
+              </ButtonGroup>
+            )}
+          </ScrollBody>
         </Wrapper>
       </Container>
     </Modal>

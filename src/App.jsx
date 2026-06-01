@@ -1,12 +1,14 @@
 import { ThemeProvider } from "styled-components";
 import { Suspense, useEffect, useState } from "react";
-import { darkTheme, lightTheme } from "./utils/Themes.js";
+import { darkTheme, lightTheme, readStoredTheme, THEME_STORAGE_KEY } from "./utils/Themes.js";
+import { GlobalStyle } from "./theme/globalStyles.js";
 import Navbar from "./components/Navbar/index";
 import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PublicRoutes } from "./routes.jsx";
 import styled, { keyframes } from "styled-components";
 import Cursor from "./components/Cursor/Cursor.jsx";
+import SeoManager from "./seo/SeoManager.jsx";
 
 export const LoaderWrapper = styled.div`
   height: 100dvh;
@@ -108,7 +110,7 @@ export const LoaderText = styled.p`
     100deg,
     ${({ theme }) => theme.text_primary} 0%,
     ${({ theme }) => theme.primary} 45%,
-    rgba(249, 115, 22, 0.9) 60%,
+    ${({ theme }) => theme.accent} 60%,
     ${({ theme }) => theme.text_primary} 100%
   );
   background-size: 200% 100%;
@@ -120,10 +122,17 @@ export const LoaderText = styled.p`
 `;
 
 function App() {
-  const [darkMode, setDarkMode] = useState(true);
+  const [darkMode, setDarkMode] = useState(readStoredTheme);
 
   useEffect(() => {
-    document.documentElement.dataset.theme = darkMode ? "dark" : "light";
+    const mode = darkMode ? "dark" : "light";
+    document.documentElement.dataset.theme = mode;
+    document.documentElement.style.colorScheme = mode;
+    window.localStorage.setItem(THEME_STORAGE_KEY, mode);
+    const meta = document.querySelector('meta[name="theme-color"]');
+    if (meta) {
+      meta.setAttribute("content", darkMode ? "#030711" : "#FFFFFF");
+    }
   }, [darkMode]);
 
   const toggleDarkMode = () => {
@@ -132,6 +141,7 @@ function App() {
 
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
+      <GlobalStyle />
       <Cursor />
       <Suspense
         fallback={
@@ -148,6 +158,7 @@ function App() {
         }
       >
         <Router>
+          <SeoManager />
           <Navbar darkMode={darkMode} toggleDarkMode={toggleDarkMode} />
           <Routes>
             {PublicRoutes.map((route) => (

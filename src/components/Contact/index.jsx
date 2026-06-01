@@ -1,6 +1,7 @@
 import React, { useRef, useState } from "react";
 import styled, { css } from "styled-components";
 import { glassCard } from "../../theme/mixins";
+import { sectionEyebrowDot, sectionTitleGradient } from "../../theme/sectionStyles";
 import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 import emailjs from "@emailjs/browser";
 import { Snackbar } from "@mui/material";
@@ -42,16 +43,7 @@ const Eyebrow = styled.span`
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: ${({ theme }) => theme.text_secondary};
-  &::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px rgba(133, 76, 230, 0.2),
-      0 0 16px rgba(133, 76, 230, 0.45);
-  }
+  ${sectionEyebrowDot}
 `;
 
 const Title = styled.h2`
@@ -60,17 +52,7 @@ const Title = styled.h2`
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 36%,
-    ${({ theme }) => theme.primary} 76%,
-    rgba(249, 115, 22, 0.88) 108%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  ${sectionTitleGradient}
 `;
 
 const Desc = styled.p`
@@ -104,7 +86,7 @@ const ContactForm = styled.form`
     background: linear-gradient(
       90deg,
       ${({ theme }) => theme.primary} 0%,
-      rgba(249, 115, 22, 0.75) 48%,
+      ${({ theme }) => theme.accent} 48%,
       ${({ theme }) => theme.primary} 100%
     );
     pointer-events: none;

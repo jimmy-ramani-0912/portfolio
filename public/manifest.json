@@ -1,13 +1,28 @@
 {
-  "name": "Jimmy Ramani",
-  "short_name": "Jimmy",
-  "start_url": "",
-  "theme_color": "#CB3C04",
-  "background_color": "#FFF",
-  "orientation": "any",
-  "scope": "./",
+  "name": "Jimmy Ramani Portfolio",
+  "short_name": "Jimmy Ramani",
+  "description": "Full Stack Developer portfolio — React, Next.js, Node.js, Angular, cloud, and DevOps projects by Jimmy Ramani.",
+  "start_url": "/portfolio/",
+  "scope": "/portfolio/",
   "display": "standalone",
-  "description": "Full Stack Web + App Developer | Flutter Fan📱| DevOps 🌍 | Photography Hobbyist 📸 | Editing Enthusiast 🖌️ | Shaping the Future of Tech with Innovative Solutions",
-  "features": [],
-  "icons": []
+  "orientation": "portrait-primary",
+  "theme_color": "#030711",
+  "background_color": "#FFFFFF",
+  "lang": "en",
+  "dir": "ltr",
+  "categories": ["portfolio", "business", "productivity"],
+  "icons": [
+    {
+      "src": "/portfolio/me-circular.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/portfolio/me.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
 }

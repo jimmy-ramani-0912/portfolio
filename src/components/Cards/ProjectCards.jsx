@@ -29,7 +29,7 @@ const Card = styled.article`
     background: linear-gradient(
       90deg,
       ${({ theme }) => theme.primary} 0%,
-      rgba(249, 115, 22, 0.75) 48%,
+      ${({ theme }) => theme.accent} 48%,
       ${({ theme }) => theme.primary} 100%
     );
     z-index: 2;

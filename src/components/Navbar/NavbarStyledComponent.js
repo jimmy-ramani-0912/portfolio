@@ -1,10 +1,12 @@
 import { Link as LinkR } from "react-router-dom";
 import styled from "styled-components";
 
-export const Nav = styled.div`
+export const Nav = styled.nav`
   width: 100%;
-  position: sticky;
+  position: fixed;
   top: 0;
+  left: 0;
+  right: 0;
   z-index: 200;
   min-height: 80px;
   display: flex;
@@ -14,12 +16,18 @@ export const Nav = styled.div`
   font-size: 1rem;
   isolation: isolate;
   background: ${({ theme }) => theme.navBarFill};
-  backdrop-filter: blur(5px) saturate(100.15);
-  -webkit-backdrop-filter: blur(5px) saturate(100.15);
-  border-top: 1px solid ${({ theme }) => theme.navBorder};
+  backdrop-filter: ${({ theme }) => theme.glassBlurSoft};
+  -webkit-backdrop-filter: ${({ theme }) => theme.glassBlurSoft};
+  // border-bottom: 1px solid ${({ theme }) => theme.navBorder};
   @media (max-width: 960px) {
     transition: border-color 0.25s ease, box-shadow 0.25s ease;
   }
+`;
+
+export const NavSpacer = styled.div`
+  width: 100%;
+  height: 80px;
+  flex-shrink: 0;
 `;
 
 export const NavbarContainer = styled.div`
@@ -34,7 +42,7 @@ export const NavbarContainer = styled.div`
   max-width: 1200px;
   margin: 0 16px;
   border: 1px solid ${({ theme }) => theme.navBorder};
-  border-radius: 10px;
+  border-radius: 14px;
   background: ${({ theme }) => theme.navInnerFill};
   box-sizing: border-box;
   overflow: visible;

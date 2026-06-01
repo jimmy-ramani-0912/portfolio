@@ -1,6 +1,12 @@
-import React from 'react';
-import { Div } from './HeroBgAnimationStyle';
-const HeroBgAnimation = () => (
+import React from "react";
+import { useTheme } from "styled-components";
+import { Div } from "./HeroBgAnimationStyle";
+
+const HeroBgAnimation = () => {
+  const theme = useTheme();
+  const { primary, accent, heroAnimationOpacity } = theme;
+
+  return (
   <Div>
     <svg
       className="BgAnimation__svg"
@@ -8,7 +14,7 @@ const HeroBgAnimation = () => (
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <g opacity="0.15">
+      <g opacity={heroAnimationOpacity ?? 0.15}>
         <path
           fillRule="evenodd"
           clipRule="evenodd"
@@ -33,7 +39,7 @@ const HeroBgAnimation = () => (
         transform="translate(-295.027 -193.118)"
         rx="1.07306"
         ry="1.07433"
-        fill="#945DD6"
+        fill={primary}
       >
         <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_2" />
@@ -85,7 +91,7 @@ const HeroBgAnimation = () => (
         rx="1.07433"
         ry="1.07306"
         transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-        fill="#945DD6"
+        fill={primary}
       >
         <animateMotion dur="10s" repeatCount="indefinite" rotate="auto">
           <mpath xlinkHref="#path_0" />
@@ -106,7 +112,7 @@ const HeroBgAnimation = () => (
         rx="1.07433"
         ry="1.07306"
         transform="translate(-382.164 -155.029) rotate(90 382.164 155.029)"
-        fill="#F46737"
+        fill={accent}
       >
         <animateMotion
           dur="10s"
@@ -137,7 +143,7 @@ const HeroBgAnimation = () => (
         rx="1.07306"
         ry="1.07433"
         transform="translate(-333.324 -382.691) rotate(-180 333.324 382.691)"
-        fill="#F46737"
+        fill={accent}
       >
         <animateMotion
           dur="5s"
@@ -168,7 +174,7 @@ const HeroBgAnimation = () => (
         rx="1.07306"
         ry="1.07433"
         transform="translate(-165.524 -93.9596)"
-        fill="#F46737"
+        fill={accent}
       >
         <animateMotion
           dur="10s"
@@ -199,7 +205,7 @@ const HeroBgAnimation = () => (
         rx="1.07433"
         ry="1.07306"
         transform="translate(-476.525 -363.313) rotate(90 476.525 363.313)"
-        fill="#13ADC7"
+        fill={primary}
       >
         <animateMotion
           dur="12s"
@@ -266,8 +272,8 @@ const HeroBgAnimation = () => (
           y2="218.154"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
+          <stop stopColor={primary} />
+          <stop offset="1" stopColor={primary} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint4_linear"
@@ -277,8 +283,8 @@ const HeroBgAnimation = () => (
           y2="338.272"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
+          <stop stopColor={primary} />
+          <stop offset="1" stopColor={primary} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint5_linear"
@@ -288,8 +294,8 @@ const HeroBgAnimation = () => (
           y2="129.989"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#F46737" />
-          <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+          <stop stopColor={accent} />
+          <stop offset="1" stopColor={accent} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint6_linear"
@@ -299,8 +305,8 @@ const HeroBgAnimation = () => (
           y2="357.655"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#F46737" />
-          <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+          <stop stopColor={accent} />
+          <stop offset="1" stopColor={accent} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint7_linear"
@@ -310,8 +316,8 @@ const HeroBgAnimation = () => (
           y2="118.996"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#F46737" />
-          <stop offset="1" stopColor="#F46737" stopOpacity="0" />
+          <stop stopColor={accent} />
+          <stop offset="1" stopColor={accent} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint8_linear"
@@ -321,8 +327,8 @@ const HeroBgAnimation = () => (
           y2="276.118"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
+          <stop stopColor={primary} />
+          <stop offset="1" stopColor={primary} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint9_linear"
@@ -332,8 +338,8 @@ const HeroBgAnimation = () => (
           y2="291.454"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
+          <stop stopColor={primary} />
+          <stop offset="1" stopColor={primary} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint10_linear"
@@ -343,8 +349,8 @@ const HeroBgAnimation = () => (
           y2="258.193"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#945DD6" />
-          <stop offset="1" stopColor="#945DD6" stopOpacity="0" />
+          <stop stopColor={primary} />
+          <stop offset="1" stopColor={primary} stopOpacity="0" />
         </linearGradient>
         <linearGradient
           id="paint11_linear"
@@ -354,12 +360,13 @@ const HeroBgAnimation = () => (
           y2="338.272"
           gradientUnits="userSpaceOnUse"
         >
-          <stop stopColor="#13ADC7" />
-          <stop offset="1" stopColor="#13ADC7" stopOpacity="0" />
+          <stop stopColor={primary} />
+          <stop offset="1" stopColor={primary} stopOpacity="0" />
         </linearGradient>
       </defs>
     </svg>
   </Div>
-);
+  );
+};
 
 export default HeroBgAnimation;

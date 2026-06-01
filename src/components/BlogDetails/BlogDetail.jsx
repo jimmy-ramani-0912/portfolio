@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { useLocation, useNavigate } from "react-router-dom";
+import React, { useMemo, useState } from "react";
+import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { blogs } from "../../data/constants";
 import BlogCards from "../Cards/BlogCards";
 import BlogDetails from "../../components/BlogDetails";
@@ -80,16 +80,39 @@ export const ViewAll = styled.div`
 function BlogDetail() {
   const navigate = useNavigate();
   const location = useLocation();
-  const blog = location.state?.blog;
+  const { id } = useParams();
+  const blog = useMemo(() => {
+    if (location.state?.blog) {
+      return location.state.blog;
+    }
+    return blogs.find((item) => String(item.id) === String(id));
+  }, [id, location.state?.blog]);
 
   const [openBlogModal, setOpenBlogModal] = useState({
     state: false,
     blog: null,
   });
 
+  if (!blog) {
+    return (
+      <Body>
+        <Title>Blog not found</Title>
+        <ViewAll
+          onClick={() => {
+            navigate("/portfolio/blogs");
+          }}
+        >
+          Back to Blogs
+        </ViewAll>
+      </Body>
+    );
+  }
+
   return (
     <Body>
-      <HtmlData dangerouslySetInnerHTML={{ __html: blog.HTML }} />
+      <article>
+        <HtmlData dangerouslySetInnerHTML={{ __html: blog.HTML }} />
+      </article>
       <CardContainer>
         <Title>Latest Blogs</Title>
         <Cards>

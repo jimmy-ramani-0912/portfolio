@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sectionTitleGradient } from "../../theme/sectionStyles";
 
 export const HeroContainer = styled.div`
   background: ${({ theme }) => theme.heroSurface};
@@ -18,7 +19,6 @@ export const HeroContainer = styled.div`
     padding: 40px 16px 36px;
   }
   z-index: 1;
-  clip-path: polygon(0 0, 100% 0, 100% 100%, 72% 97%, 0 100%);
 `;
 
 export const HeroBg = styled.div`
@@ -91,10 +91,10 @@ export const HeroTextColumn = styled.div`
     background: linear-gradient(
       180deg,
       ${({ theme }) => theme.primary} 0%,
-      rgba(249, 115, 22, 0.55) 52%,
+      ${({ theme }) => theme.accent} 52%,
       ${({ theme }) => theme.primary} 100%
     );
-    box-shadow: 0 0 20px rgba(133, 76, 230, 0.35);
+    box-shadow: 0 0 20px ${({ theme }) => theme.primaryGlowSoft};
   }
   @media (max-width: 960px) {
     padding-left: 0;
@@ -131,8 +131,8 @@ export const Greeting = styled.span`
     flex-shrink: 0;
     background: ${({ theme }) => theme.primary};
     box-shadow:
-      0 0 0 3px rgba(133, 76, 230, 0.22),
-      0 0 18px rgba(133, 76, 230, 0.55);
+      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
+      0 0 18px ${({ theme }) => theme.primaryGlow};
   }
 `;
 
@@ -142,18 +142,8 @@ export const NameHeading = styled.h1`
   font-size: clamp(2.25rem, 5.5vw, 3.65rem);
   line-height: 1.08;
   letter-spacing: -0.03em;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 42%,
-    ${({ theme }) => theme.primary} 72%,
-    rgba(249, 115, 22, 0.85) 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
-  filter: drop-shadow(0 2px 24px rgba(133, 76, 230, 0.12));
+  ${sectionTitleGradient}
+  filter: drop-shadow(0 2px 24px ${({ theme }) => theme.primaryGlowSubtle});
 `;
 
 export const HeroRightContainer = styled.div`
@@ -178,13 +168,13 @@ export const ProfileFrame = styled.div`
   background: linear-gradient(
     145deg,
     ${({ theme }) => theme.primary} 0%,
-    rgba(249, 115, 22, 0.42) 48%,
+    ${({ theme }) => theme.accent} 48%,
     ${({ theme }) => theme.primary} 100%
   );
   box-shadow:
     0 0 0 1px ${({ theme }) => theme.navBorder},
-    0 22px 56px rgba(133, 76, 230, 0.32),
-    0 0 72px rgba(133, 76, 230, 0.12);
+    0 22px 56px ${({ theme }) => theme.primaryGlow},
+    0 0 72px ${({ theme }) => theme.primaryGlowSubtle};
 `;
 
 export const Img = styled.img`
@@ -240,7 +230,7 @@ export const Span = styled.span`
   font-weight: 700;
   letter-spacing: -0.01em;
   color: ${({ theme }) => theme.primary};
-  text-shadow: 0 0 28px rgba(133, 76, 230, 0.35);
+  text-shadow: 0 0 28px ${({ theme }) => theme.primaryGlowSoft};
 `;
 
 export const DescriptionBlock = styled.div`
@@ -301,7 +291,7 @@ export const DescriptionListItem = styled.li`
     height: 6px;
     border-radius: 50%;
     background: ${({ theme }) => theme.primary};
-    box-shadow: 0 0 14px rgba(133, 76, 230, 0.5);
+    box-shadow: 0 0 14px ${({ theme }) => theme.primaryGlow};
   }
   @media (max-width: 960px) {
     text-align: left;
@@ -342,7 +332,7 @@ export const ResumeButton = styled.a`
   &:hover {
     transform: translateY(-2px);
     box-shadow:
-      0 12px 40px rgba(133, 76, 230, 0.45),
+      0 12px 40px ${({ theme }) => theme.primaryGlow},
       0 0 0 1px rgba(255, 255, 255, 0.06);
     filter: brightness(1.06);
   }

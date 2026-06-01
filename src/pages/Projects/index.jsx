@@ -25,8 +25,8 @@ const Body = styled.div`
 const PageBackdrop = styled.div`
   background: linear-gradient(
     343.07deg,
-    rgba(132, 59, 206, 0.06) 5.71%,
-    rgba(132, 59, 206, 0) 64.83%
+    ${({ theme }) => theme.accentMesh1} 5.71%,
+    transparent 64.83%
   );
   display: flex;
   flex-direction: column;
@@ -53,11 +53,12 @@ const ProjectsPage = () => {
 
   return (
     <Body>
+      <main id="main-content">
       <PageBackdrop>
         <Inner>
           <SectionHeader>
             <Eyebrow>Portfolio</Eyebrow>
-            <Title id="projects-page-heading">Projects</Title>
+            <Title as="h1" id="projects-page-heading">Projects</Title>
             <Desc>
               Shipped web and mobile work—from marketing sites and dashboards to
               Play Store apps—with links to live demos and source where available.
@@ -93,6 +94,7 @@ const ProjectsPage = () => {
       {openModal.state && (
         <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
       )}
+      </main>
     </Body>
   );
 };

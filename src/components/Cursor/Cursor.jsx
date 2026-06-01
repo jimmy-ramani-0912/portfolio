@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { createPortal } from "react-dom";
 import { useTheme } from "styled-components";
 import {
   CircularBorderWrapper,
@@ -85,8 +86,8 @@ const Cursor = () => {
 
   if (!enabled) return null;
 
-  return (
-    <CircularBorderWrapper>
+  return createPortal(
+    <CircularBorderWrapper data-custom-cursor="">
       <CursorRing
         ref={ringEl}
         $primary={theme.primary}
@@ -103,7 +104,8 @@ const Cursor = () => {
           transform: "translate3d(0px, 0px, 0) translate(-50%, -50%)",
         }}
       />
-    </CircularBorderWrapper>
+    </CircularBorderWrapper>,
+    document.body
   );
 };
 

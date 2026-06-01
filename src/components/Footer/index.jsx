@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sectionTitleGradient } from "../../theme/sectionStyles";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -32,17 +33,7 @@ const Logo = styled.h1`
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 38%,
-    ${({ theme }) => theme.primary} 76%,
-    rgba(249, 115, 22, 0.88) 108%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  ${sectionTitleGradient}
 `;
 
 const SocialMediaIcons = styled.div`

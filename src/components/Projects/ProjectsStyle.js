@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { sectionEyebrowDot, sectionTitleGradient } from "../../theme/sectionStyles";
 import { glassChip } from "../../theme/mixins";
 
 export const Container = styled.section`
@@ -10,8 +11,8 @@ export const Container = styled.section`
   padding: clamp(56px, 8vw, 96px) clamp(16px, 4vw, 32px);
   background: linear-gradient(
     343.07deg,
-    rgba(132, 59, 206, 0.06) 5.71%,
-    rgba(132, 59, 206, 0) 64.83%
+    ${({ theme }) => theme.accentMesh1} 5.71%,
+    transparent 64.83%
   );
 `;
 
@@ -41,16 +42,7 @@ export const Eyebrow = styled.span`
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: ${({ theme }) => theme.text_secondary};
-  &::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px rgba(133, 76, 230, 0.2),
-      0 0 16px rgba(133, 76, 230, 0.45);
-  }
+  ${sectionEyebrowDot}
 `;
 
 export const Title = styled.h2`
@@ -59,17 +51,7 @@ export const Title = styled.h2`
   font-weight: 800;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 36%,
-    ${({ theme }) => theme.primary} 76%,
-    rgba(249, 115, 22, 0.88) 108%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  ${sectionTitleGradient}
 `;
 
 export const Desc = styled.p`

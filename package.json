@@ -33,7 +33,7 @@
   },
   "scripts": {
     "start": "vite",
-    "build": "vite build",
+    "build": "node scripts/generate-sitemap.mjs && vite build",
     "test": "vite test",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",

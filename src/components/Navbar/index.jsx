@@ -12,6 +12,7 @@ import {
   MobileMenu,
   MobileLink,
   ThemeButton,
+  NavSpacer,
 } from "./NavbarStyledComponent";
 import { useNavigate } from "react-router-dom";
 import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
@@ -100,8 +101,9 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
   };
 
   return (
-    <Nav>
-      <NavbarContainer {...navSpotlight}>
+    <>
+      <Nav>
+        <NavbarContainer {...navSpotlight}>
         <NavLogo to={basePath}>
           <a
             onClick={() => scrollToTop()}
@@ -264,8 +266,10 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             </GitHubButton>
           </MobileMenu>
         )}
-      </NavbarContainer>
-    </Nav>
+        </NavbarContainer>
+      </Nav>
+      <NavSpacer aria-hidden="true" />
+    </>
   );
 };
 

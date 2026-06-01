@@ -16,7 +16,7 @@ export const CircularBorderWrapper = styled.div`
   position: fixed;
   inset: 0;
   pointer-events: none;
-  z-index: 9999;
+  z-index: 10000;
 `;
 
 export const CursorRing = styled.div`

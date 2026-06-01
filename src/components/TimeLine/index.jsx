@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { useTheme } from "styled-components";
+import { sectionEyebrowDot, sectionTitleGradient } from "../../theme/sectionStyles";
 import Timeline from "@mui/lab/Timeline";
 import TimelineItem from "@mui/lab/TimelineItem";
 import TimelineSeparator from "@mui/lab/TimelineSeparator";
@@ -53,8 +54,8 @@ const Eyebrow = styled.span`
     border-radius: 50%;
     background: ${({ theme }) => theme.primary};
     box-shadow:
-      0 0 0 3px rgba(133, 76, 230, 0.2),
-      0 0 16px rgba(133, 76, 230, 0.45);
+      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
+      0 0 16px ${({ theme }) => theme.primaryGlow};
   }
 `;
 
@@ -69,7 +70,7 @@ const Title = styled.h2`
     ${({ theme }) => theme.text_primary} 0%,
     ${({ theme }) => theme.text_primary} 36%,
     ${({ theme }) => theme.primary} 76%,
-    rgba(249, 115, 22, 0.88) 108%
+    ${({ theme }) => theme.accent} 100%
   );
   -webkit-background-clip: text;
   background-clip: text;
