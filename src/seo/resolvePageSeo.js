@@ -1,5 +1,9 @@
-import { blogs } from "../data/constants";
 import { applySeo } from "./applySeo";
+import {
+  findBlogByRouteParam,
+  getBlogSeoTitle,
+  getBlogSlug,
+} from "../utils/blogIndex";
 import {
   buildBlogDetailSchemas,
   buildBlogsSchemas,
@@ -97,25 +101,25 @@ export const resolvePageSeo = (pathname) => {
     });
   }
 
-  const blogMatch = path.match(/^\/blogs\/(\d+)$/);
+  const blogMatch = path.match(/^\/blogs\/([^/]+)$/);
   if (blogMatch) {
-    const blog = blogs.find((item) => String(item.id) === blogMatch[1]);
+    const blog = findBlogByRouteParam(blogMatch[1]);
     if (blog) {
       const plain = stripHtml(blog.HTML || "");
       const description = truncate(
         blog.description?.trim() ||
           plain ||
-          `${blog.title} — article by Jimmy Ramani on ${blog.category || "web development"}.`
+          `${getBlogSeoTitle(blog)} — article by Jimmy Ramani on ${blog.category || "web development"}.`
       );
-      const title = `${blog.title} | Blog`;
+      const title = getBlogSeoTitle(blog);
       const ogImage = toAbsoluteUrl(blog.image || DEFAULT_OG_IMAGE);
       return buildBaseSeo({
         title,
         description,
-        canonicalPath: `/blogs/${blog.id}`,
+        canonicalPath: `/blogs/${getBlogSlug(blog)}`,
         ogType: "article",
         ogImage,
-        ogImageAlt: `${blog.title} cover image`,
+        ogImageAlt: `${title} cover image`,
         jsonLd: buildBlogDetailSchemas({ ...blog, description }),
       });
     }

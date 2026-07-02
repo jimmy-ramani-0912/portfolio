@@ -235,7 +235,7 @@ const EducationCard = ({ education }) => {
             {!logoFailed && education.img ? (
               <LogoImg
                 src={education.img}
-                alt=""
+                alt={`${education.school} logo`}
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"

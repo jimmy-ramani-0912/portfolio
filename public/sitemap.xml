@@ -2,241 +2,289 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://jimmy-ramani-0912.github.io/portfolio/</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
     <loc>https://jimmy-ramani-0912.github.io/portfolio/projects</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.85</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/45</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/patterns-for-javascript-frontend-mastery</loc>
+    <lastmod>2024-07-26</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/44</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/what-exactly-are-zustand-and-redux</loc>
+    <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/43</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/what-s-new-in-next-js-15-that-will-transform-your-web-development</loc>
+    <lastmod>2024-07-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/42</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/unlock-the-power-of-next-js-with-essential-hooks</loc>
+    <lastmod>2024-07-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/41</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/react-js-vs-next-js-which-one-should-you-choose</loc>
+    <lastmod>2024-04-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/40</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/new-hook-useformstatus-in-react-19-update</loc>
+    <lastmod>2024-03-19</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/39</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/mongodb-cheat-sheet-quick-tips-for-efficient-database-management</loc>
+    <lastmod>2024-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/38</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/improvements-introduced-in-react-19</loc>
+    <lastmod>2024-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/37</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/unlock-the-secrets-to-superior-code-quality</loc>
+    <lastmod>2024-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/36</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/exciting-news-in-react-19</loc>
+    <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/35</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/mastering-state-management-with-usecontext-hook-in-reactjs</loc>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/34</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/unlocking-the-most-asked-frontend-interview-questions</loc>
+    <lastmod>2024-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/33</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/deciphering-client-side-rendering-csr-vs-server-side-rendering-ssr-in-ne</loc>
+    <lastmod>2024-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/32</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/demystifying-incremental-static-regeneration-isr-in-next-js-a-comprehens</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/31</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/elevate-your-react-interview-game</loc>
+    <lastmod>2024-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/30</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/mastering-server-side-rendering-ssr-in-next-js-a-comprehensive-guide</loc>
+    <lastmod>2024-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/29</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/unlocking-the-power-of-client-side-rendering-csr-in-next-js-a-comprehens</loc>
+    <lastmod>2024-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/28</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/dive-into-static-site-generation-ssg-in-next-js-a-complete-overview</loc>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/27</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/struggling-with-fetching-api-data-and-managing-state-in-your-react-app-r</loc>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/26</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/mastering-essential-reactjs-shorthand-techniques</loc>
+    <lastmod>2024-04-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/25</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/embark-on-your-web-development-journey-with-the-2024-roadmap</loc>
+    <lastmod>2024-04-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/24</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/next-js-unveiled-supercharge-your-web-development</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/23</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/mastering-eslint-prettier-and-vs-code-for-next-js-and-react-development</loc>
+    <lastmod>2024-03-29</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/22</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/speed-is-the-name-of-the-game-in-web-performance-and-server-side-renderi</loc>
+    <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/21</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/enhance-your-react-projects-with-these-useful-libraries</loc>
+    <lastmod>2024-03-25</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/20</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/ever-wondered-why-your-svgs-take-a-scenic-route-before-popping-up-on-you</loc>
+    <lastmod>2024-03-22</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/19</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/ever-wondered-what-the-secret-sauce-is-for-a-killer-app-or-web-project</loc>
+    <lastmod>2024-03-21</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/18</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/ready-to-level-up-your-node-js-skills-build-a-simple-express-server</loc>
+    <lastmod>2024-03-20</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/17</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/elevate-your-ui-with-react-animation-libraries</loc>
+    <lastmod>2024-03-18</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/16</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/elevate-your-website-speed-with-these-5-simple-tips-for-react-js</loc>
+    <lastmod>2024-03-17</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/15</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/excited-to-share-insights-on-reactjs-solid-principles</loc>
+    <lastmod>2024-03-16</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/14</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/web-api-design-process-a-visual-guide</loc>
+    <lastmod>2024-03-15</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/13</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/dive-into-the-world-of-react-js-in-our-first-class</loc>
+    <lastmod>2024-03-14</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/12</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/github-workflow-a-visual-guide</loc>
+    <lastmod>2024-03-13</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/11</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/master-javascript-8-pro-tricks</loc>
+    <lastmod>2024-03-12</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/10</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/master-react-with-these-repos</loc>
+    <lastmod>2024-03-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/9</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/for-working-professionals-becoming-a-front-end-engineer-can-unlock-many-</loc>
+    <lastmod>2024-03-10</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/8</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/exciting-journey-into-typescript</loc>
+    <lastmod>2024-03-08</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/7</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/useform-hook</loc>
+    <lastmod>2024-03-07</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/6</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/part-2-important-javascript-build-in-methods-cheatsheet</loc>
+    <lastmod>2024-03-06</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/5</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/factory-pattern-in-javascript</loc>
+    <lastmod>2024-03-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/4</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/part-1-important-javascript-build-in-methods-cheatsheet</loc>
+    <lastmod>2024-03-04</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/3</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/elevate-your-coding-skills-with-these-21-react-project-ideas</loc>
+    <lastmod>2024-03-03</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/2</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/elevate-your-javascript-game-with-a-deep-dive-into-web-apis</loc>
+    <lastmod>2024-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/1</loc>
+    <loc>https://jimmy-ramani-0912.github.io/portfolio/blogs/add-a-dash-of-javascript-knowledge-to-your-coding-feast</loc>
+    <lastmod>2024-03-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>

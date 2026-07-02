@@ -3,6 +3,8 @@ import styled from "styled-components";
 import { glassCard } from "../../theme/mixins";
 import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 import { useNavigate } from "react-router-dom";
+import { getBlogPath } from "../../utils/blogIndex";
+import { sanitizeBlogTitle } from "../../utils/blogSeo";
 
 const Card = styled.article`
   width: 100%;
@@ -91,11 +93,15 @@ const BlogCards = ({ blog, setOpenModal }) => {
 
   const openPost = () => {
     if (!blog?.pdfUrl) {
-      navigate(`/portfolio/blogs/${blog?.id}`, { state: { blog } });
+      navigate(getBlogPath(blog), { state: { blog } });
     } else {
       setOpenModal({ state: true, blog });
     }
   };
+
+  const imageAlt = blog?.title
+    ? `${sanitizeBlogTitle(blog.title)} cover image`
+    : "Blog cover image";
 
   return (
     <Card
@@ -111,7 +117,7 @@ const BlogCards = ({ blog, setOpenModal }) => {
         }
       }}
     >
-      <Image src={blog?.image} alt="" loading="lazy" decoding="async" />
+      <Image src={blog?.image} alt={imageAlt} loading="lazy" decoding="async" />
       <Details>
         <Title>{blog?.title}</Title>
         <DateText>{blog?.date}</DateText>

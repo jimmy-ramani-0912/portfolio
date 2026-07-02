@@ -1,4 +1,5 @@
 import { Bio } from "../data/constants";
+import { getBlogDateIso, getBlogSeoTitle, getBlogSlug } from "../utils/blogIndex";
 import {
   AUTHOR_NAME,
   DEFAULT_OG_IMAGE,
@@ -87,22 +88,25 @@ export const buildCollectionPageSchema = ({ url, name, description, itemCount })
 });
 
 export const buildBlogPostingSchema = (blog) => {
-  const url = resolveSiteUrl(`/blogs/${blog.id}`);
+  const slug = getBlogSlug(blog);
+  const url = resolveSiteUrl(`/blogs/${slug}`);
+  const seoTitle = getBlogSeoTitle(blog).replace(/ \| Blog$/, "");
   const description =
     blog.description?.trim() ||
-    `${blog.title} — technical article by ${AUTHOR_NAME} on JavaScript, React, and modern web development.`;
+    `${seoTitle} — technical article by ${AUTHOR_NAME} on JavaScript, React, and modern web development.`;
+  const datePublished = getBlogDateIso(blog);
 
   return {
     "@context": "https://schema.org",
     "@type": "BlogPosting",
     "@id": `${url}#article`,
-    headline: blog.title,
-    name: blog.title,
+    headline: seoTitle,
+    name: seoTitle,
     description,
     url,
     mainEntityOfPage: url,
     image: toAbsoluteUrl(blog.image || DEFAULT_OG_IMAGE),
-    datePublished: blog.date,
+    ...(datePublished ? { datePublished } : {}),
     author: {
       "@type": "Person",
       name: AUTHOR_NAME,
@@ -172,8 +176,10 @@ export const buildBlogsSchemas = ({ url, description }) => [
 ];
 
 export const buildBlogDetailSchemas = (blog) => {
-  const url = resolveSiteUrl(`/blogs/${blog.id}`);
-  const description = blog.description?.trim() || blog.title;
+  const slug = getBlogSlug(blog);
+  const url = resolveSiteUrl(`/blogs/${slug}`);
+  const seoTitle = getBlogSeoTitle(blog).replace(/ \| Blog$/, "");
+  const description = blog.description?.trim() || seoTitle;
 
   return [
     buildWebSiteSchema(),
@@ -181,7 +187,7 @@ export const buildBlogDetailSchemas = (blog) => {
     buildBreadcrumbSchema([
       { name: "Home", url: `${SITE_URL}/` },
       { name: "Blogs", url: resolveSiteUrl("/blogs") },
-      { name: blog.title, url },
+      { name: seoTitle, url },
     ]),
   ];
 };

@@ -17,7 +17,7 @@ export const PublicRoutes = [
     element: <Blogs />,
   },
   {
-    path: "portfolio/blogs/:id",
+    path: "portfolio/blogs/:slug",
     element: <BlogDetail />,
   },
   {

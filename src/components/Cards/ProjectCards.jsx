@@ -153,7 +153,7 @@ const ProjectCards = ({ project, setOpenModal }) => {
     >
       <Image
         src={project.image}
-        alt=""
+        alt={`${project.title} project preview`}
         loading="lazy"
         decoding="async"
       />
@@ -170,7 +170,7 @@ const ProjectCards = ({ project, setOpenModal }) => {
       {project.member?.length > 0 && (
         <Members>
           {project.member.map((member) => (
-            <Avatar key={member.img} src={member.img} alt="" />
+            <Avatar key={member.img} src={member.img} alt={`${project.title} team member`} />
           ))}
         </Members>
       )}

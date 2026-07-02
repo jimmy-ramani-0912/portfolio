@@ -10,9 +10,9 @@ export const LANGUAGE = "en";
 export const COUNTRY = "IN";
 
 export const DEFAULT_OG_IMAGE =
-  "https://avatars.githubusercontent.com/u/138371306?v=4";
-export const OG_IMAGE_WIDTH = 460;
-export const OG_IMAGE_HEIGHT = 460;
+  "https://jimmy-ramani-0912.github.io/portfolio/me.png";
+export const OG_IMAGE_WIDTH = 512;
+export const OG_IMAGE_HEIGHT = 512;
 export const OG_IMAGE_ALT = `${Bio.name} — Full Stack Developer portfolio photo`;
 
 export const ROLES_LABEL = Bio.roles.join(", ");

@@ -231,7 +231,7 @@ const SkillPanel = ({ skill }) => {
               <IconWrap>
                 <SkillImage
                   src={item.image}
-                  alt=""
+                  alt={`${item.name} technology icon`}
                   loading="lazy"
                   decoding="async"
                 />

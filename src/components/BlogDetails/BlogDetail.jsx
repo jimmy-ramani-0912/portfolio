@@ -1,6 +1,11 @@
-import React, { useMemo, useState } from "react";
+import React, { useEffect, useMemo, useState } from "react";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { blogs } from "../../data/constants";
+import {
+  findBlogByRouteParam,
+  getBlogPath,
+  isLegacyNumericBlogParam,
+} from "../../utils/blogIndex";
 import BlogCards from "../Cards/BlogCards";
 import BlogDetails from "../../components/BlogDetails";
 import styled from "styled-components";
@@ -80,13 +85,24 @@ export const ViewAll = styled.div`
 function BlogDetail() {
   const navigate = useNavigate();
   const location = useLocation();
-  const { id } = useParams();
+  const { slug } = useParams();
   const blog = useMemo(() => {
     if (location.state?.blog) {
       return location.state.blog;
     }
-    return blogs.find((item) => String(item.id) === String(id));
-  }, [id, location.state?.blog]);
+    return findBlogByRouteParam(slug);
+  }, [slug, location.state?.blog]);
+
+  useEffect(() => {
+    if (!blog || !isLegacyNumericBlogParam(slug)) {
+      return;
+    }
+
+    const canonicalPath = getBlogPath(blog);
+    if (canonicalPath !== `/portfolio/blogs/${slug}`) {
+      navigate(canonicalPath, { replace: true, state: location.state });
+    }
+  }, [blog, slug, navigate, location.state]);
 
   const [openBlogModal, setOpenBlogModal] = useState({
     state: false,

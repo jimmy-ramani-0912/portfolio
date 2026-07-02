@@ -309,7 +309,7 @@ const ExperienceCard = ({ experience }) => {
             {!logoFailed && experience.img ? (
               <LogoImg
                 src={experience.img}
-                alt=""
+                alt={`${experience.company} company logo`}
                 loading="lazy"
                 decoding="async"
                 referrerPolicy="no-referrer"
@@ -361,7 +361,7 @@ const ExperienceCard = ({ experience }) => {
               >
                 <WorkThumb
                   src={doc.workImg}
-                  alt=""
+                  alt={`${experience.company} project screenshot`}
                   loading="lazy"
                   decoding="async"
                 />
