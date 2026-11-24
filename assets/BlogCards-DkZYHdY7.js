@@ -1,4 +1,4 @@
-import{u as p,e as c,$ as x,j as t,q as i,g as l}from"./index-BoLDuifJ.js";import{g as m}from"./mixins-D7YG3nR1.js";const f=i.div`
+import{u as p,h as c,a0 as x,j as t,q as i,g as l}from"./index-PjGdYWfn.js";import{g as m}from"./mixins-CMlaYrJz.js";const h=i.div`
   width: 100%;
   max-width: 340px;
   min-height: 340px;
@@ -38,7 +38,7 @@ import{u as p,e as c,$ as x,j as t,q as i,g as l}from"./index-BoLDuifJ.js";impor
     outline: 2px solid ${({theme:e})=>e.primary};
     outline-offset: 3px;
   }
-`,h=i.img`
+`,f=i.img`
   width: 100%;
   height: 200px;
   object-fit: cover;
@@ -69,5 +69,5 @@ import{u as p,e as c,$ as x,j as t,q as i,g as l}from"./index-BoLDuifJ.js";impor
   text-transform: uppercase;
   text-align: center;
   color: ${({theme:e})=>e.text_secondary};
-`,g=({blog:e,setOpenModal:a})=>{const s=p(),o=c(),n=()=>{e!=null&&e.pdfUrl?a({state:!0,blog:e}):s(l(e),{state:{blog:e}})},d=e!=null&&e.title?`${x(e.title)} cover image`:"Blog cover image";return t.jsxs(f,{...o,tabIndex:0,role:"button",onClick:n,onKeyDown:r=>{(r.key==="Enter"||r.key===" ")&&(r.preventDefault(),n())},children:[t.jsx(h,{src:e==null?void 0:e.image,alt:d,loading:"lazy",decoding:"async"}),t.jsxs(u,{children:[t.jsx(v,{children:e==null?void 0:e.title}),t.jsx(w,{children:e==null?void 0:e.date})]})]})};export{g as B};
-//# sourceMappingURL=BlogCards-D_I2plW-.js.map
+`,$=({blog:e,setOpenModal:n})=>{const s=p(),o=c(),a=()=>{e!=null&&e.pdfUrl?n({state:!0,blog:e}):s(l(e),{state:{blog:e}})},d=e!=null&&e.title?`${x(e.title)} cover image`:"Blog cover image";return t.jsxs(h,{...o,tabIndex:0,role:"button",onClick:a,onKeyDown:r=>{(r.key==="Enter"||r.key===" ")&&(r.preventDefault(),a())},children:[t.jsx(f,{src:e==null?void 0:e.image,alt:d,loading:"lazy",decoding:"async"}),t.jsxs(u,{children:[t.jsx(v,{children:e==null?void 0:e.title}),t.jsx(w,{children:e==null?void 0:e.date})]})]})};export{$ as B};
+//# sourceMappingURL=BlogCards-DkZYHdY7.js.map
