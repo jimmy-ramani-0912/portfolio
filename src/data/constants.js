@@ -549,7 +549,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     date: "Nov 2024",
     description:
       "Enhance your organization's sales management with the Salesman Tracking System, a powerful real-time solution tailored to optimize operational efficiency. Designed for superadmins, admins, and salesmen, this comprehensive system offers seamless integration across all levels. Key Features: 1. Real-Time Location Tracking: Monitor your sales team’s movements with precision using socket.io technology.2. Attendance Management: Keep track of your sales force's attendance effortlessly.3. Visit Logging: Record and review all visits made by sales personnel.Instant Notifications: Superadmins and admins receive immediate alerts for any location discrepancies, ensuring full transparency and accountability. 4. User-Friendly Interface: Navigate the system with ease, thanks to its intuitive design. Whether managing a small team or a large workforce, the Salesman Tracking System equips you with the tools needed for efficient, transparent, and accountable sales operations. Boost your team's productivity and maintain strict oversight with our cutting-edge solution.",
-    image: "https://i.postimg.cc/YqnBSw3G/Feature-graphic.png",
+    image: img("72d9ced627.webp"),
     tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
     category: "mobile app",
     github:
@@ -574,7 +574,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     title: "Orscope",
     date: "Oct 2024",
     description: "Innovation is what Drives Us",
-    image: "https://i.postimg.cc/XqvD9sRN/Screenshot-2024-11-11-161535.png",
+    image: img("f7b6a24e2e.webp"),
     tags: ["React.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/ORSCOPE",
@@ -586,7 +586,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     date: "Dec 2024",
     description:
       "Book appointment with any doctor near you! Select your doctor and preferred time slot according to your convenience and availability.",
-    image: "https://i.postimg.cc/6qtVJTW8/Screenshot-2024-11-11-161554.png",
+    image: img("1a2817126c.webp"),
     tags: ["React.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/myhealth-frontend",
@@ -1341,7 +1341,7 @@ Ready to conquer your front-end interview? Let's dive in and master the most ask
 
 Let's ace that frontend interview and land your dream job! 🚀🎓
 `,
-    image: "https://i.postimg.cc/vZRcfrfZ/Screenshot-2024-07-16-151205.png",
+    image: img("7899caa81f.webp"),
     category: "web",
     pdfUrl: FrontEndInterview,
   },
@@ -1697,7 +1697,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     Get ready to code smarter, not harder! 🛠️🚀
     `,
-    image: "https://i.postimg.cc/rmvs22Z4/Screenshot-2024-07-16-103836.png",
+    image: img("eeeeba83cc.webp"),
     category: "web",
     pdfUrl: VSCodeExt,
   },
