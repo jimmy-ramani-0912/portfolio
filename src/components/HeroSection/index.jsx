@@ -1,5 +1,4 @@
-import React from "react";
-import HeroBgAnimation from "../HeroBgAnimation";
+import React, { lazy, Suspense } from "react";
 import {
   HeroContainer,
   HeroBg,
@@ -22,7 +21,8 @@ import {
   ProfileFrame,
 } from "./HeroStyle";
 const HeroImg = `${import.meta.env.BASE_URL}me-hero.webp`;
-import Typewriter from "typewriter-effect";
+const HeroBgAnimation = lazy(() => import("../HeroBgAnimation"));
+const Typewriter = lazy(() => import("typewriter-effect"));
 import { Bio } from "../../data/constants";
 
 const HeroSection = () => {
@@ -30,7 +30,9 @@ const HeroSection = () => {
     <div id="about">
       <HeroContainer>
         <HeroBg>
-          <HeroBgAnimation />
+          <Suspense fallback={null}>
+            <HeroBgAnimation />
+          </Suspense>
         </HeroBg>
         <HeroInnerContainer>
           <HeroLeftContainer id="Left">
@@ -42,6 +44,7 @@ const HeroSection = () => {
               <TextLoop>
                 <RolePrefix>I&apos;m a</RolePrefix>
                 <Span>
+                  <Suspense fallback={Bio.roles[0]}>
                   <Typewriter
                     options={{
                       strings: Bio.roles,
@@ -51,6 +54,7 @@ const HeroSection = () => {
                       deleteSpeed: 28,
                     }}
                   />
+                  </Suspense>
                 </Span>
               </TextLoop>
               <DescriptionBlock>

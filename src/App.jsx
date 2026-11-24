@@ -1,5 +1,5 @@
 import { ThemeProvider } from "styled-components";
-import { Suspense, useEffect, useState } from "react";
+import { lazy, Suspense, useEffect, useState } from "react";
 import { darkTheme, lightTheme, readStoredTheme, THEME_STORAGE_KEY } from "./utils/Themes.js";
 import { GlobalStyle } from "./theme/globalStyles.js";
 import Navbar from "./components/Navbar/index";
@@ -7,7 +7,7 @@ import "./App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { PublicRoutes } from "./routes.jsx";
 import styled, { keyframes } from "styled-components";
-import Cursor from "./components/Cursor/Cursor.jsx";
+const Cursor = lazy(() => import("./components/Cursor/Cursor.jsx"));
 import SeoManager from "./seo/SeoManager.jsx";
 
 export const LoaderWrapper = styled.div`
@@ -142,7 +142,9 @@ function App() {
   return (
     <ThemeProvider theme={darkMode ? darkTheme : lightTheme}>
       <GlobalStyle />
-      <Cursor />
+      <Suspense fallback={null}>
+        <Cursor />
+      </Suspense>
       <Suspense
         fallback={
           <LoaderWrapper>
