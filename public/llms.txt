@@ -1,0 +1,22 @@
+# Jimmy Ramani — Full Stack Developer & Software Engineer
+
+> Portfolio of Jimmy Ramani, a Full Stack Developer with 2.6+ years of experience building scalable web applications and AI-enabled solutions using React.js, Next.js, Angular, and Node.js, with cloud and DevOps experience.
+
+This is a single-page React portfolio hosted on GitHub Pages. Content is public and may be summarized or cited with a link back to the source page.
+
+## Pages
+
+- [Home](https://jimmy-ramani-0912.github.io/portfolio/): About, skills, experience, projects, education, blogs, timeline and contact form.
+- [Projects](https://jimmy-ramani-0912.github.io/portfolio/projects): Full list of projects with descriptions, tech tags and links.
+- [Blogs](https://jimmy-ramani-0912.github.io/portfolio/blogs): Technical articles on React, Next.js, state management, MongoDB and code quality.
+
+## Profiles
+
+- [GitHub](https://github.com/jimmy-ramani-0912)
+- [LinkedIn](https://www.linkedin.com/in/jimmyramani)
+- [Medium](https://medium.com/@jimmyramani)
+- [CodePen](https://codepen.io/jimmyramani)
+
+## Optional
+
+- [Sitemap](https://jimmy-ramani-0912.github.io/portfolio/sitemap.xml): Machine-readable list of all public URLs, including every blog post.

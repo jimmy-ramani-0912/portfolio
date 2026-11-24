@@ -10,9 +10,9 @@ export default defineConfig({
   esbuild: {
     loader: "jsx",
   },
-  // build: {
-  //   outDir: "build",
-  // },
+  build: {
+    sourcemap: true,
+  },
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),

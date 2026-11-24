@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { glassCard, glassChip } from "../../theme/mixins";
 import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
-const Card = styled.article`
+const Card = styled.div`
   width: 100%;
   max-width: 340px;
   min-height: 440px;

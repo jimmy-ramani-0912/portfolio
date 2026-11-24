@@ -104,18 +104,13 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
     <>
       <Nav>
         <NavbarContainer {...navSpotlight}>
-        <NavLogo to={basePath}>
-          <a
-            onClick={() => scrollToTop()}
-            style={{
-              display: "flex",
-              alignItems: "center",
-              marginBottom: "20",
-              cursor: "pointer",
-            }}
-          >
-            <DiCssdeck size="3rem" /> <Span>Portfolio</Span>
-          </a>
+        <NavLogo
+          to={basePath}
+          onClick={() => scrollToTop()}
+          aria-label="Portfolio home"
+          style={{ display: "flex", alignItems: "center", cursor: "pointer" }}
+        >
+          <DiCssdeck size="3rem" aria-hidden="true" /> <Span>Portfolio</Span>
         </NavLogo>
         <MobileIcon>
           <FaBars

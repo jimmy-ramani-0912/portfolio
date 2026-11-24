@@ -21,7 +21,7 @@ import {
   ResumeButton,
   ProfileFrame,
 } from "./HeroStyle";
-import HeroImg from "../../images/me.png";
+const HeroImg = `${import.meta.env.BASE_URL}me-hero.webp`;
 import Typewriter from "typewriter-effect";
 import { Bio } from "../../data/constants";
 
@@ -75,7 +75,14 @@ const HeroSection = () => {
 
           <HeroRightContainer id="Right">
             <ProfileFrame>
-              <Img src={HeroImg} alt="Jimmy Ramani" />
+              <Img
+                src={HeroImg}
+                alt="Jimmy Ramani"
+                width="392"
+                height="392"
+                fetchPriority="high"
+                decoding="async"
+              />
             </ProfileFrame>
           </HeroRightContainer>
         </HeroInnerContainer>

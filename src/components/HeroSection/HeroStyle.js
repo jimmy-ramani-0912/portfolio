@@ -163,8 +163,18 @@ export const HeroRightContainer = styled.div`
 export const ProfileFrame = styled.div`
   position: relative;
   flex-shrink: 0;
+  box-sizing: border-box;
+  width: 402px;
+  aspect-ratio: 1;
+  max-width: 100%;
   padding: 5px;
   border-radius: 50%;
+  @media (max-width: 768px) {
+    width: 370px;
+  }
+  @media (max-width: 640px) {
+    width: 270px;
+  }
   background: linear-gradient(
     145deg,
     ${({ theme }) => theme.primary} 0%,
@@ -318,8 +328,8 @@ export const ResumeButton = styled.a`
   width: fit-content;
   min-width: 200px;
   padding: 16px 32px;
-  color: ${({ theme }) => theme.white};
-  border: 1px solid ${({ theme }) => theme.primary};
+  color: ${({ theme }) => theme.onPrimary};
+  border: 1px solid ${({ theme }) => theme.primaryFill};
   border-radius: 14px;
   cursor: pointer;
   font-size: clamp(1rem, 1.2vw, 1.125rem);
@@ -328,7 +338,7 @@ export const ResumeButton = styled.a`
     transform 0.2s ease,
     box-shadow 0.25s ease,
     filter 0.2s ease;
-  background: ${({ theme }) => theme.primary};
+  background: ${({ theme }) => theme.primaryFill};
   &:hover {
     transform: translateY(-2px);
     box-shadow:

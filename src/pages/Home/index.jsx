@@ -1,4 +1,4 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import HeroSection from "../../components/HeroSection/index.jsx";
 import { useState } from "react";
 import Skills from "../../components/Skills/index.jsx";
@@ -8,8 +8,12 @@ import Footer from "../../components/Footer/index.jsx";
 import Experience from "../../components/Experience/index.jsx";
 import Education from "../../components/Education/index.jsx";
 import TimeLineData from "../../components/TimeLine/index.jsx";
-import ProjectDetails from "../../components/ProjectDetails/index.jsx";
-import BlogDetails from "../../components/BlogDetails/index.jsx";
+const ProjectDetails = lazy(() =>
+  import("../../components/ProjectDetails/index.jsx")
+);
+const BlogDetails = lazy(() =>
+  import("../../components/BlogDetails/index.jsx")
+);
 import styled from "styled-components";
 import Blogs from "../../components/Blogs/index.jsx";
 
@@ -63,15 +67,17 @@ const Home = () => {
       </Wrapper>
       <Footer />
       </main>
-      {openModal.state && (
-        <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
-      )}
-      {openBlogModal.state && (
-        <BlogDetails
-          openBlogModal={openBlogModal}
-          setOpenBlogModal={setOpenBlogModal}
-        />
-      )}
+      <Suspense fallback={null}>
+        {openModal.state && (
+          <ProjectDetails openModal={openModal} setOpenModal={setOpenModal} />
+        )}
+        {openBlogModal.state && (
+          <BlogDetails
+            openBlogModal={openBlogModal}
+            setOpenBlogModal={setOpenBlogModal}
+          />
+        )}
+      </Suspense>
     </Body>
   );
 };

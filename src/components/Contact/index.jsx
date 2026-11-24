@@ -133,9 +133,9 @@ const ContactButton = styled.button`
   margin-top: 4px;
   padding: 14px 16px;
   border-radius: 12px;
-  border: 1px solid ${({ theme }) => theme.primary};
-  background: ${({ theme }) => theme.primary};
-  color: #fff;
+  border: 1px solid ${({ theme }) => theme.primaryFill};
+  background: ${({ theme }) => theme.primaryFill};
+  color: ${({ theme }) => theme.onPrimary};
   font-size: 1rem;
   font-weight: 700;
   letter-spacing: 0.01em;

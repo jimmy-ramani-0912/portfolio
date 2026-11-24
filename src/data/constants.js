@@ -1,3 +1,4 @@
+const img = (name) => `${import.meta.env.BASE_URL}img/${name}`;
 export const Bio = {
   name: "Jimmy Ramani",
   roles: [
@@ -178,12 +179,12 @@ export const skills = [
       {
         name: "GitHub",
         image:
-          "https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png",
+          img("feef95b70a.webp"),
       },
       {
         name: "Android Studio",
         image:
-          "https://developer.android.com/static/studio/images/new-studio-logo-1_1920.png",
+          img("876a1335eb.webp"),
       },
       {
         name: "VS Code",
@@ -210,7 +211,7 @@ export const skills = [
       },
       {
         name: "Vercel",
-        image: "https://logowik.com/content/uploads/images/vercel1868.jpg",
+        image: img("b10ab3413e.webp"),
       },
       {
         name: "Postman",
@@ -250,36 +251,36 @@ export const experiences = [
     doc: [
       {
         link: "https://invoice-gen-me.netlify.app/",
-        workImg: "https://i.postimg.cc/3Rq08f8D/invoice-gen-me.jpg",
+        workImg: img("919f081fac.webp"),
       },
       {
         link: "https://readme-gen-me.netlify.app/",
-        workImg: "https://i.postimg.cc/76X80jGf/readme-gen-me.jpg",
+        workImg: img("391d78adb6.webp"),
       },
       {
         link: "https://reactjs-1-me.netlify.app/",
-        workImg: "https://i.postimg.cc/05TjQwsF/project-management-dash-me.jpg",
+        workImg: img("69de833103.webp"),
       },
       // {
       //   link: "https://myburger-me-react.netlify.app/",
-      //   workImg: "https://i.postimg.cc/RFcCyvsh/burger-builder-me.jpg",
+      //   workImg: img("a77d02dccd.webp"),
       // },
       {
         link: "https://mini-projects-js.netlify.app/",
-        workImg: "https://i.postimg.cc/2y94bd4P/mini-projects-me.jpg",
+        workImg: img("9fd70e5671.webp"),
       },
       {
         link: "https://test-6-me.netlify.app/",
         workImg:
-          "https://i.postimg.cc/nrnJjBHY/team-time-management-dash-me.jpg",
+          img("c4db4db65e.webp"),
       },
       {
         link: "https://test-5-me.netlify.app/",
-        workImg: "https://i.postimg.cc/wTsVyPG2/portfolio-dash-me.jpg",
+        workImg: img("40f1000ddb.webp"),
       },
       {
         link: "https://test-4-me-resp.netlify.app/",
-        workImg: "https://i.postimg.cc/qRRF9wMF/social-dash-me.jpg",
+        workImg: img("e53917f536.webp"),
       },
     ],
   },
@@ -298,12 +299,12 @@ export const experiences = [
       {
         link: "https://play.google.com/store/apps/details?id=com.websolguru.anwarkamal&hl=en_US",
         workImg:
-          "https://play-lh.googleusercontent.com/m4ctao_Syy3iEBmQ7fy_vozn4Zdo5q0IdQLkbdLzwtCrBe1hK983xYOwl3JUvI5yFfSR=w2560-h1440-rw",
+          img("40bf9f257c.webp"),
       },
       {
         link: "https://medium.com/@jimmyramani/my-car-35373fe7385c",
         workImg:
-          "https://miro.medium.com/v2/resize:fit:640/format:webp/0*oEDmeduTDk1t17kB.jpeg",
+          img("f305186ed1.webp"),
       },
     ],
   },
@@ -322,7 +323,7 @@ export const experiences = [
       {
         link: "https://medium.com/@jimmyramani/zambet-ecommerce-application-79e97f7c6e47",
         workImg:
-          "https://miro.medium.com/v2/resize:fit:592/format:webp/1*U3s65zSZb4Lx3mq8E8kPKg.png",
+          img("98dba178b9.webp"),
       },
     ],
   },
@@ -331,7 +332,7 @@ export const experiences = [
 export const education = [
   {
     id: 0,
-    img: "https://play-lh.googleusercontent.com/3_H1GEEyCiDcPf23k0qKTzFOWSTkPk4a6MRSFuWnS825TOojFrdaoolD_FCV3NF64Q",
+    img: img("238afa7493.webp"),
     school: "Charotar University of Science and Technology, Anand",
     date: "2020 - 2024",
     grade: "8.94 CGPA",
@@ -376,7 +377,7 @@ export const projects = [
 
 ▪ Administrator-managed accounts for organizational access only`,
     image:
-      "https://play-lh.googleusercontent.com/zUoSviCLffPQGzpyeXpk4XGbGBjQAYSuUi6OQnhmKYY9Nrl7jM6JgFdf_GpaC3OqTZkS52xVofr-LFXLKkCyJtI=w5120-h2880-rw",
+      img("71ba2e325e.webp"),
     tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
     category: "mobile app",
     webapp:
@@ -481,7 +482,7 @@ export const projects = [
     date: "Feb 2025",
     description:
       "Book appointment with any lawyer near you! Select your lawyer and preferred time slot according to your convenience and availability.",
-    image: "https://i.ibb.co/Q7B7tmGF/Screenshot-2025-06-10-223543.png",
+    image: img("cc9603ba85.webp"),
     tags: ["React.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/mylegalhelp-frontend",
@@ -492,7 +493,7 @@ export const projects = [
     title: "Sancorp",
     date: "May 2025",
     description: "Material that's Transforming the World.",
-    image: "https://i.ibb.co/XrZPkzNq/Screenshot-2025-06-10-224036.png",
+    image: img("e7cfcf0b4f.webp"),
     tags: ["React.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/Sancorp",
@@ -511,7 +512,7 @@ Secure Login and Verification: Protect your data with secure phone login and OTP
 User-Friendly Interface: Designed for patients of all ages, making healthcare access simple and intuitive.
 `,
     image:
-      "https://play-lh.googleusercontent.com/WBKYLUiFhAJNPhJkRwMQuVEUiWuLryv532TEGBkPCenMbS6Lm5o569o_ViHY7N7urhY=w1052-h592-rw",
+      img("cdc10bd5df.webp"),
     tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/myhealth-app-frontend",
@@ -535,7 +536,7 @@ Secure Login and Verification: Keep your personal and legal information safe wit
 User-Friendly Interface: Designed for users of all ages to easily connect with legal help when needed most.
 `,
     image:
-      "https://i.ibb.co/fdgwDZkR/t-Iyj-Hg-L86mmk-Fov-SLP7-WAGb-SKCI58-Mvz-Fq-Vyp-LRZf3-Fp-EFyh-V1-Hw-C-b-CMo-Jkgkvpc-w1052-h592-rw.webp",
+      img("7173d9efb5.webp"),
     tags: ["Flutter", "NodeJS", "MongoDB", "AWS"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/mylegalhelp-app-frontend",
@@ -562,7 +563,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     date: "Nov 2024",
     description:
       "Karma Time Foundation facilitates a unique value exchange system through our collaborative platform. Members earn minutes by volunteering or sharing their expertise, which can then be used to access products, services, or further their own personal growth. This system not only meets individual needs but also strengthens the bonds between community members.",
-    image: "https://i.postimg.cc/4NwqkVdB/Screenshot-2024-11-11-160737.png",
+    image: img("9badb45e7e.webp"),
     tags: ["Next.js", "JavaScript", "Static Website"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/Minomics-Website",
@@ -609,7 +610,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     date: "Jun 2024",
     description:
       "ReactJS Interview Questions is a guide for both interviewers and candidates to prepare for ReactJS interviews. It features a curated list of questions covering basic to advanced concepts, helping evaluate understanding and skills in ReactJS development. Ideal for interview preparation or enhancing ReactJS knowledge.",
-    image: "https://i.postimg.cc/3NrwbgDf/Screenshot-2024-08-01-144352.png",
+    image: img("c9a5a91a07.webp"),
     tags: ["React.js", "JavaScript", "InterviewPreparation", "Interview"],
     category: "web app",
     github:
@@ -623,7 +624,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     date: "Jun 2024",
     description:
       "JS Interview Questions is a guide for both interviewers and candidates to prepare for JS interviews. It features a curated list of questions covering basic to advanced concepts, helping to evaluate understanding and skills in JS related framework development. Ideal for interview preparation or enhancing JS knowledge.",
-    image: "https://i.postimg.cc/DzsmWfT6/Screenshot-2024-08-01-132958.png",
+    image: img("c0774c0c13.webp"),
     tags: ["JavaScript", "InterviewPreparation", "NodeJS", "NestJS"],
     category: "web app",
     github:
@@ -697,7 +698,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Built with the Next.js 14 App Router, TypeScript, Tailwind, Kinde for Auth, Neon for Postgres database, Uploadthing for File uploading, Prisma as the ORM & Stripe for Payment processing",
     image:
-      "https://github.com/jimmy-ramani-0912/CoverCreationStation/raw/main/public/SS-1.png",
+      img("702c6c52f1.webp"),
     tags: [
       "Next.js",
       "TypeScript",
@@ -719,7 +720,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Kloxa Company offers a comprehensive solution for RO systems via its mobile app, allowing customers to register repairs, installations, and complaints conveniently. With competitive prices on new RO systems and an annual maintenance contract (AMC) plan for all brands, Kloxa ensures efficient service for commercial, domestic, and industrial needs.",
     image:
-      "https://play-lh.googleusercontent.com/CNiSNjhxPwci7tqnJB9sbrjVEI-YrMn4n4AP_jcYM_eCWW7u1iJTFS9twef5RJOWjJ_E=w2560-h1440-rw",
+      img("de0595988e.webp"),
     tags: ["Flutter", "Php", "Mysql"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/Kloxa",
@@ -732,7 +733,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Our invoice generator simplifies the billing process for businesses. It allows you to create professional invoices quickly and easily. With customizable templates and automated calculations, you can generate accurate and polished invoices in no time. Say goodbye to manual invoice creation and hello to a more efficient and professional billing system.",
     image:
-      "https://github.com/jimmy-ramani-0912/Invoice-generator/blob/main/invoice-img.png?raw=true",
+      img("a47413e8e2.webp"),
     tags: ["React Js", "HTML", "Tailwind CSS", "JSX"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/Invoice-Generator",
@@ -745,7 +746,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Our readme generator is a powerful tool for software developers and project managers. It simplifies the process of creating informative and well-structured README files for your projects. With user-friendly templates and easy customization, you can document your project effectively. Save time and ensure that your project is well-documented and easy for others to understand with our README generator.",
     image:
-      "https://github.com/jimmy-ramani-0912/readme-gen/blob/main/src/design.png?raw=true",
+      img("3dea769b86.webp"),
     tags: ["React Js", "HTML", "Styled-Component", "JSX"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/readme-gen",
@@ -758,7 +759,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "AnwarKamal Shayari is a poetic collection that encapsulates the soulful expressions of Anwar Kamal. Dive into a world of profound emotions and eloquent verses, where each line weaves a tapestry of sentiments. This Shayari (poetry) is a reflection of Anwar Kamal's unique perspective and poetic artistry, offering readers a journey through the beauty of words and the depth of emotions.",
     image:
-      "https://play-lh.googleusercontent.com/m4ctao_Syy3iEBmQ7fy_vozn4Zdo5q0IdQLkbdLzwtCrBe1hK983xYOwl3JUvI5yFfSR=w2560-h1440-rw",
+      img("40bf9f257c.webp"),
     tags: ["Flutter", "Php", "Mysql"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/AnwarKamal_Shayari",
@@ -772,7 +773,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Our project management dashboard provides a win-win situation for project teams and project managers. Teams can easily view and update their project status, while managers can monitor progress and make informed decisions. Additionally, teams can customize their project views, and all team members can collaborate seamlessly. This centralized platform streamlines project management processes for increased efficiency and transparency.",
     image:
-      "https://github.com/jimmy-ramani-0912/Project-Management-Dashboard-React/blob/main/design.png?raw=true",
+      img("5f66c60440.webp"),
     tags: ["React Js", "HTML", "CSS", "JSX"],
     category: "web app",
     github:
@@ -786,7 +787,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "MyCar is a user-friendly mobile app designed to simplify car ownership. This app provides a one-stop solution for car owners, offering services such as appointment scheduling, real-time service tracking, cost estimates, and digital invoices. It streamlines communication between car owners and service providers, ensuring a seamless and efficient experience for vehicle maintenance and repairs. MyCar aims to enhance the overall car ownership experience by providing a convenient and centralized platform for managing and maintaining vehicles.",
     image:
-      "https://miro.medium.com/v2/resize:fit:640/format:webp/0*oEDmeduTDk1t17kB.jpeg",
+      img("f305186ed1.webp"),
     tags: ["Flutter", "UI - UX", "Node JS", "Express JS"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/MyCar",
@@ -799,7 +800,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Track Your Trip offers a platform that benefits both travel companies and travelers. Travel companies can showcase their packages for travelers to browse, while travelers have the freedom to create custom trip requests. Travel companies then provide competitive quotes and package details for these custom requests, all conveniently accessible in one place.",
     image:
-      "https://miro.medium.com/v2/resize:fit:720/format:webp/0*8i_NQHqmTphM61Pq.png",
+      img("129e9d6d9e.webp"),
     tags: [
       "React",
       "CSS",
@@ -836,7 +837,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Our portfolio dashboard is the ultimate solution for managing your portfolio of projects. It provides a comprehensive view of all your projects, helping you assess their performance, priorities, and progress. With customizable features and real-time data, you can make informed decisions and ensure efficient management across your entire portfolio. It's your go-to tool for maximizing portfolio success and transparency.",
     image:
-      "https://github.com/jimmy-ramani-0912/Portfolio-Dashboard-React/raw/main/t5-1.png",
+      img("2dcb97d78b.webp"),
     tags: ["React Js", "HTML", "Sass", "JSX"],
     category: "web app",
     github: "https://github.com/jimmy-ramani-0912/Portfolio-Dashboard-React",
@@ -849,7 +850,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Our project management dashboard is a game-changer for project teams and managers alike. It empowers teams to track and manage their tasks and progress effortlessly. Project managers gain real-time insights into project status and can make data-driven decisions. With customizable views and collaborative tools, it simplifies project management, making it a hub of efficiency and transparency for everyone involved.",
     image:
-      "https://github.com/jimmy-ramani-0912/Project-Management-Dashboard-React-2/raw/main/t6-1.png",
+      img("a22dd5f611.webp"),
     tags: ["React Js", "HTML", "Sass", "JSX"],
     category: "web app",
     github:
@@ -863,7 +864,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Location-Based-Attendances is a Flutter app template designed for companies. It streamlines attendance tracking using location data, providing a quick and efficient solution for developers. The template includes features like check-ins and attendance logs, making it a convenient starting point for companies implementing location-based attendance in their Flutter apps.",
     image:
-      "https://miro.medium.com/v2/resize:fit:640/format:webp/1*3l3GVLGNp5jPTYoTZw22vQ.jpeg",
+      img("fd0e63fb6e.webp"),
     tags: ["Flutter", "UI / UX", "NodeJS", "Express JS", "MongoDB"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/Location-Based-Attendances",
@@ -877,7 +878,7 @@ User-Friendly Interface: Designed for users of all ages to easily connect with l
     description:
       "Best-Flutter-UI-Templates is a curated collection of ready-to-use user interface templates for Flutter. It simplifies app development by providing high-quality templates covering various categories. Developers can save time and ensure a polished look for their apps, thanks to these pre-designed UI elements like buttons, forms, and navigation bars.",
     image:
-      "https://github.com/mitesh77/Best-Flutter-UI-Templates/raw/master/best_flutter_ui_templates/assets/fitness_app/fitness_app.png",
+      img("8ba9063b89.webp"),
     tags: ["Flutter", "UI/UX"],
     category: "mobile app",
     github: "https://github.com/jimmy-ramani-0912/Best-Flutter-UI-Templates",
@@ -985,7 +986,7 @@ export const blogs = [
 <p style="text-align: justify;"><span style="font-size: 16px;">Modern web development is driven by JavaScript, a versatile and powerful language that enables the creation of dynamic and responsive web applications. However, as we incorporate new frameworks and libraries into our projects, it's easy to lose sight of their purpose, often using them for the sake of it rather than for their actual benefits.</span></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">This article will explore the architectural patterns and design principles that have stood the test of time, helping developers manage the complexities of frontend applications. It is not another "how-to" guide, but rather a discussion to spark ideas and conversations on this critical topic.</span></p><p style="text-align: justify;">&nbsp;</p>
 <p><span style="font-size: 20px;"><strong>The Evolution of Web Development</strong></span></p><p>&nbsp;</p><p><span style="font-size: 18px;"><strong>Before React, Angular, Vue &hellip; </strong><strong>:</strong><strong> </strong><strong>The Era of jQuery</strong></span></p>
-<p><span style="font-size: 16px;"><p>&nbsp;</p><strong><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/rsj8pHtJ/jquery.png" width="400" height="250"><p>&nbsp;</p></strong></span></p>
+<p><span style="font-size: 16px;"><p>&nbsp;</p><strong><img style="display: block; margin-left: auto; margin-right: auto;" src=img("26334afc87.webp") width="400" height="250"><p>&nbsp;</p></strong></span></p>
 <p style="text-align: justify;"><span style="font-size: 16px;">In the early days of web development, jQuery was the tool of choice for manipulating the DOM and handling events. It provided a convenient way to select and manipulate the DOM, making JavaScript more accessible.</span></p><p>&nbsp;</p>
 <p><span style="font-size: 16px;"><strong>Example Scenario</strong>: Creating a Netflix-like App</span></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">Consider creating a web app similar to Netflix. We display a list of films for the user and save this information in the following format:</span></p><p>&nbsp;</p>
@@ -995,7 +996,7 @@ export const blogs = [
 <p><span style="font-size: 16px;">&nbsp; {id: 3, title: 'Iron Man', savedForLater: false}</span></p>
 <p><span style="font-size: 16px;">]</span></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">We can loop through the array and use appendChild to add relevant information to the document. Each movie has a button to toggle the savedForLater boolean field. We bind the onClick event to update the list and the UI.</span></p><p>&nbsp;</p><p style="text-align: justify;"><span style="font-size: 16px;">Next, we want to add the feature of showing a savedForLater count, A number badge on a bookmark icon button appeared in the navigation bar. To keep this count up-to-date, we bind this to the onClick event of every savedForLater button. This involves updating the list variable, updating the cards UI, and updating the count display.</span></p>
-<p><span style="background-color: #34495e; color: #ecf0f1; font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/MG0PQJd1/Picture2.png" width="400" height="250"><p>&nbsp;</p></span></p>
+<p><span style="background-color: #34495e; color: #ecf0f1; font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src=img("6a05fb7b4e.webp") width="400" height="250"><p>&nbsp;</p></span></p>
 <p><span style="font-size: 18px;"><strong>The Complexity of DOM Operations and Global Variables</strong></span></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">As features and interactions grow, managing more DOM operations and global variables (like the movie array, isLoading, isLoggedIn, themeColor, etc.) becomes complex and error-prone.</span></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">This is where frontend frameworks such as Angular, React, and Vue come in. These frameworks/libraries handle DOM operations (View) for us once we update the state (Model) of an app. Update the model, change the view. Sounds familiar? Yes, let&rsquo;s take a detour to architectural patterns.</span></p>
@@ -1004,14 +1005,14 @@ export const blogs = [
 <p>&nbsp;</p>
 <p><strong>MVVM Pattern | Two-Way Binding</strong></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">The&nbsp;Model-View-ViewModel (MVVM) pattern is a variant of the traditional Model-View-Controller (MVC) architecture. In MVVM, the view (UI) is directly bound to the ViewModel, which in turn is bound to the model (application state). This two-way binding allows for automatic updates between the view and model, making it ideal for CRUD (Create, Read, Update, Delete) applications.</span></p>
-<p><strong><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/zXWcrhKd/Picture3.png" width="600" height="350"><p>&nbsp;</p></strong></p><p><strong>Event Bus | One-Way Binding</strong></p><p>&nbsp;</p>
+<p><strong><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src=img("807fe781ef.webp") width="600" height="350"><p>&nbsp;</p></strong></p><p><strong>Event Bus | One-Way Binding</strong></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">Messages can be sent to the event bus by components in response to events, such as button clicks by users. For events that interest them, components can also subscribe to the event bus. As soon as the event bus receives a message, it will distribute it to subscribers. The term "one-way binding" refers to this type of middleman-like pattern where the component is not directly read-write bound to the model. Rather than writing independently, a component emits an event to a "state handler" so that it can write after subscribing to a portion of the model. One-way binding is implemented by the library React. As stated differently, we must independently connect the read-write cycle.</span></p>
-<p><span style="font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/pVnHmpKj/3.webp" width="400" height="250"><p>&nbsp;</p></span></p>
+<p><span style="font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src=img("8a3a2c89b5.webp") width="400" height="250"><p>&nbsp;</p></span></p>
 <p style="text-align: justify;"><span style="font-size: 16px;">In the above example, we could say the button is a publisher to send message to the event bus, and the h1 header is a subscriber listening to changes of the count part of the data model / app state.</span></p>
 <p>&nbsp;</p>
 <p><strong>Task-Based Apps |&nbsp;CQRS Pattern</strong></p><p>&nbsp;</p>
 <p style="text-align: justify;"><span style="font-size: 16px;">For task-based applications such as booking systems or e-commerce platforms, the Command Query Responsibility Segregation (CQRS) pattern can be more effective. CQRS separates read operations (queries) from write operations (commands), reducing the complexity of state management.</span></p>
-<p><span style="font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src="https://i.postimg.cc/9Fjvz1m3/4.webp" width="600" height="400"><p>&nbsp;</p></span></p>
+<p><span style="font-size: 16px;"><p>&nbsp;</p><img style="display: block; margin-left: auto; margin-right: auto;" src=img("a7fcf17e13.webp") width="600" height="400"><p>&nbsp;</p></span></p>
 <p style="text-align: justify;"><span style="font-size: 16px;">That doesn&rsquo;t mean that frameworks like Angular and Vue.js become useless. Angular service is a good example of applying CQRS pattern: you have private variables storing the items in question, public getters (query) and setters (command) as separate methods. The &ldquo;Managing Data&rdquo; section in Angular&rsquo;s official documentation has a good illustration on this. Architectural pattern capitalizing on CQRS ? Of course there is.</span></p>
 <p>&nbsp;</p>
 <p><strong>Flux pattern |&nbsp;Redux</strong></p><p>&nbsp;</p>
@@ -1061,7 +1062,7 @@ export const blogs = [
 
 #nextjs #react #zustand #redux #zustandVsRedux #context #stateManagement
 `,
-    image: "https://i.postimg.cc/PJcZ4fGw/Screenshot-2024-07-23-232003.png",
+    image: img("11731468ee.webp"),
     category: "web",
     pdfUrl: ZustandVSRedux,
   },
@@ -1094,7 +1095,7 @@ Next.js 15 continues to push the boundaries of web development, making it easier
 
 #Nextjs #React #JavaScript #TechUpdates #WebDevelopment #Coding #fullstack #typescript #Programming #WebDevTips #TechGuide
 `,
-    image: "https://i.postimg.cc/wjps2Gy3/Screenshot-2024-07-23-231536.png",
+    image: img("6808ff41c0.webp"),
     category: "web",
     pdfUrl: NextJS15,
   },
@@ -1127,7 +1128,7 @@ Dive into the carousel to learn how these hooks can transform your Next.js proje
 #reactjs #nextjs #fullstack #WebDevelopment #JavaScript #typescript
 #Programming #WebDevTips #TechGuide #linkedinlearning #growth
 `,
-    image: "https://i.postimg.cc/Nfgkpb0Q/Screenshot-2024-07-16-154526.png",
+    image: img("86c1d5e102.webp"),
     category: "web",
     pdfUrl: NextJSHook,
   },
@@ -1165,7 +1166,7 @@ Both tools are incredible in their own right and can help you build amazing appl
 
 Happy coding! 💻
 `,
-    image: "https://i.postimg.cc/SK5gP9vD/Screenshot-2024-07-16-154238.png",
+    image: img("43fc8deeaf.webp"),
     category: "web",
     pdfUrl: NextVSReact,
   },
@@ -1183,9 +1184,9 @@ Happy coding! 💻
 
 #programming #ReactJS
 `,
-    image: "https://i.postimg.cc/QxsWzLfr/1714386279635.jpg",
+    image: img("f2578e154b.webp"),
     category: "web",
-    photoUrl: "https://i.postimg.cc/QxsWzLfr/1714386279635.jpg",
+    photoUrl: img("f2578e154b.webp"),
   },
   {
     id: 39,
@@ -1218,7 +1219,7 @@ Happy coding! 💻
 
 P.S. What's your favorite MongoDB tip? Comment below!
 `,
-    image: "https://i.postimg.cc/pVB6WmhX/Screenshot-2024-07-16-155214.png",
+    image: img("7fb4d4ce53.webp"),
     category: "web",
     pdfUrl: MongoCheatSheet,
   },
@@ -1279,7 +1280,7 @@ P.S. What's your favorite MongoDB tip? Comment below!
 
 #React19 #ReactDevelopment #NewAPI
 `,
-    image: "https://i.postimg.cc/rwS7grZJ/Screenshot-2024-07-16-151753.png",
+    image: img("f7f4d2317b.webp"),
     category: "web",
     pdfUrl: React19UseAPI,
   },
@@ -1306,7 +1307,7 @@ Whether you're a beginner looking to level up your React skills or a seasoned de
 
 #ReactJS #StateManagement #useContext #ReactHooks #FrontendDevelopment
 `,
-    image: "https://i.postimg.cc/Mp8pvWJc/Screenshot-2024-07-16-151513.png",
+    image: img("bee3b2cfbc.webp"),
     category: "web",
     pdfUrl: UseContext,
   },
@@ -1375,9 +1376,9 @@ Ready to navigate the complexities of rendering in Next.js? Let's embark on this
 
 Let's unravel the complexities of CSR vs. SSR in Next.js and elevate your development approach! 🚀🔍
 `,
-    image: "https://i.postimg.cc/x1TKYCrH/image.jpg",
+    image: img("6d03a91ce9.webp"),
     category: "web",
-    photoUrl: "https://i.postimg.cc/x1TKYCrH/image.jpg",
+    photoUrl: img("6d03a91ce9.webp"),
   },
   {
     id: 32,
@@ -1408,7 +1409,7 @@ Ready to unlock the full potential of ISR in Next.js? Let's embark on this journ
 
 Let's revolutionize your Next.js projects with the power of Incremental Static Regeneration! 🚀🌐
 `,
-    image: "https://i.postimg.cc/05DgGXJr/Screenshot-2024-07-16-145700.png",
+    image: img("6a3d5a1049.webp"),
     category: "web",
     pdfUrl: ISR,
   },
@@ -1442,7 +1443,7 @@ Ace these questions, and you're on your way to React success! 🚀 Share your fa
 🙋𝑳𝒐𝒐𝒌𝒊𝒏𝒈 𝒇𝒐𝒓 𝐲𝐨𝐮𝐫 𝒅𝒓𝒆𝒂𝒎 𝒋𝒐𝒃?
 Follow Jimmy Ramani for more videos and notes.
 `,
-    image: "https://i.postimg.cc/fWcX9XDm/Screenshot-2024-07-16-150759.png",
+    image: img("59609d2a90.webp"),
     category: "web",
     pdfUrl: ReactInterview,
   },
@@ -1475,7 +1476,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     Let's elevate your Next.js projects with the power of Server-Side Rendering! 🚀
 `,
-    image: "https://i.postimg.cc/pdFBtRqQ/Screenshot-2024-07-16-102515.png",
+    image: img("744ba6d561.webp"),
     category: "web",
     pdfUrl: SSR,
   },
@@ -1508,7 +1509,7 @@ Follow Jimmy Ramani for more videos and notes.
 
   Let's elevate your Next.js projects with the power of Client-Side Rendering! 🚀🌐
 `,
-    image: "https://i.postimg.cc/qMWhHnYY/Screenshot-2024-07-16-102651.png",
+    image: img("4afeeea3b2.webp"),
     category: "web",
     pdfUrl: CSR,
   },
@@ -1541,7 +1542,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     Let's harness the power of Static Site Generation to build better web experiences! 🚀🌐
 `,
-    image: "https://i.postimg.cc/Vvp61Q7M/Screenshot-2024-07-16-102808.png",
+    image: img("650ef88bd6.webp"),
     category: "web",
     pdfUrl: SSG,
   },
@@ -1575,7 +1576,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #ReactJS #ReactQuery #WebDevelopment #Programming #TipsAndTricks #StateManagement #APIFetching #Optimization #ErrorHandling #Innovation
 `,
-    image: "https://i.postimg.cc/rs0VfZ8p/Screenshot-2024-07-16-102910.png",
+    image: img("f208eca4be.webp"),
     category: "web",
     pdfUrl: ReactQuery,
   },
@@ -1605,7 +1606,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     Let's write ReactJS code like a pro! 🚀🔍
 `,
-    image: "https://i.postimg.cc/d1vYNGz9/Screenshot-2024-07-16-102953.png",
+    image: img("4297a0b6c5.webp"),
     category: "web",
     pdfUrl: ReactShorthand,
   },
@@ -1636,7 +1637,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     Let's build the web of tomorrow, one step at a time! 🌟🔗
   `,
-    image: "https://i.postimg.cc/Jh3wXGGH/Screenshot-2024-07-16-103204.png",
+    image: img("c13e4871a5.webp"),
     category: "web",
     pdfUrl: WebDevRoadMap,
   },
@@ -1668,7 +1669,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #Nextjs #React #WebDevelopment #SEO #Performance #TechInnovation #DeveloperLife 💻🌈
     `,
-    image: "https://i.postimg.cc/cLYPqr7k/Screenshot-2024-07-16-103353.png",
+    image: img("042bfaa87d.webp"),
     category: "web",
     pdfUrl: NextJS,
   },
@@ -1725,7 +1726,7 @@ Follow Jimmy Ramani for more videos and notes.
       💬 𝘊𝘰𝘮𝘮𝘦𝘯𝘵 𝘣𝘦𝘭𝘰𝘸 𝘸𝘪𝘵𝘩 𝘺𝘰𝘶𝘳 𝘚𝘚𝘙 𝘴𝘵𝘰𝘳𝘪𝘦𝘴 𝘰𝘳 𝘲𝘶𝘦𝘴𝘵𝘪𝘰𝘯𝘴!
 
       #WebDevelopment #SEO #Performance`,
-    image: "https://i.postimg.cc/JzCNGnJk/Screenshot-2024-07-16-104307.png",
+    image: img("ce74db345b.webp"),
     category: "web",
     pdfUrl: PerformanceWithSSR,
   },
@@ -1756,7 +1757,7 @@ Follow Jimmy Ramani for more videos and notes.
     𝘙𝘦𝘢𝘥𝘺 𝘵𝘰 𝘵𝘢𝘬𝘦 𝘺𝘰𝘶𝘳 𝒄𝒐𝒅𝒊𝒏𝒈 𝘫𝘰𝘶𝘳𝘯𝘦𝘺 𝘵𝘰 𝘯𝘦𝘸 𝘩𝘦𝘪𝘨𝘩𝘵𝘴? 𝘍𝘰𝘭𝘭𝘰𝘸 Jimmy Ramani'𝒔 𝘭𝘦𝘢𝘥 𝘢𝘯𝘥 𝘶𝘯𝘭𝘰𝘤𝘬 𝘵𝘩𝘦 𝒔𝒆𝒄𝒓𝒆𝒕𝒔 𝘵𝘰 𝘦𝘯𝘩𝘢𝘯𝘤𝘪𝘯𝘨 𝘺𝘰𝘶𝘳 𝘤𝘰𝘥𝘪𝘯𝘨 𝘱𝘳𝘰𝘧𝘪𝘤𝘪𝘦𝘯𝘤𝘺! 𝘍𝘳𝘰𝘮 𝘤𝘶𝘵𝘵𝘪𝘯𝘨-𝘦𝘥𝘨𝘦 𝘵𝘪𝘱𝘴 𝘵𝘰 𝘪𝘯𝘷𝘢𝘭𝘶𝘢𝘣𝘭𝘦 𝘪𝘯𝘴𝘪𝘨𝘩𝘵𝘴, 𝑱𝒊𝒎𝒎𝒚'𝒔 𝘨𝘰𝘵 𝘺𝘰𝘶 𝘤𝘰𝘷𝘦𝘳𝘦𝘥 𝘦𝘷𝘦𝘳𝘺 𝘴𝘵𝘦𝘱 𝘰𝘧 𝘵𝘩𝘦 𝘸𝘢𝘺.
 
     #ReactJS #FrontEndDevelopment #WebDevelopment #ReactLibraries #Innovation`,
-    image: "https://i.postimg.cc/d0t4V3P9/Screenshot-2024-07-16-104451.png",
+    image: img("5d68dadb73.webp"),
     category: "web",
     pdfUrl: ReactLibrary,
   },
@@ -1778,9 +1779,9 @@ Follow Jimmy Ramani for more videos and notes.
     If this tip just made your day or you know someone who could benefit from it, go ahead and hit that like button or better yet, repost this gem. Let's spread the knowledge!
 
     hashtag#SVG hashtag#Performance hashtag#WebDevelopment`,
-    image: "https://i.postimg.cc/3xcHcCc4/Screenshot-2024-07-16-104846.png",
+    image: img("74a273e493.webp"),
     category: "web",
-    photoUrl: "https://i.postimg.cc/3xcHcCc4/Screenshot-2024-07-16-104846.png",
+    photoUrl: img("74a273e493.webp"),
   },
   {
     id: 19,
@@ -1812,7 +1813,7 @@ Follow Jimmy Ramani for more videos and notes.
     Share your 𝒕𝒉𝒐𝒖𝒈𝒉𝒕𝒔, and let's brainstorm some genius applications together! Don't forget to hit the '𝑳𝒊𝒌𝒆' button if you found this list helpful, and drop a 𝒄𝒐𝒎𝒎𝒆𝒏𝒕 with your innovative 𝒊𝒅𝒆𝒂𝒔 or 𝒒𝒖𝒆𝒔𝒕𝒊𝒐𝒏𝒔!
 
     #APIs #WebDevelopment #AppDevelopment #Innovation #Coding`,
-    image: "https://i.postimg.cc/j5189b14/Screenshot-2024-07-16-110151.png",
+    image: img("b848f1a8d2.webp"),
     category: "web",
     pdfUrl: FunAPIs,
   },
@@ -1840,7 +1841,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #NodeJS #ExpressJS #BackendDevelopment #WebDevelopment #Tutorial #Learning
     `,
-    image: "https://i.postimg.cc/tJtBgxT2/Screenshot-2024-07-16-110430.png",
+    image: img("a7a2bed1fe.webp"),
     category: "web",
     pdfUrl: ExpressServer,
   },
@@ -1866,7 +1867,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #React #Animation #UI #FrontEndDevelopment #FramerMotion #ReactSpring #AnimeJS #GreenSock #ReactMove
     `,
-    image: "https://i.postimg.cc/W3KSk8XV/Screenshot-2024-07-16-110743.png",
+    image: img("bc8dc71a45.webp"),
     category: "web",
     pdfUrl: PopularReactLibrary,
   },
@@ -1900,7 +1901,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #reactjs #react #javascript #cheatsheet #tips #mastery #guide #developer #programmer #web #development #code #nextjs #nextjs14 #webdevelopment #mern #notes #speedoptimization #website #websitedevelopment #softwaredevelopment #mernstack #seo
     `,
-    image: "https://i.postimg.cc/8CzbX9YD/Screenshot-2024-07-16-111043.png",
+    image: img("c5053fa1e9.webp"),
     category: "web",
     pdfUrl: WebSitePerformance,
   },
@@ -1929,7 +1930,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #ReactJS #SOLIDPrinciples #FrontEndDevelopment
     `,
-    image: "https://i.postimg.cc/sXjhd686/Screenshot-2024-07-16-122830.png",
+    image: img("5760c37567.webp"),
     category: "web",
     pdfUrl: ReactSolid,
   },
@@ -1957,7 +1958,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #WebAPI #SoftwareDevelopment #TechTalk
     `,
-    image: "https://i.postimg.cc/Prr2zK5M/Screenshot-2024-07-16-120106.png",
+    image: img("df2eb71c92.webp"),
     category: "web",
     pdfUrl: WebAPI,
   },
@@ -1978,7 +1979,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #ReactJS #Coding #TechEducation
     `,
-    image: "https://i.postimg.cc/xCDHLZL9/Screenshot-2024-07-16-123343.png",
+    image: img("8b698b9991.webp"),
     category: "web",
     pdfUrl: ReactMaster,
   },
@@ -2023,7 +2024,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #javascript #javascriptdeveloper #javascriptlearning #react #reactjs #reactdeveloper #frontend #frontenddeveloper #frontenddevelopment #webdevelopment #webdeveloper #connect #follow
     `,
-    image: "https://i.postimg.cc/HLp1jYhm/Screenshot-2024-07-16-123609.png",
+    image: img("7b3c458914.webp"),
     category: "web",
     pdfUrl: ProTricks,
   },
@@ -2066,7 +2067,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #react #reactdeveloper #learning #repository #github #facebook #webdevelopment #frontenddevelopment
     `,
-    image: "https://i.postimg.cc/L5zWGs1F/Screenshot-2024-07-16-124231.png",
+    image: img("476d7edc59.webp"),
     category: "web",
     pdfUrl: ReactWithRepos,
   },
@@ -2087,7 +2088,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #frontend #collab #linkedincommunity
     `,
-    image: "https://i.postimg.cc/cJtGX0X0/Screenshot-2024-07-16-124516.png",
+    image: img("ac2ff108f0.webp"),
     category: "web",
     pdfUrl: FrontEndMaster,
   },
@@ -2122,7 +2123,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #TypeScript #JavaScript #CodingJourney #DeveloperCommunity #TechEnthusiast
 `,
-    image: "https://i.postimg.cc/P5MY1y2D/Screenshot-2024-07-16-124736.png",
+    image: img("d269f4200b.webp"),
     category: "web",
     pdfUrl: TypeScript,
   },
@@ -2150,7 +2151,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #ReactJS #WebDevelopment
 `,
-    image: "https://i.postimg.cc/NFQH6gRj/Screenshot-2024-07-16-132250.png",
+    image: img("bb81a0de6b.webp"),
     category: "web",
     pdfUrl: useFormHook,
   },
@@ -2172,7 +2173,7 @@ Follow Jimmy Ramani for more videos and notes.
     #Coding
     #DeveloperResources
 `,
-    image: "https://i.postimg.cc/3JVw78W0/Screenshot-2024-07-16-132530.png",
+    image: img("2e5cbf8555.webp"),
     category: "web",
     pdfUrl: JSBuildIn2,
   },
@@ -2193,7 +2194,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #JavaScript #Coding #DeveloperResources
 `,
-    image: "https://i.postimg.cc/mZ6LNLYp/Screenshot-2024-07-16-132608.png",
+    image: img("1de6212afe.webp"),
     category: "web",
     pdfUrl: FactoryPattern,
   },
@@ -2216,7 +2217,7 @@ Follow Jimmy Ramani for more videos and notes.
     #Coding
     #DeveloperResources
 `,
-    image: "https://i.postimg.cc/FKmNs7vz/Screenshot-2024-07-16-132558.png",
+    image: img("733468d610.webp"),
     category: "web",
     pdfUrl: JSBuildIn,
   },
@@ -2235,7 +2236,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #reactjs #reactjsdeveloper #javascript #typescript #programminers #codingchallenge #coding #coder #codinglife #code #programmer #programminglife #programmers #ReactProjects #CodingChallenge
 `,
-    image: "https://i.postimg.cc/G2JSbxRg/Screenshot-2024-07-16-141914.png",
+    image: img("0a906500b8.webp"),
     category: "web",
     pdfUrl: ProjectIdeas,
   },
@@ -2253,7 +2254,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #JavaScript #WebAPIs #CodingJourney
 `,
-    image: "https://i.postimg.cc/nV9GK1gy/Screenshot-2024-07-16-142308.png",
+    image: img("26075cd04d.webp"),
     category: "web",
     pdfUrl: JSWebAPI,
   },
@@ -2269,7 +2270,7 @@ Follow Jimmy Ramani for more videos and notes.
 
     #JavaScript #Coding #DeveloperResources
 `,
-    image: "https://i.postimg.cc/Vk4YcZYD/Screenshot-2024-07-16-142648.png",
+    image: img("f9f6822f5d.webp"),
     category: "web",
     pdfUrl: JSCheatSheet,
   },

@@ -6,7 +6,7 @@ import { useNavigate } from "react-router-dom";
 import { getBlogPath } from "../../utils/blogIndex";
 import { sanitizeBlogTitle } from "../../utils/blogSeo";
 
-const Card = styled.article`
+const Card = styled.div`
   width: 100%;
   max-width: 340px;
   min-height: 340px;

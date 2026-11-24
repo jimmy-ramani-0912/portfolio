@@ -153,8 +153,8 @@ export const GitHubButton = styled.a`
   font-size: 16px;
   transition: all 0.6s ease-in-out;
   :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+    background: ${({ theme }) => theme.primaryFill};
+    color: ${({ theme }) => theme.onPrimary};
   }
   @media screen and (max-width: 768px) {
     font-size: 14px;
@@ -279,8 +279,8 @@ export const MobileMenuButton = styled.a`
   transition: all 0.6s ease-in-out;
 
   :hover {
-    background: ${({ theme }) => theme.primary};
-    color: ${({ theme }) => theme.white};
+    background: ${({ theme }) => theme.primaryFill};
+    color: ${({ theme }) => theme.onPrimary};
   }
 `;
 
