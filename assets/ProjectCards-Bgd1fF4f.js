@@ -1,4 +1,4 @@
-import{q as i,M as d,N as c,e as x,j as t}from"./index-DxVyh5Dr.js";import{f as l,g as m}from"./mixins-kDu7YNK3.js";const C=i.section`
+import{q as i,M as d,N as c,e as x,j as t}from"./index-BoLDuifJ.js";import{f as l,g as m}from"./mixins-D7YG3nR1.js";const C=i.section`
   position: relative;
   z-index: 1;
   display: flex;
@@ -227,4 +227,4 @@ import{q as i,M as d,N as c,e as x,j as t}from"./index-DxVyh5Dr.js";import{f as 
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   border: 3px solid ${({theme:e})=>e.glassCardBorder};
 `,G=({project:e,setOpenModal:n})=>{var a,s;const p=x(),o=()=>{n({state:!0,project:e})};return t.jsxs(g,{...p,tabIndex:0,role:"button",onClick:o,onKeyDown:r=>{(r.key==="Enter"||r.key===" ")&&(r.preventDefault(),o())},children:[t.jsx(h,{src:e.image,alt:`${e.title} project preview`,loading:"lazy",decoding:"async"}),t.jsx(f,{children:(a=e.tags)==null?void 0:a.map(r=>t.jsx(w,{children:r},r))}),t.jsxs(u,{children:[t.jsx(b,{children:e.title}),t.jsx(v,{children:e.date}),t.jsx(y,{children:e.description})]}),((s=e.member)==null?void 0:s.length)>0&&t.jsx($,{children:e.member.map(r=>t.jsx(k,{src:r.img,alt:`${e.title} team member`},r.img))})]})};export{q as C,B as D,j as E,D as I,G as P,T as S,E as T,A as V,I as a,S as b,M as c,C as d};
-//# sourceMappingURL=ProjectCards--Ojo6E6p.js.map
+//# sourceMappingURL=ProjectCards-Bgd1fF4f.js.map

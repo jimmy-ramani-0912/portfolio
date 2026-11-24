@@ -1,4 +1,4 @@
-import{q as a,u as m,a as f,c as u,r as n,f as h,i as w,g as b,j as e,b as j}from"./index-DxVyh5Dr.js";import{B as v}from"./BlogCards-zcp33Crd.js";import B from"./index-D76YmG5d.js";import"./mixins-kDu7YNK3.js";import"./Modal-CvjjSgB7.js";const p=a.div`
+import{q as a,u as m,a as f,c as u,r as n,f as h,i as w,g as b,j as e,b as j}from"./index-BoLDuifJ.js";import{B as v}from"./BlogCards-D_I2plW-.js";import B from"./index-D03ez-Fd.js";import"./mixins-D7YG3nR1.js";import"./Modal-C_249NR9.js";const p=a.div`
   color: ${({theme:t})=>t.text_primary};
   background-color: ${({theme:t})=>t.bg};
   width: 100%;
@@ -59,4 +59,4 @@ import{q as a,u as m,a as f,c as u,r as n,f as h,i as w,g as b,j as e,b as j}fro
     font-size: 16px;
   }
 `;function _(){var c;const t=m(),l=f(),{slug:r}=u(),i=n.useMemo(()=>{var o;return(o=l.state)!=null&&o.blog?l.state.blog:h(r)},[r,(c=l.state)==null?void 0:c.blog]);n.useEffect(()=>{if(!i||!w(r))return;const o=b(i);o!==`/portfolio/blogs/${r}`&&t(o,{replace:!0,state:l.state})},[i,r,t,l.state]);const[s,d]=n.useState({state:!1,blog:null});return i?e.jsxs(p,{children:[e.jsx("article",{children:e.jsx(y,{dangerouslySetInnerHTML:{__html:i.HTML}})}),e.jsxs(C,{children:[e.jsx(x,{children:"Latest Blogs"}),e.jsx(M,{children:j.filter(o=>o.id!==i.id).slice(0,5).map(o=>e.jsx(v,{blog:o,openModal:s,setOpenModal:d},o.id))}),e.jsx(g,{onClick:()=>{t("/portfolio/blogs")},children:"View All"})]}),s.state&&e.jsx(B,{openBlogModal:s,setOpenBlogModal:d})]}):e.jsxs(p,{children:[e.jsx(x,{children:"Blog not found"}),e.jsx(g,{onClick:()=>{t("/portfolio/blogs")},children:"Back to Blogs"})]})}export{p as Body,C as CardContainer,M as Cards,y as HtmlData,x as Title,g as ViewAll,_ as default};
-//# sourceMappingURL=BlogDetail-DPOb_LDa.js.map
+//# sourceMappingURL=BlogDetail-KMtJ3Myi.js.map

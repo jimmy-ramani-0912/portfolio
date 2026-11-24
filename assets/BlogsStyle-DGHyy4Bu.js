@@ -1,4 +1,4 @@
-import{q as t}from"./index-DxVyh5Dr.js";const n=t.section`
+import{q as t}from"./index-BoLDuifJ.js";const n=t.section`
   position: relative;
   z-index: 1;
   display: flex;
@@ -94,4 +94,4 @@ import{q as t}from"./index-DxVyh5Dr.js";const n=t.section`
     border-radius: 4px;
   }
 `;export{c as C,l as D,o as E,r as I,a as S,p as T,s as V,n as a};
-//# sourceMappingURL=BlogsStyle-COEpDFba.js.map
+//# sourceMappingURL=BlogsStyle-DGHyy4Bu.js.map
