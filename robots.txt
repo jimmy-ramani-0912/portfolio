@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /portfolio/
+
+Sitemap: https://jimmy-ramani-0912.github.io/portfolio/sitemap.xml
