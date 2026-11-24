@@ -108,7 +108,6 @@ const BlogCards = ({ blog, setOpenModal }) => {
       {...spotlight}
       tabIndex={0}
       role="button"
-      aria-label={`Open blog: ${blog?.title}`}
       onClick={openPost}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {

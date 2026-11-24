@@ -142,7 +142,6 @@ const ProjectCards = ({ project, setOpenModal }) => {
       {...spotlight}
       tabIndex={0}
       role="button"
-      aria-label={`Open project: ${project.title}`}
       onClick={openDetails}
       onKeyDown={(e) => {
         if (e.key === "Enter" || e.key === " ") {

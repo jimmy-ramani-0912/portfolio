@@ -105,7 +105,7 @@ export const Span = styled.div`
   font-size: 18px;
 `;
 
-export const NavItems = styled.ul`
+export const NavItems = styled.div`
   flex: 1;
   min-width: 0;
   display: flex;

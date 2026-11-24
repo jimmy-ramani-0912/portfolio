@@ -180,7 +180,11 @@ const Navbar = ({ darkMode, toggleDarkMode }) => {
             <GitHubIcon style={{ marginRight: "10px" }} />
             Github
           </GitHubButton>
-          <ThemeButton onClick={toggleDarkMode}>
+          <ThemeButton
+            type="button"
+            onClick={toggleDarkMode}
+            aria-label="Toggle light and dark theme"
+          >
             {darkMode ? <WbSunnyIcon /> : <FaMoon />}
           </ThemeButton>
         </ButtonContainer>
