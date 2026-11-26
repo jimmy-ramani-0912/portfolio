@@ -23,11 +23,7 @@ const Body = styled.div`
 `;
 
 const PageBackdrop = styled.div`
-  background: linear-gradient(
-    343.07deg,
-    ${({ theme }) => theme.accentMesh1} 5.71%,
-    transparent 64.83%
-  );
+  background: transparent;
   display: flex;
   flex-direction: column;
   align-items: center;

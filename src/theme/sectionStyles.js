@@ -6,32 +6,16 @@ export const sectionEyebrowDot = css`
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
-      0 0 16px ${({ theme }) => theme.primaryGlow};
+    background: ${({ theme }) => theme.primaryFill};
   }
 `;
 
+// Solid heading colour (name kept so existing imports keep working).
 export const sectionTitleGradient = css`
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 38%,
-    ${({ theme }) => theme.primary} 72%,
-    ${({ theme }) => theme.accent} 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: ${({ theme }) => theme.text_primary};
+  letter-spacing: -0.02em;
 `;
 
 export const cardAccentBorder = css`
-  background: linear-gradient(
-    145deg,
-    ${({ theme }) => theme.primary} 0%,
-    ${({ theme }) => theme.accent} 48%,
-    ${({ theme }) => theme.primary} 100%
-  );
+  background: ${({ theme }) => theme.primaryFill};
 `;

@@ -19,17 +19,21 @@ const Container = styled.section`
 
 const Inner = styled.div`
   width: 100%;
-  max-width: min(640px, 92vw);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: min(1240px, 92vw);
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+  gap: clamp(32px, 6vw, 72px);
+  align-items: start;
+  @media (max-width: 900px) {
+    grid-template-columns: minmax(0, 1fr);
+  }
 `;
 
 const SectionHeader = styled.header`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: 12px;
   max-width: 720px;
 `;
@@ -42,14 +46,13 @@ const Eyebrow = styled.span`
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.text_secondary};
-  ${sectionEyebrowDot}
+  color: ${({ theme }) => theme.primary};
 `;
 
 const Title = styled.h2`
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
   ${sectionTitleGradient}
@@ -65,33 +68,13 @@ const Desc = styled.p`
 
 const ContactForm = styled.form`
   width: 100%;
-  max-width: 560px;
   display: flex;
   flex-direction: column;
   ${glassCard}
   padding: clamp(24px, 4vw, 32px);
-  border-radius: 18px;
-  margin-top: clamp(28px, 4vw, 40px);
+  border-radius: 20px;
   gap: 14px;
-  border-color: ${({ theme }) => theme.primary}40;
   position: relative;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    border-radius: 18px 18px 0 0;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.primary} 0%,
-      ${({ theme }) => theme.accent} 48%,
-      ${({ theme }) => theme.primary} 100%
-    );
-    pointer-events: none;
-    z-index: 2;
-  }
 `;
 
 const ContactTitle = styled.h3`

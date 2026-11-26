@@ -131,7 +131,7 @@ function App() {
     window.localStorage.setItem(THEME_STORAGE_KEY, mode);
     const meta = document.querySelector('meta[name="theme-color"]');
     if (meta) {
-      meta.setAttribute("content", darkMode ? "#030711" : "#FFFFFF");
+      meta.setAttribute("content", darkMode ? "#0A0F1C" : "#F8FAFC");
     }
   }, [darkMode]);
 

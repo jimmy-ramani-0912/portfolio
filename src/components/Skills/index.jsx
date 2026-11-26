@@ -20,14 +20,14 @@ const Inner = styled.div`
   max-width: min(1240px, 90vw);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 const SectionHeader = styled.header`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: 12px;
   max-width: 720px;
 `;
@@ -40,14 +40,13 @@ const Eyebrow = styled.span`
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.text_secondary};
-  ${sectionEyebrowDot}
+  color: ${({ theme }) => theme.primary};
 `;
 
 const Title = styled.h2`
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
   ${sectionTitleGradient}
@@ -65,26 +64,6 @@ const SkillsGridWrap = styled.div`
   position: relative;
   width: 100%;
   margin-top: clamp(36px, 5vw, 52px);
-`;
-
-const GridCenterOrb = styled.div`
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: ${({ theme }) => theme.primary};
-  box-shadow:
-    0 0 0 5px ${({ theme }) => theme.primaryGlowSoft},
-    0 0 36px ${({ theme }) => theme.primaryGlow},
-    0 0 72px ${({ theme }) => theme.primaryGlowSubtle};
-  pointer-events: none;
-  z-index: 3;
-  @media (max-width: 720px) {
-    display: none;
-  }
 `;
 
 const SkillsGrid = styled.div`
@@ -111,24 +90,6 @@ const Skill = styled.article`
   ${glassCard}
   border-radius: 20px;
   padding: 0;
-  border-color: ${({ theme }) => theme.primary}40;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    border-radius: 20px 20px 0 0;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.primary} 0%,
-      ${({ theme }) => theme.accent} 48%,
-      ${({ theme }) => theme.primary} 100%
-    );
-    z-index: 2;
-    pointer-events: none;
-  }
 `;
 
 const SkillCardInner = styled.div`
@@ -152,8 +113,8 @@ const SkillCardInner = styled.div`
 const SkillHead = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
 `;
 
 const SkillTitle = styled.h3`
@@ -164,7 +125,7 @@ const SkillTitle = styled.h3`
   letter-spacing: -0.02em;
   line-height: 1.25;
   color: ${({ theme }) => theme.text_primary};
-  text-align: center;
+  text-align: left;
 `;
 
 const SkillList = styled.ul`
@@ -175,8 +136,8 @@ const SkillList = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  align-content: center;
-  justify-content: center;
+  align-content: flex-start;
+  justify-content: flex-start;
 `;
 
 const SkillItem = styled.li`
@@ -184,8 +145,8 @@ const SkillItem = styled.li`
   font-weight: 500;
   ${glassChip}
   color: ${({ theme }) => theme.text_primary};
-  border-radius: 12px;
-  padding: 11px 15px 11px 11px;
+  border-radius: 10px;
+  padding: 9px 14px 9px 9px;
   display: inline-flex;
   align-items: center;
   gap: 10px;
@@ -258,7 +219,6 @@ const Skills = () => {
           </Desc>
         </SectionHeader>
         <SkillsGridWrap>
-          <GridCenterOrb aria-hidden />
           <SkillsGrid>
             {skills.map((skill) => (
               <SkillPanel key={skill.title} skill={skill} />

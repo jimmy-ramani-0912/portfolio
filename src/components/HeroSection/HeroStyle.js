@@ -1,362 +1,218 @@
 import styled from "styled-components";
-import { sectionTitleGradient } from "../../theme/sectionStyles";
 
-export const HeroContainer = styled.div`
-  background: ${({ theme }) => theme.heroSurface};
-  backdrop-filter: blur(22px) saturate(1.2);
-  -webkit-backdrop-filter: blur(22px) saturate(1.2);
-  border-bottom: 1px solid ${({ theme }) => theme.navBorder};
+export const HeroContainer = styled.section`
+  position: relative;
+  z-index: 1;
   display: flex;
   justify-content: center;
-  position: relative;
-  padding: clamp(56px, 10vw, 96px) clamp(20px, 4vw, 48px);
-  min-height: min(88vh, 840px);
-  @media (max-width: 960px) {
-    min-height: 0;
-    padding: 56px 20px 48px;
-  }
-  @media (max-width: 640px) {
-    padding: 40px 16px 36px;
-  }
-  z-index: 1;
-`;
-
-export const HeroBg = styled.div`
-  position: absolute;
-  display: flex;
-  justify-content: end;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  max-width: 1360px;
-  overflow: hidden;
-  padding: 0 30px;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-  transform: translateX(-50%) translateY(-50%);
-
-  @media (max-width: 960px) {
-    justify-content: center;
-    padding: 0 0px;
-  }
+  padding: clamp(40px, 6vw, 72px) clamp(20px, 4vw, 48px) clamp(56px, 8vw, 96px);
+  border-bottom: 1px solid ${({ theme }) => theme.navBorder};
 `;
 
 export const HeroInnerContainer = styled.div`
-  position: relative;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   width: 100%;
-  max-width: 1180px;
-  gap: clamp(28px, 5vw, 64px);
-
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: clamp(32px, 5vw, 64px);
   @media (max-width: 960px) {
-    flex-direction: column;
+    flex-direction: column-reverse;
+    align-items: stretch;
   }
 `;
 
 export const HeroLeftContainer = styled.div`
-  width: 100%;
-  max-width: min(560px, 100%);
-  order: 1;
+  flex: 1 1 0;
+  min-width: 0;
+  max-width: 640px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: clamp(18px, 2.8vw, 28px);
+  gap: 24px;
   @media (max-width: 960px) {
-    order: 2;
-    margin-bottom: 8px;
-    align-items: center;
-    text-align: center;
-    max-width: 640px;
+    max-width: none;
   }
 `;
 
-export const HeroTextColumn = styled.div`
-  position: relative;
-  width: 100%;
-  padding-left: clamp(20px, 2.8vw, 32px);
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.25rem;
-    bottom: 0.25rem;
-    width: 4px;
-    border-radius: 4px;
-    background: linear-gradient(
-      180deg,
-      ${({ theme }) => theme.primary} 0%,
-      ${({ theme }) => theme.accent} 52%,
-      ${({ theme }) => theme.primary} 100%
-    );
-    box-shadow: 0 0 20px ${({ theme }) => theme.primaryGlowSoft};
-  }
-  @media (max-width: 960px) {
-    padding-left: 0;
-    &::before {
-      display: none;
-    }
-  }
-`;
-
-export const HeadlineGroup = styled.div`
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 10px;
-  @media (max-width: 960px) {
-    align-items: center;
-  }
-`;
-
-export const Greeting = styled.span`
+export const RoleBadge = styled.span`
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  font-weight: 600;
-  font-size: clamp(0.8125rem, 1.5vw, 0.9375rem);
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
+  padding: 8px 16px;
+  border: 1px solid ${({ theme }) => theme.navBorder};
+  border-radius: 999px;
+  background: ${({ theme }) => theme.card};
   color: ${({ theme }) => theme.text_secondary};
+  font-size: 0.8125rem;
+  font-weight: 500;
+  min-height: 20px;
   &::before {
     content: "";
     width: 8px;
     height: 8px;
     border-radius: 50%;
     flex-shrink: 0;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
-      0 0 18px ${({ theme }) => theme.primaryGlow};
+    background: ${({ theme }) => theme.primaryFill};
+  }
+  & .Typewriter__wrapper {
+    color: ${({ theme }) => theme.text_primary};
+    font-weight: 600;
   }
 `;
 
-export const NameHeading = styled.h1`
+export const Headline = styled.h1`
   margin: 0;
-  font-weight: 800;
-  font-size: clamp(2.25rem, 5.5vw, 3.65rem);
-  line-height: 1.08;
-  letter-spacing: -0.03em;
-  ${sectionTitleGradient}
-  filter: drop-shadow(0 2px 24px ${({ theme }) => theme.primaryGlowSubtle});
-`;
-
-export const HeroRightContainer = styled.div`
-  width: 100%;
-  display: flex;
-  order: 2;
-  // justify-content: flex-end;
-  justify-content: center;
-  align-items: center;
-  @media (max-width: 960px) {
-    order: 1;
-    // justify-content: center;
-    margin-bottom: 12px;
-  }
-`;
-
-export const ProfileFrame = styled.div`
-  position: relative;
-  flex-shrink: 0;
-  box-sizing: border-box;
-  width: 402px;
-  aspect-ratio: 1;
-  max-width: 100%;
-  padding: 5px;
-  border-radius: 50%;
-  @media (max-width: 768px) {
-    width: 370px;
-  }
-  @media (max-width: 640px) {
-    width: 270px;
-  }
-  background: linear-gradient(
-    145deg,
-    ${({ theme }) => theme.primary} 0%,
-    ${({ theme }) => theme.accent} 48%,
-    ${({ theme }) => theme.primary} 100%
-  );
-  box-shadow:
-    0 0 0 1px ${({ theme }) => theme.navBorder},
-    0 22px 56px ${({ theme }) => theme.primaryGlow},
-    0 0 72px ${({ theme }) => theme.primaryGlowSubtle};
-`;
-
-export const Img = styled.img`
-  display: block;
-  // object-fit: cover;
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  max-width: 392px;
-  max-height: 392px;
-  aspect-ratio: 1;
-  border-radius: 50%;
-
-  @media (max-width: 768px) {
-    max-width: 360px;
-    max-height: 360px;
-  }
-
-  @media (max-width: 640px) {
-    max-width: 260px;
-    max-height: 260px;
-  }
-`;
-
-export const TextLoop = styled.div`
-  font-weight: 600;
-  font-size: clamp(1.05rem, 2.2vw, 1.75rem);
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-  min-height: 3rem;
-  padding: 12px 18px 12px 0;
-  border-radius: 16px;
-  line-height: 1.35;
-  color: ${({ theme }) => theme.text_primary};
-  backdrop-filter: ${({ theme }) => theme.glassBlurSoft};
-  -webkit-backdrop-filter: ${({ theme }) => theme.glassBlurSoft};
-  @media (max-width: 960px) {
-    justify-content: center;
-    padding-left: 18px;
-    padding-right: 18px;
-  }
-`;
-
-export const RolePrefix = styled.span`
-  font-weight: 500;
-  letter-spacing: 0.02em;
-  color: ${({ theme }) => theme.text_secondary};
-`;
-
-export const Span = styled.span`
   font-weight: 700;
-  letter-spacing: -0.01em;
-  color: ${({ theme }) => theme.primary};
-  text-shadow: 0 0 28px ${({ theme }) => theme.primaryGlowSoft};
-`;
-
-export const DescriptionBlock = styled.div`
-  width: 100%;
-  max-width: min(54ch, 100%);
-  display: flex;
-  flex-direction: column;
-  gap: clamp(12px, 2vw, 16px);
-  padding: clamp(14px, 2vw, 18px) 0;
-  @media (max-width: 960px) {
-    max-width: min(62ch, 100%);
-    align-items: center;
-  }
-`;
-
-export const DescriptionLead = styled.p`
-  margin: 0;
-  font-size: clamp(1rem, 1.42vw, 1.125rem);
-  line-height: 1.55;
-  font-weight: 600;
-  letter-spacing: -0.02em;
-  text-align: left;
+  font-size: clamp(2.4rem, 5.4vw, 4.25rem);
+  line-height: 1.04;
+  letter-spacing: -0.03em;
   color: ${({ theme }) => theme.text_primary};
-  @media (max-width: 960px) {
-    text-align: center;
-  }
 `;
 
-export const DescriptionList = styled.ul`
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 100%;
-  @media (max-width: 960px) {
-    gap: 8px;
-  }
+export const HeadlineAccent = styled.span`
+  color: ${({ theme }) => theme.primary};
 `;
 
-export const DescriptionListItem = styled.li`
-  position: relative;
+export const Lead = styled.p`
   margin: 0;
-  padding-left: 1.15rem;
-  font-size: clamp(0.9rem, 1.18vw, 1.02rem);
-  line-height: 1.62;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-  text-align: left;
+  max-width: 56ch;
+  font-size: clamp(1rem, 1.5vw, 1.125rem);
+  line-height: 1.65;
   color: ${({ theme }) => theme.text_secondary};
-  &::before {
-    content: "";
-    position: absolute;
-    left: 0;
-    top: 0.58em;
-    width: 6px;
-    height: 6px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow: 0 0 14px ${({ theme }) => theme.primaryGlow};
-  }
-  @media (max-width: 960px) {
-    text-align: left;
-    width: 100%;
-    max-width: none;
-    font-size: 0.99rem;
-    line-height: 1.58;
-  }
-  @media (max-width: 640px) {
-    padding-left: 1rem;
-    font-size: 0.96rem;
-    line-height: 1.54;
-  }
 `;
 
-export const ResumeButton = styled.a`
-  -webkit-appearance: button;
-  -moz-appearance: button;
-  appearance: button;
-  text-decoration: none;
+export const ButtonRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+`;
+
+const buttonBase = `
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: fit-content;
-  min-width: 200px;
-  padding: 16px 32px;
+  padding: 15px 24px;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: border-color 0.2s ease, transform 0.2s ease, filter 0.2s ease;
+`;
+
+export const PrimaryButton = styled.a`
+  ${buttonBase}
+  background: ${({ theme }) => theme.primaryFill};
   color: ${({ theme }) => theme.onPrimary};
   border: 1px solid ${({ theme }) => theme.primaryFill};
-  border-radius: 14px;
-  cursor: pointer;
-  font-size: clamp(1rem, 1.2vw, 1.125rem);
-  font-weight: 600;
-  transition:
-    transform 0.2s ease,
-    box-shadow 0.25s ease,
-    filter 0.2s ease;
-  background: ${({ theme }) => theme.primaryFill};
   &:hover {
-    transform: translateY(-2px);
-    box-shadow:
-      0 12px 40px ${({ theme }) => theme.primaryGlow},
-      0 0 0 1px rgba(255, 255, 255, 0.06);
-    filter: brightness(1.06);
+    transform: translateY(-1px);
+    filter: brightness(1.08);
   }
   &:focus-visible {
     outline: 2px solid ${({ theme }) => theme.primary};
     outline-offset: 3px;
   }
+`;
 
+export const SecondaryButton = styled.a`
+  ${buttonBase}
+  background: transparent;
+  color: ${({ theme }) => theme.text_primary};
+  border: 1px solid ${({ theme }) => theme.navBorder};
+  &:hover {
+    border-color: ${({ theme }) => theme.primary};
+    transform: translateY(-1px);
+  }
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.primary};
+    outline-offset: 3px;
+  }
+`;
+
+export const StatsRow = styled.dl`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+  width: 100%;
+  margin: 8px 0 0;
+  padding: 24px 0 0;
+  border-top: 1px solid ${({ theme }) => theme.navBorder};
+`;
+
+export const Stat = styled.div`
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 2px;
+`;
+
+export const StatValue = styled.dd`
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 2.4vw, 1.875rem);
+  font-weight: 700;
+  color: ${({ theme }) => theme.text_primary};
+`;
+
+export const StatLabel = styled.dt`
+  font-size: 0.8125rem;
+  color: ${({ theme }) => theme.text_secondary};
+`;
+
+export const HeroRightContainer = styled.div`
+  flex: 0 1 400px;
+  display: flex;
+  justify-content: center;
   @media (max-width: 960px) {
-    width: 100%;
-    max-width: 320px;
+    flex: none;
   }
+`;
 
+export const PortraitCard = styled.figure`
+  margin: 0;
+  width: 400px;
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  border-radius: 24px;
+  overflow: hidden;
+  background: ${({ theme }) => theme.card};
+  border: 1px solid ${({ theme }) => theme.navBorder};
+  box-shadow: ${({ theme }) => theme.boxShadow};
   @media (max-width: 640px) {
-    padding: 14px 28px;
+    width: 320px;
   }
+`;
+
+export const PortraitImageWrap = styled.div`
+  aspect-ratio: 1;
+  background: #ffffff;
+  overflow: hidden;
+`;
+
+export const Img = styled.img`
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+`;
+
+export const PortraitCaption = styled.figcaption`
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 18px 22px;
+`;
+
+export const CaptionName = styled.span`
+  font-size: 1rem;
+  font-weight: 600;
+  color: ${({ theme }) => theme.text_primary};
+`;
+
+export const CaptionRole = styled.span`
+  font-size: 0.8125rem;
+  color: ${({ theme }) => theme.text_secondary};
 `;

@@ -14,20 +14,23 @@ const FooterContainer = styled.footer`
   justify-content: center;
   position: relative;
   z-index: 1;
+  border-top: 1px solid ${({ theme }) => theme.navBorder};
+  background: ${({ theme }) => theme.bg};
 `;
 
 const FooterWrapper = styled.div`
   width: 100%;
-  max-width: min(1040px, 100%);
+  max-width: min(1240px, 92vw);
   display: flex;
-  flex-direction: column;
-  gap: 16px;
+  flex-wrap: wrap;
+  gap: 16px 32px;
   align-items: center;
+  justify-content: space-between;
   padding: 0;
   color: ${({ theme }) => theme.text_primary};
 `;
 
-const Logo = styled.h1`
+const Logo = styled.p`
   margin: 0;
   font-size: clamp(1.25rem, 2.6vw, 1.65rem);
   font-weight: 800;
@@ -50,7 +53,7 @@ const SocialMediaIcon = styled.a`
   text-decoration: none;
   width: 42px;
   height: 42px;
-  border-radius: 50%;
+  border-radius: 12px;
   border: 1px solid ${({ theme }) => theme.navBorder};
   background: ${({ theme }) => theme.card_light};
   transition:
@@ -69,8 +72,9 @@ const SocialMediaIcon = styled.a`
 const Copyright = styled.p`
   margin: 2px 0 0;
   font-size: 0.85rem;
-  color: ${({ theme }) => theme.soft2};
-  text-align: center;
+  flex-basis: 100%;
+  color: ${({ theme }) => theme.text_muted};
+  text-align: left;
 `;
 
 function Footer() {

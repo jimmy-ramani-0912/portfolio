@@ -12,6 +12,7 @@ import {
   ToggleButton,
   Divider,
   ViewAll,
+  HeaderRow,
 } from "./ProjectsStyle";
 import ProjectCard from "../Cards/ProjectCards";
 import { projects } from "../../data/constants";
@@ -37,6 +38,7 @@ const Projects = ({ openModal, setOpenModal }) => {
   return (
     <Container id="projects" aria-labelledby="projects-heading">
       <Inner>
+        <HeaderRow>
         <SectionHeader>
           <Eyebrow>Portfolio</Eyebrow>
           <Title id="projects-heading">Projects</Title>
@@ -45,6 +47,13 @@ const Projects = ({ openModal, setOpenModal }) => {
             Play Store apps—with links to live demos and source where available.
           </Desc>
         </SectionHeader>
+        <ViewAll
+          type="button"
+          onClick={() => navigate("portfolio/projects")}
+        >
+          All projects &rarr;
+        </ViewAll>
+        </HeaderRow>
         <ToggleButtonGroup role="tablist" aria-label="Filter projects by type">
           {FILTERS.map((f, i) => (
             <React.Fragment key={f.value}>
@@ -71,12 +80,6 @@ const Projects = ({ openModal, setOpenModal }) => {
             />
           ))}
         </CardContainer>
-        <ViewAll
-          type="button"
-          onClick={() => navigate("portfolio/projects")}
-        >
-          View all projects
-        </ViewAll>
       </Inner>
     </Container>
   );

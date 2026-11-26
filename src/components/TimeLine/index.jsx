@@ -22,17 +22,17 @@ const Container = styled.section`
 
 const Inner = styled.div`
   width: 100%;
-  max-width: min(980px, 94vw);
+  max-width: min(1240px, 92vw);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 const SectionHeader = styled.header`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: 12px;
   width: 100%;
   max-width: 720px;
@@ -47,35 +47,15 @@ const Eyebrow = styled.span`
   letter-spacing: 0.14em;
   text-transform: uppercase;
   color: ${({ theme }) => theme.primary};
-  &::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
-      0 0 16px ${({ theme }) => theme.primaryGlow};
-  }
 `;
 
 const Title = styled.h2`
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 36%,
-    ${({ theme }) => theme.primary} 76%,
-    ${({ theme }) => theme.accent} 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 const Desc = styled.p`
@@ -85,8 +65,7 @@ const Desc = styled.p`
   color: ${({ theme }) => theme.text_secondary};
   width: 100%;
   max-width: 56ch;
-  margin-inline: auto;
-  text-align: center;
+  text-align: left;
 `;
 
 const TimelineWrap = styled.div`
@@ -157,17 +136,18 @@ const TimeLineSection = () => {
                 </TimelineOppositeContent>
                 <TimelineSeparator>
                   <TimelineDot
-                    variant="outlined"
+                    variant="filled"
                     sx={{
-                      borderColor: theme.primary,
-                      boxShadow: `0 0 0 4px ${theme.primary}22`,
+                      bgcolor: theme.primaryFill,
+                      boxShadow: `0 0 0 5px ${theme.bg}`,
+                      border: 0,
                     }}
                   />
                   {index !== TimeLineData.length - 1 && (
                     <TimelineConnector
                       sx={{
-                        background: `linear-gradient(180deg, ${theme.primary} 0%, ${theme.primary}99 55%, ${theme.primary}44 100%)`,
-                        width: 3,
+                        background: theme.navBorder,
+                        width: 2,
                         borderRadius: 2,
                       }}
                     />

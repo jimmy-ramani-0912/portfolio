@@ -13,17 +13,7 @@ const Wrapper = styled.div`
   width: 100%;
   position: relative;
   background: ${({ theme }) => theme.bgLight};
-  &::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    pointer-events: none;
-    background: radial-gradient(
-      70% 45% at 50% 0%,
-      ${({ theme }) => theme.accentMesh1},
-      transparent 65%
-    );
-  }
+  border-top: 1px solid ${({ theme }) => theme.navBorder};
 `;
 
 const BelowFold = ({

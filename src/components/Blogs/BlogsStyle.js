@@ -7,12 +7,9 @@ export const Container = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border-top: 1px solid ${({ theme }) => theme.navBorder};
   padding: clamp(56px, 8vw, 96px) clamp(16px, 4vw, 32px);
-  background: linear-gradient(
-    343.07deg,
-    ${({ theme }) => theme.accentMesh1} 5.71%,
-    transparent 64.83%
-  );
+  background: transparent;
 `;
 
 export const Inner = styled.div`
@@ -20,14 +17,14 @@ export const Inner = styled.div`
   max-width: min(1240px, 92vw);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
 `;
 
 export const SectionHeader = styled.header`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  text-align: center;
+  align-items: flex-start;
+  text-align: left;
   gap: 12px;
   max-width: 720px;
 `;
@@ -40,36 +37,16 @@ export const Eyebrow = styled.span`
   font-weight: 600;
   letter-spacing: 0.14em;
   text-transform: uppercase;
-  color: ${({ theme }) => theme.text_secondary};
-  &::before {
-    content: "";
-    width: 7px;
-    height: 7px;
-    border-radius: 50%;
-    background: ${({ theme }) => theme.primary};
-    box-shadow:
-      0 0 0 3px ${({ theme }) => theme.primaryGlowSoft},
-      0 0 16px ${({ theme }) => theme.primaryGlow};
-  }
+  color: ${({ theme }) => theme.primary};
 `;
 
 export const Title = styled.h2`
   margin: 0;
   font-size: clamp(2rem, 4.2vw, 2.75rem);
-  font-weight: 800;
+  font-weight: 700;
   letter-spacing: -0.03em;
   line-height: 1.1;
-  background: linear-gradient(
-    110deg,
-    ${({ theme }) => theme.text_primary} 0%,
-    ${({ theme }) => theme.text_primary} 36%,
-    ${({ theme }) => theme.primary} 76%,
-    ${({ theme }) => theme.accent} 100%
-  );
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  color: ${({ theme }) => theme.text_primary};
 `;
 
 export const Desc = styled.p`
@@ -80,30 +57,43 @@ export const Desc = styled.p`
   max-width: 56ch;
 `;
 
+export const HeaderRow = styled.div`
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px 32px;
+`;
+
 export const CardContainer = styled.div`
   width: 100%;
-  max-width: min(1200px, 94vw);
-  margin-top: clamp(24px, 4vw, 40px);
+  margin-top: clamp(24px, 4vw, 36px);
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
-  gap: clamp(20px, 3vw, 28px);
-  justify-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 320px), 1fr));
+  gap: clamp(16px, 2.4vw, 24px);
+  align-items: stretch;
+  @media (min-width: 1000px) {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    & > *:first-child {
+      grid-column: span 2;
+    }
+  }
 `;
 
 export const ViewAll = styled.button`
-  margin-top: clamp(28px, 4vw, 40px);
-  padding: 0;
+  margin: 0;
+  padding: 10px 0;
   border: none;
   background: none;
   cursor: pointer;
-  font-size: clamp(0.95rem, 1.4vw, 1.0625rem);
+  font-size: 0.9375rem;
   font-weight: 600;
-  color: ${({ theme }) => theme.button};
-  text-decoration: underline;
-  text-underline-offset: 4px;
-  transition: color 0.2s ease;
+  color: ${({ theme }) => theme.primary};
+  transition: color 0.2s ease, transform 0.2s ease;
   &:hover {
-    color: ${({ theme }) => theme.primary};
+    color: ${({ theme }) => theme.text_primary};
+    transform: translateX(2px);
   }
   &:focus-visible {
     outline: 2px solid ${({ theme }) => theme.primary};

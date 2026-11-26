@@ -9,6 +9,7 @@ import {
   Desc,
   CardContainer,
   ViewAll,
+  HeaderRow,
 } from "./BlogsStyle";
 import BlogCards from "../Cards/BlogCards";
 import { blogs } from "../../data/constants";
@@ -19,6 +20,7 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
   return (
     <Container id="blogs" aria-labelledby="blogs-heading">
       <Inner>
+        <HeaderRow>
         <SectionHeader>
           <Eyebrow>Writing</Eyebrow>
           <Title id="blogs-heading">Blogs</Title>
@@ -27,6 +29,13 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
             learned while building real products.
           </Desc>
         </SectionHeader>
+        <ViewAll
+          type="button"
+          onClick={() => navigate("portfolio/blogs")}
+        >
+          All blogs &rarr;
+        </ViewAll>
+        </HeaderRow>
         <CardContainer>
           {blogs.slice(0, 5).map((blog) => (
             <BlogCards
@@ -37,12 +46,6 @@ const Blogs = ({ openBlogModal, setOpenBlogModal }) => {
             />
           ))}
         </CardContainer>
-        <ViewAll
-          type="button"
-          onClick={() => navigate("portfolio/blogs")}
-        >
-          View All Blogs
-        </ViewAll>
       </Inner>
     </Container>
   );

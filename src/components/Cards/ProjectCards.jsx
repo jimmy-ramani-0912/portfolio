@@ -5,11 +5,11 @@ import { useSpotlightCardHandlers } from "../../hooks/useSpotlightCardHandlers";
 
 const Card = styled.div`
   width: 100%;
-  max-width: 340px;
+  max-width: none;
   min-height: 440px;
   ${glassCard}
   cursor: pointer;
-  border-radius: 18px;
+  border-radius: 20px;
   overflow: hidden;
   padding: 22px 20px 20px;
   display: flex;
@@ -17,24 +17,6 @@ const Card = styled.div`
   gap: 14px;
   transition: transform 0.3s ease;
   position: relative;
-  border-color: ${({ theme }) => theme.primary}40;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    border-radius: 18px 18px 0 0;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.primary} 0%,
-      ${({ theme }) => theme.accent} 48%,
-      ${({ theme }) => theme.primary} 100%
-    );
-    z-index: 2;
-    pointer-events: none;
-  }
   &:hover {
     transform: translateY(-5px);
   }

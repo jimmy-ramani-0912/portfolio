@@ -19,8 +19,8 @@ const companyInitials = (name) => {
 
 const Card = styled.article`
   width: 100%;
-  max-width: min(680px, calc(100vw - 102px));
-  border-radius: 18px;
+  max-width: 100%;
+  border-radius: 20px;
   ${glassCard}
   padding: 22px 22px 20px;
   justify-content: space-between;
@@ -31,31 +31,13 @@ const Card = styled.article`
   gap: 16px;
   text-align: left;
   transition: transform 0.35s ease;
-  border-color: ${({ theme }) => theme.primary}40;
-  &::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    border-radius: 18px 18px 0 0;
-    background: linear-gradient(
-      90deg,
-      ${({ theme }) => theme.primary} 0%,
-      ${({ theme }) => theme.accent} 48%,
-      ${({ theme }) => theme.primary} 100%
-    );
-    z-index: 2;
-    pointer-events: none;
-  }
   &:hover {
     transform: translateY(-4px);
   }
   @media (max-width: 600px) {
     padding: 18px 16px 16px;
     gap: 14px;
-    max-width: calc(100vw - 86px);
+    max-width: 100%;
   }
 `;
 

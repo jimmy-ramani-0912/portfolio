@@ -1,98 +1,102 @@
 import React, { lazy, Suspense } from "react";
 import {
   HeroContainer,
-  HeroBg,
-  HeroLeftContainer,
-  HeroTextColumn,
-  Img,
-  HeroRightContainer,
   HeroInnerContainer,
-  TextLoop,
-  HeadlineGroup,
-  Greeting,
-  NameHeading,
-  RolePrefix,
-  Span,
-  DescriptionBlock,
-  DescriptionLead,
-  DescriptionList,
-  DescriptionListItem,
-  ResumeButton,
-  ProfileFrame,
+  HeroLeftContainer,
+  RoleBadge,
+  Headline,
+  HeadlineAccent,
+  Lead,
+  ButtonRow,
+  PrimaryButton,
+  SecondaryButton,
+  StatsRow,
+  Stat,
+  StatValue,
+  StatLabel,
+  HeroRightContainer,
+  PortraitCard,
+  PortraitImageWrap,
+  Img,
+  PortraitCaption,
+  CaptionName,
+  CaptionRole,
 } from "./HeroStyle";
+import { Bio, experiences, projects } from "../../data/constants";
+
 const HeroImg = `${import.meta.env.BASE_URL}me-hero.webp`;
-const HeroBgAnimation = lazy(() => import("../HeroBgAnimation"));
 const Typewriter = lazy(() => import("typewriter-effect"));
-import { Bio } from "../../data/constants";
 
-const HeroSection = () => {
-  return (
-    <div id="about">
-      <HeroContainer>
-        <HeroBg>
-          <Suspense fallback={null}>
-            <HeroBgAnimation />
+const uniqueProjects = new Set(projects.map((p) => p.title)).size;
+
+const stats = [
+  { value: "2.6+", label: "Years experience" },
+  { value: String(uniqueProjects), label: "Projects built" },
+  { value: experiences[0].company.split(" ")[0], label: "Currently at" },
+];
+
+const HeroSection = () => (
+  <HeroContainer id="about" aria-label="Introduction">
+    <HeroInnerContainer>
+      <HeroLeftContainer id="Left">
+        <RoleBadge>
+          <Suspense fallback={Bio.roles[0]}>
+            <Typewriter
+              options={{
+                strings: Bio.roles,
+                autoStart: true,
+                loop: true,
+                delay: 45,
+                deleteSpeed: 28,
+              }}
+            />
           </Suspense>
-        </HeroBg>
-        <HeroInnerContainer>
-          <HeroLeftContainer id="Left">
-            <HeroTextColumn>
-              <HeadlineGroup>
-                <Greeting>Hi, I am</Greeting>
-                <NameHeading>{Bio.name}</NameHeading>
-              </HeadlineGroup>
-              <TextLoop>
-                <RolePrefix>I&apos;m a</RolePrefix>
-                <Span>
-                  <Suspense fallback={Bio.roles[0]}>
-                  <Typewriter
-                    options={{
-                      strings: Bio.roles,
-                      autoStart: true,
-                      loop: true,
-                      delay: 45,
-                      deleteSpeed: 28,
-                    }}
-                  />
-                  </Suspense>
-                </Span>
-              </TextLoop>
-              <DescriptionBlock>
-                <DescriptionLead>{Bio.description.lead}</DescriptionLead>
-                <DescriptionList>
-                  {Bio.description.bullets.map((line) => (
-                    <DescriptionListItem key={line}>
-                      {line}
-                    </DescriptionListItem>
-                  ))}
-                </DescriptionList>
-              </DescriptionBlock>
-            </HeroTextColumn>
-            <ResumeButton
-              href={Bio.resume}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Check Resume
-            </ResumeButton>
-          </HeroLeftContainer>
+        </RoleBadge>
+        <Headline>
+          Hi, I&apos;m {Bio.name}. I build scalable web products{" "}
+          <HeadlineAccent>front to back.</HeadlineAccent>
+        </Headline>
+        <Lead>{Bio.description.lead}</Lead>
+        <ButtonRow>
+          <PrimaryButton href="#projects">View selected work</PrimaryButton>
+          <SecondaryButton
+            href={Bio.resume}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Download resume
+          </SecondaryButton>
+        </ButtonRow>
+        <StatsRow>
+          {stats.map((s) => (
+            <Stat key={s.label}>
+              <StatValue>{s.value}</StatValue>
+              <StatLabel>{s.label}</StatLabel>
+            </Stat>
+          ))}
+        </StatsRow>
+      </HeroLeftContainer>
 
-          <HeroRightContainer id="Right">
-            <ProfileFrame>
-              <Img
-                src={HeroImg}
-                alt="Jimmy Ramani"
-                width="392"
-                height="392"
-                fetchPriority="high"
-                decoding="async"
-              />
-            </ProfileFrame>
-          </HeroRightContainer>
-        </HeroInnerContainer>
-      </HeroContainer>
-    </div>
-  );
-};
+      <HeroRightContainer id="Right">
+        <PortraitCard>
+          <PortraitImageWrap>
+            <Img
+              src={HeroImg}
+              alt={Bio.name}
+              width="640"
+              height="640"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </PortraitImageWrap>
+          <PortraitCaption>
+            <CaptionName>{Bio.name}</CaptionName>
+            <CaptionRole>Full Stack Developer</CaptionRole>
+          </PortraitCaption>
+        </PortraitCard>
+      </HeroRightContainer>
+    </HeroInnerContainer>
+  </HeroContainer>
+);
 
 export default HeroSection;
